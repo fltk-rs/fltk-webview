@@ -19,7 +19,7 @@ fn main() {
     win.end();
     win.show();
     
-    let mut wv = fltk_webview::Webview::from(false, &mut wv_win);
+    let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
     wv.navigate("http://google.com");
 
     app.run().unwrap();
@@ -79,7 +79,7 @@ impl Drop for Webview {
 
 impl Webview {
     /// Create a Webview from an embedded fltk window. Requires that the window is already shown
-    pub fn from(debug: bool, win: &mut window::Window) -> Webview {
+    pub fn create(debug: bool, win: &mut window::Window) -> Webview {
         assert!(win.shown());
         win.end();
         win.set_color(enums::Color::White);
