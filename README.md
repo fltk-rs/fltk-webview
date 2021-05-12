@@ -27,7 +27,12 @@ fn main() {
 
 ## Limitations
 - On windows, webview requires winrt headers, that means it's basically buildable with the MSVC toolchain. For Msys2/mingw, there are efforts to provide such headers, but nothing yet upstream.
+<<<<<<< HEAD
 - On MacOS, unhandled exceptions arising from the objective-c code can cause application crashes.
 - On linux, I can't construct a GtkWindow from an FLTK window nor from an FLTK raw handle (XID). If you're able to do so, you're help is needed!
+=======
+- On macos, unhandled objective-c exceptions can lead to application crashes.
+- On linux, I can't construct a GtkWindow from an FLTK window nor from an FLTK raw handle (xid). If you're able to do so, your help is needed!
+>>>>>>> ed7ab6e6e2339f75bd79e89ee4f42452c282ec88
 
 ![alt_test](screenshots/ex.jpg)
