@@ -57,6 +57,7 @@ impl FlString for CString {
     }
 }
 
+/// Webview wrapper
 #[derive(Clone)]
 pub struct Webview {
     inner: Arc<wv::webview_t>,
@@ -77,6 +78,7 @@ impl Drop for Webview {
 }
 
 impl Webview {
+    /// Create a Webview from an embedded fltk window. Requires that the window is already shown
     pub fn from(debug: bool, win: &mut window::Window) -> Webview {
         assert!(win.shown());
         win.end();
@@ -111,6 +113,7 @@ impl Webview {
         Self { inner }
     }
 
+    /// Navigate to a url
     pub fn navigate(&mut self, url: &str) {
         let url = std::ffi::CString::safe_new(url);
         unsafe {
@@ -118,16 +121,19 @@ impl Webview {
         }
     }
 
+    /// Injects JavaScript code at the initialization of the new page
     pub fn init(&mut self, js: &str) {
         let js = CString::safe_new(js);
         unsafe { wv::webview_init(*self.inner, js.as_ptr()) }
     }
 
+    /// Evaluates arbitrary JavaScript code. Evaluation happens asynchronously
     pub fn eval(&mut self, js: &str) {
         let js = CString::safe_new(js);
         unsafe { wv::webview_eval(*self.inner, js.as_ptr()) }
     }
 
+    /// Posts a function to be executed on the main thread
     pub fn dispatch<F>(&mut self, f: F)
     where
         F: FnOnce(&mut Webview) + Send + 'static,
@@ -146,6 +152,7 @@ impl Webview {
         unsafe { wv::webview_dispatch(*self.inner, Some(callback::<F>), closure as *mut _) }
     }
 
+    /// Binds a native C callback so that it will appear under the given name as a global JavaScript function
     pub fn bind<F>(&mut self, name: &str, f: F)
     where
         F: FnMut(&str, &str),
@@ -182,7 +189,8 @@ impl Webview {
             )
         }
     }
-
+    
+    /// Allows to return a value from the native binding.
     pub fn r#return(&self, seq: &str, status: i32, result: &str) {
         let seq = CString::safe_new(seq);
         let result = CString::safe_new(result);
