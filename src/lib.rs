@@ -1,7 +1,7 @@
 /*!
 # fltk-webview
 
-This provides webview functionality for embedded fltk windows. This currently works on Windows and MacOS:
+This provides webview functionality for embedded fltk windows. This currently works on Windows:
 
 ## Usage
 
