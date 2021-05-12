@@ -85,11 +85,18 @@ impl Webview {
         win.set_color(enums::Color::White);
         let inner;
         unsafe {
-            #[cfg(not(target_os = "linux"))]
+            #[cfg(target_os = "windows")]
             {
                 inner = wv::webview_create(
                     debug as i32,
                     &mut win.raw_handle() as *mut *mut raw::c_void as *mut raw::c_void,
+                );
+            }
+            #[cfg(target_os = "macos")]
+            {
+                inner = wv::webview_create(
+                    debug as i32,
+                    win.raw_handle() as *mut raw::c_void,
                 );
             }
             #[cfg(target_os = "linux")]
