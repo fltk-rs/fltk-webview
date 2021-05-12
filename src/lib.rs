@@ -1,3 +1,32 @@
+/*!
+# fltk-webview
+
+This provides webview functionality for embedded fltk windows. This currently works on Windows and MacOS:
+
+## Usage
+
+```rust,no_run
+use fltk::{prelude::*, *};
+
+fn main() {
+    let app = app::App::default();
+    let mut win = window::Window::default()
+        .with_size(800, 600)
+        .with_label("Webview");
+    let mut wv_win = window::Window::default()
+        .with_size(790, 590)
+        .center_of_parent();
+    win.end();
+    win.show();
+    
+    let mut wv = fltk_webview::Webview::from(false, &mut wv_win);
+    wv.navigate("http://google.com");
+
+    app.run().unwrap();
+}
+```
+*/
+
 // Uses code from https://github.com/webview/webview_rust/blob/dev/src/webview.rs
 
 use webview_official_sys as wv;
