@@ -6,10 +6,10 @@ This provides webview functionality for embedded fltk windows. This currently wo
 ## Usage
 
 ```rust,no_run
-use fltk::{prelude::*, *};
+use fltk::{app, enums::Event, prelude::*, window};
 
 fn main() {
-    let app = app::App::default();
+    let _app = app::App::default();
     let mut win = window::Window::default()
         .with_size(800, 600)
         .with_label("Webview");
@@ -18,11 +18,19 @@ fn main() {
         .center_of_parent();
     win.end();
     win.show();
-    
-    let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
-    wv.navigate("http://google.com");
 
-    app.run().unwrap();
+    // close the app when the main window is closed
+    win.set_callback(|_| {
+        if app::event() == Event::Close {
+            std::process::exit(0);
+        }
+    });
+
+    let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
+    wv.navigate("http://wikipedia.com");
+    
+    // the webview handles the main loop
+    wv.run();
 }
 ```
 */
