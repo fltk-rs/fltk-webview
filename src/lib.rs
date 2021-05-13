@@ -29,6 +29,8 @@ fn main() {
 
 // Uses code from https://github.com/webview/webview_rust/blob/dev/src/webview.rs
 
+#![allow(unused_imports)]
+
 use webview_official_sys as wv;
 use fltk::{prelude::*, *};
 use std::{
@@ -37,6 +39,10 @@ use std::{
     os::raw,
     sync::Arc,
 };
+
+#[cfg(target_os = "macos")]
+#[macro_use]
+extern crate objc;
 
 #[cfg(target_os = "linux")]
 use gdk_x11_sys as gdk;
@@ -94,9 +100,10 @@ impl Webview {
             }
             #[cfg(target_os = "macos")]
             {
+                let handle = win.raw_handle();
                 inner = wv::webview_create(
                     debug as i32,
-                    win.raw_handle() as *mut raw::c_void,
+                    handle as *mut raw::c_void,
                 );
             }
             #[cfg(target_os = "linux")]
@@ -202,5 +209,10 @@ impl Webview {
         let seq = CString::safe_new(seq);
         let result = CString::safe_new(result);
         unsafe { wv::webview_return(*self.inner, seq.as_ptr(), status, result.as_ptr()) }
+    }
+
+    /// Run the main loop of the webview
+    pub fn run(&self) {
+        unsafe { wv::webview_run(*self.inner) }
     }
 }
