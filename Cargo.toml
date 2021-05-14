@@ -22,3 +22,6 @@ objc = "0.2.7"
 gdkx11-sys = "0.10"
 gtk-sys = "0.10"
 gdk-sys = "0.10"
+
+[build-dependencies]
+cc = "1"

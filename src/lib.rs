@@ -116,6 +116,26 @@ impl Webview {
             }
             #[cfg(target_os = "linux")]
             {
+                // #[repr(C)]
+                // #[derive(Debug, Copy, Clone)]
+                // pub struct GtkWidget {
+                //     _unused: [u8; 0],
+                // }
+                // #[repr(C)]
+                // #[derive(Debug, Copy, Clone)]
+                // pub struct GdkWindow {
+                //     _unused: [u8; 0],
+                // }
+                // extern "C" {
+                    // pub fn gtk_init(argc: *mut raw::c_int, argv: *mut *mut raw::c_char);
+                    // pub fn customwin_new() -> *mut gtk_sys::GtkWidget;
+                    // pub fn customwin_set_win(_self: *mut gtk_sys::GtkWidget, w: *mut gdk_sys::GdkWindow);
+                // }
+                // gtk_init(&mut 0, std::ptr::null_mut());
+                // let display = concat!(env!("DISPLAY"), "\0");
+                // let wid = customwin_new();
+                // customwin_set_win(wid, win.raw_handle(), display.as_ptr() as _);
+                // inner = wv::webview_create(debug as i32, wid as _);
                 gtk_sys::gtk_init(&mut 0, std::ptr::null_mut());
                 let mn = gdk_sys::gdk_display_manager_get();
                 // fltk::app::display() doesn't work for some reason
