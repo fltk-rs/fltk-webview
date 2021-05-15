@@ -37,8 +37,6 @@ fn main() {
 
 // Uses code from https://github.com/webview/webview_rust/blob/dev/src/webview.rs
 
-#![allow(unused_imports)]
-
 use webview_official_sys as wv;
 use fltk::{prelude::*, *};
 use std::{
@@ -47,13 +45,6 @@ use std::{
     os::raw,
     sync::Arc,
 };
-
-#[cfg(target_os = "macos")]
-#[macro_use]
-extern crate objc;
-
-#[cfg(target_os = "linux")]
-use gdk_x11_sys as gdk;
 
 pub(crate) trait FlString {
     fn safe_new(s: &str) -> CString;
@@ -69,6 +60,15 @@ impl FlString for CString {
             }
         }
     }
+}
+
+#[repr(i32)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Ord)]
+pub enum SizeHint {
+    None = 0,
+    Min = 1,
+    Max = 2,
+    Fixed = 3,
 }
 
 /// Webview wrapper
@@ -116,38 +116,16 @@ impl Webview {
             }
             #[cfg(target_os = "linux")]
             {
-                // #[repr(C)]
-                // #[derive(Debug, Copy, Clone)]
-                // pub struct GtkWidget {
-                //     _unused: [u8; 0],
-                // }
-                // #[repr(C)]
-                // #[derive(Debug, Copy, Clone)]
-                // pub struct GdkWindow {
-                //     _unused: [u8; 0],
-                // }
-                // extern "C" {
-                    // pub fn gtk_init(argc: *mut raw::c_int, argv: *mut *mut raw::c_char);
-                    // pub fn customwin_new() -> *mut gtk_sys::GtkWidget;
-                    // pub fn customwin_set_win(_self: *mut gtk_sys::GtkWidget, w: *mut gdk_sys::GdkWindow);
-                // }
-                // gtk_init(&mut 0, std::ptr::null_mut());
-                // let display = concat!(env!("DISPLAY"), "\0");
-                // let wid = customwin_new();
-                // customwin_set_win(wid, win.raw_handle(), display.as_ptr() as _);
-                // inner = wv::webview_create(debug as i32, wid as _);
-                gtk_sys::gtk_init(&mut 0, std::ptr::null_mut());
-                let mn = gdk_sys::gdk_display_manager_get();
-                // fltk::app::display() doesn't work for some reason
-                let display = gdk_sys::gdk_display_manager_open_display(
-                    mn,
-                    concat!(env!("DISPLAY"), "\0").as_ptr() as _,
-                );
-                let gdkwin =
-                    gdk::gdk_x11_window_foreign_new_for_display(display as _, win.raw_handle());
-                let gtkwid = gtk_sys::gtk_window_new(0);
-                gtk_sys::gtk_widget_set_window(gtkwid, gdkwin);
-                inner = wv::webview_create(debug as i32, gtkwid as _);
+                pub enum GtkWidget {}
+                extern "C" {
+                    pub fn gtk_init(argc: *mut raw::c_int, argv: *mut *mut raw::c_char);
+                    pub fn customwin_new() -> *mut GtkWidget;
+                    pub fn customwin_set_win(_self: *mut GtkWidget, xid: raw::c_ulong);
+                }
+                gtk_init(&mut 0, std::ptr::null_mut());
+                let wid = customwin_new();
+                customwin_set_win(wid, win.raw_handle());
+                inner = wv::webview_create(debug as i32, wid as _);
             }
         }
         assert!(!inner.is_null());
@@ -242,5 +220,10 @@ impl Webview {
     /// Run the main loop of the webview
     pub fn run(&self) {
         unsafe { wv::webview_run(*self.inner) }
+    }
+
+    /// Set the size of the webview window
+    pub fn set_size(&mut self, width: i32, height: i32, hints: SizeHint) {
+        unsafe { wv::webview_set_size(*self.inner, width, height, hints as i32) }
     }
 }

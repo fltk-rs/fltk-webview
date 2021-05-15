@@ -23,7 +23,7 @@ typedef struct _CustomWin {
 
 GType customwin_get_type(void);
 GtkWidget *customwin_new(void);
-void customwin_set_win(CustomWin *self, GdkWindow *w);
+void customwin_set_win(CustomWin *self, long xid);
 
 G_END_DECLS
 

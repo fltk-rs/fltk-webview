@@ -15,13 +15,5 @@ license = "MIT"
 fltk = "1"
 webview-official-sys = "0.1.2"
 
-[target.'cfg(target_os = "macos")'.dependencies]
-objc = "0.2.7"
-
-[target.'cfg(target_os = "linux")'.dependencies]
-gdkx11-sys = "0.10"
-gtk-sys = "0.10"
-gdk-sys = "0.10"
-
 [build-dependencies]
 cc = "1"
