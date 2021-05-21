@@ -15,3 +15,5 @@ fn main() {
         .compile("gtkwid");
 }
 
+fn main() {}
+
