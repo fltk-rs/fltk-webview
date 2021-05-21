@@ -1,4 +1,4 @@
-#[cfg(target_os = "linux")]
+#[cfg(not(any(target_os = "macos", target_os = "windows")))]
 fn main() {
     let cflags = std::process::Command::new("pkg-config")
         .args(&["--cflags", "gtk+-3.0"])
@@ -15,5 +15,6 @@ fn main() {
         .compile("gtkwid");
 }
 
+#[cfg(any(target_os = "macos", target_os = "windows"))]
 fn main() {}
 

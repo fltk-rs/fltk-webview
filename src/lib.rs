@@ -28,7 +28,7 @@ fn main() {
 
     let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
     wv.navigate("http://wikipedia.com");
-    
+
     // the webview handles the main loop
     wv.run();
 }
@@ -37,7 +37,6 @@ fn main() {
 
 // Uses code from https://github.com/webview/webview_rust/blob/dev/src/webview.rs
 
-use webview_official_sys as wv;
 use fltk::{prelude::*, *};
 use std::{
     ffi::{CStr, CString},
@@ -45,6 +44,7 @@ use std::{
     os::raw,
     sync::Arc,
 };
+use webview_official_sys as wv;
 
 pub(crate) trait FlString {
     fn safe_new(s: &str) -> CString;
@@ -109,23 +109,39 @@ impl Webview {
             #[cfg(target_os = "macos")]
             {
                 let handle = win.raw_handle();
-                inner = wv::webview_create(
-                    debug as i32,
-                    handle as *mut raw::c_void,
-                );
+                inner = wv::webview_create(debug as i32, handle as *mut raw::c_void);
             }
             #[cfg(target_os = "linux")]
             {
+                pub enum GdkWindow {}
                 pub enum GtkWidget {}
+                pub enum GtkWindow {}
+                pub enum Display {}
                 extern "C" {
                     pub fn gtk_init(argc: *mut raw::c_int, argv: *mut *mut raw::c_char);
-                    pub fn customwin_new() -> *mut GtkWidget;
-                    pub fn customwin_set_win(_self: *mut GtkWidget, xid: raw::c_ulong);
+                    pub fn my_get_win(wid: *mut GtkWindow) -> *mut GdkWindow;
+                    pub fn my_get_xid(w: *mut GdkWindow) -> u64;
+                    pub fn XReparentWindow(
+                        display: *mut Display,
+                        w: u64,
+                        parent: u64,
+                        x: i32,
+                        y: i32,
+                    );
+                    pub fn XMapWindow(display: *mut Display, w: u64);
+                    pub fn gtk_widget_set_size_request(wid: *mut GtkWidget, w: i32, h: i32);
                 }
                 gtk_init(&mut 0, std::ptr::null_mut());
-                let wid = customwin_new();
-                customwin_set_win(wid, win.raw_handle());
-                inner = wv::webview_create(debug as i32, wid as _);
+                inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
+                assert!(!inner.is_null());
+                wv::webview_set_size(inner, win.w(), win.h(), 0);
+                let temp_win = wv::webview_get_window(inner);
+                let temp = my_get_win(temp_win as _);
+                assert!(!temp.is_null());
+                let xid = my_get_xid(temp as _);
+                gtk_widget_set_size_request(temp_win as _, win.x(), win.h());
+                XReparentWindow(app::display() as _, xid, win.raw_handle(), win.x(), win.y());
+                XMapWindow(app::display() as _, xid);
             }
         }
         assert!(!inner.is_null());
@@ -209,7 +225,7 @@ impl Webview {
             )
         }
     }
-    
+
     /// Allows to return a value from the native binding.
     pub fn r#return(&self, seq: &str, status: i32, result: &str) {
         let seq = CString::safe_new(seq);

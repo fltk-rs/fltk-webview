@@ -22,5 +22,5 @@ fn main() {
     wv.navigate("http://wikipedia.com");
     
     // the webview handles the main loop
-    wv.run();
+    _app.run().unwrap();
 }
