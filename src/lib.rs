@@ -170,11 +170,9 @@ impl Webview {
             #[cfg(target_os = "linux")]
             {
                 pub enum GdkWindow {}
-                pub enum GtkWidget {}
                 pub enum GtkWindow {}
                 pub enum Display {}
                 extern "C" {
-                    pub fn gtk_init(argc: *mut raw::c_int, argv: *mut *mut raw::c_char);
                     pub fn my_get_win(wid: *mut GtkWindow) -> *mut GdkWindow;
                     pub fn my_get_xid(w: *mut GdkWindow) -> u64;
                     pub fn XReparentWindow(
@@ -185,19 +183,20 @@ impl Webview {
                         y: i32,
                     );
                     pub fn XMapWindow(display: *mut Display, w: u64);
-                    pub fn gtk_widget_set_size_request(wid: *mut GtkWidget, w: i32, h: i32);
+                    pub fn XFlush(disp: *mut Display);
+                    pub fn gtk_window_move(wid: *mut GtkWindow, x: i32, y: i32);
                 }
-                gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
                 assert!(!inner.is_null());
-                wv::webview_set_size(inner, win.w(), win.h(), 0);
                 let temp_win = wv::webview_get_window(inner);
+                gtk_window_move(temp_win as _, win.x(), win.y());
                 let temp = my_get_win(temp_win as _);
                 assert!(!temp.is_null());
                 let xid = my_get_xid(temp as _);
-                gtk_widget_set_size_request(temp_win as _, win.x(), win.h());
                 XReparentWindow(app::display() as _, xid, win.raw_handle(), win.x(), win.y());
                 XMapWindow(app::display() as _, xid);
+                XFlush(app::display() as _);
+                wv::webview_set_size(inner, win.w(), win.h(), 0);
             }
         }
         assert!(!inner.is_null());
