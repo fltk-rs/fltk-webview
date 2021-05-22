@@ -112,33 +112,60 @@ impl Webview {
             }
             #[cfg(target_os = "macos")]
             {
-                use objc::runtime::*;
                 use objc::declare::MethodImplementation;
+                use objc::runtime::*;
                 use objc::{Encode, EncodeArguments};
-                extern fn did_view_resolution_change(_this: &Object, _cmd: Sel) -> i32 {
-                    1
+                extern "C" {
+                    pub fn objc_getMetaClass(name: *const std::os::raw::c_char) -> *mut Class;
                 }
-                fn method_type_encoding(ret: &objc::Encoding, args: &[objc::Encoding]) -> std::ffi::CString {
-                    // First two arguments are always self and the selector
-                    let mut types = format!("{}{}{}",
-                        ret.as_str(), <*mut Object>::encode().as_str(), Sel::encode().as_str());
+                extern fn my_method(_this: &Object, _cmd: Sel) -> bool {
+                    true
+                }
+                fn method_type_encoding(
+                    ret: &objc::Encoding,
+                    args: &[objc::Encoding],
+                ) -> std::ffi::CString {
+                    let mut types = format!(
+                        "{}{}{}",
+                        ret.as_str(),
+                        <*mut Object>::encode().as_str(),
+                        Sel::encode().as_str()
+                    );
                     for enc in args {
                         use std::fmt::Write;
                         write!(&mut types, "{}", enc.as_str()).unwrap();
                     }
                     std::ffi::CString::new(types).unwrap()
                 }
-                fn add_method<F>(cls: *mut Class, func: F) where F: MethodImplementation<Callee=Object> {
+                fn add_method<F>(cls: *mut Class, sel: Sel, func: F)
+                where
+                    F: MethodImplementation<Callee = Object>,
+                {
                     let encs = F::Args::encodings();
                     let types = method_type_encoding(&F::Ret::encode(), encs.as_ref());
-                    unsafe { 
-                        class_addMethod(cls, sel!(did_view_resolution_change), func.imp(), types.as_ptr());
+                    unsafe {
+                        class_addMethod(
+                            cls,
+                            sel,
+                            func.imp(),
+                            types.as_ptr(),
+                        );
                     }
                 }
                 let handle = win.raw_handle();
-                let cls = objc_getClass(handle as _) as *mut Class;
-                add_method(cls, did_view_resolution_change as extern fn(&Object, Sel) -> i32);
+                let cls2 = objc_getMetaClass("WKWebView\0".as_ptr() as _);
+                add_method(
+                    cls2,
+                    sel!(did_view_resolution_change),
+                    my_method as extern fn(&Object, Sel) -> bool,
+                );
                 inner = wv::webview_create(debug as i32, handle as *mut raw::c_void);
+                let cls = object_getClass(wv::webview_get_window(inner) as _) as *mut Class;
+                add_method(
+                    cls,
+                    sel!(did_view_resolution_change),
+                    my_method as extern fn(&Object, Sel) -> bool,
+                );
             }
             #[cfg(target_os = "linux")]
             {
