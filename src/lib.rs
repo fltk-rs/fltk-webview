@@ -27,7 +27,7 @@ fn main() {
     });
 
     let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
-    wv.navigate("http://wikipedia.com");
+    wv.navigate("https://google.com");
 
     // the webview handles the main loop
     wv.run();
@@ -184,16 +184,14 @@ impl Webview {
                     );
                     pub fn XMapWindow(display: *mut Display, w: u64);
                     pub fn XFlush(disp: *mut Display);
-                    pub fn gtk_window_move(wid: *mut GtkWindow, x: i32, y: i32);
                 }
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
                 assert!(!inner.is_null());
                 let temp_win = wv::webview_get_window(inner);
-                gtk_window_move(temp_win as _, win.x(), win.y());
                 let temp = my_get_win(temp_win as _);
                 assert!(!temp.is_null());
                 let xid = my_get_xid(temp as _);
-                XReparentWindow(app::display() as _, xid, win.raw_handle(), win.x(), win.y());
+                XReparentWindow(app::display() as _, xid, win.top_window().unwrap().raw_handle(), win.x(), win.y());
                 XMapWindow(app::display() as _, xid);
                 XFlush(app::display() as _);
                 wv::webview_set_size(inner, win.w(), win.h(), 0);
@@ -290,7 +288,9 @@ impl Webview {
 
     /// Run the main loop of the webview
     pub fn run(&self) {
-        unsafe { wv::webview_run(*self.inner) }
+        unsafe {
+            wv::webview_run(*self.inner) 
+        }
     }
 
     /// Set the size of the webview window
