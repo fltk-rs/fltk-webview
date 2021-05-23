@@ -169,10 +169,12 @@ impl Webview {
             }
             #[cfg(target_os = "linux")]
             {
+                use std::os::raw::*;
                 pub enum GdkWindow {}
                 pub enum GtkWindow {}
                 pub enum Display {}
                 extern "C" {
+                    pub fn gtk_init(argc: *mut i32, argv: *mut *mut c_char);
                     pub fn my_get_win(wid: *mut GtkWindow) -> *mut GdkWindow;
                     pub fn my_get_xid(w: *mut GdkWindow) -> u64;
                     pub fn XReparentWindow(
@@ -185,14 +187,20 @@ impl Webview {
                     pub fn XMapWindow(display: *mut Display, w: u64);
                     pub fn XFlush(disp: *mut Display);
                 }
+                gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
                 assert!(!inner.is_null());
                 let temp_win = wv::webview_get_window(inner);
                 let temp = my_get_win(temp_win as _);
                 assert!(!temp.is_null());
                 let xid = my_get_xid(temp as _);
-                XReparentWindow(app::display() as _, xid, win.top_window().unwrap().raw_handle(), win.x(), win.y());
+                let flxid = if let Some(xid) = win.top_window() {
+                    xid.raw_handle()
+                } else {
+                    win.raw_handle()
+                };
                 XMapWindow(app::display() as _, xid);
+                XReparentWindow(app::display() as _, xid, flxid, win.x(), win.y());
                 XFlush(app::display() as _);
                 wv::webview_set_size(inner, win.w(), win.h(), 0);
             }
@@ -289,6 +297,18 @@ impl Webview {
     /// Run the main loop of the webview
     pub fn run(&self) {
         unsafe {
+            #[cfg(not(any(target_os = "macos", target_os = "windows")))]
+            {
+                extern "C" {
+                    pub fn gtk_main_iteration() -> i32;
+                }
+                while app::wait() {
+                    gtk_main_iteration();
+                    app::first_window().unwrap().redraw();
+                    app::sleep(0.03);
+                }
+            }
+            #[cfg(any(target_os = "macos", target_os = "windows"))]
             wv::webview_run(*self.inner) 
         }
     }

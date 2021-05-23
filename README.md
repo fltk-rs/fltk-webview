@@ -37,8 +37,8 @@ fn main() {
 
 ## Limitations
 - On windows, webview requires winrt headers, that means it's basically buildable with the MSVC toolchain. For Msys2/mingw, there are efforts to provide such headers, but nothing yet upstream.
-- On macos, unhandled objective-c exceptions can lead to faulty behavior.
-- On linux, I can't construct a GtkWindow from an FLTK window nor from an FLTK raw handle (xid). If you're able to do so, your help is needed!
+- On macos, need help with getting mouse input to work.
+- On linux, need help with the XEmbed protocol.
 
 
 ![alt_test](screenshots/ex.jpg)
