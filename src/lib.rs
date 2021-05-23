@@ -302,11 +302,10 @@ impl Webview {
                 extern "C" {
                     pub fn gtk_main_iteration() -> i32;
                 }
-                while app::wait() {
+                app::add_idle(|| {
                     gtk_main_iteration();
-                    app::first_window().unwrap().redraw();
-                    app::sleep(0.03);
-                }
+                });
+                app::run().unwrap();
             }
             #[cfg(any(target_os = "macos", target_os = "windows"))]
             wv::webview_run(*self.inner) 
