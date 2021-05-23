@@ -23,5 +23,4 @@ fn main() {
     
     // the webview handles the main loop
     wv.run();
-    // _app.run().unwrap();
 }
