@@ -150,15 +150,13 @@ impl Webview {
                 let temp = my_get_win(temp_win as _);
                 assert!(!temp.is_null());
                 let xid = my_get_xid(temp as _);
-                let flxid = if let Some(xid) = win.top_window() {
-                    xid.raw_handle()
-                } else {
-                    win.raw_handle()
-                };
-                XMapWindow(app::display() as _, xid);
-                XReparentWindow(app::display() as _, xid, flxid, win.x(), win.y());
-                XFlush(app::display() as _);
-                wv::webview_set_size(inner, win.w(), win.h(), 0);
+                let flxid = win.raw_handle();
+                win.draw(move |w| {
+                    XMapWindow(app::display() as _, xid);
+                    XReparentWindow(app::display() as _, xid, flxid, w.x(), w.y());
+                    XFlush(app::display() as _);
+                    wv::webview_set_size(inner, w.w(), w.h(), 0);
+                });
             }
         }
         assert!(!inner.is_null());
