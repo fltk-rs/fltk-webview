@@ -254,13 +254,11 @@ impl Webview {
             #[cfg(not(any(target_os = "macos", target_os = "windows")))]
             {
                 extern "C" {
-                    pub fn gtk_main_iteration() -> i32;
+                    pub fn gtk_main_iteration_do(val: bool) -> bool;
                 }
-                app::add_idle(|| {
-                    gtk_main_iteration();
-                    // app::sleep(0.03);
-                });
-                app::run().unwrap();
+                while gtk_main_iteration_do(true) {
+                    app::check();
+                }
             }
             #[cfg(any(target_os = "macos", target_os = "windows"))]
             wv::webview_run(*self.inner) 
