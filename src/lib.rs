@@ -151,10 +151,10 @@ impl Webview {
                 assert!(!temp.is_null());
                 let xid = my_get_xid(temp as _);
                 let flxid = win.raw_handle();
+                XReparentWindow(app::display() as _, xid, flxid, win.x(), win.y());
+                XMapWindow(app::display() as _, xid);
+                XFlush(app::display() as _);
                 win.draw(move |w| {
-                    XMapWindow(app::display() as _, xid);
-                    XReparentWindow(app::display() as _, xid, flxid, w.x(), w.y());
-                    XFlush(app::display() as _);
                     wv::webview_set_size(inner, w.w(), w.h(), 0);
                 });
             }
@@ -258,6 +258,7 @@ impl Webview {
                 }
                 app::add_idle(|| {
                     gtk_main_iteration();
+                    // app::sleep(0.03);
                 });
                 app::run().unwrap();
             }
