@@ -133,16 +133,7 @@ impl Webview {
                     pub fn gtk_init(argc: *mut i32, argv: *mut *mut c_char);
                     pub fn my_get_win(wid: *mut GtkWindow) -> *mut GdkWindow;
                     pub fn my_get_xid(w: *mut GdkWindow) -> u64;
-                    pub fn XReparentWindow(
-                        display: *mut Display,
-                        w: u64,
-                        parent: u64,
-                        x: i32,
-                        y: i32,
-                    );
-                    pub fn XMapWindow(display: *mut Display, w: u64);
-                    pub fn XFlush(disp: *mut Display);
-                    pub fn XFixesChangeSaveSet(disp: *mut Display, xid: u64, mode: i32, target: i32, map: i32);
+                    pub fn xmagic(disp: *mut Display, child: u64, parent: u64);
                 }
                 gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
@@ -152,10 +143,7 @@ impl Webview {
                 assert!(!temp.is_null());
                 let xid = my_get_xid(temp as _);
                 let flxid = win.raw_handle();
-                XReparentWindow(app::display() as _, xid, flxid, win.x(), win.y());
-                XFixesChangeSaveSet(app::display() as _, xid, 0, 1, 1); // SetModeInsert, SaveSetRoot, SaveSetUnmap
-                XMapWindow(app::display() as _, xid);
-                XFlush(app::display() as _);
+                xmagic(app::display() as _, xid, flxid);
                 win.draw(move |w| {
                     wv::webview_set_size(inner, w.w(), w.h(), 0);
                 });
