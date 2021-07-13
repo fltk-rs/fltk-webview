@@ -46,7 +46,6 @@ void x_reparent(Display *display, Window childWin, Window parentWin) {
   unsigned int nch;
   XQueryTree(display, childWin, &root, &parent, &ch, &nch);
   if (parent != parentWin) {
-    XMoveWindow(display, childWin, 0, 0);
     XReparentWindow(display, childWin, parentWin, 0, 0);
   }
   if (nch > 0) {
