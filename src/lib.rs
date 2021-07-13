@@ -144,7 +144,6 @@ impl Webview {
                 assert!(!temp.is_null());
                 let xid = my_get_xid(temp as _);
                 let flxid = win.raw_handle();
-                x_init(app::display() as _, xid, flxid);
                 if has_program("gnome-shell") {
                     win.draw(move |w| {
                         x_reparent(app::display() as _, xid, flxid);
