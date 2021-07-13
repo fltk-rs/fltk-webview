@@ -142,6 +142,7 @@ impl Webview {
                     );
                     pub fn XMapWindow(display: *mut Display, w: u64);
                     pub fn XFlush(disp: *mut Display);
+                    pub fn XFixesChangeSaveSet(disp: *mut Display, xid: u64, mode: i32, target: i32, map: i32);
                 }
                 gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
@@ -152,6 +153,7 @@ impl Webview {
                 let xid = my_get_xid(temp as _);
                 let flxid = win.raw_handle();
                 XReparentWindow(app::display() as _, xid, flxid, win.x(), win.y());
+                XFixesChangeSaveSet(app::display() as _, xid, 0, 1, 1); // SetModeInsert, SaveSetRoot, SaveSetUnmap
                 XMapWindow(app::display() as _, xid);
                 XFlush(app::display() as _);
                 win.draw(move |w| {
