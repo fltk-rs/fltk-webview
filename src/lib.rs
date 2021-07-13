@@ -145,13 +145,15 @@ impl Webview {
                 let xid = my_get_xid(temp as _);
                 let flxid = win.raw_handle();
                 x_init(app::display() as _, xid, flxid);
-                let is_gnome = has_program("gnome-shell");
-                win.draw(move |w| {
-                    if is_gnome {
+                if has_program("gnome-shell") {
+                    win.draw(move |w| {
                         x_reparent(app::display() as _, xid, flxid);
-                    }
-                    wv::webview_set_size(inner, w.w(), w.h(), 0);
-                });
+                        wv::webview_set_size(inner, w.w(), w.h(), 0);
+                    });
+                } else {
+                    x_init(app::display() as _, xid, flxid);
+                    win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
+                }
             }
         }
         assert!(!inner.is_null());
