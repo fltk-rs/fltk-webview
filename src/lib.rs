@@ -133,7 +133,8 @@ impl Webview {
                     pub fn gtk_init(argc: *mut i32, argv: *mut *mut c_char);
                     pub fn my_get_win(wid: *mut GtkWindow) -> *mut GdkWindow;
                     pub fn my_get_xid(w: *mut GdkWindow) -> u64;
-                    pub fn xmagic(disp: *mut Display, child: u64, parent: u64);
+                    pub fn x_init(disp: *mut Display, child: u64, parent: u64);
+                    pub fn x_reparent(disp: *mut Display, child: u64, parent: u64);
                 }
                 gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
@@ -143,7 +144,10 @@ impl Webview {
                 assert!(!temp.is_null());
                 let xid = my_get_xid(temp as _);
                 let flxid = win.raw_handle();
-                xmagic(app::display() as _, xid, flxid);
+                x_init(app::display() as _, xid, flxid);
+                if has_program("gnome-shell") {
+                    app::add_idle(move || x_reparent(app::display() as _, xid, flxid));
+                }
                 win.draw(move |w| {
                     wv::webview_set_size(inner, w.w(), w.h(), 0);
                 });
@@ -258,5 +262,12 @@ impl Webview {
     /// Set the size of the webview window
     pub fn set_size(&mut self, width: i32, height: i32, hints: SizeHint) {
         unsafe { wv::webview_set_size(*self.inner, width, height, hints as i32) }
+    }
+}
+
+fn has_program(prog: &str) -> bool {
+    match std::process::Command::new(prog).arg("--version").output() {
+        Ok(out) => !out.stdout.is_empty(),
+        _ => false,
     }
 }
