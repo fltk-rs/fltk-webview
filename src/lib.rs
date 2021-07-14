@@ -135,6 +135,7 @@ impl Webview {
                     pub fn my_get_xid(w: *mut GdkWindow) -> u64;
                     pub fn x_init(disp: *mut Display, child: u64, parent: u64);
                     pub fn x_reparent(disp: *mut Display, child: u64, parent: u64);
+                    pub fn XMapWindow(disp: *mut Display, win: u64);
                 }
                 gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
@@ -145,6 +146,7 @@ impl Webview {
                 let xid = my_get_xid(temp as _);
                 let flxid = win.raw_handle();
                 if has_program("gnome-shell") {
+                    XMapWindow(app::display() as _, xid);
                     win.draw(move |w| {
                         x_reparent(app::display() as _, xid, flxid);
                         wv::webview_set_size(inner, w.w(), w.h(), 0);
