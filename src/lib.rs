@@ -152,15 +152,15 @@ impl Webview {
                         x_reparent(app::display() as _, xid, flxid);
                         app::sleep(0.03);
                     });
-                    win.parent().unwrap().set_callback(|_| {
-                        if app::event() == enums::Event::Close {
-                            wv_at_exit(app::display() as _);
-                            RUNNING = false;
-                        }
-                    });
                 } else {
                     x_init(app::display() as _, xid, flxid);
                 }
+                win.parent().unwrap().set_callback(|_| {
+                    if app::event() == enums::Event::Close {
+                        wv_at_exit(app::display() as _);
+                        RUNNING = false;
+                    }
+                });
                 win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
             }
         }
