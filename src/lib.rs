@@ -119,13 +119,11 @@ impl Webview {
             {
                 pub enum NSWindow {}
                 extern "C" {
-                    pub fn cocoa_reparent(child: *mut NSWindow, parent: *mut NSWindow);
+                    pub fn make_delegate(child: *mut NSWindow, parent: *mut NSWindow);
                 }
                 let handle = win.raw_handle();
-                inner = wv::webview_create(debug as i32, std::ptr::null_mut());
-                let inner_win = wv::webview_get_window(inner);
-                wv::webview_set_size(inner, win.w(), win.h(), 0);
-                cocoa_reparent(inner_win as _, handle as _);
+                inner = wv::webview_create(debug as i32, handle as _);
+                make_delegate(wv::webview_get_window(inner) as _, handle as _);
                 win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 win.parent().unwrap().set_callback(|_| {
                     if app::event() == enums::Event::Close {
