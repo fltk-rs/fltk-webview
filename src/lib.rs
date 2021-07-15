@@ -111,6 +111,12 @@ impl Webview {
                     debug as i32,
                     &mut win.raw_handle() as *mut *mut raw::c_void as *mut raw::c_void,
                 );
+                win.parent().unwrap().set_callback(|_| {
+                    if app::event() == enums::Event::Close {
+                        RUNNING = false;
+                        std::process::exit(0);
+                    }
+                });
             }
             #[cfg(target_os = "macos")]
             {
@@ -124,6 +130,12 @@ impl Webview {
                 let _: () = msg_send![win_view, addSubview:inner_view positioned:1 relativeTo:0];
                 let _: () = msg_send![inner_view, acceptsFirstResponder];
                 let _: () = msg_send![inner_win as *mut Object, close];
+                win.parent().unwrap().set_callback(|_| {
+                    if app::event() == enums::Event::Close {
+                        RUNNING = false;
+                        std::process::exit(0);
+                    }
+                });
             }
             #[cfg(target_os = "linux")]
             {
@@ -276,6 +288,7 @@ impl Webview {
     }
 }
 
+#[cfg(target_os = "linux")]
 fn has_program(prog: &str) -> bool {
     match std::process::Command::new(prog).arg("--version").output() {
         Ok(out) => !out.stdout.is_empty(),
