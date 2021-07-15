@@ -111,6 +111,7 @@ impl Webview {
                     debug as i32,
                     &mut win.raw_handle() as *mut *mut raw::c_void as *mut raw::c_void,
                 );
+                win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 win.parent().unwrap().set_callback(|_| {
                     if app::event() == enums::Event::Close {
                         RUNNING = false;
@@ -130,6 +131,7 @@ impl Webview {
                 let _: () = msg_send![win_view, addSubview:inner_view positioned:1 relativeTo:0];
                 let _: () = msg_send![inner_view, acceptsFirstResponder];
                 let _: () = msg_send![inner_win as *mut Object, close];
+                win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 win.parent().unwrap().set_callback(|_| {
                     if app::event() == enums::Event::Close {
                         RUNNING = false;
