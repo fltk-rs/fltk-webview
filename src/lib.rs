@@ -46,10 +46,6 @@ use std::{
 };
 use webview_official_sys as wv;
 
-#[cfg(target_os = "macos")]
-#[macro_use]
-extern crate objc;
-
 static mut RUNNING: bool = true;
 
 pub(crate) trait FlString {
@@ -121,16 +117,15 @@ impl Webview {
             }
             #[cfg(target_os = "macos")]
             {
-                use objc::runtime::*;
-                let win_view: *mut Object = msg_send![win.raw_handle() as *mut Object, contentView];
+                pub enum NSWindow {}
+                extern "C" {
+                    pub fn cocoa_reparent(child: *mut NSWindow, parent: *mut NSWindow);
+                }
+                let handle = win.raw_handle();
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut());
                 let inner_win = wv::webview_get_window(inner);
                 wv::webview_set_size(inner, win.w(), win.h(), 0);
-                let inner_view: *mut Object = msg_send![inner_win as *mut Object, contentView];
-                let _: () = msg_send![inner_view, removeFromSuperview];
-                let _: () = msg_send![win_view, addSubview:inner_view positioned:1 relativeTo:0];
-                let _: () = msg_send![inner_view, acceptsFirstResponder];
-                let _: () = msg_send![inner_win as *mut Object, close];
+                cocoa_reparent(inner_win as _, handle as _);
                 win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 win.parent().unwrap().set_callback(|_| {
                     if app::event() == enums::Event::Close {

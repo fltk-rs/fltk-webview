@@ -15,6 +15,14 @@ fn main() {
         .compile("gtkwid");
 }
 
-#[cfg(any(target_os = "macos", target_os = "windows"))]
+#[cfg(target_os = "macos")]
+fn main() {
+    let mut build = cc::Build::new();
+    build.file("src/cocoa.m");
+    build
+        .compile("cocoa");
+}
+
+#[cfg(target_os = "windows")]
 fn main() {}
 
