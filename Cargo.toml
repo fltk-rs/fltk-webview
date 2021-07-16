@@ -1,6 +1,6 @@
 [package]
 name = "fltk-webview"
-version = "0.1.11"
+version = "0.1.12"
 authors = ["MoAlyousef <mohammed.alyousef@neurosrg.com>"]
 edition = "2018"
 description = "Webview for embedded fltk windows"
@@ -15,5 +15,8 @@ license = "MIT"
 fltk = "1.1"
 webview-official-sys = "0.1.2"
 
-[build-dependencies]
+[target.'cfg(not(any(target_os = "macos", target_os = "windows")))'.dependencies]
+signal-hook = "0.3"
+
+[target.'cfg(not(target_os = "windows"))'.build-dependencies]
 cc = "1"

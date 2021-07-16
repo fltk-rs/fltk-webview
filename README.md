@@ -1,13 +1,18 @@
 # fltk-webview
 
-This provides webview functionality for embedded fltk windows. This currently works on Windows:
+This provides webview functionality for embedded fltk windows:
 
 ## Usage
+Add fltk-webview to your fltk application's Cargo.toml file:
+```toml
+[dependencies]
+fltk = "1"
+fltk-webview = "0.1"
+```
 
+Then you can embed a webview using fltk_webview::Webview::create:
 ```rust
-extern crate fltk;
-
-use fltk::{app, enums::Event, prelude::*, window};
+use fltk::{app, prelude::*, window};
 
 fn main() {
     let _app = app::App::default();
@@ -18,14 +23,8 @@ fn main() {
         .with_size(790, 590)
         .center_of_parent();
     win.end();
+    win.make_resizable(true);
     win.show();
-
-    // close the app when the main window is closed
-    win.set_callback(|_| {
-        if app::event() == Event::Close {
-            std::process::exit(0);
-        }
-    });
 
     let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
     wv.navigate("https://google.com");
@@ -35,10 +34,16 @@ fn main() {
 }
 ```
 
+## Dependencies
+- fltk-rs's dependencies, which can be found [here](https://github.com/fltk-rs/fltk-rs#dependencies).
+- On Linux, webkit2gtk:
+    - Debian-based distros: `sudo apt-get install libwebkit2gtk-4.0-dev`.
+    - RHEL-based distros: `sudo dnf install webkit2gtk3-devel`.
+
 ## Limitations
 - On windows, webview requires winrt headers, that means it's basically buildable with the MSVC toolchain. For Msys2/mingw, there are efforts to provide such headers, but nothing yet upstream.
 - On macos, need help with getting mouse input to work.
-- On linux, need help with the XEmbed protocol.
+- On linux, need help with Gnome's mutter window manager fighting for ownership of the webview window!
 
 
 ![alt_test](screenshots/ex.jpg)

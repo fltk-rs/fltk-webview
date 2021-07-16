@@ -1,12 +1,19 @@
 /*!
 # fltk-webview
 
-This provides webview functionality for embedded fltk windows. This currently works on Windows:
+This provides webview functionality for embedded fltk windows:
 
 ## Usage
+Add fltk-webview to your fltk application's Cargo.toml file:
+```toml
+[dependencies]
+fltk = "1"
+fltk-webview = "0.1"
+```
 
-```rust,no_run
-use fltk::{app, enums::Event, prelude::*, window};
+Then you can embed a webview using fltk_webview::Webview::create:
+```rust
+use fltk::{app, prelude::*, window};
 
 fn main() {
     let _app = app::App::default();
@@ -17,22 +24,28 @@ fn main() {
         .with_size(790, 590)
         .center_of_parent();
     win.end();
+    win.make_resizable(true);
     win.show();
-
-    // close the app when the main window is closed
-    win.set_callback(|_| {
-        if app::event() == Event::Close {
-            std::process::exit(0);
-        }
-    });
 
     let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
     wv.navigate("https://google.com");
-
+    
     // the webview handles the main loop
     wv.run();
 }
 ```
+
+## Dependencies
+- fltk-rs's dependencies, which can be found [here](https://github.com/fltk-rs/fltk-rs#dependencies).
+- On Linux, webkit2gtk:
+    - Debian-based distros: `sudo apt-get install libwebkit2gtk-4.0-dev`.
+    - RHEL-based distros: `sudo dnf install webkit2gtk3-devel`.
+
+## Limitations
+- On windows, webview requires winrt headers, that means it's basically buildable with the MSVC toolchain. For Msys2/mingw, there are efforts to provide such headers, but nothing yet upstream.
+- On macos, need help with getting mouse input to work.
+- On linux, need help with Gnome's mutter window manager fighting for ownership of the webview window!
+
 */
 
 // Uses code from https://github.com/webview/webview_rust/blob/dev/src/webview.rs
@@ -135,6 +148,7 @@ impl Webview {
             #[cfg(target_os = "linux")]
             {
                 use std::os::raw::*;
+                use signal_hook::{consts::signal::SIGINT, iterator::Signals};
                 pub enum GdkWindow {}
                 pub enum GtkWindow {}
                 pub enum Display {}
@@ -146,6 +160,13 @@ impl Webview {
                     pub fn x_reparent(disp: *mut Display, child: u64, parent: u64);
                     pub fn wv_at_exit(disp: *mut Display);
                 }
+                let mut signals = Signals::new(&[SIGINT]).unwrap();
+                std::thread::spawn(move || {
+                    for _sig in signals.forever() {
+                        wv_at_exit(app::display() as _);
+                        RUNNING = false;
+                    }
+                });
                 gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
                 assert!(!inner.is_null());
