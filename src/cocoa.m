@@ -6,3 +6,8 @@ void make_delegate(NSWindow *child, NSWindow *parent) {
   [child setIgnoresMouseEvents:NO];
   [child makeKeyAndOrderFront:nil];
 }
+
+int send_event(void *event, void *data) {
+  [(NSWindow *)data sendEvent:(NSEvent *)event];
+  return 0;
+}
