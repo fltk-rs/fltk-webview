@@ -12,58 +12,34 @@
 
 @end
 
-static id get_nsstring(const char *c_str) {
-  return [NSString stringWithUTF8String:c_str];
-}
-
-static id create_menu_item(id title, const char *action, const char *key) {
-  id item =
-      objc_msgSend((id)objc_getClass("NSMenuItem"), sel_registerName("alloc"));
-  objc_msgSend(item, sel_registerName("initWithTitle:action:keyEquivalent:"),
-               title, sel_registerName(action), get_nsstring(key));
-  objc_msgSend(item, sel_registerName("autorelease"));
-
-  return item;
-}
-
+// modified to objc from https://github.com/ravern/web-view/blob/master/webview-sys/webview_cocoa.c
 void add_nsmenu(bool val) {
   if (val) {
-    id menubar =
-        objc_msgSend((id)objc_getClass("NSMenu"), sel_registerName("alloc"));
-    objc_msgSend(menubar, sel_registerName("initWithTitle:"), get_nsstring(""));
-    objc_msgSend(menubar, sel_registerName("autorelease"));
-    id editMenu =
-        objc_msgSend((id)objc_getClass("NSMenu"), sel_registerName("alloc"));
-    objc_msgSend(editMenu, sel_registerName("initWithTitle:"),
-                 get_nsstring("Edit"));
-    objc_msgSend(editMenu, sel_registerName("autorelease"));
-    id editMenuItem = objc_msgSend((id)objc_getClass("NSMenuItem"),
-                                   sel_registerName("alloc"));
-    objc_msgSend(editMenuItem, sel_registerName("setSubmenu:"), editMenu);
-    objc_msgSend(menubar, sel_registerName("addItem:"), editMenuItem);
-    id title = objc_msgSend(get_nsstring("Hide "),
-                            sel_registerName("stringByAppendingString:"),
-                            get_nsstring("Webview"));
-    id item = create_menu_item(title, "hide:", "h");
-    id appMenu =
-        objc_msgSend((id)objc_getClass("NSMenu"), sel_registerName("alloc"));
-    objc_msgSend(appMenu, sel_registerName("addItem:"), item);
+    id menubar = [[NSMenu alloc] initWithTitle:@""];
+    id editMenu = [[NSMenu alloc] initWithTitle:@"Edit"];
+    id editMenuItem = [NSMenuItem alloc];
+    [editMenuItem setSubmenu:editMenu];
+    [menubar addItem:editMenuItem];
 
-    item = create_menu_item(get_nsstring("Cut"), "cut:", "x");
-    objc_msgSend(editMenu, sel_registerName("addItem:"), item);
+    id item = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(hide:) keyEquivalent:@"h"];
 
-    item = create_menu_item(get_nsstring("Copy"), "copy:", "c");
-    objc_msgSend(editMenu, sel_registerName("addItem:"), item);
+    id appMenu = [NSMenu alloc];
+    [appMenu addItem:item];
 
-    item = create_menu_item(get_nsstring("Paste"), "paste:", "v");
-    objc_msgSend(editMenu, sel_registerName("addItem:"), item);
+    item = [[NSMenuItem alloc] initWithTitle:@"Cut" action:@selector(cut:) keyEquivalent:@"x"];
+    [editMenu addItem:item];
 
-    item = create_menu_item(get_nsstring("Select All"), "selectAll:", "a");
-    objc_msgSend(editMenu, sel_registerName("addItem:"), item);
+    item = [[NSMenuItem alloc] initWithTitle:@"Copy" action:@selector(copy:) keyEquivalent:@"c"];
+    [editMenu addItem:item];
 
-    objc_msgSend(objc_msgSend((id)objc_getClass("NSApplication"),
-                              sel_registerName("sharedApplication")),
-                 sel_registerName("setMainMenu:"), menubar);
+    item = [[NSMenuItem alloc] initWithTitle:@"Paste" action:@selector(paste:) keyEquivalent:@"v"];
+    [editMenu addItem:item];
+
+    item = [[NSMenuItem alloc] initWithTitle:@"Select All" action:@selector(selectAll:) keyEquivalent:@"a"];
+    [editMenu addItem:item];
+    [menubar autorelease];
+
+    [[NSApplication sharedApplication] setMainMenu:menubar];
   }
 }
 
