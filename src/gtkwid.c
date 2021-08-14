@@ -7,7 +7,7 @@
 #include <X11/extensions/shape.h>
 #include <stdlib.h>
 
-Window g_window;
+// Window g_window;
 
 long my_get_xid(GdkWindow *win) { return GDK_WINDOW_XID(win); }
 
@@ -45,21 +45,21 @@ void x_init(Display *display, Window childWindowId, Window parentWindowId) {
   XSendEvent(display, childWindowId, False, StructureNotifyMask, &client_event);
 }
 
-void wv_at_exit(Display *display) {
-	XDestroyWindow(display, g_window);
-}
+// void wv_at_exit(Display *display) {
+// 	XDestroyWindow(display, g_window);
+// }
 
 void x_reparent(Display *display, Window childWin, Window parentWin) {
   Window root, parent = 0, *ch;
   unsigned int nch;
   XQueryTree(display, childWin, &root, &parent, &ch, &nch);
   if (parent != parentWin) {
-    XMapWindow(display, childWin);
+    // XMapWindow(display, childWin);
     XReparentWindow(display, childWin, parentWin, 0, 0);
-    if (parent > 1000) {
-	    g_window = parent;
-    	    XUnmapWindow(display, parent);
-    }
+    // if (parent > 1000) {
+	  //   g_window = parent;
+    // 	    XUnmapWindow(display, parent);
+    // }
   }
   if (nch > 0) {
     XFree(ch);
