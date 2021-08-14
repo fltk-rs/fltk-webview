@@ -192,7 +192,7 @@ impl Webview {
                 }
                 win.parent().unwrap().set_callback(|_| {
                     if app::event() == enums::Event::Close {
-                        wv_at_exit(app::display() as _);
+                        // wv_at_exit(app::display() as _);
                         RUNNING = false;
                     }
                 });
