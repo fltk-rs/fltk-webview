@@ -43,8 +43,7 @@ fn main() {
     - RHEL-based distros: `sudo dnf install webkit2gtk3-devel`.
 
 ## Known Issues
-- On windows, webview requires winrt headers, that means it's basically buildable with the MSVC toolchain. For Msys2/mingw, there are efforts to provide such headers, but nothing yet upstream.
-- On macos, need help with native shortcuts to work.
+- On windows, webview requires winrt headers, that means it's currently buildable with the MSVC toolchain. For Msys2/mingw, there are efforts to provide such headers, but nothing yet upstream.
 - On linux:
     - need help with Gnome's mutter window manager fighting for ownership of the webview window!
     - If running with wayland, you need to pass the GDK_BACKEND=x11 environment variable for webkit2gtk to work properly.
