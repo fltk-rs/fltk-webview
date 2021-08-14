@@ -160,12 +160,12 @@ impl Webview {
                     pub fn my_get_xid(w: *mut GdkWindow) -> u64;
                     pub fn x_init(disp: *mut Display, child: u64, parent: u64);
                     pub fn x_reparent(disp: *mut Display, child: u64, parent: u64);
-                    pub fn wv_at_exit(disp: *mut Display);
+                    // pub fn wv_at_exit(disp: *mut Display);
                 }
                 let mut signals = Signals::new(&[SIGINT]).unwrap();
                 std::thread::spawn(move || {
                     for _sig in signals.forever() {
-                        wv_at_exit(app::display() as _);
+                        // wv_at_exit(app::display() as _);
                         RUNNING = false;
                     }
                 });
@@ -178,12 +178,17 @@ impl Webview {
                 let xid = my_get_xid(temp as _);
                 let flxid = win.raw_handle();
                 if has_program("gnome-shell") {
-                    app::add_idle(move || {
+                    // app::add_idle(move || {
+                    //     x_reparent(app::display() as _, xid, flxid);
+                    //     app::sleep(0.03);
+                    // });
+                    win.draw(move |w| {
                         x_reparent(app::display() as _, xid, flxid);
-                        app::sleep(0.03);
+                        wv::webview_set_size(inner, w.w(), w.h(), 0);
                     });
                 } else {
                     x_init(app::display() as _, xid, flxid);
+                    win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 }
                 win.parent().unwrap().set_callback(|_| {
                     if app::event() == enums::Event::Close {
@@ -191,7 +196,6 @@ impl Webview {
                         RUNNING = false;
                     }
                 });
-                win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
             }
         }
         assert!(!inner.is_null());
