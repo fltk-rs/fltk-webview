@@ -1,7 +1,5 @@
-#define OBJC_OLD_DISPATCH_PROTOTYPES 1
 #import <Cocoa/Cocoa.h>
 #include <assert.h>
-#include <objc/message.h>
 #include <objc/runtime.h>
 
 @implementation NSWindow (KeyWindow)
