@@ -146,7 +146,6 @@ impl Webview {
             #[cfg(target_os = "linux")]
             {
                 use std::os::raw::*;
-                use signal_hook::{consts::signal::SIGINT, iterator::Signals};
                 pub enum GdkWindow {}
                 pub enum GtkWindow {}
                 pub enum Display {}
@@ -155,16 +154,8 @@ impl Webview {
                     pub fn my_get_win(wid: *mut GtkWindow) -> *mut GdkWindow;
                     pub fn my_get_xid(w: *mut GdkWindow) -> u64;
                     pub fn x_init(disp: *mut Display, child: u64, parent: u64);
-                    pub fn x_reparent(disp: *mut Display, child: u64, parent: u64);
-                    // pub fn wv_at_exit(disp: *mut Display);
+                    pub fn my_xembed(disp: *mut Display, child: u64, parent: u64);
                 }
-                let mut signals = Signals::new(&[SIGINT]).unwrap();
-                std::thread::spawn(move || {
-                    for _sig in signals.forever() {
-                        // wv_at_exit(app::display() as _);
-                        RUNNING = false;
-                    }
-                });
                 gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
                 assert!(!inner.is_null());
@@ -174,21 +165,18 @@ impl Webview {
                 let xid = my_get_xid(temp as _);
                 let flxid = win.raw_handle();
                 if has_program("gnome-shell") {
-                    // app::add_idle(move || {
-                    //     x_reparent(app::display() as _, xid, flxid);
-                    //     app::sleep(0.03);
-                    // });
                     win.draw(move |w| {
-                        x_reparent(app::display() as _, xid, flxid);
                         wv::webview_set_size(inner, w.w(), w.h(), 0);
+                        my_xembed(app::display() as _, xid, flxid);
                     });
+                    win.flush();
                 } else {
                     x_init(app::display() as _, xid, flxid);
                     win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
+
                 }
                 win.parent().unwrap().set_callback(|_| {
                     if app::event() == enums::Event::Close {
-                        // wv_at_exit(app::display() as _);
                         RUNNING = false;
                     }
                 });
@@ -291,7 +279,7 @@ impl Webview {
                 extern "C" {
                     pub fn gtk_main_iteration_do(val: bool) -> bool;
                 }
-                while gtk_main_iteration_do(true) && RUNNING {
+                while gtk_main_iteration_do(false) && RUNNING {
                     app::check();
                 }
             }
