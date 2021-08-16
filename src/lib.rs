@@ -279,7 +279,7 @@ impl Webview {
                 extern "C" {
                     pub fn gtk_main_iteration_do(val: bool) -> bool;
                 }
-                while gtk_main_iteration_do(false) && RUNNING {
+                while gtk_main_iteration_do(true) && RUNNING {
                     app::check();
                 }
             }
