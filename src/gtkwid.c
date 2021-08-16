@@ -7,8 +7,6 @@
 #include <X11/extensions/shape.h>
 #include <stdlib.h>
 
-// Window g_window;
-
 long my_get_xid(GdkWindow *win) { return GDK_WINDOW_XID(win); }
 
 GdkWindow *my_get_win(GtkWindow *win) {
@@ -16,53 +14,36 @@ GdkWindow *my_get_win(GtkWindow *win) {
   return w;
 }
 
-// copied from https://stackoverflow.com/a/40902444
-void x_init(Display *display, Window childWindowId, Window parentWindowId) {
-  XMoveWindow(display, childWindowId, 0, 0);
+void x_init(Display *disp, Window child, Window parent) {
+  XMoveWindow(disp, child, 0, 0);
 
-  XReparentWindow(display, childWindowId, parentWindowId, 0, 0);
+  XReparentWindow(disp, child, parent, 0, 0);
 
-  XFixesChangeSaveSet(display, childWindowId, SetModeInsert, SaveSetRoot,
+  XFixesChangeSaveSet(disp, child, SetModeInsert, SaveSetRoot,
                       SaveSetUnmap);
 
   XEvent client_event;
   XWindowAttributes childAttributes;
   XWindowAttributes parentAttributes;
-  XGetWindowAttributes(display, childWindowId, &childAttributes);
-  XGetWindowAttributes(display, parentWindowId, &parentAttributes);
+  XGetWindowAttributes(disp, child, &childAttributes);
+  XGetWindowAttributes(disp, parent, &parentAttributes);
 
   client_event.type = ConfigureNotify;
   client_event.xconfigure.send_event = True;
-  client_event.xconfigure.display = display;
-  client_event.xconfigure.event = childWindowId;
-  client_event.xconfigure.window = childWindowId;
+  client_event.xconfigure.display = disp;
+  client_event.xconfigure.event = child;
+  client_event.xconfigure.window = child;
   client_event.xconfigure.width = childAttributes.width;
   client_event.xconfigure.height = childAttributes.height;
   client_event.xconfigure.border_width = 0;
   client_event.xconfigure.above = None;
   client_event.xconfigure.override_redirect = True;
 
-  XSendEvent(display, childWindowId, False, StructureNotifyMask, &client_event);
+  XSendEvent(disp, child, False, StructureNotifyMask, &client_event);
 }
 
-// void wv_at_exit(Display *display) {
-// 	XDestroyWindow(display, g_window);
-// }
-
-void x_reparent(Display *display, Window childWin, Window parentWin) {
-  Window root, parent = 0, *ch;
-  unsigned int nch;
-  XQueryTree(display, childWin, &root, &parent, &ch, &nch);
-  if (parent != parentWin) {
-    // XMapWindow(display, childWin);
-    XReparentWindow(display, childWin, parentWin, 0, 0);
-    // if (parent > 1000) {
-	  //   g_window = parent;
-    // 	    XUnmapWindow(display, parent);
-    // }
-  }
-  if (nch > 0) {
-    XFree(ch);
-  }
-  XFlush(display);
+void my_xembed(Display *disp, Window child, Window parent) {
+  XReparentWindow(disp, child, parent, 0, 0);
+  XMapWindow(disp, child);
+  usleep(3000);
 }
