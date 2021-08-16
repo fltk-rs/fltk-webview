@@ -10,7 +10,6 @@
 
 @end
 
-// modified to objc from https://github.com/ravern/web-view/blob/master/webview-sys/webview_cocoa.c
 void add_nsmenu(bool val) {
   if (val) {
     id menubar = [[NSMenu alloc] initWithTitle:@""];
