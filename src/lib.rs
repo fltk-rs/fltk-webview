@@ -164,7 +164,7 @@ impl Webview {
                 assert!(!temp.is_null());
                 let xid = my_get_xid(temp as _);
                 let flxid = win.raw_handle();
-                if win_manager("gnome-shell") {
+                if win_manager("gnome-session") {
                     win.draw(move |w| {
                         wv::webview_set_size(inner, w.w(), w.h(), 0);
                         my_xembed(app::display() as _, xid, flxid);
