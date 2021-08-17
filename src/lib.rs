@@ -296,8 +296,8 @@ impl Webview {
 
 #[cfg(target_os = "linux")]
 fn win_manager(prog: &str) -> bool {
-    let sm = env!("SESSION_MANAGER");
-    if !sm.is_empty() {
+    let sm = std::env::var("SESSION_MANAGER");
+    if let Ok(sm) = sm {
         let pid = sm.split("/").last();
         if let Some(pid) = pid {
             match std::process::Command::new("ps").args(&["-p", pid, "-o", "comm="]).output() {
