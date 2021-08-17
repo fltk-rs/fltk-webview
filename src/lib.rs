@@ -164,7 +164,7 @@ impl Webview {
                 assert!(!temp.is_null());
                 let xid = my_get_xid(temp as _);
                 let flxid = win.raw_handle();
-                if has_program("gnome-shell") {
+                if win_manager("gnome-shell") {
                     win.draw(move |w| {
                         wv::webview_set_size(inner, w.w(), w.h(), 0);
                         my_xembed(app::display() as _, xid, flxid);
@@ -295,9 +295,25 @@ impl Webview {
 }
 
 #[cfg(target_os = "linux")]
-fn has_program(prog: &str) -> bool {
-    match std::process::Command::new(prog).arg("--version").output() {
-        Ok(out) => !out.stdout.is_empty(),
-        _ => false,
+fn win_manager(prog: &str) -> bool {
+    let sm = env!("SESSION_MANAGER");
+    if !sm.is_empty() {
+        let pid = sm.split("/").last();
+        if let Some(pid) = pid {
+            match std::process::Command::new("ps").args(&["-p", pid, "-o", "comm="]).output() {
+                Ok(out) => {
+                    if String::from_utf8_lossy(&out.stdout).contains(prog) {
+                        true
+                    } else {
+                        false
+                    }
+                }
+                _ => false,
+            }
+        } else {
+            false
+        }
+    } else {
+        false
     }
 }
