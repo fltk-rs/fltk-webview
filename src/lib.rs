@@ -29,7 +29,7 @@ fn main() {
 
     let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
     wv.navigate("https://google.com");
-    
+
     // the webview handles the main loop
     wv.run();
 }
@@ -54,8 +54,6 @@ use std::{
     sync::Arc,
 };
 use webview_official_sys as wv;
-
-static mut RUNNING: bool = true;
 
 pub(crate) trait FlString {
     fn safe_new(s: &str) -> CString;
@@ -119,7 +117,6 @@ impl Webview {
                 win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 win.parent().unwrap().set_callback(|_| {
                     if app::event() == enums::Event::Close {
-                        RUNNING = false;
                         std::process::exit(0);
                     }
                 });
@@ -138,7 +135,6 @@ impl Webview {
                 win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 win.parent().unwrap().set_callback(|_| {
                     if app::event() == enums::Event::Close {
-                        RUNNING = false;
                         std::process::exit(0);
                     }
                 });
@@ -155,7 +151,10 @@ impl Webview {
                     pub fn my_get_xid(w: *mut GdkWindow) -> u64;
                     pub fn x_init(disp: *mut Display, child: u64, parent: u64);
                     pub fn my_xembed(disp: *mut Display, child: u64, parent: u64);
-                    pub fn g_idle_add(cb: Option<extern "C" fn(*mut raw::c_void) -> bool>, data: *mut raw::c_void);
+                    pub fn g_idle_add(
+                        cb: Option<extern "C" fn(*mut raw::c_void) -> bool>,
+                        data: *mut raw::c_void,
+                    );
                 }
                 gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
@@ -171,19 +170,19 @@ impl Webview {
                         my_xembed(app::display() as _, xid, flxid);
                     });
                     win.flush();
-                    
                 } else {
                     x_init(app::display() as _, xid, flxid);
                     win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
-
                 }
                 extern "C" fn cb(_data: *mut raw::c_void) -> bool {
                     app::check()
                 }
                 g_idle_add(Some(cb), std::ptr::null_mut());
-                win.parent().unwrap().set_callback(|_| {
+                let mut topwin =
+                    window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
+                topwin.set_callback(move |_| {
                     if app::event() == enums::Event::Close {
-                        RUNNING = false;
+                        std::process::exit(0);
                     }
                 });
             }
@@ -279,9 +278,7 @@ impl Webview {
 
     /// Run the main loop of the webview
     pub fn run(&self) {
-        unsafe {
-            wv::webview_run(*self.inner) 
-        }
+        unsafe { wv::webview_run(*self.inner) }
     }
 
     /// Set the size of the webview window
@@ -296,7 +293,10 @@ fn win_manager(prog: &str) -> bool {
     if let Ok(sm) = sm {
         let pid = sm.split("/").last();
         if let Some(pid) = pid {
-            match std::process::Command::new("ps").args(&["-p", pid, "-o", "comm="]).output() {
+            match std::process::Command::new("ps")
+                .args(&["-p", pid, "-o", "comm="])
+                .output()
+            {
                 Ok(out) => {
                     if String::from_utf8_lossy(&out.stdout).contains(prog) {
                         true

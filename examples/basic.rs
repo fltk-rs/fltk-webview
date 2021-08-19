@@ -14,7 +14,7 @@ fn main() {
 
     let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
     wv.navigate("https://google.com");
-    
+
     // the webview handles the main loop
     wv.run();
 }
