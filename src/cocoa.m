@@ -18,21 +18,31 @@ void add_nsmenu(bool val) {
     [editMenuItem setSubmenu:editMenu];
     [menubar addItem:editMenuItem];
 
-    id item = [[NSMenuItem alloc] initWithTitle:@"" action:@selector(hide:) keyEquivalent:@"h"];
+    id item = [[NSMenuItem alloc] initWithTitle:@""
+                                         action:@selector(hide:)
+                                  keyEquivalent:@"h"];
 
     id appMenu = [NSMenu alloc];
     [appMenu addItem:item];
 
-    item = [[NSMenuItem alloc] initWithTitle:@"Cut" action:@selector(cut:) keyEquivalent:@"x"];
+    item = [[NSMenuItem alloc] initWithTitle:@"Cut"
+                                      action:@selector(cut:)
+                               keyEquivalent:@"x"];
     [editMenu addItem:item];
 
-    item = [[NSMenuItem alloc] initWithTitle:@"Copy" action:@selector(copy:) keyEquivalent:@"c"];
+    item = [[NSMenuItem alloc] initWithTitle:@"Copy"
+                                      action:@selector(copy:)
+                               keyEquivalent:@"c"];
     [editMenu addItem:item];
 
-    item = [[NSMenuItem alloc] initWithTitle:@"Paste" action:@selector(paste:) keyEquivalent:@"v"];
+    item = [[NSMenuItem alloc] initWithTitle:@"Paste"
+                                      action:@selector(paste:)
+                               keyEquivalent:@"v"];
     [editMenu addItem:item];
 
-    item = [[NSMenuItem alloc] initWithTitle:@"Select All" action:@selector(selectAll:) keyEquivalent:@"a"];
+    item = [[NSMenuItem alloc] initWithTitle:@"Select All"
+                                      action:@selector(selectAll:)
+                               keyEquivalent:@"a"];
     [editMenu addItem:item];
     [menubar autorelease];
 
@@ -53,4 +63,3 @@ void make_delegate(NSWindow *child, NSWindow *parent) {
   [child makeKeyAndOrderFront:nil];
   add_nsmenu(true);
 }
-

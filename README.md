@@ -38,13 +38,13 @@ fn main() {
 - fltk-rs's dependencies, which can be found [here](https://github.com/fltk-rs/fltk-rs#dependencies).
 - On Windows: The necessary shared libraries are automatically provided by the webview-official-sys crate.
 - On MacOS: No dependencies.
-- On Linux, webkit2gtk:
+- On X11/wayland platforms, webkit2gtk:
     - Debian-based distros: `sudo apt-get install libwebkit2gtk-4.0-dev`.
     - RHEL-based distros: `sudo dnf install webkit2gtk3-devel`.
 
 ## Known Issues
 - On windows, webview requires winrt headers, that means it's currently buildable with the MSVC toolchain. For Msys2/mingw, there are efforts to provide such headers, but nothing yet upstream.
-- On linux:
+- On X11/wayland platforms:
     - need help with Gnome's mutter window manager fighting for ownership of the webview window!
     - If running with wayland, you need to pass the GDK_BACKEND=x11 environment variable for webkit2gtk to work properly.
     - KDE Plasma on X11 seems to work fine.

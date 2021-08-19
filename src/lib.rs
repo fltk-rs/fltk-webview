@@ -39,7 +39,7 @@ fn main() {
 - fltk-rs's dependencies, which can be found [here](https://github.com/fltk-rs/fltk-rs#dependencies).
 - On Windows: The necessary shared libraries are automatically provided by the webview-official-sys crate.
 - On MacOS: No dependencies.
-- On Linux, webkit2gtk:
+- On X11/wayland platforms, webkit2gtk:
     - Debian-based distros: `sudo apt-get install libwebkit2gtk-4.0-dev`.
     - RHEL-based distros: `sudo dnf install webkit2gtk3-devel`.
 */
@@ -141,7 +141,7 @@ impl Webview {
                     }
                 });
             }
-            #[cfg(target_os = "linux")]
+            #[cfg(not(any(target_os = "macos", target_os = "windows")))] 
             {
                 use std::os::raw::*;
                 pub enum GdkWindow {}
@@ -161,6 +161,7 @@ impl Webview {
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
                 assert!(!inner.is_null());
                 let temp_win = wv::webview_get_window(inner);
+                assert!(!temp_win.is_null());
                 let temp = my_get_win(temp_win as _);
                 assert!(!temp.is_null());
                 let xid = my_get_xid(temp as _);
@@ -294,7 +295,7 @@ impl Webview {
     }
 }
 
-#[cfg(target_os = "linux")]
+#[cfg(not(any(target_os = "macos", target_os = "windows")))] 
 fn win_manager(prog: &str) -> bool {
     let sm = std::env::var("SESSION_MANAGER");
     if let Ok(sm) = sm {

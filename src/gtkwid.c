@@ -3,9 +3,6 @@
 #include <gdk/gdk.h>
 #include <gdk/gdkx.h>
 #include <gtk/gtk.h>
-#include <unistd.h>
-#include <X11/extensions/shape.h>
-#include <stdlib.h>
 
 long my_get_xid(GdkWindow *win) { return GDK_WINDOW_XID(win); }
 
@@ -19,8 +16,7 @@ void x_init(Display *disp, Window child, Window parent) {
 
   XReparentWindow(disp, child, parent, 0, 0);
 
-  XFixesChangeSaveSet(disp, child, SetModeInsert, SaveSetRoot,
-                      SaveSetUnmap);
+  XFixesChangeSaveSet(disp, child, SetModeInsert, SaveSetRoot, SaveSetUnmap);
 
   XEvent client_event;
   XWindowAttributes childAttributes;
@@ -41,4 +37,3 @@ void x_init(Display *disp, Window child, Window parent) {
 
   XSendEvent(disp, child, False, StructureNotifyMask, &client_event);
 }
-
