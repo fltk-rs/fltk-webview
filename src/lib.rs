@@ -155,6 +155,7 @@ impl Webview {
                     pub fn my_get_xid(w: *mut GdkWindow) -> u64;
                     pub fn x_init(disp: *mut Display, child: u64, parent: u64);
                     pub fn my_xembed(disp: *mut Display, child: u64, parent: u64);
+                    pub fn g_idle_add(cb: Option<extern "C" fn(*mut raw::c_void) -> bool>, data: *mut raw::c_void);
                 }
                 gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
@@ -170,11 +171,16 @@ impl Webview {
                         my_xembed(app::display() as _, xid, flxid);
                     });
                     win.flush();
+                    
                 } else {
                     x_init(app::display() as _, xid, flxid);
                     win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
 
                 }
+                extern "C" fn cb(_data: *mut raw::c_void) -> bool {
+                    app::check()
+                }
+                g_idle_add(Some(cb), std::ptr::null_mut());
                 win.parent().unwrap().set_callback(|_| {
                     if app::event() == enums::Event::Close {
                         RUNNING = false;
@@ -274,16 +280,6 @@ impl Webview {
     /// Run the main loop of the webview
     pub fn run(&self) {
         unsafe {
-            #[cfg(not(any(target_os = "macos", target_os = "windows")))]
-            {
-                extern "C" {
-                    pub fn gtk_main_iteration_do(val: bool) -> bool;
-                }
-                while gtk_main_iteration_do(true) && RUNNING {
-                    app::check();
-                }
-            }
-            #[cfg(any(target_os = "macos", target_os = "windows"))]
             wv::webview_run(*self.inner) 
         }
     }
