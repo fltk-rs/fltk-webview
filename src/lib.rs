@@ -115,7 +115,9 @@ impl Webview {
                     &mut win.raw_handle() as *mut *mut raw::c_void as *mut raw::c_void,
                 );
                 win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
-                win.parent().unwrap().set_callback(|_| {
+                let mut topwin =
+                    window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
+                topwin.set_callback(|_| {
                     if app::event() == enums::Event::Close {
                         std::process::exit(0);
                     }
@@ -133,7 +135,9 @@ impl Webview {
                 make_delegate(wv::webview_get_window(inner) as _, handle as _);
                 app::add_system_handler(Some(send_event), wv::webview_get_window(inner) as _);
                 win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
-                win.parent().unwrap().set_callback(|_| {
+                let mut topwin =
+                    window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
+                topwin.set_callback(|_| {
                     if app::event() == enums::Event::Close {
                         std::process::exit(0);
                     }
@@ -278,6 +282,11 @@ impl Webview {
 
     /// Run the main loop of the webview
     pub fn run(&self) {
+        #[cfg(target_os = "windows")] 
+        {
+            app::run().unwrap();
+        }
+        #[cfg(not(target_os = "windows"))] 
         unsafe { wv::webview_run(*self.inner) }
     }
 
