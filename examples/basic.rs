@@ -1,7 +1,7 @@
 use fltk::{app, prelude::*, window};
 
 fn main() {
-    let _app = app::App::default();
+    let app = app::App::default();
     let mut win = window::Window::default()
         .with_size(800, 600)
         .with_label("Webview");
@@ -15,6 +15,5 @@ fn main() {
     let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
     wv.navigate("https://google.com");
 
-    // the webview handles the main loop
-    wv.run();
+    app.run().unwrap();
 }

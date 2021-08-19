@@ -8,7 +8,7 @@ Add fltk-webview to your fltk application's Cargo.toml file:
 ```toml
 [dependencies]
 fltk = "1"
-fltk-webview = "0.2"
+fltk-webview = "0.3"
 ```
 
 Then you can embed a webview using fltk_webview::Webview::create:
@@ -16,7 +16,7 @@ Then you can embed a webview using fltk_webview::Webview::create:
 use fltk::{app, prelude::*, window};
 
 fn main() {
-    let _app = app::App::default();
+    let app = app::App::default();
     let mut win = window::Window::default()
         .with_size(800, 600)
         .with_label("Webview");
@@ -30,8 +30,7 @@ fn main() {
     let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
     wv.navigate("https://google.com");
 
-    // the webview handles the main loop
-    wv.run();
+    app.run().unwrap();
 }
 ```
 
@@ -156,6 +155,7 @@ impl Webview {
                         cb: Option<extern "C" fn(*mut raw::c_void) -> bool>,
                         data: *mut raw::c_void,
                     );
+                    pub fn gtk_main();
                 }
                 gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
@@ -181,6 +181,7 @@ impl Webview {
                     app::check()
                 }
                 g_idle_add(Some(cb), std::ptr::null_mut());
+                app::add_idle(|| gtk_main());
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
                 topwin.set_callback(move |_| {
@@ -277,16 +278,6 @@ impl Webview {
         let seq = CString::safe_new(seq);
         let result = CString::safe_new(result);
         unsafe { wv::webview_return(*self.inner, seq.as_ptr(), status, result.as_ptr()) }
-    }
-
-    /// Run the main loop of the webview
-    pub fn run(&self) {
-        #[cfg(any(target_os = "macos", target_os = "windows"))] 
-        {
-            app::run().unwrap();
-        }
-        #[cfg(not(any(target_os = "macos", target_os = "windows")))] 
-        unsafe { wv::webview_run(*self.inner) }
     }
 
     /// Set the size of the webview window

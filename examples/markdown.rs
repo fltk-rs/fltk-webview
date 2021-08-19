@@ -2,7 +2,7 @@ use fltk::{prelude::*, *};
 use pulldown_cmark::{html, Options, Parser};
 
 fn main() {
-    let _a = app::App::default().with_scheme(app::Scheme::Gtk);
+    let a = app::App::default().with_scheme(app::Scheme::Gtk);
     let mut buf = text::TextBuffer::default();
     let mut win = window::Window::default().with_size(800, 600);
     let mut pack = group::Pack::default()
@@ -34,5 +34,5 @@ fn main() {
         }
     });
 
-    wv.run();
+    a.run().unwrap();
 }
