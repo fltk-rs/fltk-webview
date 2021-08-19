@@ -8,7 +8,7 @@ Add fltk-webview to your fltk application's Cargo.toml file:
 ```toml
 [dependencies]
 fltk = "1"
-fltk-webview = "0.1"
+fltk-webview = "0.2"
 ```
 
 Then you can embed a webview using fltk_webview::Webview::create:
