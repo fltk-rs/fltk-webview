@@ -128,12 +128,10 @@ impl Webview {
                 pub enum NSWindow {}
                 extern "C" {
                     pub fn make_delegate(child: *mut NSWindow, parent: *mut NSWindow);
-                    pub fn send_event(event: *mut raw::c_void, data: *mut raw::c_void) -> i32;
                 }
                 let handle = win.raw_handle();
                 inner = wv::webview_create(debug as i32, handle as _);
                 make_delegate(wv::webview_get_window(inner) as _, handle as _);
-                app::add_system_handler(Some(send_event), wv::webview_get_window(inner) as _);
                 win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
@@ -282,11 +280,11 @@ impl Webview {
 
     /// Run the main loop of the webview
     pub fn run(&self) {
-        #[cfg(target_os = "windows")] 
+        #[cfg(any(target_os = "macos", target_os = "windows"))] 
         {
             app::run().unwrap();
         }
-        #[cfg(not(target_os = "windows"))] 
+        #[cfg(not(any(target_os = "macos", target_os = "windows")))] 
         unsafe { wv::webview_run(*self.inner) }
     }
 

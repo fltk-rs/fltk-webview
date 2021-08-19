@@ -17,7 +17,8 @@ fn main() {
     win.end();
     win.show();
 
-    let wv = fltk_webview::Webview::create(false, &mut wv_win);
+    let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
+    wv.navigate("data:text/html,<html></html>");
 
     buf.add_modify_callback({
         let mut wv = wv.clone();

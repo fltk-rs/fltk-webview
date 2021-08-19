@@ -54,7 +54,3 @@ void make_delegate(NSWindow *child, NSWindow *parent) {
   add_nsmenu(true);
 }
 
-int send_event(void *event, void *data) {
-  [(NSWindow *)data sendEvent:(NSEvent *)event];
-  return 0;
-}
