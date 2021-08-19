@@ -150,7 +150,6 @@ impl Webview {
                     pub fn my_get_win(wid: *mut GtkWindow) -> *mut GdkWindow;
                     pub fn my_get_xid(w: *mut GdkWindow) -> u64;
                     pub fn x_init(disp: *mut Display, child: u64, parent: u64);
-                    pub fn my_xembed(disp: *mut Display, child: u64, parent: u64);
                     pub fn g_idle_add(
                         cb: Option<extern "C" fn(*mut raw::c_void) -> bool>,
                         data: *mut raw::c_void,
@@ -166,8 +165,9 @@ impl Webview {
                 let flxid = win.raw_handle();
                 if win_manager("gnome-session") {
                     win.draw(move |w| {
+                        x_init(app::display() as _, xid, flxid);
+                        app::sleep(0.03);
                         wv::webview_set_size(inner, w.w(), w.h(), 0);
-                        my_xembed(app::display() as _, xid, flxid);
                     });
                     win.flush();
                 } else {
