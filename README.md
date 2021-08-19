@@ -7,7 +7,7 @@ Add fltk-webview to your fltk application's Cargo.toml file:
 ```toml
 [dependencies]
 fltk = "1"
-fltk-webview = "0.3"
+fltk-webview = "0.3" # version 0.3 hasn't been released yet
 ```
 
 Then you can embed a webview using fltk_webview::Webview::create:
@@ -29,9 +29,11 @@ fn main() {
     let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
     wv.navigate("https://google.com");
     
+    // for version 0.2, use wv.run();
     app.run().unwrap();
 }
 ```
+P.S. Note that this example examples is for version 0.3, for version 0.2, use `wv.run();` to let webview run the event loop.
 
 ## Dependencies
 - fltk-rs's dependencies, which can be found [here](https://github.com/fltk-rs/fltk-rs#dependencies).
