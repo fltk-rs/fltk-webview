@@ -42,8 +42,3 @@ void x_init(Display *disp, Window child, Window parent) {
   XSendEvent(disp, child, False, StructureNotifyMask, &client_event);
 }
 
-void my_xembed(Display *disp, Window child, Window parent) {
-  XReparentWindow(disp, child, parent, 0, 0);
-  XMapWindow(disp, child);
-  usleep(3000);
-}
