@@ -156,6 +156,7 @@ impl Webview {
                         data: *mut raw::c_void,
                     );
                     pub fn gtk_main();
+                    pub fn gtk_main_quit();
                 }
                 gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
@@ -184,9 +185,10 @@ impl Webview {
                 app::add_idle(|| gtk_main());
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
-                topwin.set_callback(move |_| {
+                topwin.set_callback(move |t| {
                     if app::event() == enums::Event::Close {
-                        std::process::exit(0);
+                        gtk_main_quit();
+                        t.hide();
                     }
                 });
             }
