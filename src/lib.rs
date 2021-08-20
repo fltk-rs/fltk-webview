@@ -8,7 +8,7 @@ Add fltk-webview to your fltk application's Cargo.toml file:
 ```toml
 [dependencies]
 fltk = "1"
-fltk-webview = "0.3"
+fltk-webview = "0.2"
 ```
 
 Then you can embed a webview using fltk_webview::Webview::create:
@@ -116,9 +116,9 @@ impl Webview {
                 win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
-                topwin.set_callback(|_| {
+                topwin.set_callback(|t| {
                     if app::event() == enums::Event::Close {
-                        std::process::exit(0);
+                        t.hide();
                     }
                 });
             }
@@ -142,12 +142,11 @@ impl Webview {
             }
             #[cfg(not(any(target_os = "macos", target_os = "windows")))] 
             {
-                use std::os::raw::*;
                 pub enum GdkWindow {}
                 pub enum GtkWindow {}
                 pub enum Display {}
                 extern "C" {
-                    pub fn gtk_init(argc: *mut i32, argv: *mut *mut c_char);
+                    pub fn gtk_init(argc: *mut i32, argv: *mut *mut raw::c_char);
                     pub fn my_get_win(wid: *mut GtkWindow) -> *mut GdkWindow;
                     pub fn my_get_xid(w: *mut GdkWindow) -> u64;
                     pub fn x_init(disp: *mut Display, child: u64, parent: u64);
