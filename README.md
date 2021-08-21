@@ -1,6 +1,6 @@
 # fltk-webview
 
-This provides webview functionality for embedded fltk windows:
+This provides webview functionality for embedded fltk windows.
 
 ## Usage
 Add fltk-webview to your fltk application's Cargo.toml file:
