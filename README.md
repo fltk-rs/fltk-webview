@@ -1,6 +1,7 @@
 # fltk-webview
 
 This provides webview functionality for embedded fltk windows.
+The webview bindings and building are based on the [webview-official-sys crate](https://crates.io/crates/webview-official-sys), which was modified for use with FLTK and to use the static WebView2Loader library on Windows along with a newer version of webview.
 
 ## Usage
 Add fltk-webview to your fltk application's Cargo.toml file:
