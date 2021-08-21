@@ -53,9 +53,9 @@ fn compile_webview() {
         .flag_if_supported("-w");
 
     if target.contains("windows") {
-        if target.contains("gnu")
+        if target.contains("gnu") {
             build.flag("-std=c++17");
-        else {
+        } else {
             build.flag("/std:c++17");
         }
         build.include("webview/script");
