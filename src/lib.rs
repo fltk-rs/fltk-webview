@@ -127,6 +127,7 @@ impl Webview {
                 pub enum NSWindow {}
                 extern "C" {
                     pub fn make_delegate(child: *mut NSWindow, parent: *mut NSWindow);
+                    pub fn my_close_win(win: *mut NSWindow);
                 }
                 let handle = win.raw_handle();
                 inner = wv::webview_create(debug as i32, handle as _);
@@ -134,9 +135,11 @@ impl Webview {
                 win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
-                topwin.set_callback(|_| {
+                let inner = inner.clone();
+                topwin.set_callback(move |t| {
                     if app::event() == enums::Event::Close {
-                        std::process::exit(0);
+                        my_close_win(wv::webview_get_window(inner) as _);
+                        t.hide();
                     }
                 });
             }
@@ -203,6 +206,12 @@ impl Webview {
         unsafe {
             wv::webview_navigate(*self.inner, url.as_ptr() as _);
         }
+    }
+
+    /// Set the html content of the weview window
+    pub fn set_html(&mut self, html: &str) {
+        let temp = String::from("data:text/html,") + html;
+        self.navigate(&temp);
     }
 
     /// Injects JavaScript code at the initialization of the new page

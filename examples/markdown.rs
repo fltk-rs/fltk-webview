@@ -18,7 +18,7 @@ fn main() {
     win.show();
 
     let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
-    wv.navigate("data:text/html,<html></html>");
+    wv.set_html("");
 
     buf.add_modify_callback({
         let mut wv = wv.clone();
@@ -29,8 +29,7 @@ fn main() {
             let parser = Parser::new_ext(&txt, options);
             let mut html_output: String = String::with_capacity(txt.len() * 3 / 2);
             html::push_html(&mut html_output, parser);
-            html_output = String::from("data:text/html,") + &html_output;
-            wv.navigate(&html_output);
+            wv.set_html(&html_output);
         }
     });
 
