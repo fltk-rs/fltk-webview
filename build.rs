@@ -53,6 +53,11 @@ fn compile_webview() {
         .flag_if_supported("-w");
 
     if target.contains("windows") {
+        if target.contains("gnu")
+            build.flag("-std=c++17");
+        else {
+            build.flag("/std:c++17");
+        }
         build.include("webview/script");
 
         for &lib in &[
@@ -77,12 +82,11 @@ fn compile_webview() {
         wv_path.push(wv_arch);
         let webview2_dir = wv_path.as_path().to_str().unwrap();
 
-        let loader_lib = "WebView2LoaderStatic";
-
         println!("cargo:rustc-link-search={}", webview2_dir);
-        println!("cargo:rustc-link-lib={}", loader_lib);
+        println!("cargo:rustc-link-lib=WebView2LoaderStatic");
     } else if target.contains("apple") {
         build.flag("-std=c++11");
+
         println!("cargo:rustc-link-lib=framework=Cocoa");
         println!("cargo:rustc-link-lib=framework=WebKit");
     } else if target.contains("linux") || target.contains("bsd") {
@@ -90,6 +94,7 @@ fn compile_webview() {
             .atleast_version("2.8")
             .probe("webkit2gtk-4.0")
             .unwrap();
+
         for path in lib.include_paths {
             build.include(path);
         }
