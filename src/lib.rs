@@ -147,7 +147,7 @@ impl Webview {
                     }
                 });
             }
-            #[cfg(not(any(target_os = "macos", target_os = "windows")))] 
+            #[cfg(not(any(target_os = "macos", target_os = "windows")))]
             {
                 pub enum GdkWindow {}
                 pub enum GtkWindow {}
@@ -300,7 +300,7 @@ impl Webview {
     }
 }
 
-#[cfg(not(any(target_os = "macos", target_os = "windows")))] 
+#[cfg(not(any(target_os = "macos", target_os = "windows")))]
 fn win_manager(prog: &str) -> bool {
     let sm = std::env::var("SESSION_MANAGER");
     if let Ok(sm) = sm {
