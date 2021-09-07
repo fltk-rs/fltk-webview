@@ -126,6 +126,8 @@ fn compile_webview() {
         for path in lib.include_paths {
             build.include(path);
         }
+    } else {
+        panic!("Unsupported platform");
     }
 
     if !target.contains("windows-gnu") {
