@@ -80,7 +80,7 @@ fn compile_webview() {
             "arm64"
         };
 
-        let mut wv_path = manifest_dir.clone();
+        let mut wv_path = manifest_dir;
         if target.contains("msvc") {
             wv_path.push("webview/script/microsoft.web.webview2.1.0.664.37/build/native");
         } else {
