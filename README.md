@@ -1,7 +1,7 @@
 # fltk-webview
 
 This provides webview functionality for embedded fltk windows.
-The webview bindings and building are based on the [webview-official-sys crate](https://crates.io/crates/webview-official-sys), which was modified for use with FLTK and to use the static WebView2Loader library on Windows along with a newer version of webview.
+The webview bindings are based on the [webview-official-sys crate](https://crates.io/crates/webview-official-sys), which was modified for use with FLTK and to use the static WebView2Loader library on Windows along with a newer version of webview.
 
 ## Usage
 Add fltk-webview to your fltk application's Cargo.toml file:
@@ -43,11 +43,10 @@ fn main() {
     - RHEL-based distros: `sudo dnf install webkit2gtk3-devel`.
 
 ## Known Issues
-- On windows, webview requires winrt headers, that means it's currently buildable with the MSVC toolchain. For Msys2/mingw, there are efforts to provide such headers, but nothing yet upstream.
+- On windows, building using the gnu toolchain will still require deploying the dlls (webview.dll and WebView2Loader.dlls, which can be found in the `target/<profile>` directory.
 - On X11/wayland platforms:
-    - need help with Gnome's mutter window manager fighting for ownership of the webview window!
-    - If running with wayland, you need to pass the GDK_BACKEND=x11 environment variable for webkit2gtk to work properly.
-    - KDE Plasma on X11 seems to work fine.
+    - Need help with Gnome's mutter window manager fighting for ownership of the webview window, causing flickering in text fields!
+    - If running on Wayland, you need to pass the GDK_BACKEND=x11 environment variable for webkit2gtk to work properly.
 
 
 ![alt_test](screenshots/ex.jpg)
