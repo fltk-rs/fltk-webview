@@ -39,6 +39,7 @@ fn compile_webview() {
 
     let target = env::var("TARGET").unwrap();
     let manifest_dir = PathBuf::from(env::var("CARGO_MANIFEST_DIR").unwrap());
+    let exe_pth = PathBuf::from(std::env::var("OUT_DIR").unwrap());
 
     Command::new("git")
         .args(&["submodule", "update", "--init", "--recursive"])
@@ -47,18 +48,18 @@ fn compile_webview() {
         .expect("Git is needed to retrieve the fltk source files!");
 
     let mut build = cc::Build::new();
-    build
-        .cpp(true)
-        .file("webview/webview.cc")
-        .flag_if_supported("-w");
+    if !target.contains("windows-gnu") {
+        build
+            .cpp(true)
+            .file("webview/webview.cc")
+            .flag_if_supported("-w");
+    }
 
     if target.contains("windows") {
-        if target.contains("gnu") {
-            build.flag("-std=c++17");
-        } else {
+        if target.contains("msvc") {
             build.flag("/std:c++17");
+            build.include("webview/script");
         }
-        build.include("webview/script");
 
         for &lib in &[
             "windowsapp",
@@ -73,20 +74,47 @@ fn compile_webview() {
 
         let wv_arch = if target.contains("x86_64") {
             "x64"
-        } else {
+        } else if target.contains("i686") {
             "x86"
+        } else {
+            "arm64"
         };
 
-        let mut wv_path = manifest_dir;
-        wv_path.push("webview/script/microsoft.web.webview2.1.0.664.37/build/native");
+        let mut wv_path = manifest_dir.clone();
+        if target.contains("msvc") {
+            wv_path.push("webview/script/microsoft.web.webview2.1.0.664.37/build/native");
+        } else {
+            wv_path.push("webview");
+            wv_path.push("dll");
+        }
         wv_path.push(wv_arch);
         let webview2_dir = wv_path.as_path().to_str().unwrap();
-
         println!("cargo:rustc-link-search={}", webview2_dir);
-        println!("cargo:rustc-link-lib=WebView2LoaderStatic");
+        if target.contains("msvc") {
+            println!("cargo:rustc-link-lib=WebView2LoaderStatic");
+        } else {
+            if !target.contains("arm64") {
+                println!("cargo:rustc-link-lib=WebView2Loader");
+                println!("cargo:rustc-link-lib=webview");
+                for entry in std::fs::read_dir(wv_path).expect("Can't read DLL dir") {
+                    let entry_path = entry.expect("Invalid fs entry").path();
+                    let file_name_result = entry_path.file_name();
+                    let mut exe_pth = exe_pth.clone();
+                    if let Some(file_name) = file_name_result {
+                        let file_name = file_name.to_str().unwrap();
+                        if file_name.ends_with(".dll") {
+                            exe_pth.push(format!("../../../{}", file_name));
+                            std::fs::copy(&entry_path, exe_pth.as_path())
+                                .expect("Can't copy from DLL dir");
+                        }
+                    }
+                }
+            } else {
+                panic!("{:?} not supported yet", target)
+            }
+        }
     } else if target.contains("apple") {
         build.flag("-std=c++11");
-
         println!("cargo:rustc-link-lib=framework=Cocoa");
         println!("cargo:rustc-link-lib=framework=WebKit");
     } else if target.contains("linux") || target.contains("bsd") {
@@ -98,9 +126,9 @@ fn compile_webview() {
         for path in lib.include_paths {
             build.include(path);
         }
-    } else {
-        panic!("Unsupported platform");
     }
 
-    build.compile("webview");
+    if !target.contains("windows-gnu") {
+        build.compile("webview");
+    }
 }
