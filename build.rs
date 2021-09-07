@@ -93,7 +93,7 @@ fn compile_webview() {
         if target.contains("msvc") {
             println!("cargo:rustc-link-lib=WebView2LoaderStatic");
         } else {
-            if !target.contains("arm64") {
+            if !target.contains("aarch64") {
                 println!("cargo:rustc-link-lib=WebView2Loader");
                 println!("cargo:rustc-link-lib=webview");
                 for entry in std::fs::read_dir(wv_path).expect("Can't read DLL dir") {
