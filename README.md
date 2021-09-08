@@ -36,8 +36,8 @@ fn main() {
 
 ## Dependencies
 - fltk-rs's dependencies, which can be found [here](https://github.com/fltk-rs/fltk-rs#dependencies).
-- On Windows: The necessary shared libraries are automatically provided by the webview-official-sys crate.
-- On MacOS: No dependencies.
+- On Windows: No other dependencies.
+- On MacOS: No other dependencies.
 - On X11/wayland platforms, webkit2gtk:
     - Debian-based distros: `sudo apt-get install libwebkit2gtk-4.0-dev`.
     - RHEL-based distros: `sudo dnf install webkit2gtk3-devel`.
