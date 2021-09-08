@@ -34,9 +34,6 @@ fn compile_cocoa_helper() {
 }
 
 fn compile_webview() {
-    println!("cargo:rerun-if-changed=webview/webview.h");
-    println!("cargo:rerun-if-changed=webview/webview.cc");
-
     let target = env::var("TARGET").unwrap();
     let manifest_dir = PathBuf::from(env::var("CARGO_MANIFEST_DIR").unwrap());
     let exe_pth = PathBuf::from(std::env::var("OUT_DIR").unwrap());
@@ -45,7 +42,10 @@ fn compile_webview() {
         .args(&["submodule", "update", "--init", "--recursive"])
         .current_dir(&manifest_dir)
         .status()
-        .expect("Git is needed to retrieve the fltk source files!");
+        .expect("Git is needed to retrieve the fltk & webview source files!");
+
+    println!("cargo:rerun-if-changed=webview/webview.h");
+    println!("cargo:rerun-if-changed=webview/webview.cc");
 
     let mut build = cc::Build::new();
     if !target.contains("windows-gnu") {
