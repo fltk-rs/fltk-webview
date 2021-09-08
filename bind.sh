@@ -1,1 +1,1 @@
-bindgen webview/webview.h -o src/webview_sys.rs -- -DWEBVIEW_HEADER
+bindgen webview/webview.h -o fltk-webview-sys/src/sys.rs -- -DWEBVIEW_HEADER

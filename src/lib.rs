@@ -46,9 +46,6 @@ fn main() {
 
 // Uses code from https://github.com/webview/webview_rust/blob/dev/src/webview.rs
 
-#![allow(dead_code)]
-#![allow(non_camel_case_types)]
-
 use fltk::{prelude::*, *};
 use std::{
     ffi::{CStr, CString},
@@ -56,8 +53,7 @@ use std::{
     os::raw,
     sync::Arc,
 };
-mod webview_sys;
-use webview_sys as wv;
+use fltk_webview_sys as wv;
 
 pub(crate) trait FlString {
     fn safe_new(s: &str) -> CString;
