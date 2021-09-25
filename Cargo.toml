@@ -15,6 +15,7 @@ license = "MIT"
 fltk = "1.1"
 fltk-webview-sys = { version = "0.2.7", path = "fltk-webview-sys" }
 
-# for the example
+# for the examples
 [dev-dependencies]
 pulldown-cmark = "0.8"
+tinyjson = "2"
