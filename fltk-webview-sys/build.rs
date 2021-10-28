@@ -46,6 +46,8 @@ fn compile_webview() {
 
     println!("cargo:rerun-if-changed=webview/webview.h");
     println!("cargo:rerun-if-changed=webview/webview.cc");
+    println!("cargo:rerun-if-changed=src/gtk_helper.c");
+    println!("cargo:rerun-if-changed=src/cocoa_helper.m");
 
     let mut build = cc::Build::new();
     if !target.contains("windows-gnu") {
