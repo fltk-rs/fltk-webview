@@ -211,7 +211,11 @@ impl Webview {
 
     /// Set the html content of the weview window
     pub fn set_html(&mut self, html: &str) {
-        let temp = String::from("data:text/html,") + html;
+        let temp = if cfg!(target_os = "windows") {
+            String::from("data:text/html,") + html
+        } else {
+            String::from("data:text/html;charset=utf-8,") + html
+        };
         self.navigate(&temp);
     }
 
