@@ -212,7 +212,10 @@ impl Webview {
     /// Set the html content of the weview window
     pub fn set_html(&mut self, html: &str) {
         let temp = if cfg!(target_os = "windows") {
-            String::from("data:text/html,") + html
+            let mut enc = encoding_rs::WINDOWS_1250.new_encoder();
+            let mut temp = vec![0; html.len() * 4];
+            let _ = enc.encode_from_utf8(html, &mut temp, false);
+            String::from("data:text/html,") + &String::from_utf8_lossy(&temp)
         } else {
             String::from("data:text/html;charset=utf-8,") + html
         };
