@@ -4,15 +4,22 @@ extern crate tinyjson;
 use fltk::{app, prelude::*, window};
 use tinyjson::JsonValue;
 
-const HTML: &str = r#"data:text/html,
+const HTML: &str = r#"
 <!doctype html>
 <html>
-<input id="inp"><br>
-<button onclick="window.addTwo(parseInt(document.getElementById('inp').value));">Add two!</button>
-<div id="result"></div>
+
+<body>
+    <div>
+        <input id="inp" type="number">
+    </div>
+    <div>
+        <button onclick="window.addTwo(parseFloat(document.getElementById('inp').value));">Add two!</button>
+    </div>
+    <div id="result"></div>
 </body>
 <script>
 </script>
+
 </html>"#;
 
 fn main() {
@@ -41,7 +48,7 @@ fn main() {
         ));
     });
 
-    wv.navigate(HTML);
+    wv.set_html(HTML);
 
     app.run().unwrap();
 }
