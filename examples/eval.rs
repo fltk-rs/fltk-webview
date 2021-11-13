@@ -7,16 +7,11 @@ use tinyjson::JsonValue;
 const HTML: &str = r#"data:text/html,
 <!doctype html>
 <html>
-<body>hello</body>
+<input id="inp"><br>
+<button onclick="window.addTwo(parseInt(document.getElementById('inp').value));">Add two!</button>
+<div id="result"></div>
+</body>
 <script>
-    window.onload = function() {
-        add(1, 2).then(function(res) {
-            document.body.innerText = `added, ${res}`;
-        });
-        say_hello('Mo').then(function(res) {
-            console.log(res);
-        });
-    };
 </script>
 </html>"#;
 
@@ -34,22 +29,16 @@ fn main() {
 
     let mut wv = fltk_webview::Webview::create(true, &mut wv_win);
 
-    let wvc = wv.clone();
-    wv.bind("add", move |seq, content| {
+    let mut wvc = wv.clone();
+    wv.bind("addTwo", move |seq, content| {
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
         let val1: &f64 = parsed[0].get().unwrap();
-        let val2: &f64 = parsed[1].get().unwrap();
-        let ret = val1 + val2;
-        wvc.r#return(seq, 0, &ret.to_string());
-    });
-
-    let wvc = wv.clone();
-    wv.bind("say_hello", move |seq, content| {
-        println!("{}, {}", seq, content);
-        let parsed: JsonValue = content.parse().unwrap();
-        let val: &String = parsed[0].get().unwrap();
-        wvc.r#return(seq, 0, &format!("Hello {}", val));
+        let ret = val1 + 2.0;
+        wvc.eval(&format!(
+            "document.getElementById('result').innerText = {}",
+            ret
+        ));
     });
 
     wv.navigate(HTML);
