@@ -4,7 +4,7 @@ extern crate tinyjson;
 use fltk::{app, prelude::*, window};
 use tinyjson::JsonValue;
 
-const HTML: &str = r#"data:text/html,
+const HTML: &str = r#"
 <!doctype html>
 <html>
 <body>hello</body>
@@ -41,7 +41,7 @@ fn main() {
         let val1: &f64 = parsed[0].get().unwrap();
         let val2: &f64 = parsed[1].get().unwrap();
         let ret = val1 + val2;
-        wvc.r#return(seq, 0, &ret.to_string());
+        wvc.return_(seq, 0, &ret.to_string());
     });
 
     let wvc = wv.clone();
@@ -49,10 +49,10 @@ fn main() {
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
         let val: &String = parsed[0].get().unwrap();
-        wvc.r#return(seq, 0, &format!("Hello {}", val));
+        wvc.return_(seq, 0, &format!("Hello {}", val));
     });
 
-    wv.navigate(HTML);
+    wv.set_html(HTML);
 
     app.run().unwrap();
 }

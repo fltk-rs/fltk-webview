@@ -18,12 +18,14 @@ fn main() {
     win.show();
 
     let mut wv = fltk_webview::Webview::create(true, &mut wv_win);
-    wv.init(r#"
+    wv.init(
+        r#"
     window.change = function() {
         let result = document.getElementById("result");
         result.innerText = "works";
     };
-    "#);
+    "#,
+    );
 
     wv.set_html(HTML);
 

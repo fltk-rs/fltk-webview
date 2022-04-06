@@ -11,7 +11,6 @@ Add fltk-webview to your fltk application's Cargo.toml file:
 fltk = "1"
 fltk-webview = "0.2"
 ```
-
 Then you can embed a webview using fltk_webview::Webview::create:
 ```rust
 use fltk::{app, prelude::*, window};
@@ -46,14 +45,18 @@ fn main() {
 
 // Uses code from https://github.com/webview/webview_rust/blob/dev/src/webview.rs
 
-use fltk::{prelude::*, *};
+use fltk::{
+    app, enums,
+    prelude::{GroupExt, WidgetBase, WidgetExt, WindowExt},
+    window,
+};
+use fltk_webview_sys as wv;
 use std::{
     ffi::{CStr, CString},
     mem,
     os::raw,
     sync::Arc,
 };
-use fltk_webview_sys as wv;
 
 pub(crate) trait FlString {
     fn safe_new(s: &str) -> CString;
@@ -185,6 +188,8 @@ impl Webview {
                     app::check()
                 }
                 g_idle_add(Some(cb), std::ptr::null_mut());
+
+                // deprecated
                 app::add_idle(|| gtk_main());
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
@@ -205,13 +210,13 @@ impl Webview {
     pub fn navigate(&mut self, url: &str) {
         let url = std::ffi::CString::safe_new(url);
         unsafe {
-            wv::webview_navigate(*self.inner, url.as_ptr() as _);
+            wv::webview_navigate(*self.inner, url.as_ptr());
         }
     }
 
     /// Set the html content of the weview window
     pub fn set_html(&mut self, html: &str) {
-        #[cfg(target_os = "windows")]
+        #[cfg(all(target_os = "windows", target_env = "msvc"))]
         {
             let mut enc = encoding_rs::WINDOWS_1250.new_encoder();
             let mut temp = vec![0; html.len() * 4];
@@ -219,21 +224,26 @@ impl Webview {
             let temp = String::from("data:text/html,") + &String::from_utf8_lossy(&temp);
             self.navigate(&temp);
         }
-        
-        #[cfg(not(target_os = "windows"))]
+
+        // On windows-gnu requires with utf-8
+        #[cfg(not(all(target_os = "windows", target_env = "msvc")))]
         self.navigate(&(String::from("data:text/html;charset=utf-8,") + html));
     }
 
     /// Injects JavaScript code at the initialization of the new page
     pub fn init(&mut self, js: &str) {
         let js = CString::safe_new(js);
-        unsafe { wv::webview_init(*self.inner, js.as_ptr()) }
+        unsafe {
+            wv::webview_init(*self.inner, js.as_ptr());
+        }
     }
 
     /// Evaluates arbitrary JavaScript code. Evaluation happens asynchronously
     pub fn eval(&mut self, js: &str) {
         let js = CString::safe_new(js);
-        unsafe { wv::webview_eval(*self.inner, js.as_ptr()) }
+        unsafe {
+            wv::webview_eval(*self.inner, js.as_ptr());
+        }
     }
 
     /// Posts a function to be executed on the main thread
@@ -293,8 +303,14 @@ impl Webview {
         }
     }
 
+    /// Unbinds a native C callback so that it will appear under the given name as a global JavaScript function
+    pub fn unbind(&mut self, name: &str) {
+        let name = CString::safe_new(name);
+        unsafe { wv::webview_unbind(*self.inner, name.as_ptr()) }
+    }
+
     /// Allows to return a value from the native binding.
-    pub fn r#return(&self, seq: &str, status: i32, result: &str) {
+    pub fn return_(&self, seq: &str, status: i32, result: &str) {
         let seq = CString::safe_new(seq);
         let result = CString::safe_new(result);
         unsafe { wv::webview_return(*self.inner, seq.as_ptr(), status, result.as_ptr()) }

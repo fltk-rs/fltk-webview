@@ -7,7 +7,6 @@ use tinyjson::JsonValue;
 const HTML: &str = r#"
 <!doctype html>
 <html>
-
 <body>
     <div>
         <input id="inp" type="number">
