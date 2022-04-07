@@ -216,17 +216,7 @@ impl Webview {
 
     /// Set the html content of the weview window
     pub fn set_html(&mut self, html: &str) {
-        #[cfg(all(target_os = "windows", target_env = "msvc"))]
-        {
-            let mut enc = encoding_rs::WINDOWS_1250.new_encoder();
-            let mut temp = vec![0; html.len() * 4];
-            let _ = enc.encode_from_utf8(html, &mut temp, false);
-            let temp = String::from("data:text/html,") + &String::from_utf8_lossy(&temp);
-            self.navigate(&temp);
-        }
-
-        // On windows-gnu also requires utf-8
-        #[cfg(not(all(target_os = "windows", target_env = "msvc")))]
+        // MS Edge chromium based also requires utf-8
         self.navigate(&(String::from("data:text/html;charset=utf-8,") + html));
     }
 

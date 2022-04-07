@@ -32,6 +32,7 @@ fn main() {
     win.show();
 
     let mut wv = fltk_webview::Webview::create(true, &mut wv_win);
+
     wv.bind("add", |seq, content| {
         let mut wvc = wv.clone();
         println!("{}, {}", seq, content);

@@ -1,6 +1,6 @@
 [package]
 name = "fltk-webview"
-version = "0.2.14"
+version = "0.2.13"
 authors = ["MoAlyousef <mohammed.alyousef@neurosrg.com>"]
 edition = "2018"
 description = "Webview for embedded fltk windows"
@@ -15,8 +15,6 @@ license = "MIT"
 # fltk = { version = "1.3", features = ["fltk-bundled"] }
 fltk = "1.3"
 fltk-webview-sys = { version = "0.2.8", path = "fltk-webview-sys" }
-[target.'cfg(windows)'.dependencies]
-encoding_rs = "0.8"
 
 # for the examples
 [dev-dependencies]

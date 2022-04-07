@@ -61,7 +61,7 @@ fn compile_webview() {
             "webview/script/Microsoft.Web.WebView2.1.0.1150.38/build/native".to_string();
         if target.contains("msvc") {
             let mut include = edge_weview_native.clone();
-            include.push_str("include");
+            include.push_str("/include");
             build.flag("/DWEBVIEW_EDGE");
             build.flag("/std:c++17");
             build.include(include);
@@ -142,6 +142,7 @@ fn compile_webview() {
         for path in lib.include_paths {
             build.include(path);
         }
+		#[cfg(not(any(target_os = "macos", target_os = "windows")))]
         compile_gtk_helper();
     } else {
         panic!("Unsupported platform");
