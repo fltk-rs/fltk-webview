@@ -9,7 +9,7 @@ const HTML: &str = r#"
 
 <body>
     <div>
-        <input id="inp" type="number">
+        <input id="inp" type="number" value=0>
     </div>
     <div>
         <button onclick="window.addTwo(parseFloat(document.getElementById('inp').value));">Add two!</button>

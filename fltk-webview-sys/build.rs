@@ -62,6 +62,7 @@ fn compile_webview() {
         if target.contains("msvc") {
             let mut include = edge_weview_native.clone();
             include.push_str("include");
+            build.flag("/DWEBVIEW_EDGE");
             build.flag("/std:c++17");
             build.include(include);
         }
@@ -127,10 +128,13 @@ fn compile_webview() {
             }
         }
     } else if target.contains("apple") {
+        build.flag("-DWEBVIEW_COCOA");
         build.flag("-std=c++11");
         println!("cargo:rustc-link-lib=framework=Cocoa");
         println!("cargo:rustc-link-lib=framework=WebKit");
     } else if target.contains("linux") || target.contains("bsd") {
+        build.flag("-DWEBVIEW_GTK");
+        build.flag("-std=c++11");
         let lib = pkg_config::Config::new()
             .atleast_version("2.8")
             .probe("webkit2gtk-4.0")
