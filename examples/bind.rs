@@ -31,24 +31,25 @@ fn main() {
     win.make_resizable(true);
     win.show();
 
-    let mut wv = fltk_webview::Webview::create(true, &mut wv_win);
+    let wv = fltk_webview::Webview::create(true, &mut wv_win);
 
     wv.bind("add", |seq, content| {
-        let mut wvc = wv.clone();
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
         let val1: &f64 = parsed[0].get().unwrap();
         let val2: &f64 = parsed[1].get().unwrap();
         let ret = val1 + val2;
-        wvc.r#return(seq, 0, &ret.to_string());
+        // currenyly still not valid on MS Edge as well as the official for window.onload = function() {..},
+        // binding (on first load window evaluation), but working fine on webkit.
+        wv.return_(seq, 0, &ret.to_string());
     });
 
     wv.bind("say_hello", |seq, content| {
-        let mut wvc = wv.clone();
+        // let wvc = wv.clone();
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
         let val: &String = parsed[0].get().unwrap();
-        wvc.r#return(seq, 0, &format!("Hello {}", val));
+        wv.return_(seq, 0, &format!("Hello {}", val));
     });
 
     wv.navigate(HTML);

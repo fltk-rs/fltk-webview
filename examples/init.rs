@@ -17,7 +17,7 @@ fn main() {
     win.make_resizable(true);
     win.show();
 
-    let mut wv = fltk_webview::Webview::create(true, &mut wv_win);
+    let wv = fltk_webview::Webview::create(true, &mut wv_win);
     wv.init(
         r#"
     window.change = function() {

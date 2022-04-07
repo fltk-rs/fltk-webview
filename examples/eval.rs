@@ -33,14 +33,13 @@ fn main() {
     win.make_resizable(true);
     win.show();
 
-    let mut wv = fltk_webview::Webview::create(true, &mut wv_win);
+    let wv = fltk_webview::Webview::create(true, &mut wv_win);
     wv.bind("addTwo", |seq, content| {
-        let mut wvc = wv.clone();
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
         let val1: &f64 = parsed[0].get().unwrap();
         let ret = val1 + 2.0;
-        wvc.eval(&format!(
+        wv.eval(&format!(
             "document.getElementById('result').innerText = {}",
             ret
         ));

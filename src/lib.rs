@@ -207,7 +207,7 @@ impl Webview {
     }
 
     /// Navigate to a url
-    pub fn navigate(&mut self, url: &str) {
+    pub fn navigate(&self, url: &str) {
         let url = std::ffi::CString::safe_new(url);
         unsafe {
             wv::webview_navigate(*self.inner, url.as_ptr() as _);
@@ -215,13 +215,13 @@ impl Webview {
     }
 
     /// Set the html content of the weview window
-    pub fn set_html(&mut self, html: &str) {
+    pub fn set_html(&self, html: &str) {
         // MS Edge chromium based also requires utf-8
         self.navigate(&(String::from("data:text/html;charset=utf-8,") + html));
     }
 
     /// Injects JavaScript code at the initialization of the new page
-    pub fn init(&mut self, js: &str) {
+    pub fn init(&self, js: &str) {
         let js = CString::safe_new(js);
         unsafe {
             wv::webview_init(*self.inner, js.as_ptr());
@@ -229,7 +229,7 @@ impl Webview {
     }
 
     /// Evaluates arbitrary JavaScript code. Evaluation happens asynchronously
-    pub fn eval(&mut self, js: &str) {
+    pub fn eval(&self, js: &str) {
         let js = CString::safe_new(js);
         unsafe {
             wv::webview_eval(*self.inner, js.as_ptr());
@@ -237,20 +237,20 @@ impl Webview {
     }
 
     /// Posts a function to be executed on the main thread
-    pub fn dispatch<F>(&mut self, f: F)
+    pub fn dispatch<F>(&self, f: F)
     where
-        F: FnOnce(&mut Webview) + Send + 'static,
+        F: FnOnce(&Webview) + Send + 'static,
     {
         let closure = Box::into_raw(Box::new(f));
         extern "C" fn callback<F>(webview: wv::webview_t, arg: *mut raw::c_void)
         where
-            F: FnOnce(&mut Webview) + Send + 'static,
+            F: FnOnce(&Webview) + Send + 'static,
         {
-            let mut webview = Webview {
+            let webview = Webview {
                 inner: Arc::new(webview),
             };
             let closure: Box<F> = unsafe { Box::from_raw(arg as *mut F) };
-            (*closure)(&mut webview);
+            (*closure)(&webview);
         }
         unsafe { wv::webview_dispatch(*self.inner, Some(callback::<F>), closure as *mut _) }
     }
@@ -292,21 +292,21 @@ impl Webview {
     }
 
     /// Unbinds a native C callback so that it will appear under the given name as a global JavaScript function
-    pub fn unbind(&mut self, name: &str) {
+    pub fn unbind(&self, name: &str) {
         let name = CString::safe_new(name);
         let _move = move || unsafe { wv::webview_unbind(*self.inner, name.as_ptr()) };
         _move();
     }
 
     /// Allows to return a value from the native binding.
-    pub fn r#return(&mut self, seq: &str, status: i32, result: &str) {
+    pub fn return_(&self, seq: &str, status: i32, result: &str) {
         let seq = CString::safe_new(seq);
         let result = CString::safe_new(result);
         unsafe { wv::webview_return(*self.inner, seq.as_ptr(), status, result.as_ptr()) }
     }
 
     /// Set the size of the webview window
-    pub fn set_size(&mut self, width: i32, height: i32, hints: SizeHint) {
+    pub fn set_size(&self, width: i32, height: i32, hints: SizeHint) {
         unsafe { wv::webview_set_size(*self.inner, width, height, hints as i32) }
     }
 }
