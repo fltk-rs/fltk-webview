@@ -2,6 +2,7 @@ extern crate fltk;
 extern crate tinyjson;
 
 use fltk::{app, prelude::*, window};
+use fltk_webview::Webview;
 use tinyjson::JsonValue;
 
 const HTML: &str = r#"data:text/html,
@@ -31,7 +32,7 @@ fn main() {
     win.make_resizable(true);
     win.show();
 
-    let wv = fltk_webview::Webview::create(true, &mut wv_win);
+    let wv = Webview::create(true, &mut wv_win);
 
     wv.bind("add", |seq, content| {
         println!("{}, {}", seq, content);
@@ -45,7 +46,6 @@ fn main() {
     });
 
     wv.bind("say_hello", |seq, content| {
-        // let wvc = wv.clone();
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
         let val: &String = parsed[0].get().unwrap();

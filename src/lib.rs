@@ -237,20 +237,20 @@ impl Webview {
     }
 
     /// Posts a function to be executed on the main thread
-    pub fn dispatch<F>(&self, f: F)
+    pub fn dispatch<F>(&mut self, f: F)
     where
-        F: FnOnce(&Webview) + Send + 'static,
+        F: FnOnce(Webview) + Send + 'static,
     {
         let closure = Box::into_raw(Box::new(f));
         extern "C" fn callback<F>(webview: wv::webview_t, arg: *mut raw::c_void)
         where
-            F: FnOnce(&Webview) + Send + 'static,
+            F: FnOnce(Webview) + Send + 'static,
         {
             let webview = Webview {
                 inner: Arc::new(webview),
             };
             let closure: Box<F> = unsafe { Box::from_raw(arg as *mut F) };
-            (*closure)(&webview);
+            (*closure)(webview);
         }
         unsafe { wv::webview_dispatch(*self.inner, Some(callback::<F>), closure as *mut _) }
     }

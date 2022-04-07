@@ -1,4 +1,5 @@
 use fltk::{prelude::*, *};
+use fltk_webview::Webview;
 use pulldown_cmark::{html, Options, Parser};
 
 fn main() {
@@ -17,7 +18,7 @@ fn main() {
     win.end();
     win.show();
 
-    let wv = fltk_webview::Webview::create(false, &mut wv_win);
+    let wv = Webview::create(false, &mut wv_win);
     wv.set_html("");
 
     buf.add_modify_callback({
