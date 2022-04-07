@@ -53,7 +53,6 @@ use fltk::{
 use fltk_webview_sys as wv;
 use std::{
     ffi::{CStr, CString},
-    mem,
     os::raw,
     sync::Arc,
 };
@@ -210,7 +209,7 @@ impl Webview {
     pub fn navigate(&mut self, url: &str) {
         let url = std::ffi::CString::safe_new(url);
         unsafe {
-            wv::webview_navigate(*self.inner, url.as_ptr());
+            wv::webview_navigate(*self.inner, url.as_ptr() as _);
         }
     }
 
@@ -225,7 +224,7 @@ impl Webview {
             self.navigate(&temp);
         }
 
-        // On windows-gnu requires with utf-8
+        // On windows-gnu also requires utf-8
         #[cfg(not(all(target_os = "windows", target_env = "msvc")))]
         self.navigate(&(String::from("data:text/html;charset=utf-8,") + html));
     }
@@ -266,19 +265,17 @@ impl Webview {
     }
 
     /// Binds a native C callback so that it will appear under the given name as a global JavaScript function
-    pub fn bind<F>(&mut self, name: &str, f: F)
+    pub fn bind<F>(&self, name: &str, f: F)
     where
         F: FnMut(&str, &str),
     {
         let name = CString::safe_new(name);
-        let closure = Box::into_raw(Box::new(f));
-        extern "C" fn callback<F>(
+        let closure = Box::new(f);
+        extern "C" fn callback<F: FnMut(&str, &str)>(
             seq: *const raw::c_char,
             req: *const raw::c_char,
             arg: *mut raw::c_void,
-        ) where
-            F: FnMut(&str, &str),
-        {
+        ) {
             let seq = unsafe {
                 CStr::from_ptr(seq)
                     .to_str()
@@ -291,26 +288,27 @@ impl Webview {
             };
             let mut f: Box<F> = unsafe { Box::from_raw(arg as *mut F) };
             (*f)(seq, req);
-            mem::forget(f);
+            std::mem::forget(f);
         }
         unsafe {
             wv::webview_bind(
                 *self.inner,
                 name.as_ptr(),
                 Some(callback::<F>),
-                closure as *mut _,
+                Box::into_raw(closure) as *mut _,
             )
-        }
+        };
     }
 
     /// Unbinds a native C callback so that it will appear under the given name as a global JavaScript function
     pub fn unbind(&mut self, name: &str) {
         let name = CString::safe_new(name);
-        unsafe { wv::webview_unbind(*self.inner, name.as_ptr()) }
+        let _move = move || unsafe { wv::webview_unbind(*self.inner, name.as_ptr()) };
+        _move();
     }
 
     /// Allows to return a value from the native binding.
-    pub fn return_(&self, seq: &str, status: i32, result: &str) {
+    pub fn r#return(&mut self, seq: &str, status: i32, result: &str) {
         let seq = CString::safe_new(seq);
         let result = CString::safe_new(result);
         unsafe { wv::webview_return(*self.inner, seq.as_ptr(), status, result.as_ptr()) }

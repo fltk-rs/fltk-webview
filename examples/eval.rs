@@ -5,8 +5,8 @@ use fltk::{app, prelude::*, window};
 use tinyjson::JsonValue;
 
 const HTML: &str = r#"
-<!doctype html>
 <html>
+
 <body>
     <div>
         <input id="inp" type="number">
@@ -34,9 +34,8 @@ fn main() {
     win.show();
 
     let mut wv = fltk_webview::Webview::create(true, &mut wv_win);
-
-    let mut wvc = wv.clone();
-    wv.bind("addTwo", move |seq, content| {
+    wv.bind("addTwo", |seq, content| {
+        let mut wvc = wv.clone();
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
         let val1: &f64 = parsed[0].get().unwrap();

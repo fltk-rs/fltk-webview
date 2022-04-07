@@ -4,10 +4,10 @@ extern crate tinyjson;
 use fltk::{app, prelude::*, window};
 use tinyjson::JsonValue;
 
-const HTML: &str = r#"
-<!doctype html>
+const HTML: &str = r#"data:text/html,
 <html>
-<body>hello</body>
+<head>hello</head>
+<body>world</body>
 <script>
     window.onload = function() {
         add(1, 2).then(function(res) {
@@ -33,26 +33,24 @@ fn main() {
     win.show();
 
     let mut wv = fltk_webview::Webview::create(true, &mut wv_win);
-
-    let wvc = wv.clone();
-    wv.bind("add", move |seq, content| {
+    wv.bind("add", |seq, content| {
+        let mut wvc = wv.clone();
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
         let val1: &f64 = parsed[0].get().unwrap();
         let val2: &f64 = parsed[1].get().unwrap();
         let ret = val1 + val2;
-        wvc.return_(seq, 0, &ret.to_string());
+        wvc.r#return(seq, 0, &ret.to_string());
     });
 
-    let wvc = wv.clone();
-    wv.bind("say_hello", move |seq, content| {
+    wv.bind("say_hello", |seq, content| {
+        let mut wvc = wv.clone();
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
         let val: &String = parsed[0].get().unwrap();
-        wvc.return_(seq, 0, &format!("Hello {}", val));
+        wvc.r#return(seq, 0, &format!("Hello {}", val));
     });
 
-    wv.set_html(HTML);
-
+    wv.navigate(HTML);
     app.run().unwrap();
 }
