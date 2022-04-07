@@ -53,6 +53,7 @@ use fltk::{
 use fltk_webview_sys as wv;
 use std::{
     ffi::{CStr, CString},
+    mem,
     os::raw,
     sync::Arc,
 };
@@ -288,7 +289,7 @@ impl Webview {
             };
             let mut f: Box<F> = unsafe { Box::from_raw(arg as *mut F) };
             (*f)(seq, req);
-            std::mem::forget(f);
+            mem::forget(f);
         }
         unsafe {
             wv::webview_bind(

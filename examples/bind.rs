@@ -6,8 +6,7 @@ use tinyjson::JsonValue;
 
 const HTML: &str = r#"data:text/html,
 <html>
-<head>hello</head>
-<body>world</body>
+<body>hello</body>
 <script>
     window.onload = function() {
         add(1, 2).then(function(res) {
