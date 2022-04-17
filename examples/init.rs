@@ -2,6 +2,7 @@ extern crate fltk;
 extern crate tinyjson;
 
 use fltk::{app, button, prelude::*, window};
+use fltk_webview::Webview;
 
 const HTML: &str = r#"<div id="result"></div>"#;
 
@@ -17,13 +18,15 @@ fn main() {
     win.make_resizable(true);
     win.show();
 
-    let mut wv = fltk_webview::Webview::create(true, &mut wv_win);
-    wv.init(r#"
+    let wv = Webview::create(true, &mut wv_win);
+    wv.init(
+        r#"
     window.change = function() {
         let result = document.getElementById("result");
         result.innerText = "works";
     };
-    "#);
+    "#,
+    );
 
     wv.set_html(HTML);
 

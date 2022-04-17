@@ -1,4 +1,5 @@
 use fltk::{app, prelude::*, window};
+use fltk_webview::Webview;
 
 fn main() {
     let app = app::App::default();
@@ -12,7 +13,7 @@ fn main() {
     win.make_resizable(true);
     win.show();
 
-    let mut wv = fltk_webview::Webview::create(false, &mut wv_win);
+    let wv = Webview::create(false, &mut wv_win);
     wv.navigate("https://google.com");
 
     app.run().unwrap();

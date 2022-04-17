@@ -1,3 +1,0 @@
-[submodule "fltk-webview-sys/webview"]
-	path = fltk-webview-sys/webview
-	url = https://github.com/webview/webview

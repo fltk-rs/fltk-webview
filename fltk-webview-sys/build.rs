@@ -4,8 +4,7 @@ use std::process::Command;
 
 fn main() {
     compile_webview();
-    #[cfg(not(any(target_os = "macos", target_os = "windows")))]
-    compile_gtk_helper();
+
     #[cfg(target_os = "macos")]
     compile_cocoa_helper();
 }
@@ -58,9 +57,14 @@ fn compile_webview() {
     }
 
     if target.contains("windows") {
+        let edge_weview_native =
+            "webview/script/Microsoft.Web.WebView2.1.0.1150.38/build/native".to_string();
         if target.contains("msvc") {
+            let mut include = edge_weview_native.clone();
+            include.push_str("/include");
+            build.flag("/DWEBVIEW_EDGE");
             build.flag("/std:c++17");
-            build.include("webview/script");
+            build.include(include);
         }
 
         for &lib in &[
@@ -84,7 +88,7 @@ fn compile_webview() {
 
         let mut wv_path = manifest_dir;
         if target.contains("msvc") {
-            wv_path.push("webview/script/microsoft.web.webview2.1.0.664.37/build/native");
+            wv_path.push(edge_weview_native);
         } else {
             wv_path.push("webview");
             wv_path.push("dll");
@@ -105,9 +109,17 @@ fn compile_webview() {
                     if let Some(file_name) = file_name_result {
                         let file_name = file_name.to_str().unwrap();
                         if file_name.ends_with(".dll") {
-                            exe_pth.push(format!("../../../{}", file_name));
+                            exe_pth.push("../../..");
+                            let mut for_examples_exe_pth = exe_pth.clone();
+                            for_examples_exe_pth.push("examples");
+                            exe_pth.push(file_name);
                             std::fs::copy(&entry_path, exe_pth.as_path())
-                                .expect("Can't copy from DLL dir");
+                                .expect("Can't copy from DLL dir /target/..");
+
+                            // Copy .dll to examples folder too, in order to run examples when cross compiling from linux.
+                            for_examples_exe_pth.push(file_name);
+                            std::fs::copy(&entry_path, for_examples_exe_pth.as_path())
+                                .expect("Can't copy from DLL dir to /target/../examples");
                         }
                     }
                 }
@@ -116,18 +128,22 @@ fn compile_webview() {
             }
         }
     } else if target.contains("apple") {
+        build.flag("-DWEBVIEW_COCOA");
         build.flag("-std=c++11");
         println!("cargo:rustc-link-lib=framework=Cocoa");
         println!("cargo:rustc-link-lib=framework=WebKit");
     } else if target.contains("linux") || target.contains("bsd") {
+        build.flag("-DWEBVIEW_GTK");
+        build.flag("-std=c++11");
         let lib = pkg_config::Config::new()
             .atleast_version("2.8")
             .probe("webkit2gtk-4.0")
             .unwrap();
-
         for path in lib.include_paths {
             build.include(path);
         }
+	#[cfg(not(any(target_os = "macos", target_os = "windows")))]
+        compile_gtk_helper();
     } else {
         panic!("Unsupported platform");
     }

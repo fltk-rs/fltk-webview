@@ -2,15 +2,15 @@ extern crate fltk;
 extern crate tinyjson;
 
 use fltk::{app, prelude::*, window};
+use fltk_webview::Webview;
 use tinyjson::JsonValue;
 
 const HTML: &str = r#"
-<!doctype html>
 <html>
 
 <body>
     <div>
-        <input id="inp" type="number">
+        <input id="inp" type="number" value=0>
     </div>
     <div>
         <button onclick="window.addTwo(parseFloat(document.getElementById('inp').value));">Add two!</button>
@@ -34,15 +34,13 @@ fn main() {
     win.make_resizable(true);
     win.show();
 
-    let mut wv = fltk_webview::Webview::create(true, &mut wv_win);
-
-    let mut wvc = wv.clone();
-    wv.bind("addTwo", move |seq, content| {
+    let wv = Webview::create(true, &mut wv_win);
+    wv.bind("addTwo", |seq, content| {
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
         let val1: &f64 = parsed[0].get().unwrap();
         let ret = val1 + 2.0;
-        wvc.eval(&format!(
+        wv.eval(&format!(
             "document.getElementById('result').innerText = {}",
             ret
         ));
