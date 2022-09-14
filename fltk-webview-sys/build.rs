@@ -58,7 +58,7 @@ fn compile_webview() {
 
     if target.contains("windows") {
         let edge_weview_native =
-            "webview/script/Microsoft.Web.WebView2.1.0.1150.38/build/native".to_string();
+            "webview/script/Microsoft.Web.WebView2.1.0.1343.22/build/native".to_string();
         if target.contains("msvc") {
             let mut include = edge_weview_native.clone();
             include.push_str("/include");
@@ -68,12 +68,13 @@ fn compile_webview() {
         }
 
         for &lib in &[
-            "windowsapp",
             "user32",
             "oleaut32",
             "ole32",
             "version",
             "shell32",
+			"advapi32",
+			"shlwapi"
         ] {
             println!("cargo:rustc-link-lib={}", lib);
         }
