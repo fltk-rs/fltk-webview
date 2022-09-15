@@ -161,7 +161,7 @@ impl Webview {
                         cb: Option<extern "C" fn(*mut raw::c_void) -> bool>,
                         data: *mut raw::c_void,
                     );
-                    pub fn gtk_main();
+                    pub fn gtk_main_iteration_do(blocking: bool);
                     pub fn gtk_main_quit();
                 }
                 gtk_init(&mut 0, std::ptr::null_mut());
@@ -184,20 +184,10 @@ impl Webview {
                     x_init(app::display() as _, xid, flxid);
                     win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 }
-                extern "C" fn cb(_data: *mut raw::c_void) -> bool {
-                    app::check()
-                }
-                g_idle_add(Some(cb), std::ptr::null_mut());
 
-                // deprecated
-                app::add_idle(|| gtk_main());
-                let mut topwin =
-                    window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
-                topwin.set_callback(move |t| {
-                    if app::event() == enums::Event::Close {
-                        gtk_main_quit();
-                        t.hide();
-                    }
+                app::add_timeout3(0.001, |handle| {
+                    gtk_main_iteration_do(false);
+                    app::repeat_timeout3(0.001, handle);
                 });
             }
         }
