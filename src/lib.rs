@@ -157,12 +157,7 @@ impl Webview {
                     pub fn my_get_win(wid: *mut GtkWindow) -> *mut GdkWindow;
                     pub fn my_get_xid(w: *mut GdkWindow) -> u64;
                     pub fn x_init(disp: *mut Display, child: u64, parent: u64);
-                    pub fn g_idle_add(
-                        cb: Option<extern "C" fn(*mut raw::c_void) -> bool>,
-                        data: *mut raw::c_void,
-                    );
                     pub fn gtk_main_iteration_do(blocking: bool);
-                    pub fn gtk_main_quit();
                 }
                 gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
