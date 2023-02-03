@@ -35,7 +35,8 @@ fn compile_cocoa_helper() {
 fn compile_webview() {
     let target = env::var("TARGET").unwrap();
     let manifest_dir = PathBuf::from(env::var("CARGO_MANIFEST_DIR").unwrap());
-    let exe_pth = PathBuf::from(std::env::var("OUT_DIR").unwrap());
+    let out_dir = PathBuf::from(std::env::var("OUT_DIR").unwrap());
+    let exe_pth = out_dir.clone();
 
     Command::new("git")
         .args(&["submodule", "update", "--init", "--recursive"])
@@ -58,7 +59,7 @@ fn compile_webview() {
 
     if target.contains("windows") {
         let edge_weview_native =
-            "webview/script/Microsoft.Web.WebView2.1.0.1343.22/build/native".to_string();
+            "webview/build/native".to_string();
         if target.contains("msvc") {
             let mut include = edge_weview_native.clone();
             include.push_str("/include");
@@ -92,11 +93,13 @@ fn compile_webview() {
             wv_path.push(edge_weview_native);
         } else {
             wv_path.push("webview");
-            wv_path.push("dll");
+            wv_path.push("build");
+            wv_path.push("native");
         }
         wv_path.push(wv_arch);
         let webview2_dir = wv_path.as_path().to_str().unwrap();
         println!("cargo:rustc-link-search={}", webview2_dir);
+        println!("cargo:rustc-link-search={}", out_dir.join("../../..").display());
         if target.contains("msvc") {
             println!("cargo:rustc-link-lib=WebView2LoaderStatic");
         } else {

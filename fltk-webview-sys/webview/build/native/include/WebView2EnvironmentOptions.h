@@ -9,7 +9,7 @@
 #include <wrl/implements.h>
 
 #include "webview2.h"
-#define CORE_WEBVIEW_TARGET_PRODUCT_VERSION L"105.0.1343.22"
+#define CORE_WEBVIEW_TARGET_PRODUCT_VERSION L"109.0.1518.46"
 
 #define COREWEBVIEW2ENVIRONMENTOPTIONS_STRING_PROPERTY(p)     \
  public:                                                      \
@@ -31,21 +31,21 @@
  protected:                                                   \
   AutoCoMemString m_##p;
 
-#define COREWEBVIEW2ENVIRONMENTOPTIONS_BOOL_PROPERTY(p)     \
- public:                                                    \
-  HRESULT STDMETHODCALLTYPE get_##p(BOOL* value) override { \
-    if (!value)                                             \
-      return E_POINTER;                                     \
-    *value = m_##p;                                         \
-    return S_OK;                                            \
-  }                                                         \
-  HRESULT STDMETHODCALLTYPE put_##p(BOOL value) override {  \
-    m_##p = value;                                          \
-    return S_OK;                                            \
-  }                                                         \
-                                                            \
- protected:                                                 \
-  BOOL m_##p = FALSE;
+#define COREWEBVIEW2ENVIRONMENTOPTIONS_BOOL_PROPERTY(p, defPVal) \
+ public:                                                         \
+  HRESULT STDMETHODCALLTYPE get_##p(BOOL* value) override {      \
+    if (!value)                                                  \
+      return E_POINTER;                                          \
+    *value = m_##p;                                              \
+    return S_OK;                                                 \
+  }                                                              \
+  HRESULT STDMETHODCALLTYPE put_##p(BOOL value) override {       \
+    m_##p = value;                                               \
+    return S_OK;                                                 \
+  }                                                              \
+                                                                 \
+ protected:                                                      \
+  BOOL m_##p = defPVal ? TRUE : FALSE;
 
 // This is a base COM class that implements ICoreWebView2EnvironmentOptions.
 template <typename allocate_fn_t,
@@ -56,7 +56,8 @@ class CoreWebView2EnvironmentOptionsBase
     : public Microsoft::WRL::Implements<
           Microsoft::WRL::RuntimeClassFlags<Microsoft::WRL::ClassicCom>,
           ICoreWebView2EnvironmentOptions,
-          ICoreWebView2EnvironmentOptions2> {
+          ICoreWebView2EnvironmentOptions2,
+          ICoreWebView2EnvironmentOptions3> {
  public:
   CoreWebView2EnvironmentOptionsBase() {
     // Initialize the target compatible browser version value to the version of
@@ -65,7 +66,7 @@ class CoreWebView2EnvironmentOptionsBase
   }
 
  protected:
-  ~CoreWebView2EnvironmentOptionsBase(){};
+  ~CoreWebView2EnvironmentOptionsBase() {}
 
   class AutoCoMemString {
    public:
@@ -116,10 +117,16 @@ class CoreWebView2EnvironmentOptionsBase
   COREWEBVIEW2ENVIRONMENTOPTIONS_STRING_PROPERTY(Language)
   COREWEBVIEW2ENVIRONMENTOPTIONS_STRING_PROPERTY(TargetCompatibleBrowserVersion)
   COREWEBVIEW2ENVIRONMENTOPTIONS_BOOL_PROPERTY(
-      AllowSingleSignOnUsingOSPrimaryAccount)
+      AllowSingleSignOnUsingOSPrimaryAccount,
+      false)
 
   // ICoreWebView2EnvironmentOptions2
-  COREWEBVIEW2ENVIRONMENTOPTIONS_BOOL_PROPERTY(ExclusiveUserDataFolderAccess)
+  COREWEBVIEW2ENVIRONMENTOPTIONS_BOOL_PROPERTY(ExclusiveUserDataFolderAccess,
+                                               false)
+
+  // ICoreWebView2EnvironmentOptions3
+  COREWEBVIEW2ENVIRONMENTOPTIONS_BOOL_PROPERTY(IsCustomCrashReportingEnabled,
+                                               false)
 };
 
 template <typename allocate_fn_t,
@@ -137,7 +144,7 @@ class CoreWebView2EnvironmentOptionsBaseClass
   CoreWebView2EnvironmentOptionsBaseClass() {}
 
  protected:
-  ~CoreWebView2EnvironmentOptionsBaseClass() override{};
+  ~CoreWebView2EnvironmentOptionsBaseClass() override {}
 };
 
 typedef CoreWebView2EnvironmentOptionsBaseClass<decltype(&::CoTaskMemAlloc),
