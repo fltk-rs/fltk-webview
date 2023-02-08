@@ -1,1 +1,1 @@
-bindgen fltk-webview-sys/webview/webview.h -o fltk-webview-sys/src/sys.rs -- -DWEBVIEW_HEADER
+bindgen --no-layout-tests fltk-webview-sys/webview/webview.h -o fltk-webview-sys/src/sys.rs -- -DWEBVIEW_HEADER

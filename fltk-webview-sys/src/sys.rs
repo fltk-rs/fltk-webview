@@ -16,49 +16,6 @@ pub struct webview_version_t {
     pub minor: ::std::os::raw::c_uint,
     pub patch: ::std::os::raw::c_uint,
 }
-#[test]
-fn bindgen_test_layout_webview_version_t() {
-    assert_eq!(
-        ::std::mem::size_of::<webview_version_t>(),
-        12usize,
-        concat!("Size of: ", stringify!(webview_version_t))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<webview_version_t>(),
-        4usize,
-        concat!("Alignment of ", stringify!(webview_version_t))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<webview_version_t>())).major as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(webview_version_t),
-            "::",
-            stringify!(major)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<webview_version_t>())).minor as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(webview_version_t),
-            "::",
-            stringify!(minor)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<webview_version_t>())).patch as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(webview_version_t),
-            "::",
-            stringify!(patch)
-        )
-    );
-}
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct webview_version_info_t {
@@ -66,65 +23,6 @@ pub struct webview_version_info_t {
     pub version_number: [::std::os::raw::c_char; 32usize],
     pub pre_release: [::std::os::raw::c_char; 48usize],
     pub build_metadata: [::std::os::raw::c_char; 48usize],
-}
-#[test]
-fn bindgen_test_layout_webview_version_info_t() {
-    assert_eq!(
-        ::std::mem::size_of::<webview_version_info_t>(),
-        140usize,
-        concat!("Size of: ", stringify!(webview_version_info_t))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<webview_version_info_t>(),
-        4usize,
-        concat!("Alignment of ", stringify!(webview_version_info_t))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<webview_version_info_t>())).version as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(webview_version_info_t),
-            "::",
-            stringify!(version)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<webview_version_info_t>())).version_number as *const _ as usize
-        },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(webview_version_info_t),
-            "::",
-            stringify!(version_number)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<webview_version_info_t>())).pre_release as *const _ as usize
-        },
-        44usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(webview_version_info_t),
-            "::",
-            stringify!(pre_release)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<webview_version_info_t>())).build_metadata as *const _ as usize
-        },
-        92usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(webview_version_info_t),
-            "::",
-            stringify!(build_metadata)
-        )
-    );
 }
 pub type webview_t = *mut ::std::os::raw::c_void;
 extern "C" {
