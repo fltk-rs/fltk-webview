@@ -22,9 +22,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-
-#include <string>
-
 #ifndef WEBVIEW_H
 #define WEBVIEW_H
 
@@ -718,12 +715,6 @@ inline id operator"" _str(const char *s, std::size_t) {
   return objc::msg_send<id>("NSString"_cls, "stringWithUTF8String:"_sel, s);
 }
 
-inline std::string unique_name(std::string base) {
-  static int name_counter = 0;
-  base += std::to_string(name_counter++);
-  return base;
-}
-
 class cocoa_wkwebview_engine {
 public:
   cocoa_wkwebview_engine(bool debug, void *window)
@@ -836,7 +827,7 @@ private:
     // default name in projects created with Xcode, and using the same name
     // causes objc_registerClassPair to crash.
     auto cls = objc_allocateClassPair((Class) "NSResponder"_cls,
-                                      unique_name("WebviewAppDelegate").c_str(), 0);
+                                      "WebviewAppDelegate", 0);
     class_addProtocol(cls, objc_getProtocol("NSTouchBarProvider"));
     class_addMethod(cls, "applicationShouldTerminateAfterLastWindowClosed:"_sel,
                     (IMP)(+[](id, SEL, id) -> BOOL { return 1; }), "c@:@");
@@ -859,7 +850,7 @@ private:
   }
   id create_script_message_handler() {
     auto cls = objc_allocateClassPair((Class) "NSResponder"_cls,
-                                      unique_name("WebkitScriptMessageHandler").c_str(), 0);
+                                      "WebkitScriptMessageHandler", 0);
     class_addProtocol(cls, objc_getProtocol("WKScriptMessageHandler"));
     class_addMethod(
         cls, "userContentController:didReceiveScriptMessage:"_sel,
@@ -877,7 +868,7 @@ private:
   }
   static id create_webkit_ui_delegate() {
     auto cls =
-        objc_allocateClassPair((Class) "NSObject"_cls, unique_name("WebkitUIDelegate").c_str(), 0);
+        objc_allocateClassPair((Class) "NSObject"_cls, "WebkitUIDelegate", 0);
     class_addProtocol(cls, objc_getProtocol("WKUIDelegate"));
     class_addMethod(
         cls,
