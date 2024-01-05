@@ -38,12 +38,6 @@ fn compile_webview() {
     let out_dir = PathBuf::from(std::env::var("OUT_DIR").unwrap());
     let exe_pth = out_dir.clone();
 
-    Command::new("git")
-        .args(&["submodule", "update", "--init", "--recursive"])
-        .current_dir(&manifest_dir)
-        .status()
-        .expect("Git is needed to retrieve the fltk & webview source files!");
-
     println!("cargo:rerun-if-changed=webview/webview.h");
     println!("cargo:rerun-if-changed=webview/webview.cc");
     println!("cargo:rerun-if-changed=src/gtk_helper.c");
@@ -132,6 +126,11 @@ fn compile_webview() {
             }
         }
     } else if target.contains("apple") {
+        Command::new("git")
+            .args(&["apply", "webview.patch"])
+            .current_dir(&manifest_dir)
+            .status()
+            .expect("Git is needed to retrieve the fltk & webview source files!");
         build.flag("-DWEBVIEW_COCOA");
         build.flag("-std=c++11");
         println!("cargo:rustc-link-lib=framework=Cocoa");

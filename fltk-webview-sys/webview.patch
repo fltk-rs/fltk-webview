@@ -11,11 +11,11 @@ index 01f81e6..622bfdf 100644
 +
  #ifndef WEBVIEW_H
  #define WEBVIEW_H
- 
+
 @@ -715,6 +718,12 @@ inline id operator"" _str(const char *s, std::size_t) {
    return objc::msg_send<id>("NSString"_cls, "stringWithUTF8String:"_sel, s);
  }
- 
+
 +inline std::string unique_name(std::string base) {
 +  static int name_counter = 0;
 +  base += std::to_string(name_counter++);
@@ -53,7 +53,7 @@ index 01f81e6..622bfdf 100644
      class_addMethod(
          cls,
 @@ -2292,4 +2301,4 @@ WEBVIEW_API const webview_version_info_t *webview_version() {
- 
+
  #endif /* WEBVIEW_HEADER */
  #endif /* __cplusplus */
 -#endif /* WEBVIEW_H */
