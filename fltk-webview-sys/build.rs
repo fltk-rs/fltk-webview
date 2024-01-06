@@ -135,7 +135,7 @@ fn compile_webview() {
         build.flag("-std=c++11");
         let lib = pkg_config::Config::new()
             .atleast_version("2.8")
-            .probe("webkit2gtk-4.1")
+            .probe("webkit2gtk-4.0")
             .unwrap();
         for path in lib.include_paths {
             build.include(path);
