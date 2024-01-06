@@ -46,6 +46,7 @@ fn compile_webview() {
     if !target.contains("windows-gnu") {
         build
             .cpp(true)
+            .define("WEBVIEW_STATIC", "")
             .file("webview/webview.cc")
             .flag_if_supported("-w");
     }
@@ -134,7 +135,7 @@ fn compile_webview() {
         build.flag("-std=c++11");
         let lib = pkg_config::Config::new()
             .atleast_version("2.8")
-            .probe("webkit2gtk-4.0")
+            .probe("webkit2gtk-4.1")
             .unwrap();
         for path in lib.include_paths {
             build.include(path);
