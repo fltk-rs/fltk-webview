@@ -40,7 +40,7 @@
 #endif
 
 #ifndef DECLSPEC_XFGVIRT
-#if _CONTROL_FLOW_GUARD_XFG
+#if defined(_CONTROL_FLOW_GUARD_XFG)
 #define DECLSPEC_XFGVIRT(base, func) __declspec(xfg_virtual(base, func))
 #else
 #define DECLSPEC_XFGVIRT(base, func)
@@ -54,6 +54,13 @@
 typedef interface ICoreWebView2AcceleratorKeyPressedEventArgs ICoreWebView2AcceleratorKeyPressedEventArgs;
 
 #endif 	/* __ICoreWebView2AcceleratorKeyPressedEventArgs_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2AcceleratorKeyPressedEventArgs2_FWD_DEFINED__
+#define __ICoreWebView2AcceleratorKeyPressedEventArgs2_FWD_DEFINED__
+typedef interface ICoreWebView2AcceleratorKeyPressedEventArgs2 ICoreWebView2AcceleratorKeyPressedEventArgs2;
+
+#endif 	/* __ICoreWebView2AcceleratorKeyPressedEventArgs2_FWD_DEFINED__ */
 
 
 #ifndef __ICoreWebView2AcceleratorKeyPressedEventHandler_FWD_DEFINED__
@@ -175,6 +182,55 @@ typedef interface ICoreWebView2_13 ICoreWebView2_13;
 #endif 	/* __ICoreWebView2_13_FWD_DEFINED__ */
 
 
+#ifndef __ICoreWebView2_14_FWD_DEFINED__
+#define __ICoreWebView2_14_FWD_DEFINED__
+typedef interface ICoreWebView2_14 ICoreWebView2_14;
+
+#endif 	/* __ICoreWebView2_14_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2_15_FWD_DEFINED__
+#define __ICoreWebView2_15_FWD_DEFINED__
+typedef interface ICoreWebView2_15 ICoreWebView2_15;
+
+#endif 	/* __ICoreWebView2_15_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2_16_FWD_DEFINED__
+#define __ICoreWebView2_16_FWD_DEFINED__
+typedef interface ICoreWebView2_16 ICoreWebView2_16;
+
+#endif 	/* __ICoreWebView2_16_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2_17_FWD_DEFINED__
+#define __ICoreWebView2_17_FWD_DEFINED__
+typedef interface ICoreWebView2_17 ICoreWebView2_17;
+
+#endif 	/* __ICoreWebView2_17_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2_18_FWD_DEFINED__
+#define __ICoreWebView2_18_FWD_DEFINED__
+typedef interface ICoreWebView2_18 ICoreWebView2_18;
+
+#endif 	/* __ICoreWebView2_18_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2_19_FWD_DEFINED__
+#define __ICoreWebView2_19_FWD_DEFINED__
+typedef interface ICoreWebView2_19 ICoreWebView2_19;
+
+#endif 	/* __ICoreWebView2_19_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2_20_FWD_DEFINED__
+#define __ICoreWebView2_20_FWD_DEFINED__
+typedef interface ICoreWebView2_20 ICoreWebView2_20;
+
+#endif 	/* __ICoreWebView2_20_FWD_DEFINED__ */
+
+
 #ifndef __ICoreWebView2BasicAuthenticationRequestedEventArgs_FWD_DEFINED__
 #define __ICoreWebView2BasicAuthenticationRequestedEventArgs_FWD_DEFINED__
 typedef interface ICoreWebView2BasicAuthenticationRequestedEventArgs ICoreWebView2BasicAuthenticationRequestedEventArgs;
@@ -271,6 +327,13 @@ typedef interface ICoreWebView2Controller4 ICoreWebView2Controller4;
 typedef interface ICoreWebView2ControllerOptions ICoreWebView2ControllerOptions;
 
 #endif 	/* __ICoreWebView2ControllerOptions_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2ControllerOptions2_FWD_DEFINED__
+#define __ICoreWebView2ControllerOptions2_FWD_DEFINED__
+typedef interface ICoreWebView2ControllerOptions2 ICoreWebView2ControllerOptions2;
+
+#endif 	/* __ICoreWebView2ControllerOptions2_FWD_DEFINED__ */
 
 
 #ifndef __ICoreWebView2ContentLoadingEventArgs_FWD_DEFINED__
@@ -441,6 +504,13 @@ typedef interface ICoreWebView2CustomItemSelectedEventHandler ICoreWebView2Custo
 #endif 	/* __ICoreWebView2CustomItemSelectedEventHandler_FWD_DEFINED__ */
 
 
+#ifndef __ICoreWebView2CustomSchemeRegistration_FWD_DEFINED__
+#define __ICoreWebView2CustomSchemeRegistration_FWD_DEFINED__
+typedef interface ICoreWebView2CustomSchemeRegistration ICoreWebView2CustomSchemeRegistration;
+
+#endif 	/* __ICoreWebView2CustomSchemeRegistration_FWD_DEFINED__ */
+
+
 #ifndef __ICoreWebView2DocumentTitleChangedEventHandler_FWD_DEFINED__
 #define __ICoreWebView2DocumentTitleChangedEventHandler_FWD_DEFINED__
 typedef interface ICoreWebView2DocumentTitleChangedEventHandler ICoreWebView2DocumentTitleChangedEventHandler;
@@ -595,6 +665,20 @@ typedef interface ICoreWebView2Environment11 ICoreWebView2Environment11;
 #endif 	/* __ICoreWebView2Environment11_FWD_DEFINED__ */
 
 
+#ifndef __ICoreWebView2Environment12_FWD_DEFINED__
+#define __ICoreWebView2Environment12_FWD_DEFINED__
+typedef interface ICoreWebView2Environment12 ICoreWebView2Environment12;
+
+#endif 	/* __ICoreWebView2Environment12_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Environment13_FWD_DEFINED__
+#define __ICoreWebView2Environment13_FWD_DEFINED__
+typedef interface ICoreWebView2Environment13 ICoreWebView2Environment13;
+
+#endif 	/* __ICoreWebView2Environment13_FWD_DEFINED__ */
+
+
 #ifndef __ICoreWebView2EnvironmentOptions_FWD_DEFINED__
 #define __ICoreWebView2EnvironmentOptions_FWD_DEFINED__
 typedef interface ICoreWebView2EnvironmentOptions ICoreWebView2EnvironmentOptions;
@@ -616,6 +700,27 @@ typedef interface ICoreWebView2EnvironmentOptions3 ICoreWebView2EnvironmentOptio
 #endif 	/* __ICoreWebView2EnvironmentOptions3_FWD_DEFINED__ */
 
 
+#ifndef __ICoreWebView2EnvironmentOptions4_FWD_DEFINED__
+#define __ICoreWebView2EnvironmentOptions4_FWD_DEFINED__
+typedef interface ICoreWebView2EnvironmentOptions4 ICoreWebView2EnvironmentOptions4;
+
+#endif 	/* __ICoreWebView2EnvironmentOptions4_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2EnvironmentOptions5_FWD_DEFINED__
+#define __ICoreWebView2EnvironmentOptions5_FWD_DEFINED__
+typedef interface ICoreWebView2EnvironmentOptions5 ICoreWebView2EnvironmentOptions5;
+
+#endif 	/* __ICoreWebView2EnvironmentOptions5_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2EnvironmentOptions6_FWD_DEFINED__
+#define __ICoreWebView2EnvironmentOptions6_FWD_DEFINED__
+typedef interface ICoreWebView2EnvironmentOptions6 ICoreWebView2EnvironmentOptions6;
+
+#endif 	/* __ICoreWebView2EnvironmentOptions6_FWD_DEFINED__ */
+
+
 #ifndef __ICoreWebView2EstimatedEndTimeChangedEventHandler_FWD_DEFINED__
 #define __ICoreWebView2EstimatedEndTimeChangedEventHandler_FWD_DEFINED__
 typedef interface ICoreWebView2EstimatedEndTimeChangedEventHandler ICoreWebView2EstimatedEndTimeChangedEventHandler;
@@ -628,6 +733,27 @@ typedef interface ICoreWebView2EstimatedEndTimeChangedEventHandler ICoreWebView2
 typedef interface ICoreWebView2ExecuteScriptCompletedHandler ICoreWebView2ExecuteScriptCompletedHandler;
 
 #endif 	/* __ICoreWebView2ExecuteScriptCompletedHandler_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2GetProcessExtendedInfosCompletedHandler_FWD_DEFINED__
+#define __ICoreWebView2GetProcessExtendedInfosCompletedHandler_FWD_DEFINED__
+typedef interface ICoreWebView2GetProcessExtendedInfosCompletedHandler ICoreWebView2GetProcessExtendedInfosCompletedHandler;
+
+#endif 	/* __ICoreWebView2GetProcessExtendedInfosCompletedHandler_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2ProcessExtendedInfo_FWD_DEFINED__
+#define __ICoreWebView2ProcessExtendedInfo_FWD_DEFINED__
+typedef interface ICoreWebView2ProcessExtendedInfo ICoreWebView2ProcessExtendedInfo;
+
+#endif 	/* __ICoreWebView2ProcessExtendedInfo_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2ProcessExtendedInfoCollection_FWD_DEFINED__
+#define __ICoreWebView2ProcessExtendedInfoCollection_FWD_DEFINED__
+typedef interface ICoreWebView2ProcessExtendedInfoCollection ICoreWebView2ProcessExtendedInfoCollection;
+
+#endif 	/* __ICoreWebView2ProcessExtendedInfoCollection_FWD_DEFINED__ */
 
 
 #ifndef __ICoreWebView2Frame_FWD_DEFINED__
@@ -649,6 +775,20 @@ typedef interface ICoreWebView2Frame2 ICoreWebView2Frame2;
 typedef interface ICoreWebView2Frame3 ICoreWebView2Frame3;
 
 #endif 	/* __ICoreWebView2Frame3_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Frame4_FWD_DEFINED__
+#define __ICoreWebView2Frame4_FWD_DEFINED__
+typedef interface ICoreWebView2Frame4 ICoreWebView2Frame4;
+
+#endif 	/* __ICoreWebView2Frame4_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Frame5_FWD_DEFINED__
+#define __ICoreWebView2Frame5_FWD_DEFINED__
+typedef interface ICoreWebView2Frame5 ICoreWebView2Frame5;
+
+#endif 	/* __ICoreWebView2Frame5_FWD_DEFINED__ */
 
 
 #ifndef __ICoreWebView2FrameContentLoadingEventHandler_FWD_DEFINED__
@@ -728,6 +868,13 @@ typedef interface ICoreWebView2FrameInfo ICoreWebView2FrameInfo;
 #endif 	/* __ICoreWebView2FrameInfo_FWD_DEFINED__ */
 
 
+#ifndef __ICoreWebView2FrameInfo2_FWD_DEFINED__
+#define __ICoreWebView2FrameInfo2_FWD_DEFINED__
+typedef interface ICoreWebView2FrameInfo2 ICoreWebView2FrameInfo2;
+
+#endif 	/* __ICoreWebView2FrameInfo2_FWD_DEFINED__ */
+
+
 #ifndef __ICoreWebView2FrameInfoCollection_FWD_DEFINED__
 #define __ICoreWebView2FrameInfoCollection_FWD_DEFINED__
 typedef interface ICoreWebView2FrameInfoCollection ICoreWebView2FrameInfoCollection;
@@ -754,6 +901,13 @@ typedef interface ICoreWebView2FocusChangedEventHandler ICoreWebView2FocusChange
 typedef interface ICoreWebView2GetCookiesCompletedHandler ICoreWebView2GetCookiesCompletedHandler;
 
 #endif 	/* __ICoreWebView2GetCookiesCompletedHandler_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler_FWD_DEFINED__
+#define __ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler_FWD_DEFINED__
+typedef interface ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler;
+
+#endif 	/* __ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler_FWD_DEFINED__ */
 
 
 #ifndef __ICoreWebView2HistoryChangedEventHandler_FWD_DEFINED__
@@ -789,6 +943,20 @@ typedef interface ICoreWebView2HttpResponseHeaders ICoreWebView2HttpResponseHead
 typedef interface ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler;
 
 #endif 	/* __ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2LaunchingExternalUriSchemeEventArgs_FWD_DEFINED__
+#define __ICoreWebView2LaunchingExternalUriSchemeEventArgs_FWD_DEFINED__
+typedef interface ICoreWebView2LaunchingExternalUriSchemeEventArgs ICoreWebView2LaunchingExternalUriSchemeEventArgs;
+
+#endif 	/* __ICoreWebView2LaunchingExternalUriSchemeEventArgs_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2LaunchingExternalUriSchemeEventHandler_FWD_DEFINED__
+#define __ICoreWebView2LaunchingExternalUriSchemeEventHandler_FWD_DEFINED__
+typedef interface ICoreWebView2LaunchingExternalUriSchemeEventHandler ICoreWebView2LaunchingExternalUriSchemeEventHandler;
+
+#endif 	/* __ICoreWebView2LaunchingExternalUriSchemeEventHandler_FWD_DEFINED__ */
 
 
 #ifndef __ICoreWebView2MoveFocusRequestedEventArgs_FWD_DEFINED__
@@ -840,6 +1008,13 @@ typedef interface ICoreWebView2NavigationStartingEventArgs2 ICoreWebView2Navigat
 #endif 	/* __ICoreWebView2NavigationStartingEventArgs2_FWD_DEFINED__ */
 
 
+#ifndef __ICoreWebView2NavigationStartingEventArgs3_FWD_DEFINED__
+#define __ICoreWebView2NavigationStartingEventArgs3_FWD_DEFINED__
+typedef interface ICoreWebView2NavigationStartingEventArgs3 ICoreWebView2NavigationStartingEventArgs3;
+
+#endif 	/* __ICoreWebView2NavigationStartingEventArgs3_FWD_DEFINED__ */
+
+
 #ifndef __ICoreWebView2NavigationStartingEventHandler_FWD_DEFINED__
 #define __ICoreWebView2NavigationStartingEventHandler_FWD_DEFINED__
 typedef interface ICoreWebView2NavigationStartingEventHandler ICoreWebView2NavigationStartingEventHandler;
@@ -868,6 +1043,13 @@ typedef interface ICoreWebView2NewWindowRequestedEventArgs2 ICoreWebView2NewWind
 #endif 	/* __ICoreWebView2NewWindowRequestedEventArgs2_FWD_DEFINED__ */
 
 
+#ifndef __ICoreWebView2NewWindowRequestedEventArgs3_FWD_DEFINED__
+#define __ICoreWebView2NewWindowRequestedEventArgs3_FWD_DEFINED__
+typedef interface ICoreWebView2NewWindowRequestedEventArgs3 ICoreWebView2NewWindowRequestedEventArgs3;
+
+#endif 	/* __ICoreWebView2NewWindowRequestedEventArgs3_FWD_DEFINED__ */
+
+
 #ifndef __ICoreWebView2NewWindowRequestedEventHandler_FWD_DEFINED__
 #define __ICoreWebView2NewWindowRequestedEventHandler_FWD_DEFINED__
 typedef interface ICoreWebView2NewWindowRequestedEventHandler ICoreWebView2NewWindowRequestedEventHandler;
@@ -889,11 +1071,32 @@ typedef interface ICoreWebView2PermissionRequestedEventArgs2 ICoreWebView2Permis
 #endif 	/* __ICoreWebView2PermissionRequestedEventArgs2_FWD_DEFINED__ */
 
 
+#ifndef __ICoreWebView2PermissionRequestedEventArgs3_FWD_DEFINED__
+#define __ICoreWebView2PermissionRequestedEventArgs3_FWD_DEFINED__
+typedef interface ICoreWebView2PermissionRequestedEventArgs3 ICoreWebView2PermissionRequestedEventArgs3;
+
+#endif 	/* __ICoreWebView2PermissionRequestedEventArgs3_FWD_DEFINED__ */
+
+
 #ifndef __ICoreWebView2PermissionRequestedEventHandler_FWD_DEFINED__
 #define __ICoreWebView2PermissionRequestedEventHandler_FWD_DEFINED__
 typedef interface ICoreWebView2PermissionRequestedEventHandler ICoreWebView2PermissionRequestedEventHandler;
 
 #endif 	/* __ICoreWebView2PermissionRequestedEventHandler_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2PermissionSettingCollectionView_FWD_DEFINED__
+#define __ICoreWebView2PermissionSettingCollectionView_FWD_DEFINED__
+typedef interface ICoreWebView2PermissionSettingCollectionView ICoreWebView2PermissionSettingCollectionView;
+
+#endif 	/* __ICoreWebView2PermissionSettingCollectionView_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2PermissionSetting_FWD_DEFINED__
+#define __ICoreWebView2PermissionSetting_FWD_DEFINED__
+typedef interface ICoreWebView2PermissionSetting ICoreWebView2PermissionSetting;
+
+#endif 	/* __ICoreWebView2PermissionSetting_FWD_DEFINED__ */
 
 
 #ifndef __ICoreWebView2PointerInfo_FWD_DEFINED__
@@ -973,6 +1176,55 @@ typedef interface ICoreWebView2Profile2 ICoreWebView2Profile2;
 #endif 	/* __ICoreWebView2Profile2_FWD_DEFINED__ */
 
 
+#ifndef __ICoreWebView2Profile3_FWD_DEFINED__
+#define __ICoreWebView2Profile3_FWD_DEFINED__
+typedef interface ICoreWebView2Profile3 ICoreWebView2Profile3;
+
+#endif 	/* __ICoreWebView2Profile3_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Profile4_FWD_DEFINED__
+#define __ICoreWebView2Profile4_FWD_DEFINED__
+typedef interface ICoreWebView2Profile4 ICoreWebView2Profile4;
+
+#endif 	/* __ICoreWebView2Profile4_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Profile5_FWD_DEFINED__
+#define __ICoreWebView2Profile5_FWD_DEFINED__
+typedef interface ICoreWebView2Profile5 ICoreWebView2Profile5;
+
+#endif 	/* __ICoreWebView2Profile5_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Profile6_FWD_DEFINED__
+#define __ICoreWebView2Profile6_FWD_DEFINED__
+typedef interface ICoreWebView2Profile6 ICoreWebView2Profile6;
+
+#endif 	/* __ICoreWebView2Profile6_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Profile7_FWD_DEFINED__
+#define __ICoreWebView2Profile7_FWD_DEFINED__
+typedef interface ICoreWebView2Profile7 ICoreWebView2Profile7;
+
+#endif 	/* __ICoreWebView2Profile7_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Profile8_FWD_DEFINED__
+#define __ICoreWebView2Profile8_FWD_DEFINED__
+typedef interface ICoreWebView2Profile8 ICoreWebView2Profile8;
+
+#endif 	/* __ICoreWebView2Profile8_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2ProfileDeletedEventHandler_FWD_DEFINED__
+#define __ICoreWebView2ProfileDeletedEventHandler_FWD_DEFINED__
+typedef interface ICoreWebView2ProfileDeletedEventHandler ICoreWebView2ProfileDeletedEventHandler;
+
+#endif 	/* __ICoreWebView2ProfileDeletedEventHandler_FWD_DEFINED__ */
+
+
 #ifndef __ICoreWebView2RasterizationScaleChangedEventHandler_FWD_DEFINED__
 #define __ICoreWebView2RasterizationScaleChangedEventHandler_FWD_DEFINED__
 typedef interface ICoreWebView2RasterizationScaleChangedEventHandler ICoreWebView2RasterizationScaleChangedEventHandler;
@@ -992,6 +1244,13 @@ typedef interface ICoreWebView2ServerCertificateErrorDetectedEventArgs ICoreWebV
 typedef interface ICoreWebView2ServerCertificateErrorDetectedEventHandler ICoreWebView2ServerCertificateErrorDetectedEventHandler;
 
 #endif 	/* __ICoreWebView2ServerCertificateErrorDetectedEventHandler_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2SetPermissionStateCompletedHandler_FWD_DEFINED__
+#define __ICoreWebView2SetPermissionStateCompletedHandler_FWD_DEFINED__
+typedef interface ICoreWebView2SetPermissionStateCompletedHandler ICoreWebView2SetPermissionStateCompletedHandler;
+
+#endif 	/* __ICoreWebView2SetPermissionStateCompletedHandler_FWD_DEFINED__ */
 
 
 #ifndef __ICoreWebView2ScriptDialogOpeningEventArgs_FWD_DEFINED__
@@ -1055,6 +1314,20 @@ typedef interface ICoreWebView2Settings6 ICoreWebView2Settings6;
 typedef interface ICoreWebView2Settings7 ICoreWebView2Settings7;
 
 #endif 	/* __ICoreWebView2Settings7_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Settings8_FWD_DEFINED__
+#define __ICoreWebView2Settings8_FWD_DEFINED__
+typedef interface ICoreWebView2Settings8 ICoreWebView2Settings8;
+
+#endif 	/* __ICoreWebView2Settings8_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2SharedBuffer_FWD_DEFINED__
+#define __ICoreWebView2SharedBuffer_FWD_DEFINED__
+typedef interface ICoreWebView2SharedBuffer ICoreWebView2SharedBuffer;
+
+#endif 	/* __ICoreWebView2SharedBuffer_FWD_DEFINED__ */
 
 
 #ifndef __ICoreWebView2SourceChangedEventArgs_FWD_DEFINED__
@@ -1232,25 +1505,67 @@ typedef interface ICoreWebView2GetFaviconCompletedHandler ICoreWebView2GetFavico
 #endif 	/* __ICoreWebView2GetFaviconCompletedHandler_FWD_DEFINED__ */
 
 
-#ifndef __ICoreWebView2_14_FWD_DEFINED__
-#define __ICoreWebView2_14_FWD_DEFINED__
-typedef interface ICoreWebView2_14 ICoreWebView2_14;
+#ifndef __ICoreWebView2ProfileAddBrowserExtensionCompletedHandler_FWD_DEFINED__
+#define __ICoreWebView2ProfileAddBrowserExtensionCompletedHandler_FWD_DEFINED__
+typedef interface ICoreWebView2ProfileAddBrowserExtensionCompletedHandler ICoreWebView2ProfileAddBrowserExtensionCompletedHandler;
 
-#endif 	/* __ICoreWebView2_14_FWD_DEFINED__ */
-
-
-#ifndef __ICoreWebView2_15_FWD_DEFINED__
-#define __ICoreWebView2_15_FWD_DEFINED__
-typedef interface ICoreWebView2_15 ICoreWebView2_15;
-
-#endif 	/* __ICoreWebView2_15_FWD_DEFINED__ */
+#endif 	/* __ICoreWebView2ProfileAddBrowserExtensionCompletedHandler_FWD_DEFINED__ */
 
 
-#ifndef __ICoreWebView2_16_FWD_DEFINED__
-#define __ICoreWebView2_16_FWD_DEFINED__
-typedef interface ICoreWebView2_16 ICoreWebView2_16;
+#ifndef __ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler_FWD_DEFINED__
+#define __ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler_FWD_DEFINED__
+typedef interface ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler;
 
-#endif 	/* __ICoreWebView2_16_FWD_DEFINED__ */
+#endif 	/* __ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2BrowserExtensionList_FWD_DEFINED__
+#define __ICoreWebView2BrowserExtensionList_FWD_DEFINED__
+typedef interface ICoreWebView2BrowserExtensionList ICoreWebView2BrowserExtensionList;
+
+#endif 	/* __ICoreWebView2BrowserExtensionList_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2BrowserExtension_FWD_DEFINED__
+#define __ICoreWebView2BrowserExtension_FWD_DEFINED__
+typedef interface ICoreWebView2BrowserExtension ICoreWebView2BrowserExtension;
+
+#endif 	/* __ICoreWebView2BrowserExtension_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2BrowserExtensionEnableCompletedHandler_FWD_DEFINED__
+#define __ICoreWebView2BrowserExtensionEnableCompletedHandler_FWD_DEFINED__
+typedef interface ICoreWebView2BrowserExtensionEnableCompletedHandler ICoreWebView2BrowserExtensionEnableCompletedHandler;
+
+#endif 	/* __ICoreWebView2BrowserExtensionEnableCompletedHandler_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2BrowserExtensionRemoveCompletedHandler_FWD_DEFINED__
+#define __ICoreWebView2BrowserExtensionRemoveCompletedHandler_FWD_DEFINED__
+typedef interface ICoreWebView2BrowserExtensionRemoveCompletedHandler ICoreWebView2BrowserExtensionRemoveCompletedHandler;
+
+#endif 	/* __ICoreWebView2BrowserExtensionRemoveCompletedHandler_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2File_FWD_DEFINED__
+#define __ICoreWebView2File_FWD_DEFINED__
+typedef interface ICoreWebView2File ICoreWebView2File;
+
+#endif 	/* __ICoreWebView2File_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2ObjectCollectionView_FWD_DEFINED__
+#define __ICoreWebView2ObjectCollectionView_FWD_DEFINED__
+typedef interface ICoreWebView2ObjectCollectionView ICoreWebView2ObjectCollectionView;
+
+#endif 	/* __ICoreWebView2ObjectCollectionView_FWD_DEFINED__ */
+
+
+#ifndef __ICoreWebView2WebMessageReceivedEventArgs2_FWD_DEFINED__
+#define __ICoreWebView2WebMessageReceivedEventArgs2_FWD_DEFINED__
+typedef interface ICoreWebView2WebMessageReceivedEventArgs2 ICoreWebView2WebMessageReceivedEventArgs2;
+
+#endif 	/* __ICoreWebView2WebMessageReceivedEventArgs2_FWD_DEFINED__ */
 
 
 /* header files for imported files */
@@ -1269,6 +1584,51 @@ extern "C"{
 
 /* library WebView2 */
 /* [version][uuid] */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1509,7 +1869,13 @@ enum COREWEBVIEW2_PERMISSION_KIND
         COREWEBVIEW2_PERMISSION_KIND_GEOLOCATION	= ( COREWEBVIEW2_PERMISSION_KIND_CAMERA + 1 ) ,
         COREWEBVIEW2_PERMISSION_KIND_NOTIFICATIONS	= ( COREWEBVIEW2_PERMISSION_KIND_GEOLOCATION + 1 ) ,
         COREWEBVIEW2_PERMISSION_KIND_OTHER_SENSORS	= ( COREWEBVIEW2_PERMISSION_KIND_NOTIFICATIONS + 1 ) ,
-        COREWEBVIEW2_PERMISSION_KIND_CLIPBOARD_READ	= ( COREWEBVIEW2_PERMISSION_KIND_OTHER_SENSORS + 1 ) 
+        COREWEBVIEW2_PERMISSION_KIND_CLIPBOARD_READ	= ( COREWEBVIEW2_PERMISSION_KIND_OTHER_SENSORS + 1 ) ,
+        COREWEBVIEW2_PERMISSION_KIND_MULTIPLE_AUTOMATIC_DOWNLOADS	= ( COREWEBVIEW2_PERMISSION_KIND_CLIPBOARD_READ + 1 ) ,
+        COREWEBVIEW2_PERMISSION_KIND_FILE_READ_WRITE	= ( COREWEBVIEW2_PERMISSION_KIND_MULTIPLE_AUTOMATIC_DOWNLOADS + 1 ) ,
+        COREWEBVIEW2_PERMISSION_KIND_AUTOPLAY	= ( COREWEBVIEW2_PERMISSION_KIND_FILE_READ_WRITE + 1 ) ,
+        COREWEBVIEW2_PERMISSION_KIND_LOCAL_FONTS	= ( COREWEBVIEW2_PERMISSION_KIND_AUTOPLAY + 1 ) ,
+        COREWEBVIEW2_PERMISSION_KIND_MIDI_SYSTEM_EXCLUSIVE_MESSAGES	= ( COREWEBVIEW2_PERMISSION_KIND_LOCAL_FONTS + 1 ) ,
+        COREWEBVIEW2_PERMISSION_KIND_WINDOW_MANAGEMENT	= ( COREWEBVIEW2_PERMISSION_KIND_MIDI_SYSTEM_EXCLUSIVE_MESSAGES + 1 ) 
     } 	COREWEBVIEW2_PERMISSION_KIND;
 
 typedef /* [v1_enum] */ 
@@ -1626,7 +1992,9 @@ enum COREWEBVIEW2_MOUSE_EVENT_KIND
         COREWEBVIEW2_MOUSE_EVENT_KIND_WHEEL	= 0x20a,
         COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOUBLE_CLICK	= 0x20d,
         COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOWN	= 0x20b,
-        COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_UP	= 0x20c
+        COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_UP	= 0x20c,
+        COREWEBVIEW2_MOUSE_EVENT_KIND_NON_CLIENT_RIGHT_BUTTON_DOWN	= 0xa4,
+        COREWEBVIEW2_MOUSE_EVENT_KIND_NON_CLIENT_RIGHT_BUTTON_UP	= 0xa5
     } 	COREWEBVIEW2_MOUSE_EVENT_KIND;
 
 typedef /* [v1_enum] */ 
@@ -1805,7 +2173,8 @@ enum COREWEBVIEW2_BROWSING_DATA_KINDS
         COREWEBVIEW2_BROWSING_DATA_KINDS_PASSWORD_AUTOSAVE	= ( 1 << 11 ) ,
         COREWEBVIEW2_BROWSING_DATA_KINDS_BROWSING_HISTORY	= ( 1 << 12 ) ,
         COREWEBVIEW2_BROWSING_DATA_KINDS_SETTINGS	= ( 1 << 13 ) ,
-        COREWEBVIEW2_BROWSING_DATA_KINDS_ALL_PROFILE	= ( 1 << 14 ) 
+        COREWEBVIEW2_BROWSING_DATA_KINDS_ALL_PROFILE	= ( 1 << 14 ) ,
+        COREWEBVIEW2_BROWSING_DATA_KINDS_SERVICE_WORKERS	= ( 1 << 15 ) 
     } 	COREWEBVIEW2_BROWSING_DATA_KINDS;
 
 DEFINE_ENUM_FLAG_OPERATORS(COREWEBVIEW2_BROWSING_DATA_KINDS)
@@ -1870,6 +2239,47 @@ enum COREWEBVIEW2_PRINT_STATUS
         COREWEBVIEW2_PRINT_STATUS_PRINTER_UNAVAILABLE	= ( COREWEBVIEW2_PRINT_STATUS_SUCCEEDED + 1 ) ,
         COREWEBVIEW2_PRINT_STATUS_OTHER_ERROR	= ( COREWEBVIEW2_PRINT_STATUS_PRINTER_UNAVAILABLE + 1 ) 
     } 	COREWEBVIEW2_PRINT_STATUS;
+
+typedef /* [v1_enum] */ 
+enum COREWEBVIEW2_TRACKING_PREVENTION_LEVEL
+    {
+        COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_NONE	= 0,
+        COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_BASIC	= ( COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_NONE + 1 ) ,
+        COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_BALANCED	= ( COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_BASIC + 1 ) ,
+        COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_STRICT	= ( COREWEBVIEW2_TRACKING_PREVENTION_LEVEL_BALANCED + 1 ) 
+    } 	COREWEBVIEW2_TRACKING_PREVENTION_LEVEL;
+
+typedef /* [v1_enum] */ 
+enum COREWEBVIEW2_SHARED_BUFFER_ACCESS
+    {
+        COREWEBVIEW2_SHARED_BUFFER_ACCESS_READ_ONLY	= 0,
+        COREWEBVIEW2_SHARED_BUFFER_ACCESS_READ_WRITE	= ( COREWEBVIEW2_SHARED_BUFFER_ACCESS_READ_ONLY + 1 ) 
+    } 	COREWEBVIEW2_SHARED_BUFFER_ACCESS;
+
+typedef /* [v1_enum] */ 
+enum COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL
+    {
+        COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL_NORMAL	= 0,
+        COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL_LOW	= ( COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL_NORMAL + 1 ) 
+    } 	COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL;
+
+typedef /* [v1_enum] */ 
+enum COREWEBVIEW2_NAVIGATION_KIND
+    {
+        COREWEBVIEW2_NAVIGATION_KIND_RELOAD	= 0,
+        COREWEBVIEW2_NAVIGATION_KIND_BACK_OR_FORWARD	= 1,
+        COREWEBVIEW2_NAVIGATION_KIND_NEW_DOCUMENT	= 2
+    } 	COREWEBVIEW2_NAVIGATION_KIND;
+
+typedef /* [v1_enum] */ 
+enum COREWEBVIEW2_FRAME_KIND
+    {
+        COREWEBVIEW2_FRAME_KIND_UNKNOWN	= 0,
+        COREWEBVIEW2_FRAME_KIND_MAIN_FRAME	= ( COREWEBVIEW2_FRAME_KIND_UNKNOWN + 1 ) ,
+        COREWEBVIEW2_FRAME_KIND_IFRAME	= ( COREWEBVIEW2_FRAME_KIND_MAIN_FRAME + 1 ) ,
+        COREWEBVIEW2_FRAME_KIND_EMBED	= ( COREWEBVIEW2_FRAME_KIND_IFRAME + 1 ) ,
+        COREWEBVIEW2_FRAME_KIND_OBJECT	= ( COREWEBVIEW2_FRAME_KIND_EMBED + 1 ) 
+    } 	COREWEBVIEW2_FRAME_KIND;
 
 STDAPI CreateCoreWebView2EnvironmentWithOptions(PCWSTR browserExecutableFolder, PCWSTR userDataFolder, ICoreWebView2EnvironmentOptions* environmentOptions, ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler* environmentCreatedHandler);
 STDAPI CreateCoreWebView2Environment(ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler* environmentCreatedHandler);
@@ -2015,6 +2425,150 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2AcceleratorKeyPressedE
 
 
 #endif 	/* __ICoreWebView2AcceleratorKeyPressedEventArgs_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2AcceleratorKeyPressedEventArgs2_INTERFACE_DEFINED__
+#define __ICoreWebView2AcceleratorKeyPressedEventArgs2_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2AcceleratorKeyPressedEventArgs2 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2AcceleratorKeyPressedEventArgs2 = {0x03b2c8c8,0x7799,0x4e34,{0xbd,0x66,0xed,0x26,0xaa,0x85,0xf2,0xbf}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("03b2c8c8-7799-4e34-bd66-ed26aa85f2bf")
+    ICoreWebView2AcceleratorKeyPressedEventArgs2 : public ICoreWebView2AcceleratorKeyPressedEventArgs
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_IsBrowserAcceleratorKeyEnabled( 
+            /* [retval][out] */ BOOL *value) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_IsBrowserAcceleratorKeyEnabled( 
+            /* [in] */ BOOL value) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2AcceleratorKeyPressedEventArgs2Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2AcceleratorKeyPressedEventArgs2 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2AcceleratorKeyPressedEventArgs2 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2AcceleratorKeyPressedEventArgs2 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2AcceleratorKeyPressedEventArgs, get_KeyEventKind)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_KeyEventKind )( 
+            ICoreWebView2AcceleratorKeyPressedEventArgs2 * This,
+            /* [retval][out] */ COREWEBVIEW2_KEY_EVENT_KIND *keyEventKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2AcceleratorKeyPressedEventArgs, get_VirtualKey)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_VirtualKey )( 
+            ICoreWebView2AcceleratorKeyPressedEventArgs2 * This,
+            /* [retval][out] */ UINT *virtualKey);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2AcceleratorKeyPressedEventArgs, get_KeyEventLParam)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_KeyEventLParam )( 
+            ICoreWebView2AcceleratorKeyPressedEventArgs2 * This,
+            /* [retval][out] */ INT *lParam);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2AcceleratorKeyPressedEventArgs, get_PhysicalKeyStatus)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PhysicalKeyStatus )( 
+            ICoreWebView2AcceleratorKeyPressedEventArgs2 * This,
+            /* [retval][out] */ COREWEBVIEW2_PHYSICAL_KEY_STATUS *physicalKeyStatus);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2AcceleratorKeyPressedEventArgs, get_Handled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Handled )( 
+            ICoreWebView2AcceleratorKeyPressedEventArgs2 * This,
+            /* [retval][out] */ BOOL *handled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2AcceleratorKeyPressedEventArgs, put_Handled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_Handled )( 
+            ICoreWebView2AcceleratorKeyPressedEventArgs2 * This,
+            /* [in] */ BOOL handled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2AcceleratorKeyPressedEventArgs2, get_IsBrowserAcceleratorKeyEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsBrowserAcceleratorKeyEnabled )( 
+            ICoreWebView2AcceleratorKeyPressedEventArgs2 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2AcceleratorKeyPressedEventArgs2, put_IsBrowserAcceleratorKeyEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsBrowserAcceleratorKeyEnabled )( 
+            ICoreWebView2AcceleratorKeyPressedEventArgs2 * This,
+            /* [in] */ BOOL value);
+        
+        END_INTERFACE
+    } ICoreWebView2AcceleratorKeyPressedEventArgs2Vtbl;
+
+    interface ICoreWebView2AcceleratorKeyPressedEventArgs2
+    {
+        CONST_VTBL struct ICoreWebView2AcceleratorKeyPressedEventArgs2Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2AcceleratorKeyPressedEventArgs2_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2AcceleratorKeyPressedEventArgs2_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2AcceleratorKeyPressedEventArgs2_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2AcceleratorKeyPressedEventArgs2_get_KeyEventKind(This,keyEventKind)	\
+    ( (This)->lpVtbl -> get_KeyEventKind(This,keyEventKind) ) 
+
+#define ICoreWebView2AcceleratorKeyPressedEventArgs2_get_VirtualKey(This,virtualKey)	\
+    ( (This)->lpVtbl -> get_VirtualKey(This,virtualKey) ) 
+
+#define ICoreWebView2AcceleratorKeyPressedEventArgs2_get_KeyEventLParam(This,lParam)	\
+    ( (This)->lpVtbl -> get_KeyEventLParam(This,lParam) ) 
+
+#define ICoreWebView2AcceleratorKeyPressedEventArgs2_get_PhysicalKeyStatus(This,physicalKeyStatus)	\
+    ( (This)->lpVtbl -> get_PhysicalKeyStatus(This,physicalKeyStatus) ) 
+
+#define ICoreWebView2AcceleratorKeyPressedEventArgs2_get_Handled(This,handled)	\
+    ( (This)->lpVtbl -> get_Handled(This,handled) ) 
+
+#define ICoreWebView2AcceleratorKeyPressedEventArgs2_put_Handled(This,handled)	\
+    ( (This)->lpVtbl -> put_Handled(This,handled) ) 
+
+
+#define ICoreWebView2AcceleratorKeyPressedEventArgs2_get_IsBrowserAcceleratorKeyEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsBrowserAcceleratorKeyEnabled(This,value) ) 
+
+#define ICoreWebView2AcceleratorKeyPressedEventArgs2_put_IsBrowserAcceleratorKeyEnabled(This,value)	\
+    ( (This)->lpVtbl -> put_IsBrowserAcceleratorKeyEnabled(This,value) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2AcceleratorKeyPressedEventArgs2_INTERFACE_DEFINED__ */
 
 
 #ifndef __ICoreWebView2AcceleratorKeyPressedEventHandler_INTERFACE_DEFINED__
@@ -12714,6 +13268,7338 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_13 = {0xF75F09A8,0x66
 #endif 	/* __ICoreWebView2_13_INTERFACE_DEFINED__ */
 
 
+#ifndef __ICoreWebView2_14_INTERFACE_DEFINED__
+#define __ICoreWebView2_14_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2_14 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_14 = {0x6DAA4F10,0x4A90,0x4753,{0x88,0x98,0x77,0xC5,0xDF,0x53,0x41,0x65}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("6DAA4F10-4A90-4753-8898-77C5DF534165")
+    ICoreWebView2_14 : public ICoreWebView2_13
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE add_ServerCertificateErrorDetected( 
+            /* [in] */ ICoreWebView2ServerCertificateErrorDetectedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE remove_ServerCertificateErrorDetected( 
+            /* [in] */ EventRegistrationToken token) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE ClearServerCertificateErrorActions( 
+            /* [in] */ ICoreWebView2ClearServerCertificateErrorActionsCompletedHandler *handler) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2_14Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2_14 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2_14 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Settings)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Settings )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ ICoreWebView2Settings **settings);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Source)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Source )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ LPWSTR *uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Navigate)
+        HRESULT ( STDMETHODCALLTYPE *Navigate )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, NavigateToString)
+        HRESULT ( STDMETHODCALLTYPE *NavigateToString )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR htmlContent);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationStarting )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationStarting )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *add_ContentLoading )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2ContentLoadingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContentLoading )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_SourceChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2SourceChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_SourceChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_HistoryChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2HistoryChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_HistoryChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationCompleted )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationCompleted )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationStarting )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationStarting )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationCompleted )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationCompleted )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *add_ScriptDialogOpening )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2ScriptDialogOpeningEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *remove_ScriptDialogOpening )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_PermissionRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2PermissionRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_PermissionRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *add_ProcessFailed )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2ProcessFailedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *remove_ProcessFailed )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *AddScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *RemoveScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR id);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, ExecuteScript)
+        HRESULT ( STDMETHODCALLTYPE *ExecuteScript )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2ExecuteScriptCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CapturePreview)
+        HRESULT ( STDMETHODCALLTYPE *CapturePreview )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT imageFormat,
+            /* [in] */ IStream *imageStream,
+            /* [in] */ ICoreWebView2CapturePreviewCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Reload)
+        HRESULT ( STDMETHODCALLTYPE *Reload )( 
+            ICoreWebView2_14 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsJson)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsJson )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR webMessageAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsString)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsString )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR webMessageAsString);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebMessageReceived )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2WebMessageReceivedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebMessageReceived )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CallDevToolsProtocolMethod)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethod )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_BrowserProcessId)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BrowserProcessId )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ UINT32 *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoBack)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoBack )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ BOOL *canGoBack);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoForward)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoForward )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ BOOL *canGoForward);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoBack)
+        HRESULT ( STDMETHODCALLTYPE *GoBack )( 
+            ICoreWebView2_14 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoForward)
+        HRESULT ( STDMETHODCALLTYPE *GoForward )( 
+            ICoreWebView2_14 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GetDevToolsProtocolEventReceiver)
+        HRESULT ( STDMETHODCALLTYPE *GetDevToolsProtocolEventReceiver )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR eventName,
+            /* [retval][out] */ ICoreWebView2DevToolsProtocolEventReceiver **receiver);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Stop)
+        HRESULT ( STDMETHODCALLTYPE *Stop )( 
+            ICoreWebView2_14 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_NewWindowRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2NewWindowRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_NewWindowRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_DocumentTitleChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2DocumentTitleChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_DocumentTitleChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_DocumentTitle)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DocumentTitle )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ LPWSTR *title);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddHostObjectToScript)
+        HRESULT ( STDMETHODCALLTYPE *AddHostObjectToScript )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR name,
+            /* [in] */ VARIANT *object);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveHostObjectFromScript)
+        HRESULT ( STDMETHODCALLTYPE *RemoveHostObjectFromScript )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR name);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, OpenDevToolsWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenDevToolsWindow )( 
+            ICoreWebView2_14 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2ContainsFullScreenElementChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_ContainsFullScreenElement)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ContainsFullScreenElement )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ BOOL *containsFullScreenElement);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2WebResourceRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *AddWebResourceRequestedFilter )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *RemoveWebResourceRequestedFilter )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WindowCloseRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2WindowCloseRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WindowCloseRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceResponseReceived )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2WebResourceResponseReceivedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceResponseReceived )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, NavigateWithWebResourceRequest)
+        HRESULT ( STDMETHODCALLTYPE *NavigateWithWebResourceRequest )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2WebResourceRequest *request);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *add_DOMContentLoaded )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2DOMContentLoadedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *remove_DOMContentLoaded )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_CookieManager)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_Environment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Environment )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ ICoreWebView2Environment **environment);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, TrySuspend)
+        HRESULT ( STDMETHODCALLTYPE *TrySuspend )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2TrySuspendCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, Resume)
+        HRESULT ( STDMETHODCALLTYPE *Resume )( 
+            ICoreWebView2_14 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, get_IsSuspended)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsSuspended )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ BOOL *isSuspended);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, SetVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *SetVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR hostName,
+            /* [in] */ LPCWSTR folderPath,
+            /* [in] */ COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND accessKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, ClearVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *ClearVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR hostName);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameCreated )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2FrameCreatedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameCreated )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_DownloadStarting )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2DownloadStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_DownloadStarting )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, add_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ClientCertificateRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2ClientCertificateRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, remove_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ClientCertificateRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_6, OpenTaskManagerWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenTaskManagerWindow )( 
+            ICoreWebView2_14 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_7, PrintToPdf)
+        HRESULT ( STDMETHODCALLTYPE *PrintToPdf )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR resultFilePath,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintToPdfCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsMutedChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2IsMutedChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsMutedChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsMuted)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsMuted )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, put_IsMuted)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsMuted )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2IsDocumentPlayingAudioChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsDocumentPlayingAudio)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDocumentPlayingAudio )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, add_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, remove_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_IsDefaultDownloadDialogOpen)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDefaultDownloadDialogOpen )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, OpenDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *OpenDefaultDownloadDialog )( 
+            ICoreWebView2_14 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, CloseDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *CloseDefaultDownloadDialog )( 
+            ICoreWebView2_14 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogCornerAlignment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogCornerAlignment)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogMargin)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ POINT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogMargin)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ POINT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, add_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_BasicAuthenticationRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2BasicAuthenticationRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, remove_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_BasicAuthenticationRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, CallDevToolsProtocolMethodForSession)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethodForSession )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ LPCWSTR sessionId,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, add_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ContextMenuRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2ContextMenuRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, remove_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContextMenuRequested )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, add_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_StatusBarTextChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2StatusBarTextChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, remove_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_StatusBarTextChanged )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, get_StatusBarText)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StatusBarText )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_13, get_Profile)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Profile )( 
+            ICoreWebView2_14 * This,
+            /* [retval][out] */ ICoreWebView2Profile **value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, add_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *add_ServerCertificateErrorDetected )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2ServerCertificateErrorDetectedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, remove_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *remove_ServerCertificateErrorDetected )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, ClearServerCertificateErrorActions)
+        HRESULT ( STDMETHODCALLTYPE *ClearServerCertificateErrorActions )( 
+            ICoreWebView2_14 * This,
+            /* [in] */ ICoreWebView2ClearServerCertificateErrorActionsCompletedHandler *handler);
+        
+        END_INTERFACE
+    } ICoreWebView2_14Vtbl;
+
+    interface ICoreWebView2_14
+    {
+        CONST_VTBL struct ICoreWebView2_14Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2_14_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2_14_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2_14_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2_14_get_Settings(This,settings)	\
+    ( (This)->lpVtbl -> get_Settings(This,settings) ) 
+
+#define ICoreWebView2_14_get_Source(This,uri)	\
+    ( (This)->lpVtbl -> get_Source(This,uri) ) 
+
+#define ICoreWebView2_14_Navigate(This,uri)	\
+    ( (This)->lpVtbl -> Navigate(This,uri) ) 
+
+#define ICoreWebView2_14_NavigateToString(This,htmlContent)	\
+    ( (This)->lpVtbl -> NavigateToString(This,htmlContent) ) 
+
+#define ICoreWebView2_14_add_NavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_NavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationStarting(This,token) ) 
+
+#define ICoreWebView2_14_add_ContentLoading(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContentLoading(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_ContentLoading(This,token)	\
+    ( (This)->lpVtbl -> remove_ContentLoading(This,token) ) 
+
+#define ICoreWebView2_14_add_SourceChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_SourceChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_SourceChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_SourceChanged(This,token) ) 
+
+#define ICoreWebView2_14_add_HistoryChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_HistoryChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_HistoryChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_HistoryChanged(This,token) ) 
+
+#define ICoreWebView2_14_add_NavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_NavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_14_add_FrameNavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_FrameNavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationStarting(This,token) ) 
+
+#define ICoreWebView2_14_add_FrameNavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_FrameNavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_14_add_ScriptDialogOpening(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ScriptDialogOpening(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_ScriptDialogOpening(This,token)	\
+    ( (This)->lpVtbl -> remove_ScriptDialogOpening(This,token) ) 
+
+#define ICoreWebView2_14_add_PermissionRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_PermissionRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_PermissionRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_PermissionRequested(This,token) ) 
+
+#define ICoreWebView2_14_add_ProcessFailed(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ProcessFailed(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_ProcessFailed(This,token)	\
+    ( (This)->lpVtbl -> remove_ProcessFailed(This,token) ) 
+
+#define ICoreWebView2_14_AddScriptToExecuteOnDocumentCreated(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> AddScriptToExecuteOnDocumentCreated(This,javaScript,handler) ) 
+
+#define ICoreWebView2_14_RemoveScriptToExecuteOnDocumentCreated(This,id)	\
+    ( (This)->lpVtbl -> RemoveScriptToExecuteOnDocumentCreated(This,id) ) 
+
+#define ICoreWebView2_14_ExecuteScript(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> ExecuteScript(This,javaScript,handler) ) 
+
+#define ICoreWebView2_14_CapturePreview(This,imageFormat,imageStream,handler)	\
+    ( (This)->lpVtbl -> CapturePreview(This,imageFormat,imageStream,handler) ) 
+
+#define ICoreWebView2_14_Reload(This)	\
+    ( (This)->lpVtbl -> Reload(This) ) 
+
+#define ICoreWebView2_14_PostWebMessageAsJson(This,webMessageAsJson)	\
+    ( (This)->lpVtbl -> PostWebMessageAsJson(This,webMessageAsJson) ) 
+
+#define ICoreWebView2_14_PostWebMessageAsString(This,webMessageAsString)	\
+    ( (This)->lpVtbl -> PostWebMessageAsString(This,webMessageAsString) ) 
+
+#define ICoreWebView2_14_add_WebMessageReceived(This,handler,token)	\
+    ( (This)->lpVtbl -> add_WebMessageReceived(This,handler,token) ) 
+
+#define ICoreWebView2_14_remove_WebMessageReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebMessageReceived(This,token) ) 
+
+#define ICoreWebView2_14_CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_14_get_BrowserProcessId(This,value)	\
+    ( (This)->lpVtbl -> get_BrowserProcessId(This,value) ) 
+
+#define ICoreWebView2_14_get_CanGoBack(This,canGoBack)	\
+    ( (This)->lpVtbl -> get_CanGoBack(This,canGoBack) ) 
+
+#define ICoreWebView2_14_get_CanGoForward(This,canGoForward)	\
+    ( (This)->lpVtbl -> get_CanGoForward(This,canGoForward) ) 
+
+#define ICoreWebView2_14_GoBack(This)	\
+    ( (This)->lpVtbl -> GoBack(This) ) 
+
+#define ICoreWebView2_14_GoForward(This)	\
+    ( (This)->lpVtbl -> GoForward(This) ) 
+
+#define ICoreWebView2_14_GetDevToolsProtocolEventReceiver(This,eventName,receiver)	\
+    ( (This)->lpVtbl -> GetDevToolsProtocolEventReceiver(This,eventName,receiver) ) 
+
+#define ICoreWebView2_14_Stop(This)	\
+    ( (This)->lpVtbl -> Stop(This) ) 
+
+#define ICoreWebView2_14_add_NewWindowRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NewWindowRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_NewWindowRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_NewWindowRequested(This,token) ) 
+
+#define ICoreWebView2_14_add_DocumentTitleChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DocumentTitleChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_DocumentTitleChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_DocumentTitleChanged(This,token) ) 
+
+#define ICoreWebView2_14_get_DocumentTitle(This,title)	\
+    ( (This)->lpVtbl -> get_DocumentTitle(This,title) ) 
+
+#define ICoreWebView2_14_AddHostObjectToScript(This,name,object)	\
+    ( (This)->lpVtbl -> AddHostObjectToScript(This,name,object) ) 
+
+#define ICoreWebView2_14_RemoveHostObjectFromScript(This,name)	\
+    ( (This)->lpVtbl -> RemoveHostObjectFromScript(This,name) ) 
+
+#define ICoreWebView2_14_OpenDevToolsWindow(This)	\
+    ( (This)->lpVtbl -> OpenDevToolsWindow(This) ) 
+
+#define ICoreWebView2_14_add_ContainsFullScreenElementChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContainsFullScreenElementChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_ContainsFullScreenElementChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_ContainsFullScreenElementChanged(This,token) ) 
+
+#define ICoreWebView2_14_get_ContainsFullScreenElement(This,containsFullScreenElement)	\
+    ( (This)->lpVtbl -> get_ContainsFullScreenElement(This,containsFullScreenElement) ) 
+
+#define ICoreWebView2_14_add_WebResourceRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_WebResourceRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceRequested(This,token) ) 
+
+#define ICoreWebView2_14_AddWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> AddWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_14_RemoveWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> RemoveWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_14_add_WindowCloseRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WindowCloseRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_WindowCloseRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WindowCloseRequested(This,token) ) 
+
+
+#define ICoreWebView2_14_add_WebResourceResponseReceived(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceResponseReceived(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_WebResourceResponseReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceResponseReceived(This,token) ) 
+
+#define ICoreWebView2_14_NavigateWithWebResourceRequest(This,request)	\
+    ( (This)->lpVtbl -> NavigateWithWebResourceRequest(This,request) ) 
+
+#define ICoreWebView2_14_add_DOMContentLoaded(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DOMContentLoaded(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_DOMContentLoaded(This,token)	\
+    ( (This)->lpVtbl -> remove_DOMContentLoaded(This,token) ) 
+
+#define ICoreWebView2_14_get_CookieManager(This,cookieManager)	\
+    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
+
+#define ICoreWebView2_14_get_Environment(This,environment)	\
+    ( (This)->lpVtbl -> get_Environment(This,environment) ) 
+
+
+#define ICoreWebView2_14_TrySuspend(This,handler)	\
+    ( (This)->lpVtbl -> TrySuspend(This,handler) ) 
+
+#define ICoreWebView2_14_Resume(This)	\
+    ( (This)->lpVtbl -> Resume(This) ) 
+
+#define ICoreWebView2_14_get_IsSuspended(This,isSuspended)	\
+    ( (This)->lpVtbl -> get_IsSuspended(This,isSuspended) ) 
+
+#define ICoreWebView2_14_SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind)	\
+    ( (This)->lpVtbl -> SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind) ) 
+
+#define ICoreWebView2_14_ClearVirtualHostNameToFolderMapping(This,hostName)	\
+    ( (This)->lpVtbl -> ClearVirtualHostNameToFolderMapping(This,hostName) ) 
+
+
+#define ICoreWebView2_14_add_FrameCreated(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameCreated(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_FrameCreated(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameCreated(This,token) ) 
+
+#define ICoreWebView2_14_add_DownloadStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DownloadStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_DownloadStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_DownloadStarting(This,token) ) 
+
+
+#define ICoreWebView2_14_add_ClientCertificateRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ClientCertificateRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_ClientCertificateRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ClientCertificateRequested(This,token) ) 
+
+
+#define ICoreWebView2_14_OpenTaskManagerWindow(This)	\
+    ( (This)->lpVtbl -> OpenTaskManagerWindow(This) ) 
+
+
+#define ICoreWebView2_14_PrintToPdf(This,resultFilePath,printSettings,handler)	\
+    ( (This)->lpVtbl -> PrintToPdf(This,resultFilePath,printSettings,handler) ) 
+
+
+#define ICoreWebView2_14_add_IsMutedChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsMutedChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_IsMutedChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsMutedChanged(This,token) ) 
+
+#define ICoreWebView2_14_get_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> get_IsMuted(This,value) ) 
+
+#define ICoreWebView2_14_put_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> put_IsMuted(This,value) ) 
+
+#define ICoreWebView2_14_add_IsDocumentPlayingAudioChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsDocumentPlayingAudioChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_IsDocumentPlayingAudioChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDocumentPlayingAudioChanged(This,token) ) 
+
+#define ICoreWebView2_14_get_IsDocumentPlayingAudio(This,value)	\
+    ( (This)->lpVtbl -> get_IsDocumentPlayingAudio(This,value) ) 
+
+
+#define ICoreWebView2_14_add_IsDefaultDownloadDialogOpenChanged(This,handler,token)	\
+    ( (This)->lpVtbl -> add_IsDefaultDownloadDialogOpenChanged(This,handler,token) ) 
+
+#define ICoreWebView2_14_remove_IsDefaultDownloadDialogOpenChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDefaultDownloadDialogOpenChanged(This,token) ) 
+
+#define ICoreWebView2_14_get_IsDefaultDownloadDialogOpen(This,value)	\
+    ( (This)->lpVtbl -> get_IsDefaultDownloadDialogOpen(This,value) ) 
+
+#define ICoreWebView2_14_OpenDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> OpenDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_14_CloseDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> CloseDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_14_get_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_14_put_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_14_get_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogMargin(This,value) ) 
+
+#define ICoreWebView2_14_put_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogMargin(This,value) ) 
+
+
+#define ICoreWebView2_14_add_BasicAuthenticationRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_BasicAuthenticationRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_BasicAuthenticationRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_BasicAuthenticationRequested(This,token) ) 
+
+
+#define ICoreWebView2_14_CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_14_add_ContextMenuRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContextMenuRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_ContextMenuRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ContextMenuRequested(This,token) ) 
+
+
+#define ICoreWebView2_14_add_StatusBarTextChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_StatusBarTextChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_StatusBarTextChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_StatusBarTextChanged(This,token) ) 
+
+#define ICoreWebView2_14_get_StatusBarText(This,value)	\
+    ( (This)->lpVtbl -> get_StatusBarText(This,value) ) 
+
+
+#define ICoreWebView2_14_get_Profile(This,value)	\
+    ( (This)->lpVtbl -> get_Profile(This,value) ) 
+
+
+#define ICoreWebView2_14_add_ServerCertificateErrorDetected(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ServerCertificateErrorDetected(This,eventHandler,token) ) 
+
+#define ICoreWebView2_14_remove_ServerCertificateErrorDetected(This,token)	\
+    ( (This)->lpVtbl -> remove_ServerCertificateErrorDetected(This,token) ) 
+
+#define ICoreWebView2_14_ClearServerCertificateErrorActions(This,handler)	\
+    ( (This)->lpVtbl -> ClearServerCertificateErrorActions(This,handler) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2_14_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2_15_INTERFACE_DEFINED__
+#define __ICoreWebView2_15_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2_15 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_15 = {0x517B2D1D,0x7DAE,0x4A66,{0xA4,0xF4,0x10,0x35,0x2F,0xFB,0x95,0x18}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("517B2D1D-7DAE-4A66-A4F4-10352FFB9518")
+    ICoreWebView2_15 : public ICoreWebView2_14
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE add_FaviconChanged( 
+            /* [in] */ ICoreWebView2FaviconChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE remove_FaviconChanged( 
+            /* [in] */ EventRegistrationToken token) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FaviconUri( 
+            /* [retval][out] */ LPWSTR *value) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetFavicon( 
+            /* [in] */ COREWEBVIEW2_FAVICON_IMAGE_FORMAT format,
+            /* [in] */ ICoreWebView2GetFaviconCompletedHandler *completedHandler) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2_15Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2_15 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2_15 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Settings)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Settings )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ ICoreWebView2Settings **settings);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Source)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Source )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ LPWSTR *uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Navigate)
+        HRESULT ( STDMETHODCALLTYPE *Navigate )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, NavigateToString)
+        HRESULT ( STDMETHODCALLTYPE *NavigateToString )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR htmlContent);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationStarting )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationStarting )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *add_ContentLoading )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2ContentLoadingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContentLoading )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_SourceChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2SourceChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_SourceChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_HistoryChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2HistoryChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_HistoryChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationCompleted )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationCompleted )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationStarting )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationStarting )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationCompleted )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationCompleted )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *add_ScriptDialogOpening )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2ScriptDialogOpeningEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *remove_ScriptDialogOpening )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_PermissionRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2PermissionRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_PermissionRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *add_ProcessFailed )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2ProcessFailedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *remove_ProcessFailed )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *AddScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *RemoveScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR id);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, ExecuteScript)
+        HRESULT ( STDMETHODCALLTYPE *ExecuteScript )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2ExecuteScriptCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CapturePreview)
+        HRESULT ( STDMETHODCALLTYPE *CapturePreview )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT imageFormat,
+            /* [in] */ IStream *imageStream,
+            /* [in] */ ICoreWebView2CapturePreviewCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Reload)
+        HRESULT ( STDMETHODCALLTYPE *Reload )( 
+            ICoreWebView2_15 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsJson)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsJson )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR webMessageAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsString)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsString )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR webMessageAsString);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebMessageReceived )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2WebMessageReceivedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebMessageReceived )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CallDevToolsProtocolMethod)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethod )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_BrowserProcessId)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BrowserProcessId )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ UINT32 *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoBack)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoBack )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ BOOL *canGoBack);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoForward)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoForward )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ BOOL *canGoForward);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoBack)
+        HRESULT ( STDMETHODCALLTYPE *GoBack )( 
+            ICoreWebView2_15 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoForward)
+        HRESULT ( STDMETHODCALLTYPE *GoForward )( 
+            ICoreWebView2_15 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GetDevToolsProtocolEventReceiver)
+        HRESULT ( STDMETHODCALLTYPE *GetDevToolsProtocolEventReceiver )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR eventName,
+            /* [retval][out] */ ICoreWebView2DevToolsProtocolEventReceiver **receiver);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Stop)
+        HRESULT ( STDMETHODCALLTYPE *Stop )( 
+            ICoreWebView2_15 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_NewWindowRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2NewWindowRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_NewWindowRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_DocumentTitleChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2DocumentTitleChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_DocumentTitleChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_DocumentTitle)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DocumentTitle )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ LPWSTR *title);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddHostObjectToScript)
+        HRESULT ( STDMETHODCALLTYPE *AddHostObjectToScript )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR name,
+            /* [in] */ VARIANT *object);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveHostObjectFromScript)
+        HRESULT ( STDMETHODCALLTYPE *RemoveHostObjectFromScript )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR name);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, OpenDevToolsWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenDevToolsWindow )( 
+            ICoreWebView2_15 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2ContainsFullScreenElementChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_ContainsFullScreenElement)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ContainsFullScreenElement )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ BOOL *containsFullScreenElement);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2WebResourceRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *AddWebResourceRequestedFilter )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *RemoveWebResourceRequestedFilter )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WindowCloseRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2WindowCloseRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WindowCloseRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceResponseReceived )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2WebResourceResponseReceivedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceResponseReceived )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, NavigateWithWebResourceRequest)
+        HRESULT ( STDMETHODCALLTYPE *NavigateWithWebResourceRequest )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2WebResourceRequest *request);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *add_DOMContentLoaded )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2DOMContentLoadedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *remove_DOMContentLoaded )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_CookieManager)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_Environment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Environment )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ ICoreWebView2Environment **environment);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, TrySuspend)
+        HRESULT ( STDMETHODCALLTYPE *TrySuspend )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2TrySuspendCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, Resume)
+        HRESULT ( STDMETHODCALLTYPE *Resume )( 
+            ICoreWebView2_15 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, get_IsSuspended)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsSuspended )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ BOOL *isSuspended);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, SetVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *SetVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR hostName,
+            /* [in] */ LPCWSTR folderPath,
+            /* [in] */ COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND accessKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, ClearVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *ClearVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR hostName);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameCreated )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2FrameCreatedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameCreated )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_DownloadStarting )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2DownloadStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_DownloadStarting )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, add_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ClientCertificateRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2ClientCertificateRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, remove_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ClientCertificateRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_6, OpenTaskManagerWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenTaskManagerWindow )( 
+            ICoreWebView2_15 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_7, PrintToPdf)
+        HRESULT ( STDMETHODCALLTYPE *PrintToPdf )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR resultFilePath,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintToPdfCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsMutedChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2IsMutedChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsMutedChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsMuted)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsMuted )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, put_IsMuted)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsMuted )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2IsDocumentPlayingAudioChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsDocumentPlayingAudio)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDocumentPlayingAudio )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, add_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, remove_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_IsDefaultDownloadDialogOpen)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDefaultDownloadDialogOpen )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, OpenDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *OpenDefaultDownloadDialog )( 
+            ICoreWebView2_15 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, CloseDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *CloseDefaultDownloadDialog )( 
+            ICoreWebView2_15 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogCornerAlignment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogCornerAlignment)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogMargin)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ POINT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogMargin)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ POINT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, add_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_BasicAuthenticationRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2BasicAuthenticationRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, remove_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_BasicAuthenticationRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, CallDevToolsProtocolMethodForSession)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethodForSession )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ LPCWSTR sessionId,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, add_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ContextMenuRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2ContextMenuRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, remove_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContextMenuRequested )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, add_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_StatusBarTextChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2StatusBarTextChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, remove_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_StatusBarTextChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, get_StatusBarText)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StatusBarText )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_13, get_Profile)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Profile )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ ICoreWebView2Profile **value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, add_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *add_ServerCertificateErrorDetected )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2ServerCertificateErrorDetectedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, remove_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *remove_ServerCertificateErrorDetected )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, ClearServerCertificateErrorActions)
+        HRESULT ( STDMETHODCALLTYPE *ClearServerCertificateErrorActions )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2ClearServerCertificateErrorActionsCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, add_FaviconChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_FaviconChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ ICoreWebView2FaviconChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, remove_FaviconChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_FaviconChanged )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, get_FaviconUri)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FaviconUri )( 
+            ICoreWebView2_15 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, GetFavicon)
+        HRESULT ( STDMETHODCALLTYPE *GetFavicon )( 
+            ICoreWebView2_15 * This,
+            /* [in] */ COREWEBVIEW2_FAVICON_IMAGE_FORMAT format,
+            /* [in] */ ICoreWebView2GetFaviconCompletedHandler *completedHandler);
+        
+        END_INTERFACE
+    } ICoreWebView2_15Vtbl;
+
+    interface ICoreWebView2_15
+    {
+        CONST_VTBL struct ICoreWebView2_15Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2_15_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2_15_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2_15_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2_15_get_Settings(This,settings)	\
+    ( (This)->lpVtbl -> get_Settings(This,settings) ) 
+
+#define ICoreWebView2_15_get_Source(This,uri)	\
+    ( (This)->lpVtbl -> get_Source(This,uri) ) 
+
+#define ICoreWebView2_15_Navigate(This,uri)	\
+    ( (This)->lpVtbl -> Navigate(This,uri) ) 
+
+#define ICoreWebView2_15_NavigateToString(This,htmlContent)	\
+    ( (This)->lpVtbl -> NavigateToString(This,htmlContent) ) 
+
+#define ICoreWebView2_15_add_NavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_NavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationStarting(This,token) ) 
+
+#define ICoreWebView2_15_add_ContentLoading(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContentLoading(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_ContentLoading(This,token)	\
+    ( (This)->lpVtbl -> remove_ContentLoading(This,token) ) 
+
+#define ICoreWebView2_15_add_SourceChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_SourceChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_SourceChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_SourceChanged(This,token) ) 
+
+#define ICoreWebView2_15_add_HistoryChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_HistoryChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_HistoryChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_HistoryChanged(This,token) ) 
+
+#define ICoreWebView2_15_add_NavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_NavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_15_add_FrameNavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_FrameNavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationStarting(This,token) ) 
+
+#define ICoreWebView2_15_add_FrameNavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_FrameNavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_15_add_ScriptDialogOpening(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ScriptDialogOpening(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_ScriptDialogOpening(This,token)	\
+    ( (This)->lpVtbl -> remove_ScriptDialogOpening(This,token) ) 
+
+#define ICoreWebView2_15_add_PermissionRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_PermissionRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_PermissionRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_PermissionRequested(This,token) ) 
+
+#define ICoreWebView2_15_add_ProcessFailed(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ProcessFailed(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_ProcessFailed(This,token)	\
+    ( (This)->lpVtbl -> remove_ProcessFailed(This,token) ) 
+
+#define ICoreWebView2_15_AddScriptToExecuteOnDocumentCreated(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> AddScriptToExecuteOnDocumentCreated(This,javaScript,handler) ) 
+
+#define ICoreWebView2_15_RemoveScriptToExecuteOnDocumentCreated(This,id)	\
+    ( (This)->lpVtbl -> RemoveScriptToExecuteOnDocumentCreated(This,id) ) 
+
+#define ICoreWebView2_15_ExecuteScript(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> ExecuteScript(This,javaScript,handler) ) 
+
+#define ICoreWebView2_15_CapturePreview(This,imageFormat,imageStream,handler)	\
+    ( (This)->lpVtbl -> CapturePreview(This,imageFormat,imageStream,handler) ) 
+
+#define ICoreWebView2_15_Reload(This)	\
+    ( (This)->lpVtbl -> Reload(This) ) 
+
+#define ICoreWebView2_15_PostWebMessageAsJson(This,webMessageAsJson)	\
+    ( (This)->lpVtbl -> PostWebMessageAsJson(This,webMessageAsJson) ) 
+
+#define ICoreWebView2_15_PostWebMessageAsString(This,webMessageAsString)	\
+    ( (This)->lpVtbl -> PostWebMessageAsString(This,webMessageAsString) ) 
+
+#define ICoreWebView2_15_add_WebMessageReceived(This,handler,token)	\
+    ( (This)->lpVtbl -> add_WebMessageReceived(This,handler,token) ) 
+
+#define ICoreWebView2_15_remove_WebMessageReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebMessageReceived(This,token) ) 
+
+#define ICoreWebView2_15_CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_15_get_BrowserProcessId(This,value)	\
+    ( (This)->lpVtbl -> get_BrowserProcessId(This,value) ) 
+
+#define ICoreWebView2_15_get_CanGoBack(This,canGoBack)	\
+    ( (This)->lpVtbl -> get_CanGoBack(This,canGoBack) ) 
+
+#define ICoreWebView2_15_get_CanGoForward(This,canGoForward)	\
+    ( (This)->lpVtbl -> get_CanGoForward(This,canGoForward) ) 
+
+#define ICoreWebView2_15_GoBack(This)	\
+    ( (This)->lpVtbl -> GoBack(This) ) 
+
+#define ICoreWebView2_15_GoForward(This)	\
+    ( (This)->lpVtbl -> GoForward(This) ) 
+
+#define ICoreWebView2_15_GetDevToolsProtocolEventReceiver(This,eventName,receiver)	\
+    ( (This)->lpVtbl -> GetDevToolsProtocolEventReceiver(This,eventName,receiver) ) 
+
+#define ICoreWebView2_15_Stop(This)	\
+    ( (This)->lpVtbl -> Stop(This) ) 
+
+#define ICoreWebView2_15_add_NewWindowRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NewWindowRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_NewWindowRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_NewWindowRequested(This,token) ) 
+
+#define ICoreWebView2_15_add_DocumentTitleChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DocumentTitleChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_DocumentTitleChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_DocumentTitleChanged(This,token) ) 
+
+#define ICoreWebView2_15_get_DocumentTitle(This,title)	\
+    ( (This)->lpVtbl -> get_DocumentTitle(This,title) ) 
+
+#define ICoreWebView2_15_AddHostObjectToScript(This,name,object)	\
+    ( (This)->lpVtbl -> AddHostObjectToScript(This,name,object) ) 
+
+#define ICoreWebView2_15_RemoveHostObjectFromScript(This,name)	\
+    ( (This)->lpVtbl -> RemoveHostObjectFromScript(This,name) ) 
+
+#define ICoreWebView2_15_OpenDevToolsWindow(This)	\
+    ( (This)->lpVtbl -> OpenDevToolsWindow(This) ) 
+
+#define ICoreWebView2_15_add_ContainsFullScreenElementChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContainsFullScreenElementChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_ContainsFullScreenElementChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_ContainsFullScreenElementChanged(This,token) ) 
+
+#define ICoreWebView2_15_get_ContainsFullScreenElement(This,containsFullScreenElement)	\
+    ( (This)->lpVtbl -> get_ContainsFullScreenElement(This,containsFullScreenElement) ) 
+
+#define ICoreWebView2_15_add_WebResourceRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_WebResourceRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceRequested(This,token) ) 
+
+#define ICoreWebView2_15_AddWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> AddWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_15_RemoveWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> RemoveWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_15_add_WindowCloseRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WindowCloseRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_WindowCloseRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WindowCloseRequested(This,token) ) 
+
+
+#define ICoreWebView2_15_add_WebResourceResponseReceived(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceResponseReceived(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_WebResourceResponseReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceResponseReceived(This,token) ) 
+
+#define ICoreWebView2_15_NavigateWithWebResourceRequest(This,request)	\
+    ( (This)->lpVtbl -> NavigateWithWebResourceRequest(This,request) ) 
+
+#define ICoreWebView2_15_add_DOMContentLoaded(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DOMContentLoaded(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_DOMContentLoaded(This,token)	\
+    ( (This)->lpVtbl -> remove_DOMContentLoaded(This,token) ) 
+
+#define ICoreWebView2_15_get_CookieManager(This,cookieManager)	\
+    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
+
+#define ICoreWebView2_15_get_Environment(This,environment)	\
+    ( (This)->lpVtbl -> get_Environment(This,environment) ) 
+
+
+#define ICoreWebView2_15_TrySuspend(This,handler)	\
+    ( (This)->lpVtbl -> TrySuspend(This,handler) ) 
+
+#define ICoreWebView2_15_Resume(This)	\
+    ( (This)->lpVtbl -> Resume(This) ) 
+
+#define ICoreWebView2_15_get_IsSuspended(This,isSuspended)	\
+    ( (This)->lpVtbl -> get_IsSuspended(This,isSuspended) ) 
+
+#define ICoreWebView2_15_SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind)	\
+    ( (This)->lpVtbl -> SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind) ) 
+
+#define ICoreWebView2_15_ClearVirtualHostNameToFolderMapping(This,hostName)	\
+    ( (This)->lpVtbl -> ClearVirtualHostNameToFolderMapping(This,hostName) ) 
+
+
+#define ICoreWebView2_15_add_FrameCreated(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameCreated(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_FrameCreated(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameCreated(This,token) ) 
+
+#define ICoreWebView2_15_add_DownloadStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DownloadStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_DownloadStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_DownloadStarting(This,token) ) 
+
+
+#define ICoreWebView2_15_add_ClientCertificateRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ClientCertificateRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_ClientCertificateRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ClientCertificateRequested(This,token) ) 
+
+
+#define ICoreWebView2_15_OpenTaskManagerWindow(This)	\
+    ( (This)->lpVtbl -> OpenTaskManagerWindow(This) ) 
+
+
+#define ICoreWebView2_15_PrintToPdf(This,resultFilePath,printSettings,handler)	\
+    ( (This)->lpVtbl -> PrintToPdf(This,resultFilePath,printSettings,handler) ) 
+
+
+#define ICoreWebView2_15_add_IsMutedChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsMutedChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_IsMutedChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsMutedChanged(This,token) ) 
+
+#define ICoreWebView2_15_get_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> get_IsMuted(This,value) ) 
+
+#define ICoreWebView2_15_put_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> put_IsMuted(This,value) ) 
+
+#define ICoreWebView2_15_add_IsDocumentPlayingAudioChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsDocumentPlayingAudioChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_IsDocumentPlayingAudioChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDocumentPlayingAudioChanged(This,token) ) 
+
+#define ICoreWebView2_15_get_IsDocumentPlayingAudio(This,value)	\
+    ( (This)->lpVtbl -> get_IsDocumentPlayingAudio(This,value) ) 
+
+
+#define ICoreWebView2_15_add_IsDefaultDownloadDialogOpenChanged(This,handler,token)	\
+    ( (This)->lpVtbl -> add_IsDefaultDownloadDialogOpenChanged(This,handler,token) ) 
+
+#define ICoreWebView2_15_remove_IsDefaultDownloadDialogOpenChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDefaultDownloadDialogOpenChanged(This,token) ) 
+
+#define ICoreWebView2_15_get_IsDefaultDownloadDialogOpen(This,value)	\
+    ( (This)->lpVtbl -> get_IsDefaultDownloadDialogOpen(This,value) ) 
+
+#define ICoreWebView2_15_OpenDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> OpenDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_15_CloseDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> CloseDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_15_get_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_15_put_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_15_get_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogMargin(This,value) ) 
+
+#define ICoreWebView2_15_put_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogMargin(This,value) ) 
+
+
+#define ICoreWebView2_15_add_BasicAuthenticationRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_BasicAuthenticationRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_BasicAuthenticationRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_BasicAuthenticationRequested(This,token) ) 
+
+
+#define ICoreWebView2_15_CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_15_add_ContextMenuRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContextMenuRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_ContextMenuRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ContextMenuRequested(This,token) ) 
+
+
+#define ICoreWebView2_15_add_StatusBarTextChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_StatusBarTextChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_StatusBarTextChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_StatusBarTextChanged(This,token) ) 
+
+#define ICoreWebView2_15_get_StatusBarText(This,value)	\
+    ( (This)->lpVtbl -> get_StatusBarText(This,value) ) 
+
+
+#define ICoreWebView2_15_get_Profile(This,value)	\
+    ( (This)->lpVtbl -> get_Profile(This,value) ) 
+
+
+#define ICoreWebView2_15_add_ServerCertificateErrorDetected(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ServerCertificateErrorDetected(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_ServerCertificateErrorDetected(This,token)	\
+    ( (This)->lpVtbl -> remove_ServerCertificateErrorDetected(This,token) ) 
+
+#define ICoreWebView2_15_ClearServerCertificateErrorActions(This,handler)	\
+    ( (This)->lpVtbl -> ClearServerCertificateErrorActions(This,handler) ) 
+
+
+#define ICoreWebView2_15_add_FaviconChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FaviconChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_15_remove_FaviconChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_FaviconChanged(This,token) ) 
+
+#define ICoreWebView2_15_get_FaviconUri(This,value)	\
+    ( (This)->lpVtbl -> get_FaviconUri(This,value) ) 
+
+#define ICoreWebView2_15_GetFavicon(This,format,completedHandler)	\
+    ( (This)->lpVtbl -> GetFavicon(This,format,completedHandler) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2_15_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2_16_INTERFACE_DEFINED__
+#define __ICoreWebView2_16_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2_16 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_16 = {0x0EB34DC9,0x9F91,0x41E1,{0x86,0x39,0x95,0xCD,0x59,0x43,0x90,0x6B}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("0EB34DC9-9F91-41E1-8639-95CD5943906B")
+    ICoreWebView2_16 : public ICoreWebView2_15
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE Print( 
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintCompletedHandler *handler) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE ShowPrintUI( 
+            /* [in] */ COREWEBVIEW2_PRINT_DIALOG_KIND printDialogKind) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE PrintToPdfStream( 
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintToPdfStreamCompletedHandler *handler) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2_16Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2_16 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2_16 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Settings)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Settings )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ ICoreWebView2Settings **settings);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Source)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Source )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ LPWSTR *uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Navigate)
+        HRESULT ( STDMETHODCALLTYPE *Navigate )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, NavigateToString)
+        HRESULT ( STDMETHODCALLTYPE *NavigateToString )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR htmlContent);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationStarting )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationStarting )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *add_ContentLoading )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2ContentLoadingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContentLoading )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_SourceChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2SourceChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_SourceChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_HistoryChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2HistoryChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_HistoryChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationCompleted )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationCompleted )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationStarting )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationStarting )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationCompleted )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationCompleted )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *add_ScriptDialogOpening )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2ScriptDialogOpeningEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *remove_ScriptDialogOpening )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_PermissionRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2PermissionRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_PermissionRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *add_ProcessFailed )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2ProcessFailedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *remove_ProcessFailed )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *AddScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *RemoveScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR id);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, ExecuteScript)
+        HRESULT ( STDMETHODCALLTYPE *ExecuteScript )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2ExecuteScriptCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CapturePreview)
+        HRESULT ( STDMETHODCALLTYPE *CapturePreview )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT imageFormat,
+            /* [in] */ IStream *imageStream,
+            /* [in] */ ICoreWebView2CapturePreviewCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Reload)
+        HRESULT ( STDMETHODCALLTYPE *Reload )( 
+            ICoreWebView2_16 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsJson)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsJson )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR webMessageAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsString)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsString )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR webMessageAsString);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebMessageReceived )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2WebMessageReceivedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebMessageReceived )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CallDevToolsProtocolMethod)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethod )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_BrowserProcessId)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BrowserProcessId )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ UINT32 *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoBack)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoBack )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ BOOL *canGoBack);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoForward)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoForward )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ BOOL *canGoForward);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoBack)
+        HRESULT ( STDMETHODCALLTYPE *GoBack )( 
+            ICoreWebView2_16 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoForward)
+        HRESULT ( STDMETHODCALLTYPE *GoForward )( 
+            ICoreWebView2_16 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GetDevToolsProtocolEventReceiver)
+        HRESULT ( STDMETHODCALLTYPE *GetDevToolsProtocolEventReceiver )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR eventName,
+            /* [retval][out] */ ICoreWebView2DevToolsProtocolEventReceiver **receiver);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Stop)
+        HRESULT ( STDMETHODCALLTYPE *Stop )( 
+            ICoreWebView2_16 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_NewWindowRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2NewWindowRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_NewWindowRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_DocumentTitleChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2DocumentTitleChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_DocumentTitleChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_DocumentTitle)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DocumentTitle )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ LPWSTR *title);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddHostObjectToScript)
+        HRESULT ( STDMETHODCALLTYPE *AddHostObjectToScript )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR name,
+            /* [in] */ VARIANT *object);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveHostObjectFromScript)
+        HRESULT ( STDMETHODCALLTYPE *RemoveHostObjectFromScript )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR name);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, OpenDevToolsWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenDevToolsWindow )( 
+            ICoreWebView2_16 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2ContainsFullScreenElementChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_ContainsFullScreenElement)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ContainsFullScreenElement )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ BOOL *containsFullScreenElement);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2WebResourceRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *AddWebResourceRequestedFilter )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *RemoveWebResourceRequestedFilter )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WindowCloseRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2WindowCloseRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WindowCloseRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceResponseReceived )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2WebResourceResponseReceivedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceResponseReceived )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, NavigateWithWebResourceRequest)
+        HRESULT ( STDMETHODCALLTYPE *NavigateWithWebResourceRequest )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2WebResourceRequest *request);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *add_DOMContentLoaded )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2DOMContentLoadedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *remove_DOMContentLoaded )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_CookieManager)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_Environment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Environment )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ ICoreWebView2Environment **environment);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, TrySuspend)
+        HRESULT ( STDMETHODCALLTYPE *TrySuspend )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2TrySuspendCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, Resume)
+        HRESULT ( STDMETHODCALLTYPE *Resume )( 
+            ICoreWebView2_16 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, get_IsSuspended)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsSuspended )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ BOOL *isSuspended);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, SetVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *SetVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR hostName,
+            /* [in] */ LPCWSTR folderPath,
+            /* [in] */ COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND accessKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, ClearVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *ClearVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR hostName);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameCreated )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2FrameCreatedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameCreated )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_DownloadStarting )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2DownloadStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_DownloadStarting )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, add_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ClientCertificateRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2ClientCertificateRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, remove_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ClientCertificateRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_6, OpenTaskManagerWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenTaskManagerWindow )( 
+            ICoreWebView2_16 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_7, PrintToPdf)
+        HRESULT ( STDMETHODCALLTYPE *PrintToPdf )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR resultFilePath,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintToPdfCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsMutedChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2IsMutedChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsMutedChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsMuted)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsMuted )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, put_IsMuted)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsMuted )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2IsDocumentPlayingAudioChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsDocumentPlayingAudio)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDocumentPlayingAudio )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, add_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, remove_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_IsDefaultDownloadDialogOpen)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDefaultDownloadDialogOpen )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, OpenDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *OpenDefaultDownloadDialog )( 
+            ICoreWebView2_16 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, CloseDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *CloseDefaultDownloadDialog )( 
+            ICoreWebView2_16 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogCornerAlignment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogCornerAlignment)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogMargin)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ POINT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogMargin)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ POINT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, add_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_BasicAuthenticationRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2BasicAuthenticationRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, remove_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_BasicAuthenticationRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, CallDevToolsProtocolMethodForSession)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethodForSession )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ LPCWSTR sessionId,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, add_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ContextMenuRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2ContextMenuRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, remove_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContextMenuRequested )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, add_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_StatusBarTextChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2StatusBarTextChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, remove_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_StatusBarTextChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, get_StatusBarText)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StatusBarText )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_13, get_Profile)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Profile )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ ICoreWebView2Profile **value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, add_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *add_ServerCertificateErrorDetected )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2ServerCertificateErrorDetectedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, remove_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *remove_ServerCertificateErrorDetected )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, ClearServerCertificateErrorActions)
+        HRESULT ( STDMETHODCALLTYPE *ClearServerCertificateErrorActions )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2ClearServerCertificateErrorActionsCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, add_FaviconChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_FaviconChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2FaviconChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, remove_FaviconChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_FaviconChanged )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, get_FaviconUri)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FaviconUri )( 
+            ICoreWebView2_16 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, GetFavicon)
+        HRESULT ( STDMETHODCALLTYPE *GetFavicon )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ COREWEBVIEW2_FAVICON_IMAGE_FORMAT format,
+            /* [in] */ ICoreWebView2GetFaviconCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, Print)
+        HRESULT ( STDMETHODCALLTYPE *Print )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, ShowPrintUI)
+        HRESULT ( STDMETHODCALLTYPE *ShowPrintUI )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ COREWEBVIEW2_PRINT_DIALOG_KIND printDialogKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, PrintToPdfStream)
+        HRESULT ( STDMETHODCALLTYPE *PrintToPdfStream )( 
+            ICoreWebView2_16 * This,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintToPdfStreamCompletedHandler *handler);
+        
+        END_INTERFACE
+    } ICoreWebView2_16Vtbl;
+
+    interface ICoreWebView2_16
+    {
+        CONST_VTBL struct ICoreWebView2_16Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2_16_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2_16_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2_16_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2_16_get_Settings(This,settings)	\
+    ( (This)->lpVtbl -> get_Settings(This,settings) ) 
+
+#define ICoreWebView2_16_get_Source(This,uri)	\
+    ( (This)->lpVtbl -> get_Source(This,uri) ) 
+
+#define ICoreWebView2_16_Navigate(This,uri)	\
+    ( (This)->lpVtbl -> Navigate(This,uri) ) 
+
+#define ICoreWebView2_16_NavigateToString(This,htmlContent)	\
+    ( (This)->lpVtbl -> NavigateToString(This,htmlContent) ) 
+
+#define ICoreWebView2_16_add_NavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_NavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationStarting(This,token) ) 
+
+#define ICoreWebView2_16_add_ContentLoading(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContentLoading(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_ContentLoading(This,token)	\
+    ( (This)->lpVtbl -> remove_ContentLoading(This,token) ) 
+
+#define ICoreWebView2_16_add_SourceChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_SourceChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_SourceChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_SourceChanged(This,token) ) 
+
+#define ICoreWebView2_16_add_HistoryChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_HistoryChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_HistoryChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_HistoryChanged(This,token) ) 
+
+#define ICoreWebView2_16_add_NavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_NavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_16_add_FrameNavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_FrameNavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationStarting(This,token) ) 
+
+#define ICoreWebView2_16_add_FrameNavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_FrameNavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_16_add_ScriptDialogOpening(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ScriptDialogOpening(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_ScriptDialogOpening(This,token)	\
+    ( (This)->lpVtbl -> remove_ScriptDialogOpening(This,token) ) 
+
+#define ICoreWebView2_16_add_PermissionRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_PermissionRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_PermissionRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_PermissionRequested(This,token) ) 
+
+#define ICoreWebView2_16_add_ProcessFailed(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ProcessFailed(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_ProcessFailed(This,token)	\
+    ( (This)->lpVtbl -> remove_ProcessFailed(This,token) ) 
+
+#define ICoreWebView2_16_AddScriptToExecuteOnDocumentCreated(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> AddScriptToExecuteOnDocumentCreated(This,javaScript,handler) ) 
+
+#define ICoreWebView2_16_RemoveScriptToExecuteOnDocumentCreated(This,id)	\
+    ( (This)->lpVtbl -> RemoveScriptToExecuteOnDocumentCreated(This,id) ) 
+
+#define ICoreWebView2_16_ExecuteScript(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> ExecuteScript(This,javaScript,handler) ) 
+
+#define ICoreWebView2_16_CapturePreview(This,imageFormat,imageStream,handler)	\
+    ( (This)->lpVtbl -> CapturePreview(This,imageFormat,imageStream,handler) ) 
+
+#define ICoreWebView2_16_Reload(This)	\
+    ( (This)->lpVtbl -> Reload(This) ) 
+
+#define ICoreWebView2_16_PostWebMessageAsJson(This,webMessageAsJson)	\
+    ( (This)->lpVtbl -> PostWebMessageAsJson(This,webMessageAsJson) ) 
+
+#define ICoreWebView2_16_PostWebMessageAsString(This,webMessageAsString)	\
+    ( (This)->lpVtbl -> PostWebMessageAsString(This,webMessageAsString) ) 
+
+#define ICoreWebView2_16_add_WebMessageReceived(This,handler,token)	\
+    ( (This)->lpVtbl -> add_WebMessageReceived(This,handler,token) ) 
+
+#define ICoreWebView2_16_remove_WebMessageReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebMessageReceived(This,token) ) 
+
+#define ICoreWebView2_16_CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_16_get_BrowserProcessId(This,value)	\
+    ( (This)->lpVtbl -> get_BrowserProcessId(This,value) ) 
+
+#define ICoreWebView2_16_get_CanGoBack(This,canGoBack)	\
+    ( (This)->lpVtbl -> get_CanGoBack(This,canGoBack) ) 
+
+#define ICoreWebView2_16_get_CanGoForward(This,canGoForward)	\
+    ( (This)->lpVtbl -> get_CanGoForward(This,canGoForward) ) 
+
+#define ICoreWebView2_16_GoBack(This)	\
+    ( (This)->lpVtbl -> GoBack(This) ) 
+
+#define ICoreWebView2_16_GoForward(This)	\
+    ( (This)->lpVtbl -> GoForward(This) ) 
+
+#define ICoreWebView2_16_GetDevToolsProtocolEventReceiver(This,eventName,receiver)	\
+    ( (This)->lpVtbl -> GetDevToolsProtocolEventReceiver(This,eventName,receiver) ) 
+
+#define ICoreWebView2_16_Stop(This)	\
+    ( (This)->lpVtbl -> Stop(This) ) 
+
+#define ICoreWebView2_16_add_NewWindowRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NewWindowRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_NewWindowRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_NewWindowRequested(This,token) ) 
+
+#define ICoreWebView2_16_add_DocumentTitleChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DocumentTitleChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_DocumentTitleChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_DocumentTitleChanged(This,token) ) 
+
+#define ICoreWebView2_16_get_DocumentTitle(This,title)	\
+    ( (This)->lpVtbl -> get_DocumentTitle(This,title) ) 
+
+#define ICoreWebView2_16_AddHostObjectToScript(This,name,object)	\
+    ( (This)->lpVtbl -> AddHostObjectToScript(This,name,object) ) 
+
+#define ICoreWebView2_16_RemoveHostObjectFromScript(This,name)	\
+    ( (This)->lpVtbl -> RemoveHostObjectFromScript(This,name) ) 
+
+#define ICoreWebView2_16_OpenDevToolsWindow(This)	\
+    ( (This)->lpVtbl -> OpenDevToolsWindow(This) ) 
+
+#define ICoreWebView2_16_add_ContainsFullScreenElementChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContainsFullScreenElementChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_ContainsFullScreenElementChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_ContainsFullScreenElementChanged(This,token) ) 
+
+#define ICoreWebView2_16_get_ContainsFullScreenElement(This,containsFullScreenElement)	\
+    ( (This)->lpVtbl -> get_ContainsFullScreenElement(This,containsFullScreenElement) ) 
+
+#define ICoreWebView2_16_add_WebResourceRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_WebResourceRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceRequested(This,token) ) 
+
+#define ICoreWebView2_16_AddWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> AddWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_16_RemoveWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> RemoveWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_16_add_WindowCloseRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WindowCloseRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_WindowCloseRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WindowCloseRequested(This,token) ) 
+
+
+#define ICoreWebView2_16_add_WebResourceResponseReceived(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceResponseReceived(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_WebResourceResponseReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceResponseReceived(This,token) ) 
+
+#define ICoreWebView2_16_NavigateWithWebResourceRequest(This,request)	\
+    ( (This)->lpVtbl -> NavigateWithWebResourceRequest(This,request) ) 
+
+#define ICoreWebView2_16_add_DOMContentLoaded(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DOMContentLoaded(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_DOMContentLoaded(This,token)	\
+    ( (This)->lpVtbl -> remove_DOMContentLoaded(This,token) ) 
+
+#define ICoreWebView2_16_get_CookieManager(This,cookieManager)	\
+    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
+
+#define ICoreWebView2_16_get_Environment(This,environment)	\
+    ( (This)->lpVtbl -> get_Environment(This,environment) ) 
+
+
+#define ICoreWebView2_16_TrySuspend(This,handler)	\
+    ( (This)->lpVtbl -> TrySuspend(This,handler) ) 
+
+#define ICoreWebView2_16_Resume(This)	\
+    ( (This)->lpVtbl -> Resume(This) ) 
+
+#define ICoreWebView2_16_get_IsSuspended(This,isSuspended)	\
+    ( (This)->lpVtbl -> get_IsSuspended(This,isSuspended) ) 
+
+#define ICoreWebView2_16_SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind)	\
+    ( (This)->lpVtbl -> SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind) ) 
+
+#define ICoreWebView2_16_ClearVirtualHostNameToFolderMapping(This,hostName)	\
+    ( (This)->lpVtbl -> ClearVirtualHostNameToFolderMapping(This,hostName) ) 
+
+
+#define ICoreWebView2_16_add_FrameCreated(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameCreated(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_FrameCreated(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameCreated(This,token) ) 
+
+#define ICoreWebView2_16_add_DownloadStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DownloadStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_DownloadStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_DownloadStarting(This,token) ) 
+
+
+#define ICoreWebView2_16_add_ClientCertificateRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ClientCertificateRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_ClientCertificateRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ClientCertificateRequested(This,token) ) 
+
+
+#define ICoreWebView2_16_OpenTaskManagerWindow(This)	\
+    ( (This)->lpVtbl -> OpenTaskManagerWindow(This) ) 
+
+
+#define ICoreWebView2_16_PrintToPdf(This,resultFilePath,printSettings,handler)	\
+    ( (This)->lpVtbl -> PrintToPdf(This,resultFilePath,printSettings,handler) ) 
+
+
+#define ICoreWebView2_16_add_IsMutedChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsMutedChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_IsMutedChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsMutedChanged(This,token) ) 
+
+#define ICoreWebView2_16_get_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> get_IsMuted(This,value) ) 
+
+#define ICoreWebView2_16_put_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> put_IsMuted(This,value) ) 
+
+#define ICoreWebView2_16_add_IsDocumentPlayingAudioChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsDocumentPlayingAudioChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_IsDocumentPlayingAudioChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDocumentPlayingAudioChanged(This,token) ) 
+
+#define ICoreWebView2_16_get_IsDocumentPlayingAudio(This,value)	\
+    ( (This)->lpVtbl -> get_IsDocumentPlayingAudio(This,value) ) 
+
+
+#define ICoreWebView2_16_add_IsDefaultDownloadDialogOpenChanged(This,handler,token)	\
+    ( (This)->lpVtbl -> add_IsDefaultDownloadDialogOpenChanged(This,handler,token) ) 
+
+#define ICoreWebView2_16_remove_IsDefaultDownloadDialogOpenChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDefaultDownloadDialogOpenChanged(This,token) ) 
+
+#define ICoreWebView2_16_get_IsDefaultDownloadDialogOpen(This,value)	\
+    ( (This)->lpVtbl -> get_IsDefaultDownloadDialogOpen(This,value) ) 
+
+#define ICoreWebView2_16_OpenDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> OpenDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_16_CloseDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> CloseDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_16_get_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_16_put_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_16_get_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogMargin(This,value) ) 
+
+#define ICoreWebView2_16_put_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogMargin(This,value) ) 
+
+
+#define ICoreWebView2_16_add_BasicAuthenticationRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_BasicAuthenticationRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_BasicAuthenticationRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_BasicAuthenticationRequested(This,token) ) 
+
+
+#define ICoreWebView2_16_CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_16_add_ContextMenuRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContextMenuRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_ContextMenuRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ContextMenuRequested(This,token) ) 
+
+
+#define ICoreWebView2_16_add_StatusBarTextChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_StatusBarTextChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_StatusBarTextChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_StatusBarTextChanged(This,token) ) 
+
+#define ICoreWebView2_16_get_StatusBarText(This,value)	\
+    ( (This)->lpVtbl -> get_StatusBarText(This,value) ) 
+
+
+#define ICoreWebView2_16_get_Profile(This,value)	\
+    ( (This)->lpVtbl -> get_Profile(This,value) ) 
+
+
+#define ICoreWebView2_16_add_ServerCertificateErrorDetected(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ServerCertificateErrorDetected(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_ServerCertificateErrorDetected(This,token)	\
+    ( (This)->lpVtbl -> remove_ServerCertificateErrorDetected(This,token) ) 
+
+#define ICoreWebView2_16_ClearServerCertificateErrorActions(This,handler)	\
+    ( (This)->lpVtbl -> ClearServerCertificateErrorActions(This,handler) ) 
+
+
+#define ICoreWebView2_16_add_FaviconChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FaviconChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_16_remove_FaviconChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_FaviconChanged(This,token) ) 
+
+#define ICoreWebView2_16_get_FaviconUri(This,value)	\
+    ( (This)->lpVtbl -> get_FaviconUri(This,value) ) 
+
+#define ICoreWebView2_16_GetFavicon(This,format,completedHandler)	\
+    ( (This)->lpVtbl -> GetFavicon(This,format,completedHandler) ) 
+
+
+#define ICoreWebView2_16_Print(This,printSettings,handler)	\
+    ( (This)->lpVtbl -> Print(This,printSettings,handler) ) 
+
+#define ICoreWebView2_16_ShowPrintUI(This,printDialogKind)	\
+    ( (This)->lpVtbl -> ShowPrintUI(This,printDialogKind) ) 
+
+#define ICoreWebView2_16_PrintToPdfStream(This,printSettings,handler)	\
+    ( (This)->lpVtbl -> PrintToPdfStream(This,printSettings,handler) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2_16_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2_17_INTERFACE_DEFINED__
+#define __ICoreWebView2_17_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2_17 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_17 = {0x702E75D4,0xFD44,0x434D,{0x9D,0x70,0x1A,0x68,0xA6,0xB1,0x19,0x2A}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("702E75D4-FD44-434D-9D70-1A68A6B1192A")
+    ICoreWebView2_17 : public ICoreWebView2_16
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE PostSharedBufferToScript( 
+            /* [in] */ ICoreWebView2SharedBuffer *sharedBuffer,
+            /* [in] */ COREWEBVIEW2_SHARED_BUFFER_ACCESS access,
+            /* [in] */ LPCWSTR additionalDataAsJson) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2_17Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2_17 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2_17 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Settings)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Settings )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ ICoreWebView2Settings **settings);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Source)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Source )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ LPWSTR *uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Navigate)
+        HRESULT ( STDMETHODCALLTYPE *Navigate )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, NavigateToString)
+        HRESULT ( STDMETHODCALLTYPE *NavigateToString )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR htmlContent);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationStarting )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationStarting )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *add_ContentLoading )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2ContentLoadingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContentLoading )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_SourceChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2SourceChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_SourceChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_HistoryChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2HistoryChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_HistoryChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationCompleted )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationCompleted )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationStarting )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationStarting )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationCompleted )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationCompleted )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *add_ScriptDialogOpening )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2ScriptDialogOpeningEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *remove_ScriptDialogOpening )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_PermissionRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2PermissionRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_PermissionRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *add_ProcessFailed )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2ProcessFailedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *remove_ProcessFailed )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *AddScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *RemoveScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR id);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, ExecuteScript)
+        HRESULT ( STDMETHODCALLTYPE *ExecuteScript )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2ExecuteScriptCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CapturePreview)
+        HRESULT ( STDMETHODCALLTYPE *CapturePreview )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT imageFormat,
+            /* [in] */ IStream *imageStream,
+            /* [in] */ ICoreWebView2CapturePreviewCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Reload)
+        HRESULT ( STDMETHODCALLTYPE *Reload )( 
+            ICoreWebView2_17 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsJson)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsJson )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR webMessageAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsString)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsString )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR webMessageAsString);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebMessageReceived )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2WebMessageReceivedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebMessageReceived )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CallDevToolsProtocolMethod)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethod )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_BrowserProcessId)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BrowserProcessId )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ UINT32 *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoBack)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoBack )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ BOOL *canGoBack);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoForward)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoForward )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ BOOL *canGoForward);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoBack)
+        HRESULT ( STDMETHODCALLTYPE *GoBack )( 
+            ICoreWebView2_17 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoForward)
+        HRESULT ( STDMETHODCALLTYPE *GoForward )( 
+            ICoreWebView2_17 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GetDevToolsProtocolEventReceiver)
+        HRESULT ( STDMETHODCALLTYPE *GetDevToolsProtocolEventReceiver )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR eventName,
+            /* [retval][out] */ ICoreWebView2DevToolsProtocolEventReceiver **receiver);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Stop)
+        HRESULT ( STDMETHODCALLTYPE *Stop )( 
+            ICoreWebView2_17 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_NewWindowRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2NewWindowRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_NewWindowRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_DocumentTitleChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2DocumentTitleChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_DocumentTitleChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_DocumentTitle)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DocumentTitle )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ LPWSTR *title);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddHostObjectToScript)
+        HRESULT ( STDMETHODCALLTYPE *AddHostObjectToScript )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR name,
+            /* [in] */ VARIANT *object);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveHostObjectFromScript)
+        HRESULT ( STDMETHODCALLTYPE *RemoveHostObjectFromScript )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR name);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, OpenDevToolsWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenDevToolsWindow )( 
+            ICoreWebView2_17 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2ContainsFullScreenElementChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_ContainsFullScreenElement)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ContainsFullScreenElement )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ BOOL *containsFullScreenElement);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2WebResourceRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *AddWebResourceRequestedFilter )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *RemoveWebResourceRequestedFilter )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WindowCloseRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2WindowCloseRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WindowCloseRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceResponseReceived )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2WebResourceResponseReceivedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceResponseReceived )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, NavigateWithWebResourceRequest)
+        HRESULT ( STDMETHODCALLTYPE *NavigateWithWebResourceRequest )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2WebResourceRequest *request);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *add_DOMContentLoaded )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2DOMContentLoadedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *remove_DOMContentLoaded )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_CookieManager)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_Environment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Environment )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ ICoreWebView2Environment **environment);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, TrySuspend)
+        HRESULT ( STDMETHODCALLTYPE *TrySuspend )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2TrySuspendCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, Resume)
+        HRESULT ( STDMETHODCALLTYPE *Resume )( 
+            ICoreWebView2_17 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, get_IsSuspended)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsSuspended )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ BOOL *isSuspended);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, SetVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *SetVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR hostName,
+            /* [in] */ LPCWSTR folderPath,
+            /* [in] */ COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND accessKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, ClearVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *ClearVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR hostName);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameCreated )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2FrameCreatedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameCreated )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_DownloadStarting )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2DownloadStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_DownloadStarting )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, add_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ClientCertificateRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2ClientCertificateRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, remove_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ClientCertificateRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_6, OpenTaskManagerWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenTaskManagerWindow )( 
+            ICoreWebView2_17 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_7, PrintToPdf)
+        HRESULT ( STDMETHODCALLTYPE *PrintToPdf )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR resultFilePath,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintToPdfCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsMutedChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2IsMutedChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsMutedChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsMuted)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsMuted )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, put_IsMuted)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsMuted )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2IsDocumentPlayingAudioChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsDocumentPlayingAudio)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDocumentPlayingAudio )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, add_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, remove_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_IsDefaultDownloadDialogOpen)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDefaultDownloadDialogOpen )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, OpenDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *OpenDefaultDownloadDialog )( 
+            ICoreWebView2_17 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, CloseDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *CloseDefaultDownloadDialog )( 
+            ICoreWebView2_17 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogCornerAlignment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogCornerAlignment)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogMargin)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ POINT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogMargin)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ POINT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, add_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_BasicAuthenticationRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2BasicAuthenticationRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, remove_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_BasicAuthenticationRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, CallDevToolsProtocolMethodForSession)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethodForSession )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ LPCWSTR sessionId,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, add_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ContextMenuRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2ContextMenuRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, remove_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContextMenuRequested )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, add_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_StatusBarTextChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2StatusBarTextChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, remove_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_StatusBarTextChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, get_StatusBarText)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StatusBarText )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_13, get_Profile)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Profile )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ ICoreWebView2Profile **value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, add_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *add_ServerCertificateErrorDetected )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2ServerCertificateErrorDetectedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, remove_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *remove_ServerCertificateErrorDetected )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, ClearServerCertificateErrorActions)
+        HRESULT ( STDMETHODCALLTYPE *ClearServerCertificateErrorActions )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2ClearServerCertificateErrorActionsCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, add_FaviconChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_FaviconChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2FaviconChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, remove_FaviconChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_FaviconChanged )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, get_FaviconUri)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FaviconUri )( 
+            ICoreWebView2_17 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, GetFavicon)
+        HRESULT ( STDMETHODCALLTYPE *GetFavicon )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ COREWEBVIEW2_FAVICON_IMAGE_FORMAT format,
+            /* [in] */ ICoreWebView2GetFaviconCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, Print)
+        HRESULT ( STDMETHODCALLTYPE *Print )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, ShowPrintUI)
+        HRESULT ( STDMETHODCALLTYPE *ShowPrintUI )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ COREWEBVIEW2_PRINT_DIALOG_KIND printDialogKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, PrintToPdfStream)
+        HRESULT ( STDMETHODCALLTYPE *PrintToPdfStream )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintToPdfStreamCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_17, PostSharedBufferToScript)
+        HRESULT ( STDMETHODCALLTYPE *PostSharedBufferToScript )( 
+            ICoreWebView2_17 * This,
+            /* [in] */ ICoreWebView2SharedBuffer *sharedBuffer,
+            /* [in] */ COREWEBVIEW2_SHARED_BUFFER_ACCESS access,
+            /* [in] */ LPCWSTR additionalDataAsJson);
+        
+        END_INTERFACE
+    } ICoreWebView2_17Vtbl;
+
+    interface ICoreWebView2_17
+    {
+        CONST_VTBL struct ICoreWebView2_17Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2_17_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2_17_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2_17_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2_17_get_Settings(This,settings)	\
+    ( (This)->lpVtbl -> get_Settings(This,settings) ) 
+
+#define ICoreWebView2_17_get_Source(This,uri)	\
+    ( (This)->lpVtbl -> get_Source(This,uri) ) 
+
+#define ICoreWebView2_17_Navigate(This,uri)	\
+    ( (This)->lpVtbl -> Navigate(This,uri) ) 
+
+#define ICoreWebView2_17_NavigateToString(This,htmlContent)	\
+    ( (This)->lpVtbl -> NavigateToString(This,htmlContent) ) 
+
+#define ICoreWebView2_17_add_NavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_NavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationStarting(This,token) ) 
+
+#define ICoreWebView2_17_add_ContentLoading(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContentLoading(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_ContentLoading(This,token)	\
+    ( (This)->lpVtbl -> remove_ContentLoading(This,token) ) 
+
+#define ICoreWebView2_17_add_SourceChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_SourceChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_SourceChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_SourceChanged(This,token) ) 
+
+#define ICoreWebView2_17_add_HistoryChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_HistoryChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_HistoryChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_HistoryChanged(This,token) ) 
+
+#define ICoreWebView2_17_add_NavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_NavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_17_add_FrameNavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_FrameNavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationStarting(This,token) ) 
+
+#define ICoreWebView2_17_add_FrameNavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_FrameNavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_17_add_ScriptDialogOpening(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ScriptDialogOpening(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_ScriptDialogOpening(This,token)	\
+    ( (This)->lpVtbl -> remove_ScriptDialogOpening(This,token) ) 
+
+#define ICoreWebView2_17_add_PermissionRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_PermissionRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_PermissionRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_PermissionRequested(This,token) ) 
+
+#define ICoreWebView2_17_add_ProcessFailed(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ProcessFailed(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_ProcessFailed(This,token)	\
+    ( (This)->lpVtbl -> remove_ProcessFailed(This,token) ) 
+
+#define ICoreWebView2_17_AddScriptToExecuteOnDocumentCreated(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> AddScriptToExecuteOnDocumentCreated(This,javaScript,handler) ) 
+
+#define ICoreWebView2_17_RemoveScriptToExecuteOnDocumentCreated(This,id)	\
+    ( (This)->lpVtbl -> RemoveScriptToExecuteOnDocumentCreated(This,id) ) 
+
+#define ICoreWebView2_17_ExecuteScript(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> ExecuteScript(This,javaScript,handler) ) 
+
+#define ICoreWebView2_17_CapturePreview(This,imageFormat,imageStream,handler)	\
+    ( (This)->lpVtbl -> CapturePreview(This,imageFormat,imageStream,handler) ) 
+
+#define ICoreWebView2_17_Reload(This)	\
+    ( (This)->lpVtbl -> Reload(This) ) 
+
+#define ICoreWebView2_17_PostWebMessageAsJson(This,webMessageAsJson)	\
+    ( (This)->lpVtbl -> PostWebMessageAsJson(This,webMessageAsJson) ) 
+
+#define ICoreWebView2_17_PostWebMessageAsString(This,webMessageAsString)	\
+    ( (This)->lpVtbl -> PostWebMessageAsString(This,webMessageAsString) ) 
+
+#define ICoreWebView2_17_add_WebMessageReceived(This,handler,token)	\
+    ( (This)->lpVtbl -> add_WebMessageReceived(This,handler,token) ) 
+
+#define ICoreWebView2_17_remove_WebMessageReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebMessageReceived(This,token) ) 
+
+#define ICoreWebView2_17_CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_17_get_BrowserProcessId(This,value)	\
+    ( (This)->lpVtbl -> get_BrowserProcessId(This,value) ) 
+
+#define ICoreWebView2_17_get_CanGoBack(This,canGoBack)	\
+    ( (This)->lpVtbl -> get_CanGoBack(This,canGoBack) ) 
+
+#define ICoreWebView2_17_get_CanGoForward(This,canGoForward)	\
+    ( (This)->lpVtbl -> get_CanGoForward(This,canGoForward) ) 
+
+#define ICoreWebView2_17_GoBack(This)	\
+    ( (This)->lpVtbl -> GoBack(This) ) 
+
+#define ICoreWebView2_17_GoForward(This)	\
+    ( (This)->lpVtbl -> GoForward(This) ) 
+
+#define ICoreWebView2_17_GetDevToolsProtocolEventReceiver(This,eventName,receiver)	\
+    ( (This)->lpVtbl -> GetDevToolsProtocolEventReceiver(This,eventName,receiver) ) 
+
+#define ICoreWebView2_17_Stop(This)	\
+    ( (This)->lpVtbl -> Stop(This) ) 
+
+#define ICoreWebView2_17_add_NewWindowRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NewWindowRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_NewWindowRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_NewWindowRequested(This,token) ) 
+
+#define ICoreWebView2_17_add_DocumentTitleChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DocumentTitleChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_DocumentTitleChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_DocumentTitleChanged(This,token) ) 
+
+#define ICoreWebView2_17_get_DocumentTitle(This,title)	\
+    ( (This)->lpVtbl -> get_DocumentTitle(This,title) ) 
+
+#define ICoreWebView2_17_AddHostObjectToScript(This,name,object)	\
+    ( (This)->lpVtbl -> AddHostObjectToScript(This,name,object) ) 
+
+#define ICoreWebView2_17_RemoveHostObjectFromScript(This,name)	\
+    ( (This)->lpVtbl -> RemoveHostObjectFromScript(This,name) ) 
+
+#define ICoreWebView2_17_OpenDevToolsWindow(This)	\
+    ( (This)->lpVtbl -> OpenDevToolsWindow(This) ) 
+
+#define ICoreWebView2_17_add_ContainsFullScreenElementChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContainsFullScreenElementChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_ContainsFullScreenElementChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_ContainsFullScreenElementChanged(This,token) ) 
+
+#define ICoreWebView2_17_get_ContainsFullScreenElement(This,containsFullScreenElement)	\
+    ( (This)->lpVtbl -> get_ContainsFullScreenElement(This,containsFullScreenElement) ) 
+
+#define ICoreWebView2_17_add_WebResourceRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_WebResourceRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceRequested(This,token) ) 
+
+#define ICoreWebView2_17_AddWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> AddWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_17_RemoveWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> RemoveWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_17_add_WindowCloseRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WindowCloseRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_WindowCloseRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WindowCloseRequested(This,token) ) 
+
+
+#define ICoreWebView2_17_add_WebResourceResponseReceived(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceResponseReceived(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_WebResourceResponseReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceResponseReceived(This,token) ) 
+
+#define ICoreWebView2_17_NavigateWithWebResourceRequest(This,request)	\
+    ( (This)->lpVtbl -> NavigateWithWebResourceRequest(This,request) ) 
+
+#define ICoreWebView2_17_add_DOMContentLoaded(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DOMContentLoaded(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_DOMContentLoaded(This,token)	\
+    ( (This)->lpVtbl -> remove_DOMContentLoaded(This,token) ) 
+
+#define ICoreWebView2_17_get_CookieManager(This,cookieManager)	\
+    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
+
+#define ICoreWebView2_17_get_Environment(This,environment)	\
+    ( (This)->lpVtbl -> get_Environment(This,environment) ) 
+
+
+#define ICoreWebView2_17_TrySuspend(This,handler)	\
+    ( (This)->lpVtbl -> TrySuspend(This,handler) ) 
+
+#define ICoreWebView2_17_Resume(This)	\
+    ( (This)->lpVtbl -> Resume(This) ) 
+
+#define ICoreWebView2_17_get_IsSuspended(This,isSuspended)	\
+    ( (This)->lpVtbl -> get_IsSuspended(This,isSuspended) ) 
+
+#define ICoreWebView2_17_SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind)	\
+    ( (This)->lpVtbl -> SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind) ) 
+
+#define ICoreWebView2_17_ClearVirtualHostNameToFolderMapping(This,hostName)	\
+    ( (This)->lpVtbl -> ClearVirtualHostNameToFolderMapping(This,hostName) ) 
+
+
+#define ICoreWebView2_17_add_FrameCreated(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameCreated(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_FrameCreated(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameCreated(This,token) ) 
+
+#define ICoreWebView2_17_add_DownloadStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DownloadStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_DownloadStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_DownloadStarting(This,token) ) 
+
+
+#define ICoreWebView2_17_add_ClientCertificateRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ClientCertificateRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_ClientCertificateRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ClientCertificateRequested(This,token) ) 
+
+
+#define ICoreWebView2_17_OpenTaskManagerWindow(This)	\
+    ( (This)->lpVtbl -> OpenTaskManagerWindow(This) ) 
+
+
+#define ICoreWebView2_17_PrintToPdf(This,resultFilePath,printSettings,handler)	\
+    ( (This)->lpVtbl -> PrintToPdf(This,resultFilePath,printSettings,handler) ) 
+
+
+#define ICoreWebView2_17_add_IsMutedChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsMutedChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_IsMutedChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsMutedChanged(This,token) ) 
+
+#define ICoreWebView2_17_get_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> get_IsMuted(This,value) ) 
+
+#define ICoreWebView2_17_put_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> put_IsMuted(This,value) ) 
+
+#define ICoreWebView2_17_add_IsDocumentPlayingAudioChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsDocumentPlayingAudioChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_IsDocumentPlayingAudioChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDocumentPlayingAudioChanged(This,token) ) 
+
+#define ICoreWebView2_17_get_IsDocumentPlayingAudio(This,value)	\
+    ( (This)->lpVtbl -> get_IsDocumentPlayingAudio(This,value) ) 
+
+
+#define ICoreWebView2_17_add_IsDefaultDownloadDialogOpenChanged(This,handler,token)	\
+    ( (This)->lpVtbl -> add_IsDefaultDownloadDialogOpenChanged(This,handler,token) ) 
+
+#define ICoreWebView2_17_remove_IsDefaultDownloadDialogOpenChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDefaultDownloadDialogOpenChanged(This,token) ) 
+
+#define ICoreWebView2_17_get_IsDefaultDownloadDialogOpen(This,value)	\
+    ( (This)->lpVtbl -> get_IsDefaultDownloadDialogOpen(This,value) ) 
+
+#define ICoreWebView2_17_OpenDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> OpenDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_17_CloseDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> CloseDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_17_get_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_17_put_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_17_get_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogMargin(This,value) ) 
+
+#define ICoreWebView2_17_put_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogMargin(This,value) ) 
+
+
+#define ICoreWebView2_17_add_BasicAuthenticationRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_BasicAuthenticationRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_BasicAuthenticationRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_BasicAuthenticationRequested(This,token) ) 
+
+
+#define ICoreWebView2_17_CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_17_add_ContextMenuRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContextMenuRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_ContextMenuRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ContextMenuRequested(This,token) ) 
+
+
+#define ICoreWebView2_17_add_StatusBarTextChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_StatusBarTextChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_StatusBarTextChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_StatusBarTextChanged(This,token) ) 
+
+#define ICoreWebView2_17_get_StatusBarText(This,value)	\
+    ( (This)->lpVtbl -> get_StatusBarText(This,value) ) 
+
+
+#define ICoreWebView2_17_get_Profile(This,value)	\
+    ( (This)->lpVtbl -> get_Profile(This,value) ) 
+
+
+#define ICoreWebView2_17_add_ServerCertificateErrorDetected(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ServerCertificateErrorDetected(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_ServerCertificateErrorDetected(This,token)	\
+    ( (This)->lpVtbl -> remove_ServerCertificateErrorDetected(This,token) ) 
+
+#define ICoreWebView2_17_ClearServerCertificateErrorActions(This,handler)	\
+    ( (This)->lpVtbl -> ClearServerCertificateErrorActions(This,handler) ) 
+
+
+#define ICoreWebView2_17_add_FaviconChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FaviconChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_17_remove_FaviconChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_FaviconChanged(This,token) ) 
+
+#define ICoreWebView2_17_get_FaviconUri(This,value)	\
+    ( (This)->lpVtbl -> get_FaviconUri(This,value) ) 
+
+#define ICoreWebView2_17_GetFavicon(This,format,completedHandler)	\
+    ( (This)->lpVtbl -> GetFavicon(This,format,completedHandler) ) 
+
+
+#define ICoreWebView2_17_Print(This,printSettings,handler)	\
+    ( (This)->lpVtbl -> Print(This,printSettings,handler) ) 
+
+#define ICoreWebView2_17_ShowPrintUI(This,printDialogKind)	\
+    ( (This)->lpVtbl -> ShowPrintUI(This,printDialogKind) ) 
+
+#define ICoreWebView2_17_PrintToPdfStream(This,printSettings,handler)	\
+    ( (This)->lpVtbl -> PrintToPdfStream(This,printSettings,handler) ) 
+
+
+#define ICoreWebView2_17_PostSharedBufferToScript(This,sharedBuffer,access,additionalDataAsJson)	\
+    ( (This)->lpVtbl -> PostSharedBufferToScript(This,sharedBuffer,access,additionalDataAsJson) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2_17_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2_18_INTERFACE_DEFINED__
+#define __ICoreWebView2_18_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2_18 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_18 = {0x7A626017,0x28BE,0x49B2,{0xB8,0x65,0x3B,0xA2,0xB3,0x52,0x2D,0x90}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("7A626017-28BE-49B2-B865-3BA2B3522D90")
+    ICoreWebView2_18 : public ICoreWebView2_17
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE add_LaunchingExternalUriScheme( 
+            /* [in] */ ICoreWebView2LaunchingExternalUriSchemeEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE remove_LaunchingExternalUriScheme( 
+            /* [in] */ EventRegistrationToken token) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2_18Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2_18 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2_18 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Settings)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Settings )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ ICoreWebView2Settings **settings);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Source)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Source )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ LPWSTR *uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Navigate)
+        HRESULT ( STDMETHODCALLTYPE *Navigate )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, NavigateToString)
+        HRESULT ( STDMETHODCALLTYPE *NavigateToString )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR htmlContent);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationStarting )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationStarting )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *add_ContentLoading )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2ContentLoadingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContentLoading )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_SourceChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2SourceChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_SourceChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_HistoryChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2HistoryChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_HistoryChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationCompleted )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationCompleted )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationStarting )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationStarting )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationCompleted )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationCompleted )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *add_ScriptDialogOpening )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2ScriptDialogOpeningEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *remove_ScriptDialogOpening )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_PermissionRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2PermissionRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_PermissionRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *add_ProcessFailed )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2ProcessFailedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *remove_ProcessFailed )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *AddScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *RemoveScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR id);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, ExecuteScript)
+        HRESULT ( STDMETHODCALLTYPE *ExecuteScript )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2ExecuteScriptCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CapturePreview)
+        HRESULT ( STDMETHODCALLTYPE *CapturePreview )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT imageFormat,
+            /* [in] */ IStream *imageStream,
+            /* [in] */ ICoreWebView2CapturePreviewCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Reload)
+        HRESULT ( STDMETHODCALLTYPE *Reload )( 
+            ICoreWebView2_18 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsJson)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsJson )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR webMessageAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsString)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsString )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR webMessageAsString);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebMessageReceived )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2WebMessageReceivedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebMessageReceived )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CallDevToolsProtocolMethod)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethod )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_BrowserProcessId)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BrowserProcessId )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ UINT32 *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoBack)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoBack )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ BOOL *canGoBack);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoForward)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoForward )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ BOOL *canGoForward);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoBack)
+        HRESULT ( STDMETHODCALLTYPE *GoBack )( 
+            ICoreWebView2_18 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoForward)
+        HRESULT ( STDMETHODCALLTYPE *GoForward )( 
+            ICoreWebView2_18 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GetDevToolsProtocolEventReceiver)
+        HRESULT ( STDMETHODCALLTYPE *GetDevToolsProtocolEventReceiver )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR eventName,
+            /* [retval][out] */ ICoreWebView2DevToolsProtocolEventReceiver **receiver);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Stop)
+        HRESULT ( STDMETHODCALLTYPE *Stop )( 
+            ICoreWebView2_18 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_NewWindowRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2NewWindowRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_NewWindowRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_DocumentTitleChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2DocumentTitleChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_DocumentTitleChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_DocumentTitle)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DocumentTitle )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ LPWSTR *title);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddHostObjectToScript)
+        HRESULT ( STDMETHODCALLTYPE *AddHostObjectToScript )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR name,
+            /* [in] */ VARIANT *object);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveHostObjectFromScript)
+        HRESULT ( STDMETHODCALLTYPE *RemoveHostObjectFromScript )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR name);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, OpenDevToolsWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenDevToolsWindow )( 
+            ICoreWebView2_18 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2ContainsFullScreenElementChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_ContainsFullScreenElement)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ContainsFullScreenElement )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ BOOL *containsFullScreenElement);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2WebResourceRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *AddWebResourceRequestedFilter )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *RemoveWebResourceRequestedFilter )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WindowCloseRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2WindowCloseRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WindowCloseRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceResponseReceived )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2WebResourceResponseReceivedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceResponseReceived )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, NavigateWithWebResourceRequest)
+        HRESULT ( STDMETHODCALLTYPE *NavigateWithWebResourceRequest )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2WebResourceRequest *request);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *add_DOMContentLoaded )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2DOMContentLoadedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *remove_DOMContentLoaded )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_CookieManager)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_Environment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Environment )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ ICoreWebView2Environment **environment);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, TrySuspend)
+        HRESULT ( STDMETHODCALLTYPE *TrySuspend )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2TrySuspendCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, Resume)
+        HRESULT ( STDMETHODCALLTYPE *Resume )( 
+            ICoreWebView2_18 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, get_IsSuspended)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsSuspended )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ BOOL *isSuspended);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, SetVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *SetVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR hostName,
+            /* [in] */ LPCWSTR folderPath,
+            /* [in] */ COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND accessKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, ClearVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *ClearVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR hostName);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameCreated )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2FrameCreatedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameCreated )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_DownloadStarting )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2DownloadStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_DownloadStarting )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, add_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ClientCertificateRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2ClientCertificateRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, remove_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ClientCertificateRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_6, OpenTaskManagerWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenTaskManagerWindow )( 
+            ICoreWebView2_18 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_7, PrintToPdf)
+        HRESULT ( STDMETHODCALLTYPE *PrintToPdf )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR resultFilePath,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintToPdfCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsMutedChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2IsMutedChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsMutedChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsMuted)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsMuted )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, put_IsMuted)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsMuted )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2IsDocumentPlayingAudioChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsDocumentPlayingAudio)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDocumentPlayingAudio )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, add_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, remove_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_IsDefaultDownloadDialogOpen)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDefaultDownloadDialogOpen )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, OpenDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *OpenDefaultDownloadDialog )( 
+            ICoreWebView2_18 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, CloseDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *CloseDefaultDownloadDialog )( 
+            ICoreWebView2_18 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogCornerAlignment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogCornerAlignment)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogMargin)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ POINT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogMargin)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ POINT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, add_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_BasicAuthenticationRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2BasicAuthenticationRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, remove_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_BasicAuthenticationRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, CallDevToolsProtocolMethodForSession)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethodForSession )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ LPCWSTR sessionId,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, add_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ContextMenuRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2ContextMenuRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, remove_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContextMenuRequested )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, add_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_StatusBarTextChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2StatusBarTextChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, remove_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_StatusBarTextChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, get_StatusBarText)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StatusBarText )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_13, get_Profile)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Profile )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ ICoreWebView2Profile **value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, add_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *add_ServerCertificateErrorDetected )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2ServerCertificateErrorDetectedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, remove_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *remove_ServerCertificateErrorDetected )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, ClearServerCertificateErrorActions)
+        HRESULT ( STDMETHODCALLTYPE *ClearServerCertificateErrorActions )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2ClearServerCertificateErrorActionsCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, add_FaviconChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_FaviconChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2FaviconChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, remove_FaviconChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_FaviconChanged )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, get_FaviconUri)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FaviconUri )( 
+            ICoreWebView2_18 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, GetFavicon)
+        HRESULT ( STDMETHODCALLTYPE *GetFavicon )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ COREWEBVIEW2_FAVICON_IMAGE_FORMAT format,
+            /* [in] */ ICoreWebView2GetFaviconCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, Print)
+        HRESULT ( STDMETHODCALLTYPE *Print )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, ShowPrintUI)
+        HRESULT ( STDMETHODCALLTYPE *ShowPrintUI )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ COREWEBVIEW2_PRINT_DIALOG_KIND printDialogKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, PrintToPdfStream)
+        HRESULT ( STDMETHODCALLTYPE *PrintToPdfStream )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintToPdfStreamCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_17, PostSharedBufferToScript)
+        HRESULT ( STDMETHODCALLTYPE *PostSharedBufferToScript )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2SharedBuffer *sharedBuffer,
+            /* [in] */ COREWEBVIEW2_SHARED_BUFFER_ACCESS access,
+            /* [in] */ LPCWSTR additionalDataAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_18, add_LaunchingExternalUriScheme)
+        HRESULT ( STDMETHODCALLTYPE *add_LaunchingExternalUriScheme )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ ICoreWebView2LaunchingExternalUriSchemeEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_18, remove_LaunchingExternalUriScheme)
+        HRESULT ( STDMETHODCALLTYPE *remove_LaunchingExternalUriScheme )( 
+            ICoreWebView2_18 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        END_INTERFACE
+    } ICoreWebView2_18Vtbl;
+
+    interface ICoreWebView2_18
+    {
+        CONST_VTBL struct ICoreWebView2_18Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2_18_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2_18_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2_18_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2_18_get_Settings(This,settings)	\
+    ( (This)->lpVtbl -> get_Settings(This,settings) ) 
+
+#define ICoreWebView2_18_get_Source(This,uri)	\
+    ( (This)->lpVtbl -> get_Source(This,uri) ) 
+
+#define ICoreWebView2_18_Navigate(This,uri)	\
+    ( (This)->lpVtbl -> Navigate(This,uri) ) 
+
+#define ICoreWebView2_18_NavigateToString(This,htmlContent)	\
+    ( (This)->lpVtbl -> NavigateToString(This,htmlContent) ) 
+
+#define ICoreWebView2_18_add_NavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_NavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationStarting(This,token) ) 
+
+#define ICoreWebView2_18_add_ContentLoading(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContentLoading(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_ContentLoading(This,token)	\
+    ( (This)->lpVtbl -> remove_ContentLoading(This,token) ) 
+
+#define ICoreWebView2_18_add_SourceChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_SourceChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_SourceChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_SourceChanged(This,token) ) 
+
+#define ICoreWebView2_18_add_HistoryChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_HistoryChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_HistoryChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_HistoryChanged(This,token) ) 
+
+#define ICoreWebView2_18_add_NavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_NavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_18_add_FrameNavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_FrameNavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationStarting(This,token) ) 
+
+#define ICoreWebView2_18_add_FrameNavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_FrameNavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_18_add_ScriptDialogOpening(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ScriptDialogOpening(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_ScriptDialogOpening(This,token)	\
+    ( (This)->lpVtbl -> remove_ScriptDialogOpening(This,token) ) 
+
+#define ICoreWebView2_18_add_PermissionRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_PermissionRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_PermissionRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_PermissionRequested(This,token) ) 
+
+#define ICoreWebView2_18_add_ProcessFailed(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ProcessFailed(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_ProcessFailed(This,token)	\
+    ( (This)->lpVtbl -> remove_ProcessFailed(This,token) ) 
+
+#define ICoreWebView2_18_AddScriptToExecuteOnDocumentCreated(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> AddScriptToExecuteOnDocumentCreated(This,javaScript,handler) ) 
+
+#define ICoreWebView2_18_RemoveScriptToExecuteOnDocumentCreated(This,id)	\
+    ( (This)->lpVtbl -> RemoveScriptToExecuteOnDocumentCreated(This,id) ) 
+
+#define ICoreWebView2_18_ExecuteScript(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> ExecuteScript(This,javaScript,handler) ) 
+
+#define ICoreWebView2_18_CapturePreview(This,imageFormat,imageStream,handler)	\
+    ( (This)->lpVtbl -> CapturePreview(This,imageFormat,imageStream,handler) ) 
+
+#define ICoreWebView2_18_Reload(This)	\
+    ( (This)->lpVtbl -> Reload(This) ) 
+
+#define ICoreWebView2_18_PostWebMessageAsJson(This,webMessageAsJson)	\
+    ( (This)->lpVtbl -> PostWebMessageAsJson(This,webMessageAsJson) ) 
+
+#define ICoreWebView2_18_PostWebMessageAsString(This,webMessageAsString)	\
+    ( (This)->lpVtbl -> PostWebMessageAsString(This,webMessageAsString) ) 
+
+#define ICoreWebView2_18_add_WebMessageReceived(This,handler,token)	\
+    ( (This)->lpVtbl -> add_WebMessageReceived(This,handler,token) ) 
+
+#define ICoreWebView2_18_remove_WebMessageReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebMessageReceived(This,token) ) 
+
+#define ICoreWebView2_18_CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_18_get_BrowserProcessId(This,value)	\
+    ( (This)->lpVtbl -> get_BrowserProcessId(This,value) ) 
+
+#define ICoreWebView2_18_get_CanGoBack(This,canGoBack)	\
+    ( (This)->lpVtbl -> get_CanGoBack(This,canGoBack) ) 
+
+#define ICoreWebView2_18_get_CanGoForward(This,canGoForward)	\
+    ( (This)->lpVtbl -> get_CanGoForward(This,canGoForward) ) 
+
+#define ICoreWebView2_18_GoBack(This)	\
+    ( (This)->lpVtbl -> GoBack(This) ) 
+
+#define ICoreWebView2_18_GoForward(This)	\
+    ( (This)->lpVtbl -> GoForward(This) ) 
+
+#define ICoreWebView2_18_GetDevToolsProtocolEventReceiver(This,eventName,receiver)	\
+    ( (This)->lpVtbl -> GetDevToolsProtocolEventReceiver(This,eventName,receiver) ) 
+
+#define ICoreWebView2_18_Stop(This)	\
+    ( (This)->lpVtbl -> Stop(This) ) 
+
+#define ICoreWebView2_18_add_NewWindowRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NewWindowRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_NewWindowRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_NewWindowRequested(This,token) ) 
+
+#define ICoreWebView2_18_add_DocumentTitleChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DocumentTitleChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_DocumentTitleChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_DocumentTitleChanged(This,token) ) 
+
+#define ICoreWebView2_18_get_DocumentTitle(This,title)	\
+    ( (This)->lpVtbl -> get_DocumentTitle(This,title) ) 
+
+#define ICoreWebView2_18_AddHostObjectToScript(This,name,object)	\
+    ( (This)->lpVtbl -> AddHostObjectToScript(This,name,object) ) 
+
+#define ICoreWebView2_18_RemoveHostObjectFromScript(This,name)	\
+    ( (This)->lpVtbl -> RemoveHostObjectFromScript(This,name) ) 
+
+#define ICoreWebView2_18_OpenDevToolsWindow(This)	\
+    ( (This)->lpVtbl -> OpenDevToolsWindow(This) ) 
+
+#define ICoreWebView2_18_add_ContainsFullScreenElementChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContainsFullScreenElementChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_ContainsFullScreenElementChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_ContainsFullScreenElementChanged(This,token) ) 
+
+#define ICoreWebView2_18_get_ContainsFullScreenElement(This,containsFullScreenElement)	\
+    ( (This)->lpVtbl -> get_ContainsFullScreenElement(This,containsFullScreenElement) ) 
+
+#define ICoreWebView2_18_add_WebResourceRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_WebResourceRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceRequested(This,token) ) 
+
+#define ICoreWebView2_18_AddWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> AddWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_18_RemoveWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> RemoveWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_18_add_WindowCloseRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WindowCloseRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_WindowCloseRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WindowCloseRequested(This,token) ) 
+
+
+#define ICoreWebView2_18_add_WebResourceResponseReceived(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceResponseReceived(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_WebResourceResponseReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceResponseReceived(This,token) ) 
+
+#define ICoreWebView2_18_NavigateWithWebResourceRequest(This,request)	\
+    ( (This)->lpVtbl -> NavigateWithWebResourceRequest(This,request) ) 
+
+#define ICoreWebView2_18_add_DOMContentLoaded(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DOMContentLoaded(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_DOMContentLoaded(This,token)	\
+    ( (This)->lpVtbl -> remove_DOMContentLoaded(This,token) ) 
+
+#define ICoreWebView2_18_get_CookieManager(This,cookieManager)	\
+    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
+
+#define ICoreWebView2_18_get_Environment(This,environment)	\
+    ( (This)->lpVtbl -> get_Environment(This,environment) ) 
+
+
+#define ICoreWebView2_18_TrySuspend(This,handler)	\
+    ( (This)->lpVtbl -> TrySuspend(This,handler) ) 
+
+#define ICoreWebView2_18_Resume(This)	\
+    ( (This)->lpVtbl -> Resume(This) ) 
+
+#define ICoreWebView2_18_get_IsSuspended(This,isSuspended)	\
+    ( (This)->lpVtbl -> get_IsSuspended(This,isSuspended) ) 
+
+#define ICoreWebView2_18_SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind)	\
+    ( (This)->lpVtbl -> SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind) ) 
+
+#define ICoreWebView2_18_ClearVirtualHostNameToFolderMapping(This,hostName)	\
+    ( (This)->lpVtbl -> ClearVirtualHostNameToFolderMapping(This,hostName) ) 
+
+
+#define ICoreWebView2_18_add_FrameCreated(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameCreated(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_FrameCreated(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameCreated(This,token) ) 
+
+#define ICoreWebView2_18_add_DownloadStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DownloadStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_DownloadStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_DownloadStarting(This,token) ) 
+
+
+#define ICoreWebView2_18_add_ClientCertificateRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ClientCertificateRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_ClientCertificateRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ClientCertificateRequested(This,token) ) 
+
+
+#define ICoreWebView2_18_OpenTaskManagerWindow(This)	\
+    ( (This)->lpVtbl -> OpenTaskManagerWindow(This) ) 
+
+
+#define ICoreWebView2_18_PrintToPdf(This,resultFilePath,printSettings,handler)	\
+    ( (This)->lpVtbl -> PrintToPdf(This,resultFilePath,printSettings,handler) ) 
+
+
+#define ICoreWebView2_18_add_IsMutedChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsMutedChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_IsMutedChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsMutedChanged(This,token) ) 
+
+#define ICoreWebView2_18_get_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> get_IsMuted(This,value) ) 
+
+#define ICoreWebView2_18_put_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> put_IsMuted(This,value) ) 
+
+#define ICoreWebView2_18_add_IsDocumentPlayingAudioChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsDocumentPlayingAudioChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_IsDocumentPlayingAudioChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDocumentPlayingAudioChanged(This,token) ) 
+
+#define ICoreWebView2_18_get_IsDocumentPlayingAudio(This,value)	\
+    ( (This)->lpVtbl -> get_IsDocumentPlayingAudio(This,value) ) 
+
+
+#define ICoreWebView2_18_add_IsDefaultDownloadDialogOpenChanged(This,handler,token)	\
+    ( (This)->lpVtbl -> add_IsDefaultDownloadDialogOpenChanged(This,handler,token) ) 
+
+#define ICoreWebView2_18_remove_IsDefaultDownloadDialogOpenChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDefaultDownloadDialogOpenChanged(This,token) ) 
+
+#define ICoreWebView2_18_get_IsDefaultDownloadDialogOpen(This,value)	\
+    ( (This)->lpVtbl -> get_IsDefaultDownloadDialogOpen(This,value) ) 
+
+#define ICoreWebView2_18_OpenDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> OpenDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_18_CloseDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> CloseDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_18_get_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_18_put_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_18_get_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogMargin(This,value) ) 
+
+#define ICoreWebView2_18_put_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogMargin(This,value) ) 
+
+
+#define ICoreWebView2_18_add_BasicAuthenticationRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_BasicAuthenticationRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_BasicAuthenticationRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_BasicAuthenticationRequested(This,token) ) 
+
+
+#define ICoreWebView2_18_CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_18_add_ContextMenuRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContextMenuRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_ContextMenuRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ContextMenuRequested(This,token) ) 
+
+
+#define ICoreWebView2_18_add_StatusBarTextChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_StatusBarTextChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_StatusBarTextChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_StatusBarTextChanged(This,token) ) 
+
+#define ICoreWebView2_18_get_StatusBarText(This,value)	\
+    ( (This)->lpVtbl -> get_StatusBarText(This,value) ) 
+
+
+#define ICoreWebView2_18_get_Profile(This,value)	\
+    ( (This)->lpVtbl -> get_Profile(This,value) ) 
+
+
+#define ICoreWebView2_18_add_ServerCertificateErrorDetected(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ServerCertificateErrorDetected(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_ServerCertificateErrorDetected(This,token)	\
+    ( (This)->lpVtbl -> remove_ServerCertificateErrorDetected(This,token) ) 
+
+#define ICoreWebView2_18_ClearServerCertificateErrorActions(This,handler)	\
+    ( (This)->lpVtbl -> ClearServerCertificateErrorActions(This,handler) ) 
+
+
+#define ICoreWebView2_18_add_FaviconChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FaviconChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_FaviconChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_FaviconChanged(This,token) ) 
+
+#define ICoreWebView2_18_get_FaviconUri(This,value)	\
+    ( (This)->lpVtbl -> get_FaviconUri(This,value) ) 
+
+#define ICoreWebView2_18_GetFavicon(This,format,completedHandler)	\
+    ( (This)->lpVtbl -> GetFavicon(This,format,completedHandler) ) 
+
+
+#define ICoreWebView2_18_Print(This,printSettings,handler)	\
+    ( (This)->lpVtbl -> Print(This,printSettings,handler) ) 
+
+#define ICoreWebView2_18_ShowPrintUI(This,printDialogKind)	\
+    ( (This)->lpVtbl -> ShowPrintUI(This,printDialogKind) ) 
+
+#define ICoreWebView2_18_PrintToPdfStream(This,printSettings,handler)	\
+    ( (This)->lpVtbl -> PrintToPdfStream(This,printSettings,handler) ) 
+
+
+#define ICoreWebView2_18_PostSharedBufferToScript(This,sharedBuffer,access,additionalDataAsJson)	\
+    ( (This)->lpVtbl -> PostSharedBufferToScript(This,sharedBuffer,access,additionalDataAsJson) ) 
+
+
+#define ICoreWebView2_18_add_LaunchingExternalUriScheme(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_LaunchingExternalUriScheme(This,eventHandler,token) ) 
+
+#define ICoreWebView2_18_remove_LaunchingExternalUriScheme(This,token)	\
+    ( (This)->lpVtbl -> remove_LaunchingExternalUriScheme(This,token) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2_18_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2_19_INTERFACE_DEFINED__
+#define __ICoreWebView2_19_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2_19 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_19 = {0x6921F954,0x79B0,0x437F,{0xA9,0x97,0xC8,0x58,0x11,0x89,0x7C,0x68}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("6921F954-79B0-437F-A997-C85811897C68")
+    ICoreWebView2_19 : public ICoreWebView2_18
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_MemoryUsageTargetLevel( 
+            /* [retval][out] */ COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL *level) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_MemoryUsageTargetLevel( 
+            /* [in] */ COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL level) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2_19Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2_19 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2_19 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Settings)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Settings )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ ICoreWebView2Settings **settings);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Source)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Source )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ LPWSTR *uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Navigate)
+        HRESULT ( STDMETHODCALLTYPE *Navigate )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, NavigateToString)
+        HRESULT ( STDMETHODCALLTYPE *NavigateToString )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR htmlContent);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationStarting )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationStarting )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *add_ContentLoading )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2ContentLoadingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContentLoading )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_SourceChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2SourceChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_SourceChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_HistoryChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2HistoryChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_HistoryChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationCompleted )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationCompleted )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationStarting )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationStarting )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationCompleted )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationCompleted )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *add_ScriptDialogOpening )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2ScriptDialogOpeningEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *remove_ScriptDialogOpening )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_PermissionRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2PermissionRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_PermissionRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *add_ProcessFailed )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2ProcessFailedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *remove_ProcessFailed )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *AddScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *RemoveScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR id);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, ExecuteScript)
+        HRESULT ( STDMETHODCALLTYPE *ExecuteScript )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2ExecuteScriptCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CapturePreview)
+        HRESULT ( STDMETHODCALLTYPE *CapturePreview )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT imageFormat,
+            /* [in] */ IStream *imageStream,
+            /* [in] */ ICoreWebView2CapturePreviewCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Reload)
+        HRESULT ( STDMETHODCALLTYPE *Reload )( 
+            ICoreWebView2_19 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsJson)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsJson )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR webMessageAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsString)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsString )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR webMessageAsString);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebMessageReceived )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2WebMessageReceivedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebMessageReceived )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CallDevToolsProtocolMethod)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethod )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_BrowserProcessId)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BrowserProcessId )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ UINT32 *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoBack)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoBack )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ BOOL *canGoBack);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoForward)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoForward )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ BOOL *canGoForward);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoBack)
+        HRESULT ( STDMETHODCALLTYPE *GoBack )( 
+            ICoreWebView2_19 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoForward)
+        HRESULT ( STDMETHODCALLTYPE *GoForward )( 
+            ICoreWebView2_19 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GetDevToolsProtocolEventReceiver)
+        HRESULT ( STDMETHODCALLTYPE *GetDevToolsProtocolEventReceiver )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR eventName,
+            /* [retval][out] */ ICoreWebView2DevToolsProtocolEventReceiver **receiver);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Stop)
+        HRESULT ( STDMETHODCALLTYPE *Stop )( 
+            ICoreWebView2_19 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_NewWindowRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2NewWindowRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_NewWindowRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_DocumentTitleChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2DocumentTitleChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_DocumentTitleChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_DocumentTitle)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DocumentTitle )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ LPWSTR *title);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddHostObjectToScript)
+        HRESULT ( STDMETHODCALLTYPE *AddHostObjectToScript )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR name,
+            /* [in] */ VARIANT *object);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveHostObjectFromScript)
+        HRESULT ( STDMETHODCALLTYPE *RemoveHostObjectFromScript )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR name);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, OpenDevToolsWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenDevToolsWindow )( 
+            ICoreWebView2_19 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2ContainsFullScreenElementChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_ContainsFullScreenElement)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ContainsFullScreenElement )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ BOOL *containsFullScreenElement);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2WebResourceRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *AddWebResourceRequestedFilter )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *RemoveWebResourceRequestedFilter )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WindowCloseRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2WindowCloseRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WindowCloseRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceResponseReceived )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2WebResourceResponseReceivedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceResponseReceived )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, NavigateWithWebResourceRequest)
+        HRESULT ( STDMETHODCALLTYPE *NavigateWithWebResourceRequest )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2WebResourceRequest *request);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *add_DOMContentLoaded )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2DOMContentLoadedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *remove_DOMContentLoaded )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_CookieManager)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_Environment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Environment )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ ICoreWebView2Environment **environment);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, TrySuspend)
+        HRESULT ( STDMETHODCALLTYPE *TrySuspend )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2TrySuspendCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, Resume)
+        HRESULT ( STDMETHODCALLTYPE *Resume )( 
+            ICoreWebView2_19 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, get_IsSuspended)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsSuspended )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ BOOL *isSuspended);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, SetVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *SetVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR hostName,
+            /* [in] */ LPCWSTR folderPath,
+            /* [in] */ COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND accessKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, ClearVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *ClearVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR hostName);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameCreated )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2FrameCreatedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameCreated )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_DownloadStarting )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2DownloadStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_DownloadStarting )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, add_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ClientCertificateRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2ClientCertificateRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, remove_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ClientCertificateRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_6, OpenTaskManagerWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenTaskManagerWindow )( 
+            ICoreWebView2_19 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_7, PrintToPdf)
+        HRESULT ( STDMETHODCALLTYPE *PrintToPdf )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR resultFilePath,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintToPdfCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsMutedChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2IsMutedChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsMutedChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsMuted)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsMuted )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, put_IsMuted)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsMuted )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2IsDocumentPlayingAudioChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsDocumentPlayingAudio)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDocumentPlayingAudio )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, add_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, remove_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_IsDefaultDownloadDialogOpen)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDefaultDownloadDialogOpen )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, OpenDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *OpenDefaultDownloadDialog )( 
+            ICoreWebView2_19 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, CloseDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *CloseDefaultDownloadDialog )( 
+            ICoreWebView2_19 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogCornerAlignment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogCornerAlignment)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogMargin)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ POINT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogMargin)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ POINT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, add_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_BasicAuthenticationRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2BasicAuthenticationRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, remove_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_BasicAuthenticationRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, CallDevToolsProtocolMethodForSession)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethodForSession )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ LPCWSTR sessionId,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, add_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ContextMenuRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2ContextMenuRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, remove_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContextMenuRequested )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, add_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_StatusBarTextChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2StatusBarTextChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, remove_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_StatusBarTextChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, get_StatusBarText)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StatusBarText )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_13, get_Profile)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Profile )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ ICoreWebView2Profile **value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, add_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *add_ServerCertificateErrorDetected )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2ServerCertificateErrorDetectedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, remove_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *remove_ServerCertificateErrorDetected )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, ClearServerCertificateErrorActions)
+        HRESULT ( STDMETHODCALLTYPE *ClearServerCertificateErrorActions )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2ClearServerCertificateErrorActionsCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, add_FaviconChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_FaviconChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2FaviconChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, remove_FaviconChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_FaviconChanged )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, get_FaviconUri)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FaviconUri )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, GetFavicon)
+        HRESULT ( STDMETHODCALLTYPE *GetFavicon )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ COREWEBVIEW2_FAVICON_IMAGE_FORMAT format,
+            /* [in] */ ICoreWebView2GetFaviconCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, Print)
+        HRESULT ( STDMETHODCALLTYPE *Print )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, ShowPrintUI)
+        HRESULT ( STDMETHODCALLTYPE *ShowPrintUI )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ COREWEBVIEW2_PRINT_DIALOG_KIND printDialogKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, PrintToPdfStream)
+        HRESULT ( STDMETHODCALLTYPE *PrintToPdfStream )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintToPdfStreamCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_17, PostSharedBufferToScript)
+        HRESULT ( STDMETHODCALLTYPE *PostSharedBufferToScript )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2SharedBuffer *sharedBuffer,
+            /* [in] */ COREWEBVIEW2_SHARED_BUFFER_ACCESS access,
+            /* [in] */ LPCWSTR additionalDataAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_18, add_LaunchingExternalUriScheme)
+        HRESULT ( STDMETHODCALLTYPE *add_LaunchingExternalUriScheme )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ ICoreWebView2LaunchingExternalUriSchemeEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_18, remove_LaunchingExternalUriScheme)
+        HRESULT ( STDMETHODCALLTYPE *remove_LaunchingExternalUriScheme )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_19, get_MemoryUsageTargetLevel)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_MemoryUsageTargetLevel )( 
+            ICoreWebView2_19 * This,
+            /* [retval][out] */ COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL *level);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_19, put_MemoryUsageTargetLevel)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_MemoryUsageTargetLevel )( 
+            ICoreWebView2_19 * This,
+            /* [in] */ COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL level);
+        
+        END_INTERFACE
+    } ICoreWebView2_19Vtbl;
+
+    interface ICoreWebView2_19
+    {
+        CONST_VTBL struct ICoreWebView2_19Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2_19_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2_19_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2_19_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2_19_get_Settings(This,settings)	\
+    ( (This)->lpVtbl -> get_Settings(This,settings) ) 
+
+#define ICoreWebView2_19_get_Source(This,uri)	\
+    ( (This)->lpVtbl -> get_Source(This,uri) ) 
+
+#define ICoreWebView2_19_Navigate(This,uri)	\
+    ( (This)->lpVtbl -> Navigate(This,uri) ) 
+
+#define ICoreWebView2_19_NavigateToString(This,htmlContent)	\
+    ( (This)->lpVtbl -> NavigateToString(This,htmlContent) ) 
+
+#define ICoreWebView2_19_add_NavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_NavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationStarting(This,token) ) 
+
+#define ICoreWebView2_19_add_ContentLoading(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContentLoading(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_ContentLoading(This,token)	\
+    ( (This)->lpVtbl -> remove_ContentLoading(This,token) ) 
+
+#define ICoreWebView2_19_add_SourceChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_SourceChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_SourceChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_SourceChanged(This,token) ) 
+
+#define ICoreWebView2_19_add_HistoryChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_HistoryChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_HistoryChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_HistoryChanged(This,token) ) 
+
+#define ICoreWebView2_19_add_NavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_NavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_19_add_FrameNavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_FrameNavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationStarting(This,token) ) 
+
+#define ICoreWebView2_19_add_FrameNavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_FrameNavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_19_add_ScriptDialogOpening(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ScriptDialogOpening(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_ScriptDialogOpening(This,token)	\
+    ( (This)->lpVtbl -> remove_ScriptDialogOpening(This,token) ) 
+
+#define ICoreWebView2_19_add_PermissionRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_PermissionRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_PermissionRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_PermissionRequested(This,token) ) 
+
+#define ICoreWebView2_19_add_ProcessFailed(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ProcessFailed(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_ProcessFailed(This,token)	\
+    ( (This)->lpVtbl -> remove_ProcessFailed(This,token) ) 
+
+#define ICoreWebView2_19_AddScriptToExecuteOnDocumentCreated(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> AddScriptToExecuteOnDocumentCreated(This,javaScript,handler) ) 
+
+#define ICoreWebView2_19_RemoveScriptToExecuteOnDocumentCreated(This,id)	\
+    ( (This)->lpVtbl -> RemoveScriptToExecuteOnDocumentCreated(This,id) ) 
+
+#define ICoreWebView2_19_ExecuteScript(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> ExecuteScript(This,javaScript,handler) ) 
+
+#define ICoreWebView2_19_CapturePreview(This,imageFormat,imageStream,handler)	\
+    ( (This)->lpVtbl -> CapturePreview(This,imageFormat,imageStream,handler) ) 
+
+#define ICoreWebView2_19_Reload(This)	\
+    ( (This)->lpVtbl -> Reload(This) ) 
+
+#define ICoreWebView2_19_PostWebMessageAsJson(This,webMessageAsJson)	\
+    ( (This)->lpVtbl -> PostWebMessageAsJson(This,webMessageAsJson) ) 
+
+#define ICoreWebView2_19_PostWebMessageAsString(This,webMessageAsString)	\
+    ( (This)->lpVtbl -> PostWebMessageAsString(This,webMessageAsString) ) 
+
+#define ICoreWebView2_19_add_WebMessageReceived(This,handler,token)	\
+    ( (This)->lpVtbl -> add_WebMessageReceived(This,handler,token) ) 
+
+#define ICoreWebView2_19_remove_WebMessageReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebMessageReceived(This,token) ) 
+
+#define ICoreWebView2_19_CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_19_get_BrowserProcessId(This,value)	\
+    ( (This)->lpVtbl -> get_BrowserProcessId(This,value) ) 
+
+#define ICoreWebView2_19_get_CanGoBack(This,canGoBack)	\
+    ( (This)->lpVtbl -> get_CanGoBack(This,canGoBack) ) 
+
+#define ICoreWebView2_19_get_CanGoForward(This,canGoForward)	\
+    ( (This)->lpVtbl -> get_CanGoForward(This,canGoForward) ) 
+
+#define ICoreWebView2_19_GoBack(This)	\
+    ( (This)->lpVtbl -> GoBack(This) ) 
+
+#define ICoreWebView2_19_GoForward(This)	\
+    ( (This)->lpVtbl -> GoForward(This) ) 
+
+#define ICoreWebView2_19_GetDevToolsProtocolEventReceiver(This,eventName,receiver)	\
+    ( (This)->lpVtbl -> GetDevToolsProtocolEventReceiver(This,eventName,receiver) ) 
+
+#define ICoreWebView2_19_Stop(This)	\
+    ( (This)->lpVtbl -> Stop(This) ) 
+
+#define ICoreWebView2_19_add_NewWindowRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NewWindowRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_NewWindowRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_NewWindowRequested(This,token) ) 
+
+#define ICoreWebView2_19_add_DocumentTitleChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DocumentTitleChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_DocumentTitleChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_DocumentTitleChanged(This,token) ) 
+
+#define ICoreWebView2_19_get_DocumentTitle(This,title)	\
+    ( (This)->lpVtbl -> get_DocumentTitle(This,title) ) 
+
+#define ICoreWebView2_19_AddHostObjectToScript(This,name,object)	\
+    ( (This)->lpVtbl -> AddHostObjectToScript(This,name,object) ) 
+
+#define ICoreWebView2_19_RemoveHostObjectFromScript(This,name)	\
+    ( (This)->lpVtbl -> RemoveHostObjectFromScript(This,name) ) 
+
+#define ICoreWebView2_19_OpenDevToolsWindow(This)	\
+    ( (This)->lpVtbl -> OpenDevToolsWindow(This) ) 
+
+#define ICoreWebView2_19_add_ContainsFullScreenElementChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContainsFullScreenElementChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_ContainsFullScreenElementChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_ContainsFullScreenElementChanged(This,token) ) 
+
+#define ICoreWebView2_19_get_ContainsFullScreenElement(This,containsFullScreenElement)	\
+    ( (This)->lpVtbl -> get_ContainsFullScreenElement(This,containsFullScreenElement) ) 
+
+#define ICoreWebView2_19_add_WebResourceRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_WebResourceRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceRequested(This,token) ) 
+
+#define ICoreWebView2_19_AddWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> AddWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_19_RemoveWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> RemoveWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_19_add_WindowCloseRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WindowCloseRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_WindowCloseRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WindowCloseRequested(This,token) ) 
+
+
+#define ICoreWebView2_19_add_WebResourceResponseReceived(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceResponseReceived(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_WebResourceResponseReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceResponseReceived(This,token) ) 
+
+#define ICoreWebView2_19_NavigateWithWebResourceRequest(This,request)	\
+    ( (This)->lpVtbl -> NavigateWithWebResourceRequest(This,request) ) 
+
+#define ICoreWebView2_19_add_DOMContentLoaded(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DOMContentLoaded(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_DOMContentLoaded(This,token)	\
+    ( (This)->lpVtbl -> remove_DOMContentLoaded(This,token) ) 
+
+#define ICoreWebView2_19_get_CookieManager(This,cookieManager)	\
+    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
+
+#define ICoreWebView2_19_get_Environment(This,environment)	\
+    ( (This)->lpVtbl -> get_Environment(This,environment) ) 
+
+
+#define ICoreWebView2_19_TrySuspend(This,handler)	\
+    ( (This)->lpVtbl -> TrySuspend(This,handler) ) 
+
+#define ICoreWebView2_19_Resume(This)	\
+    ( (This)->lpVtbl -> Resume(This) ) 
+
+#define ICoreWebView2_19_get_IsSuspended(This,isSuspended)	\
+    ( (This)->lpVtbl -> get_IsSuspended(This,isSuspended) ) 
+
+#define ICoreWebView2_19_SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind)	\
+    ( (This)->lpVtbl -> SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind) ) 
+
+#define ICoreWebView2_19_ClearVirtualHostNameToFolderMapping(This,hostName)	\
+    ( (This)->lpVtbl -> ClearVirtualHostNameToFolderMapping(This,hostName) ) 
+
+
+#define ICoreWebView2_19_add_FrameCreated(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameCreated(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_FrameCreated(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameCreated(This,token) ) 
+
+#define ICoreWebView2_19_add_DownloadStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DownloadStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_DownloadStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_DownloadStarting(This,token) ) 
+
+
+#define ICoreWebView2_19_add_ClientCertificateRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ClientCertificateRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_ClientCertificateRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ClientCertificateRequested(This,token) ) 
+
+
+#define ICoreWebView2_19_OpenTaskManagerWindow(This)	\
+    ( (This)->lpVtbl -> OpenTaskManagerWindow(This) ) 
+
+
+#define ICoreWebView2_19_PrintToPdf(This,resultFilePath,printSettings,handler)	\
+    ( (This)->lpVtbl -> PrintToPdf(This,resultFilePath,printSettings,handler) ) 
+
+
+#define ICoreWebView2_19_add_IsMutedChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsMutedChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_IsMutedChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsMutedChanged(This,token) ) 
+
+#define ICoreWebView2_19_get_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> get_IsMuted(This,value) ) 
+
+#define ICoreWebView2_19_put_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> put_IsMuted(This,value) ) 
+
+#define ICoreWebView2_19_add_IsDocumentPlayingAudioChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsDocumentPlayingAudioChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_IsDocumentPlayingAudioChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDocumentPlayingAudioChanged(This,token) ) 
+
+#define ICoreWebView2_19_get_IsDocumentPlayingAudio(This,value)	\
+    ( (This)->lpVtbl -> get_IsDocumentPlayingAudio(This,value) ) 
+
+
+#define ICoreWebView2_19_add_IsDefaultDownloadDialogOpenChanged(This,handler,token)	\
+    ( (This)->lpVtbl -> add_IsDefaultDownloadDialogOpenChanged(This,handler,token) ) 
+
+#define ICoreWebView2_19_remove_IsDefaultDownloadDialogOpenChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDefaultDownloadDialogOpenChanged(This,token) ) 
+
+#define ICoreWebView2_19_get_IsDefaultDownloadDialogOpen(This,value)	\
+    ( (This)->lpVtbl -> get_IsDefaultDownloadDialogOpen(This,value) ) 
+
+#define ICoreWebView2_19_OpenDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> OpenDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_19_CloseDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> CloseDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_19_get_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_19_put_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_19_get_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogMargin(This,value) ) 
+
+#define ICoreWebView2_19_put_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogMargin(This,value) ) 
+
+
+#define ICoreWebView2_19_add_BasicAuthenticationRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_BasicAuthenticationRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_BasicAuthenticationRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_BasicAuthenticationRequested(This,token) ) 
+
+
+#define ICoreWebView2_19_CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_19_add_ContextMenuRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContextMenuRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_ContextMenuRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ContextMenuRequested(This,token) ) 
+
+
+#define ICoreWebView2_19_add_StatusBarTextChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_StatusBarTextChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_StatusBarTextChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_StatusBarTextChanged(This,token) ) 
+
+#define ICoreWebView2_19_get_StatusBarText(This,value)	\
+    ( (This)->lpVtbl -> get_StatusBarText(This,value) ) 
+
+
+#define ICoreWebView2_19_get_Profile(This,value)	\
+    ( (This)->lpVtbl -> get_Profile(This,value) ) 
+
+
+#define ICoreWebView2_19_add_ServerCertificateErrorDetected(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ServerCertificateErrorDetected(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_ServerCertificateErrorDetected(This,token)	\
+    ( (This)->lpVtbl -> remove_ServerCertificateErrorDetected(This,token) ) 
+
+#define ICoreWebView2_19_ClearServerCertificateErrorActions(This,handler)	\
+    ( (This)->lpVtbl -> ClearServerCertificateErrorActions(This,handler) ) 
+
+
+#define ICoreWebView2_19_add_FaviconChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FaviconChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_FaviconChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_FaviconChanged(This,token) ) 
+
+#define ICoreWebView2_19_get_FaviconUri(This,value)	\
+    ( (This)->lpVtbl -> get_FaviconUri(This,value) ) 
+
+#define ICoreWebView2_19_GetFavicon(This,format,completedHandler)	\
+    ( (This)->lpVtbl -> GetFavicon(This,format,completedHandler) ) 
+
+
+#define ICoreWebView2_19_Print(This,printSettings,handler)	\
+    ( (This)->lpVtbl -> Print(This,printSettings,handler) ) 
+
+#define ICoreWebView2_19_ShowPrintUI(This,printDialogKind)	\
+    ( (This)->lpVtbl -> ShowPrintUI(This,printDialogKind) ) 
+
+#define ICoreWebView2_19_PrintToPdfStream(This,printSettings,handler)	\
+    ( (This)->lpVtbl -> PrintToPdfStream(This,printSettings,handler) ) 
+
+
+#define ICoreWebView2_19_PostSharedBufferToScript(This,sharedBuffer,access,additionalDataAsJson)	\
+    ( (This)->lpVtbl -> PostSharedBufferToScript(This,sharedBuffer,access,additionalDataAsJson) ) 
+
+
+#define ICoreWebView2_19_add_LaunchingExternalUriScheme(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_LaunchingExternalUriScheme(This,eventHandler,token) ) 
+
+#define ICoreWebView2_19_remove_LaunchingExternalUriScheme(This,token)	\
+    ( (This)->lpVtbl -> remove_LaunchingExternalUriScheme(This,token) ) 
+
+
+#define ICoreWebView2_19_get_MemoryUsageTargetLevel(This,level)	\
+    ( (This)->lpVtbl -> get_MemoryUsageTargetLevel(This,level) ) 
+
+#define ICoreWebView2_19_put_MemoryUsageTargetLevel(This,level)	\
+    ( (This)->lpVtbl -> put_MemoryUsageTargetLevel(This,level) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2_19_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2_20_INTERFACE_DEFINED__
+#define __ICoreWebView2_20_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2_20 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_20 = {0xb4bc1926,0x7305,0x11ee,{0xb9,0x62,0x02,0x42,0xac,0x12,0x00,0x02}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("b4bc1926-7305-11ee-b962-0242ac120002")
+    ICoreWebView2_20 : public ICoreWebView2_19
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FrameId( 
+            /* [retval][out] */ UINT32 *id) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2_20Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2_20 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2_20 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Settings)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Settings )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ ICoreWebView2Settings **settings);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_Source)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Source )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ LPWSTR *uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Navigate)
+        HRESULT ( STDMETHODCALLTYPE *Navigate )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, NavigateToString)
+        HRESULT ( STDMETHODCALLTYPE *NavigateToString )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR htmlContent);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationStarting )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationStarting )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *add_ContentLoading )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2ContentLoadingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContentLoading )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_SourceChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2SourceChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_SourceChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_SourceChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_HistoryChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2HistoryChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_HistoryChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_HistoryChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationCompleted )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationCompleted )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationStarting )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationStarting )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationCompleted )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationCompleted )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *add_ScriptDialogOpening )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2ScriptDialogOpeningEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ScriptDialogOpening)
+        HRESULT ( STDMETHODCALLTYPE *remove_ScriptDialogOpening )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_PermissionRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2PermissionRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_PermissionRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *add_ProcessFailed )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2ProcessFailedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ProcessFailed)
+        HRESULT ( STDMETHODCALLTYPE *remove_ProcessFailed )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *AddScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveScriptToExecuteOnDocumentCreated)
+        HRESULT ( STDMETHODCALLTYPE *RemoveScriptToExecuteOnDocumentCreated )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR id);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, ExecuteScript)
+        HRESULT ( STDMETHODCALLTYPE *ExecuteScript )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2ExecuteScriptCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CapturePreview)
+        HRESULT ( STDMETHODCALLTYPE *CapturePreview )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT imageFormat,
+            /* [in] */ IStream *imageStream,
+            /* [in] */ ICoreWebView2CapturePreviewCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Reload)
+        HRESULT ( STDMETHODCALLTYPE *Reload )( 
+            ICoreWebView2_20 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsJson)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsJson )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR webMessageAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsString)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsString )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR webMessageAsString);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebMessageReceived )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2WebMessageReceivedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebMessageReceived )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, CallDevToolsProtocolMethod)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethod )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_BrowserProcessId)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BrowserProcessId )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ UINT32 *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoBack)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoBack )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ BOOL *canGoBack);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoForward)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoForward )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ BOOL *canGoForward);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoBack)
+        HRESULT ( STDMETHODCALLTYPE *GoBack )( 
+            ICoreWebView2_20 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GoForward)
+        HRESULT ( STDMETHODCALLTYPE *GoForward )( 
+            ICoreWebView2_20 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, GetDevToolsProtocolEventReceiver)
+        HRESULT ( STDMETHODCALLTYPE *GetDevToolsProtocolEventReceiver )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR eventName,
+            /* [retval][out] */ ICoreWebView2DevToolsProtocolEventReceiver **receiver);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, Stop)
+        HRESULT ( STDMETHODCALLTYPE *Stop )( 
+            ICoreWebView2_20 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_NewWindowRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2NewWindowRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NewWindowRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_NewWindowRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_DocumentTitleChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2DocumentTitleChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_DocumentTitleChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_DocumentTitleChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_DocumentTitle)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DocumentTitle )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ LPWSTR *title);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddHostObjectToScript)
+        HRESULT ( STDMETHODCALLTYPE *AddHostObjectToScript )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR name,
+            /* [in] */ VARIANT *object);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveHostObjectFromScript)
+        HRESULT ( STDMETHODCALLTYPE *RemoveHostObjectFromScript )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR name);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, OpenDevToolsWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenDevToolsWindow )( 
+            ICoreWebView2_20 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2ContainsFullScreenElementChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContainsFullScreenElementChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContainsFullScreenElementChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, get_ContainsFullScreenElement)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ContainsFullScreenElement )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ BOOL *containsFullScreenElement);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2WebResourceRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebResourceRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, AddWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *AddWebResourceRequestedFilter )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveWebResourceRequestedFilter)
+        HRESULT ( STDMETHODCALLTYPE *RemoveWebResourceRequestedFilter )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ const LPCWSTR uri,
+            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, add_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_WindowCloseRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2WindowCloseRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WindowCloseRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_WindowCloseRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebResourceResponseReceived )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2WebResourceResponseReceivedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_WebResourceResponseReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceResponseReceived )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, NavigateWithWebResourceRequest)
+        HRESULT ( STDMETHODCALLTYPE *NavigateWithWebResourceRequest )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2WebResourceRequest *request);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *add_DOMContentLoaded )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2DOMContentLoadedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *remove_DOMContentLoaded )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_CookieManager)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_Environment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Environment )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ ICoreWebView2Environment **environment);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, TrySuspend)
+        HRESULT ( STDMETHODCALLTYPE *TrySuspend )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2TrySuspendCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, Resume)
+        HRESULT ( STDMETHODCALLTYPE *Resume )( 
+            ICoreWebView2_20 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, get_IsSuspended)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsSuspended )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ BOOL *isSuspended);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, SetVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *SetVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR hostName,
+            /* [in] */ LPCWSTR folderPath,
+            /* [in] */ COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND accessKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_3, ClearVirtualHostNameToFolderMapping)
+        HRESULT ( STDMETHODCALLTYPE *ClearVirtualHostNameToFolderMapping )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR hostName);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *add_FrameCreated )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2FrameCreatedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_FrameCreated)
+        HRESULT ( STDMETHODCALLTYPE *remove_FrameCreated )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_DownloadStarting )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2DownloadStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_DownloadStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_DownloadStarting )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, add_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ClientCertificateRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2ClientCertificateRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_5, remove_ClientCertificateRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ClientCertificateRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_6, OpenTaskManagerWindow)
+        HRESULT ( STDMETHODCALLTYPE *OpenTaskManagerWindow )( 
+            ICoreWebView2_20 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_7, PrintToPdf)
+        HRESULT ( STDMETHODCALLTYPE *PrintToPdf )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR resultFilePath,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintToPdfCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsMutedChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2IsMutedChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsMutedChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsMutedChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsMuted)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsMuted )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, put_IsMuted)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsMuted )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2IsDocumentPlayingAudioChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsDocumentPlayingAudioChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDocumentPlayingAudioChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsDocumentPlayingAudio)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDocumentPlayingAudio )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, add_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, remove_IsDefaultDownloadDialogOpenChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_IsDefaultDownloadDialogOpenChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_IsDefaultDownloadDialogOpen)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDefaultDownloadDialogOpen )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, OpenDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *OpenDefaultDownloadDialog )( 
+            ICoreWebView2_20 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, CloseDefaultDownloadDialog)
+        HRESULT ( STDMETHODCALLTYPE *CloseDefaultDownloadDialog )( 
+            ICoreWebView2_20 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogCornerAlignment)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogCornerAlignment)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogCornerAlignment )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogMargin)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ POINT *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogMargin)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogMargin )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ POINT value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, add_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_BasicAuthenticationRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2BasicAuthenticationRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_10, remove_BasicAuthenticationRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_BasicAuthenticationRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, CallDevToolsProtocolMethodForSession)
+        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethodForSession )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ LPCWSTR sessionId,
+            /* [in] */ LPCWSTR methodName,
+            /* [in] */ LPCWSTR parametersAsJson,
+            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, add_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_ContextMenuRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2ContextMenuRequestedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_11, remove_ContextMenuRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContextMenuRequested )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, add_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_StatusBarTextChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2StatusBarTextChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, remove_StatusBarTextChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_StatusBarTextChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_12, get_StatusBarText)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StatusBarText )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_13, get_Profile)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Profile )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ ICoreWebView2Profile **value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, add_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *add_ServerCertificateErrorDetected )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2ServerCertificateErrorDetectedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, remove_ServerCertificateErrorDetected)
+        HRESULT ( STDMETHODCALLTYPE *remove_ServerCertificateErrorDetected )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_14, ClearServerCertificateErrorActions)
+        HRESULT ( STDMETHODCALLTYPE *ClearServerCertificateErrorActions )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2ClearServerCertificateErrorActionsCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, add_FaviconChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_FaviconChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2FaviconChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, remove_FaviconChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_FaviconChanged )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, get_FaviconUri)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FaviconUri )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_15, GetFavicon)
+        HRESULT ( STDMETHODCALLTYPE *GetFavicon )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ COREWEBVIEW2_FAVICON_IMAGE_FORMAT format,
+            /* [in] */ ICoreWebView2GetFaviconCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, Print)
+        HRESULT ( STDMETHODCALLTYPE *Print )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, ShowPrintUI)
+        HRESULT ( STDMETHODCALLTYPE *ShowPrintUI )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ COREWEBVIEW2_PRINT_DIALOG_KIND printDialogKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_16, PrintToPdfStream)
+        HRESULT ( STDMETHODCALLTYPE *PrintToPdfStream )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2PrintSettings *printSettings,
+            /* [in] */ ICoreWebView2PrintToPdfStreamCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_17, PostSharedBufferToScript)
+        HRESULT ( STDMETHODCALLTYPE *PostSharedBufferToScript )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2SharedBuffer *sharedBuffer,
+            /* [in] */ COREWEBVIEW2_SHARED_BUFFER_ACCESS access,
+            /* [in] */ LPCWSTR additionalDataAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_18, add_LaunchingExternalUriScheme)
+        HRESULT ( STDMETHODCALLTYPE *add_LaunchingExternalUriScheme )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ ICoreWebView2LaunchingExternalUriSchemeEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_18, remove_LaunchingExternalUriScheme)
+        HRESULT ( STDMETHODCALLTYPE *remove_LaunchingExternalUriScheme )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_19, get_MemoryUsageTargetLevel)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_MemoryUsageTargetLevel )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL *level);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_19, put_MemoryUsageTargetLevel)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_MemoryUsageTargetLevel )( 
+            ICoreWebView2_20 * This,
+            /* [in] */ COREWEBVIEW2_MEMORY_USAGE_TARGET_LEVEL level);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2_20, get_FrameId)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameId )( 
+            ICoreWebView2_20 * This,
+            /* [retval][out] */ UINT32 *id);
+        
+        END_INTERFACE
+    } ICoreWebView2_20Vtbl;
+
+    interface ICoreWebView2_20
+    {
+        CONST_VTBL struct ICoreWebView2_20Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2_20_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2_20_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2_20_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2_20_get_Settings(This,settings)	\
+    ( (This)->lpVtbl -> get_Settings(This,settings) ) 
+
+#define ICoreWebView2_20_get_Source(This,uri)	\
+    ( (This)->lpVtbl -> get_Source(This,uri) ) 
+
+#define ICoreWebView2_20_Navigate(This,uri)	\
+    ( (This)->lpVtbl -> Navigate(This,uri) ) 
+
+#define ICoreWebView2_20_NavigateToString(This,htmlContent)	\
+    ( (This)->lpVtbl -> NavigateToString(This,htmlContent) ) 
+
+#define ICoreWebView2_20_add_NavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_NavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationStarting(This,token) ) 
+
+#define ICoreWebView2_20_add_ContentLoading(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContentLoading(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_ContentLoading(This,token)	\
+    ( (This)->lpVtbl -> remove_ContentLoading(This,token) ) 
+
+#define ICoreWebView2_20_add_SourceChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_SourceChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_SourceChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_SourceChanged(This,token) ) 
+
+#define ICoreWebView2_20_add_HistoryChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_HistoryChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_HistoryChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_HistoryChanged(This,token) ) 
+
+#define ICoreWebView2_20_add_NavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_NavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_20_add_FrameNavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_FrameNavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationStarting(This,token) ) 
+
+#define ICoreWebView2_20_add_FrameNavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameNavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_FrameNavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameNavigationCompleted(This,token) ) 
+
+#define ICoreWebView2_20_add_ScriptDialogOpening(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ScriptDialogOpening(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_ScriptDialogOpening(This,token)	\
+    ( (This)->lpVtbl -> remove_ScriptDialogOpening(This,token) ) 
+
+#define ICoreWebView2_20_add_PermissionRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_PermissionRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_PermissionRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_PermissionRequested(This,token) ) 
+
+#define ICoreWebView2_20_add_ProcessFailed(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ProcessFailed(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_ProcessFailed(This,token)	\
+    ( (This)->lpVtbl -> remove_ProcessFailed(This,token) ) 
+
+#define ICoreWebView2_20_AddScriptToExecuteOnDocumentCreated(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> AddScriptToExecuteOnDocumentCreated(This,javaScript,handler) ) 
+
+#define ICoreWebView2_20_RemoveScriptToExecuteOnDocumentCreated(This,id)	\
+    ( (This)->lpVtbl -> RemoveScriptToExecuteOnDocumentCreated(This,id) ) 
+
+#define ICoreWebView2_20_ExecuteScript(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> ExecuteScript(This,javaScript,handler) ) 
+
+#define ICoreWebView2_20_CapturePreview(This,imageFormat,imageStream,handler)	\
+    ( (This)->lpVtbl -> CapturePreview(This,imageFormat,imageStream,handler) ) 
+
+#define ICoreWebView2_20_Reload(This)	\
+    ( (This)->lpVtbl -> Reload(This) ) 
+
+#define ICoreWebView2_20_PostWebMessageAsJson(This,webMessageAsJson)	\
+    ( (This)->lpVtbl -> PostWebMessageAsJson(This,webMessageAsJson) ) 
+
+#define ICoreWebView2_20_PostWebMessageAsString(This,webMessageAsString)	\
+    ( (This)->lpVtbl -> PostWebMessageAsString(This,webMessageAsString) ) 
+
+#define ICoreWebView2_20_add_WebMessageReceived(This,handler,token)	\
+    ( (This)->lpVtbl -> add_WebMessageReceived(This,handler,token) ) 
+
+#define ICoreWebView2_20_remove_WebMessageReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebMessageReceived(This,token) ) 
+
+#define ICoreWebView2_20_CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_20_get_BrowserProcessId(This,value)	\
+    ( (This)->lpVtbl -> get_BrowserProcessId(This,value) ) 
+
+#define ICoreWebView2_20_get_CanGoBack(This,canGoBack)	\
+    ( (This)->lpVtbl -> get_CanGoBack(This,canGoBack) ) 
+
+#define ICoreWebView2_20_get_CanGoForward(This,canGoForward)	\
+    ( (This)->lpVtbl -> get_CanGoForward(This,canGoForward) ) 
+
+#define ICoreWebView2_20_GoBack(This)	\
+    ( (This)->lpVtbl -> GoBack(This) ) 
+
+#define ICoreWebView2_20_GoForward(This)	\
+    ( (This)->lpVtbl -> GoForward(This) ) 
+
+#define ICoreWebView2_20_GetDevToolsProtocolEventReceiver(This,eventName,receiver)	\
+    ( (This)->lpVtbl -> GetDevToolsProtocolEventReceiver(This,eventName,receiver) ) 
+
+#define ICoreWebView2_20_Stop(This)	\
+    ( (This)->lpVtbl -> Stop(This) ) 
+
+#define ICoreWebView2_20_add_NewWindowRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NewWindowRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_NewWindowRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_NewWindowRequested(This,token) ) 
+
+#define ICoreWebView2_20_add_DocumentTitleChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DocumentTitleChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_DocumentTitleChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_DocumentTitleChanged(This,token) ) 
+
+#define ICoreWebView2_20_get_DocumentTitle(This,title)	\
+    ( (This)->lpVtbl -> get_DocumentTitle(This,title) ) 
+
+#define ICoreWebView2_20_AddHostObjectToScript(This,name,object)	\
+    ( (This)->lpVtbl -> AddHostObjectToScript(This,name,object) ) 
+
+#define ICoreWebView2_20_RemoveHostObjectFromScript(This,name)	\
+    ( (This)->lpVtbl -> RemoveHostObjectFromScript(This,name) ) 
+
+#define ICoreWebView2_20_OpenDevToolsWindow(This)	\
+    ( (This)->lpVtbl -> OpenDevToolsWindow(This) ) 
+
+#define ICoreWebView2_20_add_ContainsFullScreenElementChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContainsFullScreenElementChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_ContainsFullScreenElementChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_ContainsFullScreenElementChanged(This,token) ) 
+
+#define ICoreWebView2_20_get_ContainsFullScreenElement(This,containsFullScreenElement)	\
+    ( (This)->lpVtbl -> get_ContainsFullScreenElement(This,containsFullScreenElement) ) 
+
+#define ICoreWebView2_20_add_WebResourceRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_WebResourceRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceRequested(This,token) ) 
+
+#define ICoreWebView2_20_AddWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> AddWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_20_RemoveWebResourceRequestedFilter(This,uri,resourceContext)	\
+    ( (This)->lpVtbl -> RemoveWebResourceRequestedFilter(This,uri,resourceContext) ) 
+
+#define ICoreWebView2_20_add_WindowCloseRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WindowCloseRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_WindowCloseRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_WindowCloseRequested(This,token) ) 
+
+
+#define ICoreWebView2_20_add_WebResourceResponseReceived(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_WebResourceResponseReceived(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_WebResourceResponseReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebResourceResponseReceived(This,token) ) 
+
+#define ICoreWebView2_20_NavigateWithWebResourceRequest(This,request)	\
+    ( (This)->lpVtbl -> NavigateWithWebResourceRequest(This,request) ) 
+
+#define ICoreWebView2_20_add_DOMContentLoaded(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DOMContentLoaded(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_DOMContentLoaded(This,token)	\
+    ( (This)->lpVtbl -> remove_DOMContentLoaded(This,token) ) 
+
+#define ICoreWebView2_20_get_CookieManager(This,cookieManager)	\
+    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
+
+#define ICoreWebView2_20_get_Environment(This,environment)	\
+    ( (This)->lpVtbl -> get_Environment(This,environment) ) 
+
+
+#define ICoreWebView2_20_TrySuspend(This,handler)	\
+    ( (This)->lpVtbl -> TrySuspend(This,handler) ) 
+
+#define ICoreWebView2_20_Resume(This)	\
+    ( (This)->lpVtbl -> Resume(This) ) 
+
+#define ICoreWebView2_20_get_IsSuspended(This,isSuspended)	\
+    ( (This)->lpVtbl -> get_IsSuspended(This,isSuspended) ) 
+
+#define ICoreWebView2_20_SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind)	\
+    ( (This)->lpVtbl -> SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind) ) 
+
+#define ICoreWebView2_20_ClearVirtualHostNameToFolderMapping(This,hostName)	\
+    ( (This)->lpVtbl -> ClearVirtualHostNameToFolderMapping(This,hostName) ) 
+
+
+#define ICoreWebView2_20_add_FrameCreated(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FrameCreated(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_FrameCreated(This,token)	\
+    ( (This)->lpVtbl -> remove_FrameCreated(This,token) ) 
+
+#define ICoreWebView2_20_add_DownloadStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DownloadStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_DownloadStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_DownloadStarting(This,token) ) 
+
+
+#define ICoreWebView2_20_add_ClientCertificateRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ClientCertificateRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_ClientCertificateRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ClientCertificateRequested(This,token) ) 
+
+
+#define ICoreWebView2_20_OpenTaskManagerWindow(This)	\
+    ( (This)->lpVtbl -> OpenTaskManagerWindow(This) ) 
+
+
+#define ICoreWebView2_20_PrintToPdf(This,resultFilePath,printSettings,handler)	\
+    ( (This)->lpVtbl -> PrintToPdf(This,resultFilePath,printSettings,handler) ) 
+
+
+#define ICoreWebView2_20_add_IsMutedChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsMutedChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_IsMutedChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsMutedChanged(This,token) ) 
+
+#define ICoreWebView2_20_get_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> get_IsMuted(This,value) ) 
+
+#define ICoreWebView2_20_put_IsMuted(This,value)	\
+    ( (This)->lpVtbl -> put_IsMuted(This,value) ) 
+
+#define ICoreWebView2_20_add_IsDocumentPlayingAudioChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_IsDocumentPlayingAudioChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_IsDocumentPlayingAudioChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDocumentPlayingAudioChanged(This,token) ) 
+
+#define ICoreWebView2_20_get_IsDocumentPlayingAudio(This,value)	\
+    ( (This)->lpVtbl -> get_IsDocumentPlayingAudio(This,value) ) 
+
+
+#define ICoreWebView2_20_add_IsDefaultDownloadDialogOpenChanged(This,handler,token)	\
+    ( (This)->lpVtbl -> add_IsDefaultDownloadDialogOpenChanged(This,handler,token) ) 
+
+#define ICoreWebView2_20_remove_IsDefaultDownloadDialogOpenChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_IsDefaultDownloadDialogOpenChanged(This,token) ) 
+
+#define ICoreWebView2_20_get_IsDefaultDownloadDialogOpen(This,value)	\
+    ( (This)->lpVtbl -> get_IsDefaultDownloadDialogOpen(This,value) ) 
+
+#define ICoreWebView2_20_OpenDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> OpenDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_20_CloseDefaultDownloadDialog(This)	\
+    ( (This)->lpVtbl -> CloseDefaultDownloadDialog(This) ) 
+
+#define ICoreWebView2_20_get_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_20_put_DefaultDownloadDialogCornerAlignment(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogCornerAlignment(This,value) ) 
+
+#define ICoreWebView2_20_get_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadDialogMargin(This,value) ) 
+
+#define ICoreWebView2_20_put_DefaultDownloadDialogMargin(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadDialogMargin(This,value) ) 
+
+
+#define ICoreWebView2_20_add_BasicAuthenticationRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_BasicAuthenticationRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_BasicAuthenticationRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_BasicAuthenticationRequested(This,token) ) 
+
+
+#define ICoreWebView2_20_CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler)	\
+    ( (This)->lpVtbl -> CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler) ) 
+
+#define ICoreWebView2_20_add_ContextMenuRequested(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContextMenuRequested(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_ContextMenuRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_ContextMenuRequested(This,token) ) 
+
+
+#define ICoreWebView2_20_add_StatusBarTextChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_StatusBarTextChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_StatusBarTextChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_StatusBarTextChanged(This,token) ) 
+
+#define ICoreWebView2_20_get_StatusBarText(This,value)	\
+    ( (This)->lpVtbl -> get_StatusBarText(This,value) ) 
+
+
+#define ICoreWebView2_20_get_Profile(This,value)	\
+    ( (This)->lpVtbl -> get_Profile(This,value) ) 
+
+
+#define ICoreWebView2_20_add_ServerCertificateErrorDetected(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ServerCertificateErrorDetected(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_ServerCertificateErrorDetected(This,token)	\
+    ( (This)->lpVtbl -> remove_ServerCertificateErrorDetected(This,token) ) 
+
+#define ICoreWebView2_20_ClearServerCertificateErrorActions(This,handler)	\
+    ( (This)->lpVtbl -> ClearServerCertificateErrorActions(This,handler) ) 
+
+
+#define ICoreWebView2_20_add_FaviconChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_FaviconChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_FaviconChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_FaviconChanged(This,token) ) 
+
+#define ICoreWebView2_20_get_FaviconUri(This,value)	\
+    ( (This)->lpVtbl -> get_FaviconUri(This,value) ) 
+
+#define ICoreWebView2_20_GetFavicon(This,format,completedHandler)	\
+    ( (This)->lpVtbl -> GetFavicon(This,format,completedHandler) ) 
+
+
+#define ICoreWebView2_20_Print(This,printSettings,handler)	\
+    ( (This)->lpVtbl -> Print(This,printSettings,handler) ) 
+
+#define ICoreWebView2_20_ShowPrintUI(This,printDialogKind)	\
+    ( (This)->lpVtbl -> ShowPrintUI(This,printDialogKind) ) 
+
+#define ICoreWebView2_20_PrintToPdfStream(This,printSettings,handler)	\
+    ( (This)->lpVtbl -> PrintToPdfStream(This,printSettings,handler) ) 
+
+
+#define ICoreWebView2_20_PostSharedBufferToScript(This,sharedBuffer,access,additionalDataAsJson)	\
+    ( (This)->lpVtbl -> PostSharedBufferToScript(This,sharedBuffer,access,additionalDataAsJson) ) 
+
+
+#define ICoreWebView2_20_add_LaunchingExternalUriScheme(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_LaunchingExternalUriScheme(This,eventHandler,token) ) 
+
+#define ICoreWebView2_20_remove_LaunchingExternalUriScheme(This,token)	\
+    ( (This)->lpVtbl -> remove_LaunchingExternalUriScheme(This,token) ) 
+
+
+#define ICoreWebView2_20_get_MemoryUsageTargetLevel(This,level)	\
+    ( (This)->lpVtbl -> get_MemoryUsageTargetLevel(This,level) ) 
+
+#define ICoreWebView2_20_put_MemoryUsageTargetLevel(This,level)	\
+    ( (This)->lpVtbl -> put_MemoryUsageTargetLevel(This,level) ) 
+
+
+#define ICoreWebView2_20_get_FrameId(This,id)	\
+    ( (This)->lpVtbl -> get_FrameId(This,id) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2_20_INTERFACE_DEFINED__ */
+
+
 #ifndef __ICoreWebView2BasicAuthenticationRequestedEventArgs_INTERFACE_DEFINED__
 #define __ICoreWebView2BasicAuthenticationRequestedEventArgs_INTERFACE_DEFINED__
 
@@ -15327,6 +23213,134 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2ControllerOptions = {0
 
 
 #endif 	/* __ICoreWebView2ControllerOptions_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2ControllerOptions2_INTERFACE_DEFINED__
+#define __ICoreWebView2ControllerOptions2_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2ControllerOptions2 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2ControllerOptions2 = {0x06c991d8,0x9e7e,0x11ed,{0xa8,0xfc,0x02,0x42,0xac,0x12,0x00,0x02}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("06c991d8-9e7e-11ed-a8fc-0242ac120002")
+    ICoreWebView2ControllerOptions2 : public ICoreWebView2ControllerOptions
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ScriptLocale( 
+            /* [retval][out] */ LPWSTR *locale) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_ScriptLocale( 
+            /* [in] */ LPCWSTR locale) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2ControllerOptions2Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2ControllerOptions2 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2ControllerOptions2 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2ControllerOptions2 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ControllerOptions, get_ProfileName)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProfileName )( 
+            ICoreWebView2ControllerOptions2 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ControllerOptions, put_ProfileName)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ProfileName )( 
+            ICoreWebView2ControllerOptions2 * This,
+            /* [in] */ LPCWSTR value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ControllerOptions, get_IsInPrivateModeEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsInPrivateModeEnabled )( 
+            ICoreWebView2ControllerOptions2 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ControllerOptions, put_IsInPrivateModeEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsInPrivateModeEnabled )( 
+            ICoreWebView2ControllerOptions2 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ControllerOptions2, get_ScriptLocale)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ScriptLocale )( 
+            ICoreWebView2ControllerOptions2 * This,
+            /* [retval][out] */ LPWSTR *locale);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ControllerOptions2, put_ScriptLocale)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_ScriptLocale )( 
+            ICoreWebView2ControllerOptions2 * This,
+            /* [in] */ LPCWSTR locale);
+        
+        END_INTERFACE
+    } ICoreWebView2ControllerOptions2Vtbl;
+
+    interface ICoreWebView2ControllerOptions2
+    {
+        CONST_VTBL struct ICoreWebView2ControllerOptions2Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2ControllerOptions2_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2ControllerOptions2_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2ControllerOptions2_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2ControllerOptions2_get_ProfileName(This,value)	\
+    ( (This)->lpVtbl -> get_ProfileName(This,value) ) 
+
+#define ICoreWebView2ControllerOptions2_put_ProfileName(This,value)	\
+    ( (This)->lpVtbl -> put_ProfileName(This,value) ) 
+
+#define ICoreWebView2ControllerOptions2_get_IsInPrivateModeEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsInPrivateModeEnabled(This,value) ) 
+
+#define ICoreWebView2ControllerOptions2_put_IsInPrivateModeEnabled(This,value)	\
+    ( (This)->lpVtbl -> put_IsInPrivateModeEnabled(This,value) ) 
+
+
+#define ICoreWebView2ControllerOptions2_get_ScriptLocale(This,locale)	\
+    ( (This)->lpVtbl -> get_ScriptLocale(This,locale) ) 
+
+#define ICoreWebView2ControllerOptions2_put_ScriptLocale(This,locale)	\
+    ( (This)->lpVtbl -> put_ScriptLocale(This,locale) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2ControllerOptions2_INTERFACE_DEFINED__ */
 
 
 #ifndef __ICoreWebView2ContentLoadingEventArgs_INTERFACE_DEFINED__
@@ -18313,6 +26327,160 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2CustomItemSelectedEven
 
 
 #endif 	/* __ICoreWebView2CustomItemSelectedEventHandler_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2CustomSchemeRegistration_INTERFACE_DEFINED__
+#define __ICoreWebView2CustomSchemeRegistration_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2CustomSchemeRegistration */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2CustomSchemeRegistration = {0xd60ac92c,0x37a6,0x4b26,{0xa3,0x9e,0x95,0xcf,0xe5,0x90,0x47,0xbb}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("d60ac92c-37a6-4b26-a39e-95cfe59047bb")
+    ICoreWebView2CustomSchemeRegistration : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_SchemeName( 
+            /* [retval][out] */ LPWSTR *schemeName) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_TreatAsSecure( 
+            /* [retval][out] */ BOOL *treatAsSecure) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_TreatAsSecure( 
+            /* [in] */ BOOL value) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetAllowedOrigins( 
+            /* [out] */ UINT32 *allowedOriginsCount,
+            /* [out] */ LPWSTR **allowedOrigins) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE SetAllowedOrigins( 
+            /* [in] */ UINT32 allowedOriginsCount,
+            /* [in] */ LPCWSTR *allowedOrigins) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_HasAuthorityComponent( 
+            /* [retval][out] */ BOOL *hasAuthorityComponent) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_HasAuthorityComponent( 
+            /* [in] */ BOOL hasAuthorityComponent) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2CustomSchemeRegistrationVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2CustomSchemeRegistration * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2CustomSchemeRegistration * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2CustomSchemeRegistration * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2CustomSchemeRegistration, get_SchemeName)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_SchemeName )( 
+            ICoreWebView2CustomSchemeRegistration * This,
+            /* [retval][out] */ LPWSTR *schemeName);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2CustomSchemeRegistration, get_TreatAsSecure)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_TreatAsSecure )( 
+            ICoreWebView2CustomSchemeRegistration * This,
+            /* [retval][out] */ BOOL *treatAsSecure);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2CustomSchemeRegistration, put_TreatAsSecure)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_TreatAsSecure )( 
+            ICoreWebView2CustomSchemeRegistration * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2CustomSchemeRegistration, GetAllowedOrigins)
+        HRESULT ( STDMETHODCALLTYPE *GetAllowedOrigins )( 
+            ICoreWebView2CustomSchemeRegistration * This,
+            /* [out] */ UINT32 *allowedOriginsCount,
+            /* [out] */ LPWSTR **allowedOrigins);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2CustomSchemeRegistration, SetAllowedOrigins)
+        HRESULT ( STDMETHODCALLTYPE *SetAllowedOrigins )( 
+            ICoreWebView2CustomSchemeRegistration * This,
+            /* [in] */ UINT32 allowedOriginsCount,
+            /* [in] */ LPCWSTR *allowedOrigins);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2CustomSchemeRegistration, get_HasAuthorityComponent)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_HasAuthorityComponent )( 
+            ICoreWebView2CustomSchemeRegistration * This,
+            /* [retval][out] */ BOOL *hasAuthorityComponent);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2CustomSchemeRegistration, put_HasAuthorityComponent)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_HasAuthorityComponent )( 
+            ICoreWebView2CustomSchemeRegistration * This,
+            /* [in] */ BOOL hasAuthorityComponent);
+        
+        END_INTERFACE
+    } ICoreWebView2CustomSchemeRegistrationVtbl;
+
+    interface ICoreWebView2CustomSchemeRegistration
+    {
+        CONST_VTBL struct ICoreWebView2CustomSchemeRegistrationVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2CustomSchemeRegistration_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2CustomSchemeRegistration_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2CustomSchemeRegistration_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2CustomSchemeRegistration_get_SchemeName(This,schemeName)	\
+    ( (This)->lpVtbl -> get_SchemeName(This,schemeName) ) 
+
+#define ICoreWebView2CustomSchemeRegistration_get_TreatAsSecure(This,treatAsSecure)	\
+    ( (This)->lpVtbl -> get_TreatAsSecure(This,treatAsSecure) ) 
+
+#define ICoreWebView2CustomSchemeRegistration_put_TreatAsSecure(This,value)	\
+    ( (This)->lpVtbl -> put_TreatAsSecure(This,value) ) 
+
+#define ICoreWebView2CustomSchemeRegistration_GetAllowedOrigins(This,allowedOriginsCount,allowedOrigins)	\
+    ( (This)->lpVtbl -> GetAllowedOrigins(This,allowedOriginsCount,allowedOrigins) ) 
+
+#define ICoreWebView2CustomSchemeRegistration_SetAllowedOrigins(This,allowedOriginsCount,allowedOrigins)	\
+    ( (This)->lpVtbl -> SetAllowedOrigins(This,allowedOriginsCount,allowedOrigins) ) 
+
+#define ICoreWebView2CustomSchemeRegistration_get_HasAuthorityComponent(This,hasAuthorityComponent)	\
+    ( (This)->lpVtbl -> get_HasAuthorityComponent(This,hasAuthorityComponent) ) 
+
+#define ICoreWebView2CustomSchemeRegistration_put_HasAuthorityComponent(This,hasAuthorityComponent)	\
+    ( (This)->lpVtbl -> put_HasAuthorityComponent(This,hasAuthorityComponent) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2CustomSchemeRegistration_INTERFACE_DEFINED__ */
 
 
 #ifndef __ICoreWebView2DocumentTitleChangedEventHandler_INTERFACE_DEFINED__
@@ -21739,6 +29907,586 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Environment11 = {0xF09
 #endif 	/* __ICoreWebView2Environment11_INTERFACE_DEFINED__ */
 
 
+#ifndef __ICoreWebView2Environment12_INTERFACE_DEFINED__
+#define __ICoreWebView2Environment12_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2Environment12 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Environment12 = {0xF503DB9B,0x739F,0x48DD,{0xB1,0x51,0xFD,0xFC,0xF2,0x53,0xF5,0x4E}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("F503DB9B-739F-48DD-B151-FDFCF253F54E")
+    ICoreWebView2Environment12 : public ICoreWebView2Environment11
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE CreateSharedBuffer( 
+            /* [in] */ UINT64 size,
+            /* [retval][out] */ ICoreWebView2SharedBuffer **shared_buffer) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2Environment12Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2Environment12 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2Environment12 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment, CreateCoreWebView2Controller)
+        HRESULT ( STDMETHODCALLTYPE *CreateCoreWebView2Controller )( 
+            ICoreWebView2Environment12 * This,
+            HWND parentWindow,
+            ICoreWebView2CreateCoreWebView2ControllerCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment, CreateWebResourceResponse)
+        HRESULT ( STDMETHODCALLTYPE *CreateWebResourceResponse )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ IStream *content,
+            /* [in] */ int statusCode,
+            /* [in] */ LPCWSTR reasonPhrase,
+            /* [in] */ LPCWSTR headers,
+            /* [retval][out] */ ICoreWebView2WebResourceResponse **response);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment, get_BrowserVersionString)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BrowserVersionString )( 
+            ICoreWebView2Environment12 * This,
+            /* [retval][out] */ LPWSTR *versionInfo);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment, add_NewBrowserVersionAvailable)
+        HRESULT ( STDMETHODCALLTYPE *add_NewBrowserVersionAvailable )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ ICoreWebView2NewBrowserVersionAvailableEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment, remove_NewBrowserVersionAvailable)
+        HRESULT ( STDMETHODCALLTYPE *remove_NewBrowserVersionAvailable )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment2, CreateWebResourceRequest)
+        HRESULT ( STDMETHODCALLTYPE *CreateWebResourceRequest )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ LPCWSTR uri,
+            /* [in] */ LPCWSTR method,
+            /* [in] */ IStream *postData,
+            /* [in] */ LPCWSTR headers,
+            /* [retval][out] */ ICoreWebView2WebResourceRequest **request);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment3, CreateCoreWebView2CompositionController)
+        HRESULT ( STDMETHODCALLTYPE *CreateCoreWebView2CompositionController )( 
+            ICoreWebView2Environment12 * This,
+            HWND parentWindow,
+            ICoreWebView2CreateCoreWebView2CompositionControllerCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment3, CreateCoreWebView2PointerInfo)
+        HRESULT ( STDMETHODCALLTYPE *CreateCoreWebView2PointerInfo )( 
+            ICoreWebView2Environment12 * This,
+            /* [retval][out] */ ICoreWebView2PointerInfo **pointerInfo);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment4, GetAutomationProviderForWindow)
+        HRESULT ( STDMETHODCALLTYPE *GetAutomationProviderForWindow )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ HWND hwnd,
+            /* [retval][out] */ IUnknown **provider);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment5, add_BrowserProcessExited)
+        HRESULT ( STDMETHODCALLTYPE *add_BrowserProcessExited )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ ICoreWebView2BrowserProcessExitedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment5, remove_BrowserProcessExited)
+        HRESULT ( STDMETHODCALLTYPE *remove_BrowserProcessExited )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment6, CreatePrintSettings)
+        HRESULT ( STDMETHODCALLTYPE *CreatePrintSettings )( 
+            ICoreWebView2Environment12 * This,
+            /* [retval][out] */ ICoreWebView2PrintSettings **printSettings);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment7, get_UserDataFolder)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_UserDataFolder )( 
+            ICoreWebView2Environment12 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment8, add_ProcessInfosChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_ProcessInfosChanged )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ ICoreWebView2ProcessInfosChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment8, remove_ProcessInfosChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_ProcessInfosChanged )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment8, GetProcessInfos)
+        HRESULT ( STDMETHODCALLTYPE *GetProcessInfos )( 
+            ICoreWebView2Environment12 * This,
+            /* [retval][out] */ ICoreWebView2ProcessInfoCollection **value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment9, CreateContextMenuItem)
+        HRESULT ( STDMETHODCALLTYPE *CreateContextMenuItem )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ LPCWSTR label,
+            /* [in] */ IStream *iconStream,
+            /* [in] */ COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND kind,
+            /* [retval][out] */ ICoreWebView2ContextMenuItem **item);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment10, CreateCoreWebView2ControllerOptions)
+        HRESULT ( STDMETHODCALLTYPE *CreateCoreWebView2ControllerOptions )( 
+            ICoreWebView2Environment12 * This,
+            /* [retval][out] */ ICoreWebView2ControllerOptions **options);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment10, CreateCoreWebView2ControllerWithOptions)
+        HRESULT ( STDMETHODCALLTYPE *CreateCoreWebView2ControllerWithOptions )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ HWND parentWindow,
+            /* [in] */ ICoreWebView2ControllerOptions *options,
+            /* [in] */ ICoreWebView2CreateCoreWebView2ControllerCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment10, CreateCoreWebView2CompositionControllerWithOptions)
+        HRESULT ( STDMETHODCALLTYPE *CreateCoreWebView2CompositionControllerWithOptions )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ HWND parentWindow,
+            /* [in] */ ICoreWebView2ControllerOptions *options,
+            /* [in] */ ICoreWebView2CreateCoreWebView2CompositionControllerCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment11, get_FailureReportFolderPath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FailureReportFolderPath )( 
+            ICoreWebView2Environment12 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment12, CreateSharedBuffer)
+        HRESULT ( STDMETHODCALLTYPE *CreateSharedBuffer )( 
+            ICoreWebView2Environment12 * This,
+            /* [in] */ UINT64 size,
+            /* [retval][out] */ ICoreWebView2SharedBuffer **shared_buffer);
+        
+        END_INTERFACE
+    } ICoreWebView2Environment12Vtbl;
+
+    interface ICoreWebView2Environment12
+    {
+        CONST_VTBL struct ICoreWebView2Environment12Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2Environment12_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2Environment12_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2Environment12_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2Environment12_CreateCoreWebView2Controller(This,parentWindow,handler)	\
+    ( (This)->lpVtbl -> CreateCoreWebView2Controller(This,parentWindow,handler) ) 
+
+#define ICoreWebView2Environment12_CreateWebResourceResponse(This,content,statusCode,reasonPhrase,headers,response)	\
+    ( (This)->lpVtbl -> CreateWebResourceResponse(This,content,statusCode,reasonPhrase,headers,response) ) 
+
+#define ICoreWebView2Environment12_get_BrowserVersionString(This,versionInfo)	\
+    ( (This)->lpVtbl -> get_BrowserVersionString(This,versionInfo) ) 
+
+#define ICoreWebView2Environment12_add_NewBrowserVersionAvailable(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NewBrowserVersionAvailable(This,eventHandler,token) ) 
+
+#define ICoreWebView2Environment12_remove_NewBrowserVersionAvailable(This,token)	\
+    ( (This)->lpVtbl -> remove_NewBrowserVersionAvailable(This,token) ) 
+
+
+#define ICoreWebView2Environment12_CreateWebResourceRequest(This,uri,method,postData,headers,request)	\
+    ( (This)->lpVtbl -> CreateWebResourceRequest(This,uri,method,postData,headers,request) ) 
+
+
+#define ICoreWebView2Environment12_CreateCoreWebView2CompositionController(This,parentWindow,handler)	\
+    ( (This)->lpVtbl -> CreateCoreWebView2CompositionController(This,parentWindow,handler) ) 
+
+#define ICoreWebView2Environment12_CreateCoreWebView2PointerInfo(This,pointerInfo)	\
+    ( (This)->lpVtbl -> CreateCoreWebView2PointerInfo(This,pointerInfo) ) 
+
+
+#define ICoreWebView2Environment12_GetAutomationProviderForWindow(This,hwnd,provider)	\
+    ( (This)->lpVtbl -> GetAutomationProviderForWindow(This,hwnd,provider) ) 
+
+
+#define ICoreWebView2Environment12_add_BrowserProcessExited(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_BrowserProcessExited(This,eventHandler,token) ) 
+
+#define ICoreWebView2Environment12_remove_BrowserProcessExited(This,token)	\
+    ( (This)->lpVtbl -> remove_BrowserProcessExited(This,token) ) 
+
+
+#define ICoreWebView2Environment12_CreatePrintSettings(This,printSettings)	\
+    ( (This)->lpVtbl -> CreatePrintSettings(This,printSettings) ) 
+
+
+#define ICoreWebView2Environment12_get_UserDataFolder(This,value)	\
+    ( (This)->lpVtbl -> get_UserDataFolder(This,value) ) 
+
+
+#define ICoreWebView2Environment12_add_ProcessInfosChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ProcessInfosChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2Environment12_remove_ProcessInfosChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_ProcessInfosChanged(This,token) ) 
+
+#define ICoreWebView2Environment12_GetProcessInfos(This,value)	\
+    ( (This)->lpVtbl -> GetProcessInfos(This,value) ) 
+
+
+#define ICoreWebView2Environment12_CreateContextMenuItem(This,label,iconStream,kind,item)	\
+    ( (This)->lpVtbl -> CreateContextMenuItem(This,label,iconStream,kind,item) ) 
+
+
+#define ICoreWebView2Environment12_CreateCoreWebView2ControllerOptions(This,options)	\
+    ( (This)->lpVtbl -> CreateCoreWebView2ControllerOptions(This,options) ) 
+
+#define ICoreWebView2Environment12_CreateCoreWebView2ControllerWithOptions(This,parentWindow,options,handler)	\
+    ( (This)->lpVtbl -> CreateCoreWebView2ControllerWithOptions(This,parentWindow,options,handler) ) 
+
+#define ICoreWebView2Environment12_CreateCoreWebView2CompositionControllerWithOptions(This,parentWindow,options,handler)	\
+    ( (This)->lpVtbl -> CreateCoreWebView2CompositionControllerWithOptions(This,parentWindow,options,handler) ) 
+
+
+#define ICoreWebView2Environment12_get_FailureReportFolderPath(This,value)	\
+    ( (This)->lpVtbl -> get_FailureReportFolderPath(This,value) ) 
+
+
+#define ICoreWebView2Environment12_CreateSharedBuffer(This,size,shared_buffer)	\
+    ( (This)->lpVtbl -> CreateSharedBuffer(This,size,shared_buffer) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2Environment12_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Environment13_INTERFACE_DEFINED__
+#define __ICoreWebView2Environment13_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2Environment13 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Environment13 = {0xaf641f58,0x72b2,0x11ee,{0xb9,0x62,0x02,0x42,0xac,0x12,0x00,0x02}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("af641f58-72b2-11ee-b962-0242ac120002")
+    ICoreWebView2Environment13 : public ICoreWebView2Environment12
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE GetProcessExtendedInfos( 
+            /* [in] */ ICoreWebView2GetProcessExtendedInfosCompletedHandler *handler) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2Environment13Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2Environment13 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2Environment13 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment, CreateCoreWebView2Controller)
+        HRESULT ( STDMETHODCALLTYPE *CreateCoreWebView2Controller )( 
+            ICoreWebView2Environment13 * This,
+            HWND parentWindow,
+            ICoreWebView2CreateCoreWebView2ControllerCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment, CreateWebResourceResponse)
+        HRESULT ( STDMETHODCALLTYPE *CreateWebResourceResponse )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ IStream *content,
+            /* [in] */ int statusCode,
+            /* [in] */ LPCWSTR reasonPhrase,
+            /* [in] */ LPCWSTR headers,
+            /* [retval][out] */ ICoreWebView2WebResourceResponse **response);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment, get_BrowserVersionString)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BrowserVersionString )( 
+            ICoreWebView2Environment13 * This,
+            /* [retval][out] */ LPWSTR *versionInfo);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment, add_NewBrowserVersionAvailable)
+        HRESULT ( STDMETHODCALLTYPE *add_NewBrowserVersionAvailable )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ ICoreWebView2NewBrowserVersionAvailableEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment, remove_NewBrowserVersionAvailable)
+        HRESULT ( STDMETHODCALLTYPE *remove_NewBrowserVersionAvailable )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment2, CreateWebResourceRequest)
+        HRESULT ( STDMETHODCALLTYPE *CreateWebResourceRequest )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ LPCWSTR uri,
+            /* [in] */ LPCWSTR method,
+            /* [in] */ IStream *postData,
+            /* [in] */ LPCWSTR headers,
+            /* [retval][out] */ ICoreWebView2WebResourceRequest **request);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment3, CreateCoreWebView2CompositionController)
+        HRESULT ( STDMETHODCALLTYPE *CreateCoreWebView2CompositionController )( 
+            ICoreWebView2Environment13 * This,
+            HWND parentWindow,
+            ICoreWebView2CreateCoreWebView2CompositionControllerCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment3, CreateCoreWebView2PointerInfo)
+        HRESULT ( STDMETHODCALLTYPE *CreateCoreWebView2PointerInfo )( 
+            ICoreWebView2Environment13 * This,
+            /* [retval][out] */ ICoreWebView2PointerInfo **pointerInfo);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment4, GetAutomationProviderForWindow)
+        HRESULT ( STDMETHODCALLTYPE *GetAutomationProviderForWindow )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ HWND hwnd,
+            /* [retval][out] */ IUnknown **provider);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment5, add_BrowserProcessExited)
+        HRESULT ( STDMETHODCALLTYPE *add_BrowserProcessExited )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ ICoreWebView2BrowserProcessExitedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment5, remove_BrowserProcessExited)
+        HRESULT ( STDMETHODCALLTYPE *remove_BrowserProcessExited )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment6, CreatePrintSettings)
+        HRESULT ( STDMETHODCALLTYPE *CreatePrintSettings )( 
+            ICoreWebView2Environment13 * This,
+            /* [retval][out] */ ICoreWebView2PrintSettings **printSettings);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment7, get_UserDataFolder)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_UserDataFolder )( 
+            ICoreWebView2Environment13 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment8, add_ProcessInfosChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_ProcessInfosChanged )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ ICoreWebView2ProcessInfosChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment8, remove_ProcessInfosChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_ProcessInfosChanged )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment8, GetProcessInfos)
+        HRESULT ( STDMETHODCALLTYPE *GetProcessInfos )( 
+            ICoreWebView2Environment13 * This,
+            /* [retval][out] */ ICoreWebView2ProcessInfoCollection **value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment9, CreateContextMenuItem)
+        HRESULT ( STDMETHODCALLTYPE *CreateContextMenuItem )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ LPCWSTR label,
+            /* [in] */ IStream *iconStream,
+            /* [in] */ COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND kind,
+            /* [retval][out] */ ICoreWebView2ContextMenuItem **item);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment10, CreateCoreWebView2ControllerOptions)
+        HRESULT ( STDMETHODCALLTYPE *CreateCoreWebView2ControllerOptions )( 
+            ICoreWebView2Environment13 * This,
+            /* [retval][out] */ ICoreWebView2ControllerOptions **options);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment10, CreateCoreWebView2ControllerWithOptions)
+        HRESULT ( STDMETHODCALLTYPE *CreateCoreWebView2ControllerWithOptions )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ HWND parentWindow,
+            /* [in] */ ICoreWebView2ControllerOptions *options,
+            /* [in] */ ICoreWebView2CreateCoreWebView2ControllerCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment10, CreateCoreWebView2CompositionControllerWithOptions)
+        HRESULT ( STDMETHODCALLTYPE *CreateCoreWebView2CompositionControllerWithOptions )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ HWND parentWindow,
+            /* [in] */ ICoreWebView2ControllerOptions *options,
+            /* [in] */ ICoreWebView2CreateCoreWebView2CompositionControllerCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment11, get_FailureReportFolderPath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FailureReportFolderPath )( 
+            ICoreWebView2Environment13 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment12, CreateSharedBuffer)
+        HRESULT ( STDMETHODCALLTYPE *CreateSharedBuffer )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ UINT64 size,
+            /* [retval][out] */ ICoreWebView2SharedBuffer **shared_buffer);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Environment13, GetProcessExtendedInfos)
+        HRESULT ( STDMETHODCALLTYPE *GetProcessExtendedInfos )( 
+            ICoreWebView2Environment13 * This,
+            /* [in] */ ICoreWebView2GetProcessExtendedInfosCompletedHandler *handler);
+        
+        END_INTERFACE
+    } ICoreWebView2Environment13Vtbl;
+
+    interface ICoreWebView2Environment13
+    {
+        CONST_VTBL struct ICoreWebView2Environment13Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2Environment13_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2Environment13_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2Environment13_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2Environment13_CreateCoreWebView2Controller(This,parentWindow,handler)	\
+    ( (This)->lpVtbl -> CreateCoreWebView2Controller(This,parentWindow,handler) ) 
+
+#define ICoreWebView2Environment13_CreateWebResourceResponse(This,content,statusCode,reasonPhrase,headers,response)	\
+    ( (This)->lpVtbl -> CreateWebResourceResponse(This,content,statusCode,reasonPhrase,headers,response) ) 
+
+#define ICoreWebView2Environment13_get_BrowserVersionString(This,versionInfo)	\
+    ( (This)->lpVtbl -> get_BrowserVersionString(This,versionInfo) ) 
+
+#define ICoreWebView2Environment13_add_NewBrowserVersionAvailable(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NewBrowserVersionAvailable(This,eventHandler,token) ) 
+
+#define ICoreWebView2Environment13_remove_NewBrowserVersionAvailable(This,token)	\
+    ( (This)->lpVtbl -> remove_NewBrowserVersionAvailable(This,token) ) 
+
+
+#define ICoreWebView2Environment13_CreateWebResourceRequest(This,uri,method,postData,headers,request)	\
+    ( (This)->lpVtbl -> CreateWebResourceRequest(This,uri,method,postData,headers,request) ) 
+
+
+#define ICoreWebView2Environment13_CreateCoreWebView2CompositionController(This,parentWindow,handler)	\
+    ( (This)->lpVtbl -> CreateCoreWebView2CompositionController(This,parentWindow,handler) ) 
+
+#define ICoreWebView2Environment13_CreateCoreWebView2PointerInfo(This,pointerInfo)	\
+    ( (This)->lpVtbl -> CreateCoreWebView2PointerInfo(This,pointerInfo) ) 
+
+
+#define ICoreWebView2Environment13_GetAutomationProviderForWindow(This,hwnd,provider)	\
+    ( (This)->lpVtbl -> GetAutomationProviderForWindow(This,hwnd,provider) ) 
+
+
+#define ICoreWebView2Environment13_add_BrowserProcessExited(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_BrowserProcessExited(This,eventHandler,token) ) 
+
+#define ICoreWebView2Environment13_remove_BrowserProcessExited(This,token)	\
+    ( (This)->lpVtbl -> remove_BrowserProcessExited(This,token) ) 
+
+
+#define ICoreWebView2Environment13_CreatePrintSettings(This,printSettings)	\
+    ( (This)->lpVtbl -> CreatePrintSettings(This,printSettings) ) 
+
+
+#define ICoreWebView2Environment13_get_UserDataFolder(This,value)	\
+    ( (This)->lpVtbl -> get_UserDataFolder(This,value) ) 
+
+
+#define ICoreWebView2Environment13_add_ProcessInfosChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ProcessInfosChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2Environment13_remove_ProcessInfosChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_ProcessInfosChanged(This,token) ) 
+
+#define ICoreWebView2Environment13_GetProcessInfos(This,value)	\
+    ( (This)->lpVtbl -> GetProcessInfos(This,value) ) 
+
+
+#define ICoreWebView2Environment13_CreateContextMenuItem(This,label,iconStream,kind,item)	\
+    ( (This)->lpVtbl -> CreateContextMenuItem(This,label,iconStream,kind,item) ) 
+
+
+#define ICoreWebView2Environment13_CreateCoreWebView2ControllerOptions(This,options)	\
+    ( (This)->lpVtbl -> CreateCoreWebView2ControllerOptions(This,options) ) 
+
+#define ICoreWebView2Environment13_CreateCoreWebView2ControllerWithOptions(This,parentWindow,options,handler)	\
+    ( (This)->lpVtbl -> CreateCoreWebView2ControllerWithOptions(This,parentWindow,options,handler) ) 
+
+#define ICoreWebView2Environment13_CreateCoreWebView2CompositionControllerWithOptions(This,parentWindow,options,handler)	\
+    ( (This)->lpVtbl -> CreateCoreWebView2CompositionControllerWithOptions(This,parentWindow,options,handler) ) 
+
+
+#define ICoreWebView2Environment13_get_FailureReportFolderPath(This,value)	\
+    ( (This)->lpVtbl -> get_FailureReportFolderPath(This,value) ) 
+
+
+#define ICoreWebView2Environment13_CreateSharedBuffer(This,size,shared_buffer)	\
+    ( (This)->lpVtbl -> CreateSharedBuffer(This,size,shared_buffer) ) 
+
+
+#define ICoreWebView2Environment13_GetProcessExtendedInfos(This,handler)	\
+    ( (This)->lpVtbl -> GetProcessExtendedInfos(This,handler) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2Environment13_INTERFACE_DEFINED__ */
+
+
 #ifndef __ICoreWebView2EnvironmentOptions_INTERFACE_DEFINED__
 #define __ICoreWebView2EnvironmentOptions_INTERFACE_DEFINED__
 
@@ -22090,6 +30838,295 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2EnvironmentOptions3 = 
 #endif 	/* __ICoreWebView2EnvironmentOptions3_INTERFACE_DEFINED__ */
 
 
+#ifndef __ICoreWebView2EnvironmentOptions4_INTERFACE_DEFINED__
+#define __ICoreWebView2EnvironmentOptions4_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2EnvironmentOptions4 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2EnvironmentOptions4 = {0xac52d13f,0x0d38,0x475a,{0x9d,0xca,0x87,0x65,0x80,0xd6,0x79,0x3e}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("ac52d13f-0d38-475a-9dca-876580d6793e")
+    ICoreWebView2EnvironmentOptions4 : public IUnknown
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE GetCustomSchemeRegistrations( 
+            /* [out] */ UINT32 *count,
+            /* [out] */ ICoreWebView2CustomSchemeRegistration ***schemeRegistrations) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE SetCustomSchemeRegistrations( 
+            /* [in] */ UINT32 count,
+            /* [in] */ ICoreWebView2CustomSchemeRegistration **schemeRegistrations) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2EnvironmentOptions4Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2EnvironmentOptions4 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2EnvironmentOptions4 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2EnvironmentOptions4 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2EnvironmentOptions4, GetCustomSchemeRegistrations)
+        HRESULT ( STDMETHODCALLTYPE *GetCustomSchemeRegistrations )( 
+            ICoreWebView2EnvironmentOptions4 * This,
+            /* [out] */ UINT32 *count,
+            /* [out] */ ICoreWebView2CustomSchemeRegistration ***schemeRegistrations);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2EnvironmentOptions4, SetCustomSchemeRegistrations)
+        HRESULT ( STDMETHODCALLTYPE *SetCustomSchemeRegistrations )( 
+            ICoreWebView2EnvironmentOptions4 * This,
+            /* [in] */ UINT32 count,
+            /* [in] */ ICoreWebView2CustomSchemeRegistration **schemeRegistrations);
+        
+        END_INTERFACE
+    } ICoreWebView2EnvironmentOptions4Vtbl;
+
+    interface ICoreWebView2EnvironmentOptions4
+    {
+        CONST_VTBL struct ICoreWebView2EnvironmentOptions4Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2EnvironmentOptions4_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2EnvironmentOptions4_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2EnvironmentOptions4_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2EnvironmentOptions4_GetCustomSchemeRegistrations(This,count,schemeRegistrations)	\
+    ( (This)->lpVtbl -> GetCustomSchemeRegistrations(This,count,schemeRegistrations) ) 
+
+#define ICoreWebView2EnvironmentOptions4_SetCustomSchemeRegistrations(This,count,schemeRegistrations)	\
+    ( (This)->lpVtbl -> SetCustomSchemeRegistrations(This,count,schemeRegistrations) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2EnvironmentOptions4_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2EnvironmentOptions5_INTERFACE_DEFINED__
+#define __ICoreWebView2EnvironmentOptions5_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2EnvironmentOptions5 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2EnvironmentOptions5 = {0x0AE35D64,0xC47F,0x4464,{0x81,0x4E,0x25,0x9C,0x34,0x5D,0x15,0x01}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("0AE35D64-C47F-4464-814E-259C345D1501")
+    ICoreWebView2EnvironmentOptions5 : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_EnableTrackingPrevention( 
+            /* [retval][out] */ BOOL *value) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_EnableTrackingPrevention( 
+            /* [in] */ BOOL value) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2EnvironmentOptions5Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2EnvironmentOptions5 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2EnvironmentOptions5 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2EnvironmentOptions5 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2EnvironmentOptions5, get_EnableTrackingPrevention)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_EnableTrackingPrevention )( 
+            ICoreWebView2EnvironmentOptions5 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2EnvironmentOptions5, put_EnableTrackingPrevention)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_EnableTrackingPrevention )( 
+            ICoreWebView2EnvironmentOptions5 * This,
+            /* [in] */ BOOL value);
+        
+        END_INTERFACE
+    } ICoreWebView2EnvironmentOptions5Vtbl;
+
+    interface ICoreWebView2EnvironmentOptions5
+    {
+        CONST_VTBL struct ICoreWebView2EnvironmentOptions5Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2EnvironmentOptions5_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2EnvironmentOptions5_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2EnvironmentOptions5_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2EnvironmentOptions5_get_EnableTrackingPrevention(This,value)	\
+    ( (This)->lpVtbl -> get_EnableTrackingPrevention(This,value) ) 
+
+#define ICoreWebView2EnvironmentOptions5_put_EnableTrackingPrevention(This,value)	\
+    ( (This)->lpVtbl -> put_EnableTrackingPrevention(This,value) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2EnvironmentOptions5_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2EnvironmentOptions6_INTERFACE_DEFINED__
+#define __ICoreWebView2EnvironmentOptions6_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2EnvironmentOptions6 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2EnvironmentOptions6 = {0x57D29CC3,0xC84F,0x42A0,{0xB0,0xE2,0xEF,0xFB,0xD5,0xE1,0x79,0xDE}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("57D29CC3-C84F-42A0-B0E2-EFFBD5E179DE")
+    ICoreWebView2EnvironmentOptions6 : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_AreBrowserExtensionsEnabled( 
+            /* [retval][out] */ BOOL *value) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_AreBrowserExtensionsEnabled( 
+            /* [in] */ BOOL value) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2EnvironmentOptions6Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2EnvironmentOptions6 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2EnvironmentOptions6 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2EnvironmentOptions6 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2EnvironmentOptions6, get_AreBrowserExtensionsEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AreBrowserExtensionsEnabled )( 
+            ICoreWebView2EnvironmentOptions6 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2EnvironmentOptions6, put_AreBrowserExtensionsEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AreBrowserExtensionsEnabled )( 
+            ICoreWebView2EnvironmentOptions6 * This,
+            /* [in] */ BOOL value);
+        
+        END_INTERFACE
+    } ICoreWebView2EnvironmentOptions6Vtbl;
+
+    interface ICoreWebView2EnvironmentOptions6
+    {
+        CONST_VTBL struct ICoreWebView2EnvironmentOptions6Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2EnvironmentOptions6_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2EnvironmentOptions6_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2EnvironmentOptions6_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2EnvironmentOptions6_get_AreBrowserExtensionsEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_AreBrowserExtensionsEnabled(This,value) ) 
+
+#define ICoreWebView2EnvironmentOptions6_put_AreBrowserExtensionsEnabled(This,value)	\
+    ( (This)->lpVtbl -> put_AreBrowserExtensionsEnabled(This,value) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2EnvironmentOptions6_INTERFACE_DEFINED__ */
+
+
 #ifndef __ICoreWebView2EstimatedEndTimeChangedEventHandler_INTERFACE_DEFINED__
 #define __ICoreWebView2EstimatedEndTimeChangedEventHandler_INTERFACE_DEFINED__
 
@@ -22260,6 +31297,284 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2ExecuteScriptCompleted
 
 
 #endif 	/* __ICoreWebView2ExecuteScriptCompletedHandler_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2GetProcessExtendedInfosCompletedHandler_INTERFACE_DEFINED__
+#define __ICoreWebView2GetProcessExtendedInfosCompletedHandler_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2GetProcessExtendedInfosCompletedHandler */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2GetProcessExtendedInfosCompletedHandler = {0xf45e55aa,0x3bc2,0x11ee,{0xbe,0x56,0x02,0x42,0xac,0x12,0x00,0x02}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("f45e55aa-3bc2-11ee-be56-0242ac120002")
+    ICoreWebView2GetProcessExtendedInfosCompletedHandler : public IUnknown
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE Invoke( 
+            /* [in] */ HRESULT errorCode,
+            /* [in] */ ICoreWebView2ProcessExtendedInfoCollection *value) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2GetProcessExtendedInfosCompletedHandlerVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2GetProcessExtendedInfosCompletedHandler * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2GetProcessExtendedInfosCompletedHandler * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2GetProcessExtendedInfosCompletedHandler * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2GetProcessExtendedInfosCompletedHandler, Invoke)
+        HRESULT ( STDMETHODCALLTYPE *Invoke )( 
+            ICoreWebView2GetProcessExtendedInfosCompletedHandler * This,
+            /* [in] */ HRESULT errorCode,
+            /* [in] */ ICoreWebView2ProcessExtendedInfoCollection *value);
+        
+        END_INTERFACE
+    } ICoreWebView2GetProcessExtendedInfosCompletedHandlerVtbl;
+
+    interface ICoreWebView2GetProcessExtendedInfosCompletedHandler
+    {
+        CONST_VTBL struct ICoreWebView2GetProcessExtendedInfosCompletedHandlerVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2GetProcessExtendedInfosCompletedHandler_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2GetProcessExtendedInfosCompletedHandler_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2GetProcessExtendedInfosCompletedHandler_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2GetProcessExtendedInfosCompletedHandler_Invoke(This,errorCode,value)	\
+    ( (This)->lpVtbl -> Invoke(This,errorCode,value) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2GetProcessExtendedInfosCompletedHandler_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2ProcessExtendedInfo_INTERFACE_DEFINED__
+#define __ICoreWebView2ProcessExtendedInfo_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2ProcessExtendedInfo */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2ProcessExtendedInfo = {0xaf4c4c2e,0x45db,0x11ee,{0xbe,0x56,0x02,0x42,0xac,0x12,0x00,0x02}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("af4c4c2e-45db-11ee-be56-0242ac120002")
+    ICoreWebView2ProcessExtendedInfo : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ProcessInfo( 
+            /* [retval][out] */ ICoreWebView2ProcessInfo **processInfo) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_AssociatedFrameInfos( 
+            /* [retval][out] */ ICoreWebView2FrameInfoCollection **frames) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2ProcessExtendedInfoVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2ProcessExtendedInfo * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2ProcessExtendedInfo * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2ProcessExtendedInfo * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ProcessExtendedInfo, get_ProcessInfo)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProcessInfo )( 
+            ICoreWebView2ProcessExtendedInfo * This,
+            /* [retval][out] */ ICoreWebView2ProcessInfo **processInfo);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ProcessExtendedInfo, get_AssociatedFrameInfos)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AssociatedFrameInfos )( 
+            ICoreWebView2ProcessExtendedInfo * This,
+            /* [retval][out] */ ICoreWebView2FrameInfoCollection **frames);
+        
+        END_INTERFACE
+    } ICoreWebView2ProcessExtendedInfoVtbl;
+
+    interface ICoreWebView2ProcessExtendedInfo
+    {
+        CONST_VTBL struct ICoreWebView2ProcessExtendedInfoVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2ProcessExtendedInfo_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2ProcessExtendedInfo_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2ProcessExtendedInfo_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2ProcessExtendedInfo_get_ProcessInfo(This,processInfo)	\
+    ( (This)->lpVtbl -> get_ProcessInfo(This,processInfo) ) 
+
+#define ICoreWebView2ProcessExtendedInfo_get_AssociatedFrameInfos(This,frames)	\
+    ( (This)->lpVtbl -> get_AssociatedFrameInfos(This,frames) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2ProcessExtendedInfo_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2ProcessExtendedInfoCollection_INTERFACE_DEFINED__
+#define __ICoreWebView2ProcessExtendedInfoCollection_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2ProcessExtendedInfoCollection */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2ProcessExtendedInfoCollection = {0x32efa696,0x407a,0x11ee,{0xbe,0x56,0x02,0x42,0xac,0x12,0x00,0x02}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("32efa696-407a-11ee-be56-0242ac120002")
+    ICoreWebView2ProcessExtendedInfoCollection : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Count( 
+            /* [retval][out] */ UINT *count) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetValueAtIndex( 
+            /* [in] */ UINT32 index,
+            /* [retval][out] */ ICoreWebView2ProcessExtendedInfo **processInfo) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2ProcessExtendedInfoCollectionVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2ProcessExtendedInfoCollection * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2ProcessExtendedInfoCollection * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2ProcessExtendedInfoCollection * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ProcessExtendedInfoCollection, get_Count)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Count )( 
+            ICoreWebView2ProcessExtendedInfoCollection * This,
+            /* [retval][out] */ UINT *count);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ProcessExtendedInfoCollection, GetValueAtIndex)
+        HRESULT ( STDMETHODCALLTYPE *GetValueAtIndex )( 
+            ICoreWebView2ProcessExtendedInfoCollection * This,
+            /* [in] */ UINT32 index,
+            /* [retval][out] */ ICoreWebView2ProcessExtendedInfo **processInfo);
+        
+        END_INTERFACE
+    } ICoreWebView2ProcessExtendedInfoCollectionVtbl;
+
+    interface ICoreWebView2ProcessExtendedInfoCollection
+    {
+        CONST_VTBL struct ICoreWebView2ProcessExtendedInfoCollectionVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2ProcessExtendedInfoCollection_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2ProcessExtendedInfoCollection_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2ProcessExtendedInfoCollection_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2ProcessExtendedInfoCollection_get_Count(This,count)	\
+    ( (This)->lpVtbl -> get_Count(This,count) ) 
+
+#define ICoreWebView2ProcessExtendedInfoCollection_GetValueAtIndex(This,index,processInfo)	\
+    ( (This)->lpVtbl -> GetValueAtIndex(This,index,processInfo) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2ProcessExtendedInfoCollection_INTERFACE_DEFINED__ */
 
 
 #ifndef __ICoreWebView2Frame_INTERFACE_DEFINED__
@@ -23007,6 +32322,587 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Frame3 = {0xb50d82cc,0
 
 
 #endif 	/* __ICoreWebView2Frame3_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Frame4_INTERFACE_DEFINED__
+#define __ICoreWebView2Frame4_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2Frame4 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Frame4 = {0x188782DC,0x92AA,0x4732,{0xAB,0x3C,0xFC,0xC5,0x9F,0x6F,0x68,0xB9}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("188782DC-92AA-4732-AB3C-FCC59F6F68B9")
+    ICoreWebView2Frame4 : public ICoreWebView2Frame3
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE PostSharedBufferToScript( 
+            /* [in] */ ICoreWebView2SharedBuffer *sharedBuffer,
+            /* [in] */ COREWEBVIEW2_SHARED_BUFFER_ACCESS access,
+            /* [in] */ LPCWSTR additionalDataAsJson) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2Frame4Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2Frame4 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2Frame4 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, get_Name)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Name )( 
+            ICoreWebView2Frame4 * This,
+            /* [retval][out] */ LPWSTR *name);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, add_NameChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_NameChanged )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ ICoreWebView2FrameNameChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, remove_NameChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_NameChanged )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, AddHostObjectToScriptWithOrigins)
+        HRESULT ( STDMETHODCALLTYPE *AddHostObjectToScriptWithOrigins )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ LPCWSTR name,
+            /* [in] */ VARIANT *object,
+            /* [in] */ UINT32 originsCount,
+            /* [size_is][in] */ LPCWSTR *origins);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, RemoveHostObjectFromScript)
+        HRESULT ( STDMETHODCALLTYPE *RemoveHostObjectFromScript )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ LPCWSTR name);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, add_Destroyed)
+        HRESULT ( STDMETHODCALLTYPE *add_Destroyed )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ ICoreWebView2FrameDestroyedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, remove_Destroyed)
+        HRESULT ( STDMETHODCALLTYPE *remove_Destroyed )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, IsDestroyed)
+        HRESULT ( STDMETHODCALLTYPE *IsDestroyed )( 
+            ICoreWebView2Frame4 * This,
+            /* [retval][out] */ BOOL *destroyed);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, add_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationStarting )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ ICoreWebView2FrameNavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, remove_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationStarting )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, add_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *add_ContentLoading )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ ICoreWebView2FrameContentLoadingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, remove_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContentLoading )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, add_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationCompleted )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ ICoreWebView2FrameNavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, remove_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationCompleted )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, add_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *add_DOMContentLoaded )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ ICoreWebView2FrameDOMContentLoadedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, remove_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *remove_DOMContentLoaded )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, ExecuteScript)
+        HRESULT ( STDMETHODCALLTYPE *ExecuteScript )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2ExecuteScriptCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, PostWebMessageAsJson)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsJson )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ LPCWSTR webMessageAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, PostWebMessageAsString)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsString )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ LPCWSTR webMessageAsString);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, add_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebMessageReceived )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ ICoreWebView2FrameWebMessageReceivedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, remove_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebMessageReceived )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame3, add_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_PermissionRequested )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ ICoreWebView2FramePermissionRequestedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame3, remove_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_PermissionRequested )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame4, PostSharedBufferToScript)
+        HRESULT ( STDMETHODCALLTYPE *PostSharedBufferToScript )( 
+            ICoreWebView2Frame4 * This,
+            /* [in] */ ICoreWebView2SharedBuffer *sharedBuffer,
+            /* [in] */ COREWEBVIEW2_SHARED_BUFFER_ACCESS access,
+            /* [in] */ LPCWSTR additionalDataAsJson);
+        
+        END_INTERFACE
+    } ICoreWebView2Frame4Vtbl;
+
+    interface ICoreWebView2Frame4
+    {
+        CONST_VTBL struct ICoreWebView2Frame4Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2Frame4_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2Frame4_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2Frame4_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2Frame4_get_Name(This,name)	\
+    ( (This)->lpVtbl -> get_Name(This,name) ) 
+
+#define ICoreWebView2Frame4_add_NameChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NameChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2Frame4_remove_NameChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_NameChanged(This,token) ) 
+
+#define ICoreWebView2Frame4_AddHostObjectToScriptWithOrigins(This,name,object,originsCount,origins)	\
+    ( (This)->lpVtbl -> AddHostObjectToScriptWithOrigins(This,name,object,originsCount,origins) ) 
+
+#define ICoreWebView2Frame4_RemoveHostObjectFromScript(This,name)	\
+    ( (This)->lpVtbl -> RemoveHostObjectFromScript(This,name) ) 
+
+#define ICoreWebView2Frame4_add_Destroyed(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_Destroyed(This,eventHandler,token) ) 
+
+#define ICoreWebView2Frame4_remove_Destroyed(This,token)	\
+    ( (This)->lpVtbl -> remove_Destroyed(This,token) ) 
+
+#define ICoreWebView2Frame4_IsDestroyed(This,destroyed)	\
+    ( (This)->lpVtbl -> IsDestroyed(This,destroyed) ) 
+
+
+#define ICoreWebView2Frame4_add_NavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2Frame4_remove_NavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationStarting(This,token) ) 
+
+#define ICoreWebView2Frame4_add_ContentLoading(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContentLoading(This,eventHandler,token) ) 
+
+#define ICoreWebView2Frame4_remove_ContentLoading(This,token)	\
+    ( (This)->lpVtbl -> remove_ContentLoading(This,token) ) 
+
+#define ICoreWebView2Frame4_add_NavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2Frame4_remove_NavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationCompleted(This,token) ) 
+
+#define ICoreWebView2Frame4_add_DOMContentLoaded(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DOMContentLoaded(This,eventHandler,token) ) 
+
+#define ICoreWebView2Frame4_remove_DOMContentLoaded(This,token)	\
+    ( (This)->lpVtbl -> remove_DOMContentLoaded(This,token) ) 
+
+#define ICoreWebView2Frame4_ExecuteScript(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> ExecuteScript(This,javaScript,handler) ) 
+
+#define ICoreWebView2Frame4_PostWebMessageAsJson(This,webMessageAsJson)	\
+    ( (This)->lpVtbl -> PostWebMessageAsJson(This,webMessageAsJson) ) 
+
+#define ICoreWebView2Frame4_PostWebMessageAsString(This,webMessageAsString)	\
+    ( (This)->lpVtbl -> PostWebMessageAsString(This,webMessageAsString) ) 
+
+#define ICoreWebView2Frame4_add_WebMessageReceived(This,handler,token)	\
+    ( (This)->lpVtbl -> add_WebMessageReceived(This,handler,token) ) 
+
+#define ICoreWebView2Frame4_remove_WebMessageReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebMessageReceived(This,token) ) 
+
+
+#define ICoreWebView2Frame4_add_PermissionRequested(This,handler,token)	\
+    ( (This)->lpVtbl -> add_PermissionRequested(This,handler,token) ) 
+
+#define ICoreWebView2Frame4_remove_PermissionRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_PermissionRequested(This,token) ) 
+
+
+#define ICoreWebView2Frame4_PostSharedBufferToScript(This,sharedBuffer,access,additionalDataAsJson)	\
+    ( (This)->lpVtbl -> PostSharedBufferToScript(This,sharedBuffer,access,additionalDataAsJson) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2Frame4_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Frame5_INTERFACE_DEFINED__
+#define __ICoreWebView2Frame5_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2Frame5 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Frame5 = {0x99d199c4,0x7305,0x11ee,{0xb9,0x62,0x02,0x42,0xac,0x12,0x00,0x02}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("99d199c4-7305-11ee-b962-0242ac120002")
+    ICoreWebView2Frame5 : public ICoreWebView2Frame4
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FrameId( 
+            /* [retval][out] */ UINT32 *id) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2Frame5Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2Frame5 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2Frame5 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, get_Name)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Name )( 
+            ICoreWebView2Frame5 * This,
+            /* [retval][out] */ LPWSTR *name);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, add_NameChanged)
+        HRESULT ( STDMETHODCALLTYPE *add_NameChanged )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ ICoreWebView2FrameNameChangedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, remove_NameChanged)
+        HRESULT ( STDMETHODCALLTYPE *remove_NameChanged )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, AddHostObjectToScriptWithOrigins)
+        HRESULT ( STDMETHODCALLTYPE *AddHostObjectToScriptWithOrigins )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ LPCWSTR name,
+            /* [in] */ VARIANT *object,
+            /* [in] */ UINT32 originsCount,
+            /* [size_is][in] */ LPCWSTR *origins);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, RemoveHostObjectFromScript)
+        HRESULT ( STDMETHODCALLTYPE *RemoveHostObjectFromScript )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ LPCWSTR name);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, add_Destroyed)
+        HRESULT ( STDMETHODCALLTYPE *add_Destroyed )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ ICoreWebView2FrameDestroyedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, remove_Destroyed)
+        HRESULT ( STDMETHODCALLTYPE *remove_Destroyed )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame, IsDestroyed)
+        HRESULT ( STDMETHODCALLTYPE *IsDestroyed )( 
+            ICoreWebView2Frame5 * This,
+            /* [retval][out] */ BOOL *destroyed);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, add_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationStarting )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ ICoreWebView2FrameNavigationStartingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, remove_NavigationStarting)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationStarting )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, add_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *add_ContentLoading )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ ICoreWebView2FrameContentLoadingEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, remove_ContentLoading)
+        HRESULT ( STDMETHODCALLTYPE *remove_ContentLoading )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, add_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *add_NavigationCompleted )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ ICoreWebView2FrameNavigationCompletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, remove_NavigationCompleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_NavigationCompleted )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, add_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *add_DOMContentLoaded )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ ICoreWebView2FrameDOMContentLoadedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, remove_DOMContentLoaded)
+        HRESULT ( STDMETHODCALLTYPE *remove_DOMContentLoaded )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, ExecuteScript)
+        HRESULT ( STDMETHODCALLTYPE *ExecuteScript )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ LPCWSTR javaScript,
+            /* [in] */ ICoreWebView2ExecuteScriptCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, PostWebMessageAsJson)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsJson )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ LPCWSTR webMessageAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, PostWebMessageAsString)
+        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsString )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ LPCWSTR webMessageAsString);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, add_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *add_WebMessageReceived )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ ICoreWebView2FrameWebMessageReceivedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame2, remove_WebMessageReceived)
+        HRESULT ( STDMETHODCALLTYPE *remove_WebMessageReceived )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame3, add_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *add_PermissionRequested )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ ICoreWebView2FramePermissionRequestedEventHandler *handler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame3, remove_PermissionRequested)
+        HRESULT ( STDMETHODCALLTYPE *remove_PermissionRequested )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame4, PostSharedBufferToScript)
+        HRESULT ( STDMETHODCALLTYPE *PostSharedBufferToScript )( 
+            ICoreWebView2Frame5 * This,
+            /* [in] */ ICoreWebView2SharedBuffer *sharedBuffer,
+            /* [in] */ COREWEBVIEW2_SHARED_BUFFER_ACCESS access,
+            /* [in] */ LPCWSTR additionalDataAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Frame5, get_FrameId)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameId )( 
+            ICoreWebView2Frame5 * This,
+            /* [retval][out] */ UINT32 *id);
+        
+        END_INTERFACE
+    } ICoreWebView2Frame5Vtbl;
+
+    interface ICoreWebView2Frame5
+    {
+        CONST_VTBL struct ICoreWebView2Frame5Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2Frame5_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2Frame5_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2Frame5_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2Frame5_get_Name(This,name)	\
+    ( (This)->lpVtbl -> get_Name(This,name) ) 
+
+#define ICoreWebView2Frame5_add_NameChanged(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NameChanged(This,eventHandler,token) ) 
+
+#define ICoreWebView2Frame5_remove_NameChanged(This,token)	\
+    ( (This)->lpVtbl -> remove_NameChanged(This,token) ) 
+
+#define ICoreWebView2Frame5_AddHostObjectToScriptWithOrigins(This,name,object,originsCount,origins)	\
+    ( (This)->lpVtbl -> AddHostObjectToScriptWithOrigins(This,name,object,originsCount,origins) ) 
+
+#define ICoreWebView2Frame5_RemoveHostObjectFromScript(This,name)	\
+    ( (This)->lpVtbl -> RemoveHostObjectFromScript(This,name) ) 
+
+#define ICoreWebView2Frame5_add_Destroyed(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_Destroyed(This,eventHandler,token) ) 
+
+#define ICoreWebView2Frame5_remove_Destroyed(This,token)	\
+    ( (This)->lpVtbl -> remove_Destroyed(This,token) ) 
+
+#define ICoreWebView2Frame5_IsDestroyed(This,destroyed)	\
+    ( (This)->lpVtbl -> IsDestroyed(This,destroyed) ) 
+
+
+#define ICoreWebView2Frame5_add_NavigationStarting(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationStarting(This,eventHandler,token) ) 
+
+#define ICoreWebView2Frame5_remove_NavigationStarting(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationStarting(This,token) ) 
+
+#define ICoreWebView2Frame5_add_ContentLoading(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_ContentLoading(This,eventHandler,token) ) 
+
+#define ICoreWebView2Frame5_remove_ContentLoading(This,token)	\
+    ( (This)->lpVtbl -> remove_ContentLoading(This,token) ) 
+
+#define ICoreWebView2Frame5_add_NavigationCompleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_NavigationCompleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2Frame5_remove_NavigationCompleted(This,token)	\
+    ( (This)->lpVtbl -> remove_NavigationCompleted(This,token) ) 
+
+#define ICoreWebView2Frame5_add_DOMContentLoaded(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_DOMContentLoaded(This,eventHandler,token) ) 
+
+#define ICoreWebView2Frame5_remove_DOMContentLoaded(This,token)	\
+    ( (This)->lpVtbl -> remove_DOMContentLoaded(This,token) ) 
+
+#define ICoreWebView2Frame5_ExecuteScript(This,javaScript,handler)	\
+    ( (This)->lpVtbl -> ExecuteScript(This,javaScript,handler) ) 
+
+#define ICoreWebView2Frame5_PostWebMessageAsJson(This,webMessageAsJson)	\
+    ( (This)->lpVtbl -> PostWebMessageAsJson(This,webMessageAsJson) ) 
+
+#define ICoreWebView2Frame5_PostWebMessageAsString(This,webMessageAsString)	\
+    ( (This)->lpVtbl -> PostWebMessageAsString(This,webMessageAsString) ) 
+
+#define ICoreWebView2Frame5_add_WebMessageReceived(This,handler,token)	\
+    ( (This)->lpVtbl -> add_WebMessageReceived(This,handler,token) ) 
+
+#define ICoreWebView2Frame5_remove_WebMessageReceived(This,token)	\
+    ( (This)->lpVtbl -> remove_WebMessageReceived(This,token) ) 
+
+
+#define ICoreWebView2Frame5_add_PermissionRequested(This,handler,token)	\
+    ( (This)->lpVtbl -> add_PermissionRequested(This,handler,token) ) 
+
+#define ICoreWebView2Frame5_remove_PermissionRequested(This,token)	\
+    ( (This)->lpVtbl -> remove_PermissionRequested(This,token) ) 
+
+
+#define ICoreWebView2Frame5_PostSharedBufferToScript(This,sharedBuffer,access,additionalDataAsJson)	\
+    ( (This)->lpVtbl -> PostSharedBufferToScript(This,sharedBuffer,access,additionalDataAsJson) ) 
+
+
+#define ICoreWebView2Frame5_get_FrameId(This,id)	\
+    ( (This)->lpVtbl -> get_FrameId(This,id) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2Frame5_INTERFACE_DEFINED__ */
 
 
 #ifndef __ICoreWebView2FrameContentLoadingEventHandler_INTERFACE_DEFINED__
@@ -23962,6 +33858,129 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2FrameInfo = {0xda86b8a
 #endif 	/* __ICoreWebView2FrameInfo_INTERFACE_DEFINED__ */
 
 
+#ifndef __ICoreWebView2FrameInfo2_INTERFACE_DEFINED__
+#define __ICoreWebView2FrameInfo2_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2FrameInfo2 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2FrameInfo2 = {0x56f85cfa,0x72c4,0x11ee,{0xb9,0x62,0x02,0x42,0xac,0x12,0x00,0x02}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("56f85cfa-72c4-11ee-b962-0242ac120002")
+    ICoreWebView2FrameInfo2 : public ICoreWebView2FrameInfo
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_ParentFrameInfo( 
+            /* [retval][out] */ ICoreWebView2FrameInfo **frameInfo) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FrameId( 
+            /* [retval][out] */ UINT32 *id) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FrameKind( 
+            /* [retval][out] */ COREWEBVIEW2_FRAME_KIND *kind) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2FrameInfo2Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2FrameInfo2 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2FrameInfo2 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2FrameInfo2 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2FrameInfo, get_Name)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Name )( 
+            ICoreWebView2FrameInfo2 * This,
+            /* [retval][out] */ LPWSTR *name);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2FrameInfo, get_Source)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Source )( 
+            ICoreWebView2FrameInfo2 * This,
+            /* [retval][out] */ LPWSTR *source);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2FrameInfo2, get_ParentFrameInfo)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ParentFrameInfo )( 
+            ICoreWebView2FrameInfo2 * This,
+            /* [retval][out] */ ICoreWebView2FrameInfo **frameInfo);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2FrameInfo2, get_FrameId)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameId )( 
+            ICoreWebView2FrameInfo2 * This,
+            /* [retval][out] */ UINT32 *id);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2FrameInfo2, get_FrameKind)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FrameKind )( 
+            ICoreWebView2FrameInfo2 * This,
+            /* [retval][out] */ COREWEBVIEW2_FRAME_KIND *kind);
+        
+        END_INTERFACE
+    } ICoreWebView2FrameInfo2Vtbl;
+
+    interface ICoreWebView2FrameInfo2
+    {
+        CONST_VTBL struct ICoreWebView2FrameInfo2Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2FrameInfo2_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2FrameInfo2_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2FrameInfo2_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2FrameInfo2_get_Name(This,name)	\
+    ( (This)->lpVtbl -> get_Name(This,name) ) 
+
+#define ICoreWebView2FrameInfo2_get_Source(This,source)	\
+    ( (This)->lpVtbl -> get_Source(This,source) ) 
+
+
+#define ICoreWebView2FrameInfo2_get_ParentFrameInfo(This,frameInfo)	\
+    ( (This)->lpVtbl -> get_ParentFrameInfo(This,frameInfo) ) 
+
+#define ICoreWebView2FrameInfo2_get_FrameId(This,id)	\
+    ( (This)->lpVtbl -> get_FrameId(This,id) ) 
+
+#define ICoreWebView2FrameInfo2_get_FrameKind(This,kind)	\
+    ( (This)->lpVtbl -> get_FrameKind(This,kind) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2FrameInfo2_INTERFACE_DEFINED__ */
+
+
 #ifndef __ICoreWebView2FrameInfoCollection_INTERFACE_DEFINED__
 #define __ICoreWebView2FrameInfoCollection_INTERFACE_DEFINED__
 
@@ -24322,6 +34341,92 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2GetCookiesCompletedHan
 
 
 #endif 	/* __ICoreWebView2GetCookiesCompletedHandler_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler_INTERFACE_DEFINED__
+#define __ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler = {0x38274481,0xa15c,0x4563,{0x94,0xcf,0x99,0x0e,0xdc,0x9a,0xeb,0x95}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("38274481-a15c-4563-94cf-990edc9aeb95")
+    ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler : public IUnknown
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE Invoke( 
+            /* [in] */ HRESULT errorCode,
+            /* [in] */ ICoreWebView2PermissionSettingCollectionView *collectionView) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandlerVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler, Invoke)
+        HRESULT ( STDMETHODCALLTYPE *Invoke )( 
+            ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler * This,
+            /* [in] */ HRESULT errorCode,
+            /* [in] */ ICoreWebView2PermissionSettingCollectionView *collectionView);
+        
+        END_INTERFACE
+    } ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandlerVtbl;
+
+    interface ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler
+    {
+        CONST_VTBL struct ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandlerVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler_Invoke(This,errorCode,collectionView)	\
+    ( (This)->lpVtbl -> Invoke(This,errorCode,collectionView) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler_INTERFACE_DEFINED__ */
 
 
 #ifndef __ICoreWebView2HistoryChangedEventHandler_INTERFACE_DEFINED__
@@ -24885,6 +34990,231 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2IsDefaultDownloadDialo
 
 
 #endif 	/* __ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2LaunchingExternalUriSchemeEventArgs_INTERFACE_DEFINED__
+#define __ICoreWebView2LaunchingExternalUriSchemeEventArgs_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2LaunchingExternalUriSchemeEventArgs */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2LaunchingExternalUriSchemeEventArgs = {0x07D1A6C3,0x7175,0x4BA1,{0x93,0x06,0xE5,0x93,0xCA,0x07,0xE4,0x6C}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("07D1A6C3-7175-4BA1-9306-E593CA07E46C")
+    ICoreWebView2LaunchingExternalUriSchemeEventArgs : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Uri( 
+            /* [retval][out] */ LPWSTR *value) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_InitiatingOrigin( 
+            /* [retval][out] */ LPWSTR *value) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_IsUserInitiated( 
+            /* [retval][out] */ BOOL *value) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Cancel( 
+            /* [retval][out] */ BOOL *value) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_Cancel( 
+            /* [in] */ BOOL value) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetDeferral( 
+            /* [retval][out] */ ICoreWebView2Deferral **value) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2LaunchingExternalUriSchemeEventArgsVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2LaunchingExternalUriSchemeEventArgs * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2LaunchingExternalUriSchemeEventArgs * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2LaunchingExternalUriSchemeEventArgs * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2LaunchingExternalUriSchemeEventArgs, get_Uri)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Uri )( 
+            ICoreWebView2LaunchingExternalUriSchemeEventArgs * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2LaunchingExternalUriSchemeEventArgs, get_InitiatingOrigin)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_InitiatingOrigin )( 
+            ICoreWebView2LaunchingExternalUriSchemeEventArgs * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2LaunchingExternalUriSchemeEventArgs, get_IsUserInitiated)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsUserInitiated )( 
+            ICoreWebView2LaunchingExternalUriSchemeEventArgs * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2LaunchingExternalUriSchemeEventArgs, get_Cancel)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Cancel )( 
+            ICoreWebView2LaunchingExternalUriSchemeEventArgs * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2LaunchingExternalUriSchemeEventArgs, put_Cancel)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_Cancel )( 
+            ICoreWebView2LaunchingExternalUriSchemeEventArgs * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2LaunchingExternalUriSchemeEventArgs, GetDeferral)
+        HRESULT ( STDMETHODCALLTYPE *GetDeferral )( 
+            ICoreWebView2LaunchingExternalUriSchemeEventArgs * This,
+            /* [retval][out] */ ICoreWebView2Deferral **value);
+        
+        END_INTERFACE
+    } ICoreWebView2LaunchingExternalUriSchemeEventArgsVtbl;
+
+    interface ICoreWebView2LaunchingExternalUriSchemeEventArgs
+    {
+        CONST_VTBL struct ICoreWebView2LaunchingExternalUriSchemeEventArgsVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2LaunchingExternalUriSchemeEventArgs_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2LaunchingExternalUriSchemeEventArgs_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2LaunchingExternalUriSchemeEventArgs_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2LaunchingExternalUriSchemeEventArgs_get_Uri(This,value)	\
+    ( (This)->lpVtbl -> get_Uri(This,value) ) 
+
+#define ICoreWebView2LaunchingExternalUriSchemeEventArgs_get_InitiatingOrigin(This,value)	\
+    ( (This)->lpVtbl -> get_InitiatingOrigin(This,value) ) 
+
+#define ICoreWebView2LaunchingExternalUriSchemeEventArgs_get_IsUserInitiated(This,value)	\
+    ( (This)->lpVtbl -> get_IsUserInitiated(This,value) ) 
+
+#define ICoreWebView2LaunchingExternalUriSchemeEventArgs_get_Cancel(This,value)	\
+    ( (This)->lpVtbl -> get_Cancel(This,value) ) 
+
+#define ICoreWebView2LaunchingExternalUriSchemeEventArgs_put_Cancel(This,value)	\
+    ( (This)->lpVtbl -> put_Cancel(This,value) ) 
+
+#define ICoreWebView2LaunchingExternalUriSchemeEventArgs_GetDeferral(This,value)	\
+    ( (This)->lpVtbl -> GetDeferral(This,value) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2LaunchingExternalUriSchemeEventArgs_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2LaunchingExternalUriSchemeEventHandler_INTERFACE_DEFINED__
+#define __ICoreWebView2LaunchingExternalUriSchemeEventHandler_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2LaunchingExternalUriSchemeEventHandler */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2LaunchingExternalUriSchemeEventHandler = {0x74F712E0,0x8165,0x43A9,{0xA1,0x3F,0x0C,0xCE,0x59,0x7E,0x75,0xDF}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("74F712E0-8165-43A9-A13F-0CCE597E75DF")
+    ICoreWebView2LaunchingExternalUriSchemeEventHandler : public IUnknown
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE Invoke( 
+            /* [in] */ ICoreWebView2 *sender,
+            /* [in] */ ICoreWebView2LaunchingExternalUriSchemeEventArgs *args) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2LaunchingExternalUriSchemeEventHandlerVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2LaunchingExternalUriSchemeEventHandler * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2LaunchingExternalUriSchemeEventHandler * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2LaunchingExternalUriSchemeEventHandler * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2LaunchingExternalUriSchemeEventHandler, Invoke)
+        HRESULT ( STDMETHODCALLTYPE *Invoke )( 
+            ICoreWebView2LaunchingExternalUriSchemeEventHandler * This,
+            /* [in] */ ICoreWebView2 *sender,
+            /* [in] */ ICoreWebView2LaunchingExternalUriSchemeEventArgs *args);
+        
+        END_INTERFACE
+    } ICoreWebView2LaunchingExternalUriSchemeEventHandlerVtbl;
+
+    interface ICoreWebView2LaunchingExternalUriSchemeEventHandler
+    {
+        CONST_VTBL struct ICoreWebView2LaunchingExternalUriSchemeEventHandlerVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2LaunchingExternalUriSchemeEventHandler_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2LaunchingExternalUriSchemeEventHandler_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2LaunchingExternalUriSchemeEventHandler_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2LaunchingExternalUriSchemeEventHandler_Invoke(This,sender,args)	\
+    ( (This)->lpVtbl -> Invoke(This,sender,args) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2LaunchingExternalUriSchemeEventHandler_INTERFACE_DEFINED__ */
 
 
 #ifndef __ICoreWebView2MoveFocusRequestedEventArgs_INTERFACE_DEFINED__
@@ -25682,6 +36012,164 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2NavigationStartingEven
 #endif 	/* __ICoreWebView2NavigationStartingEventArgs2_INTERFACE_DEFINED__ */
 
 
+#ifndef __ICoreWebView2NavigationStartingEventArgs3_INTERFACE_DEFINED__
+#define __ICoreWebView2NavigationStartingEventArgs3_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2NavigationStartingEventArgs3 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2NavigationStartingEventArgs3 = {0xDDFFE494,0x4942,0x4BD2,{0xAB,0x73,0x35,0xB8,0xFF,0x40,0xE1,0x9F}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("DDFFE494-4942-4BD2-AB73-35B8FF40E19F")
+    ICoreWebView2NavigationStartingEventArgs3 : public ICoreWebView2NavigationStartingEventArgs2
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_NavigationKind( 
+            /* [retval][out] */ COREWEBVIEW2_NAVIGATION_KIND *navigation_kind) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2NavigationStartingEventArgs3Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2NavigationStartingEventArgs3 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2NavigationStartingEventArgs3 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2NavigationStartingEventArgs3 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NavigationStartingEventArgs, get_Uri)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Uri )( 
+            ICoreWebView2NavigationStartingEventArgs3 * This,
+            /* [retval][out] */ LPWSTR *uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NavigationStartingEventArgs, get_IsUserInitiated)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsUserInitiated )( 
+            ICoreWebView2NavigationStartingEventArgs3 * This,
+            /* [retval][out] */ BOOL *isUserInitiated);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NavigationStartingEventArgs, get_IsRedirected)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsRedirected )( 
+            ICoreWebView2NavigationStartingEventArgs3 * This,
+            /* [retval][out] */ BOOL *isRedirected);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NavigationStartingEventArgs, get_RequestHeaders)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_RequestHeaders )( 
+            ICoreWebView2NavigationStartingEventArgs3 * This,
+            /* [retval][out] */ ICoreWebView2HttpRequestHeaders **requestHeaders);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NavigationStartingEventArgs, get_Cancel)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Cancel )( 
+            ICoreWebView2NavigationStartingEventArgs3 * This,
+            /* [retval][out] */ BOOL *cancel);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NavigationStartingEventArgs, put_Cancel)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_Cancel )( 
+            ICoreWebView2NavigationStartingEventArgs3 * This,
+            /* [in] */ BOOL cancel);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NavigationStartingEventArgs, get_NavigationId)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_NavigationId )( 
+            ICoreWebView2NavigationStartingEventArgs3 * This,
+            /* [retval][out] */ UINT64 *navigationId);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NavigationStartingEventArgs2, get_AdditionalAllowedFrameAncestors)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AdditionalAllowedFrameAncestors )( 
+            ICoreWebView2NavigationStartingEventArgs3 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NavigationStartingEventArgs2, put_AdditionalAllowedFrameAncestors)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AdditionalAllowedFrameAncestors )( 
+            ICoreWebView2NavigationStartingEventArgs3 * This,
+            /* [in] */ LPCWSTR value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NavigationStartingEventArgs3, get_NavigationKind)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_NavigationKind )( 
+            ICoreWebView2NavigationStartingEventArgs3 * This,
+            /* [retval][out] */ COREWEBVIEW2_NAVIGATION_KIND *navigation_kind);
+        
+        END_INTERFACE
+    } ICoreWebView2NavigationStartingEventArgs3Vtbl;
+
+    interface ICoreWebView2NavigationStartingEventArgs3
+    {
+        CONST_VTBL struct ICoreWebView2NavigationStartingEventArgs3Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2NavigationStartingEventArgs3_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2NavigationStartingEventArgs3_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2NavigationStartingEventArgs3_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2NavigationStartingEventArgs3_get_Uri(This,uri)	\
+    ( (This)->lpVtbl -> get_Uri(This,uri) ) 
+
+#define ICoreWebView2NavigationStartingEventArgs3_get_IsUserInitiated(This,isUserInitiated)	\
+    ( (This)->lpVtbl -> get_IsUserInitiated(This,isUserInitiated) ) 
+
+#define ICoreWebView2NavigationStartingEventArgs3_get_IsRedirected(This,isRedirected)	\
+    ( (This)->lpVtbl -> get_IsRedirected(This,isRedirected) ) 
+
+#define ICoreWebView2NavigationStartingEventArgs3_get_RequestHeaders(This,requestHeaders)	\
+    ( (This)->lpVtbl -> get_RequestHeaders(This,requestHeaders) ) 
+
+#define ICoreWebView2NavigationStartingEventArgs3_get_Cancel(This,cancel)	\
+    ( (This)->lpVtbl -> get_Cancel(This,cancel) ) 
+
+#define ICoreWebView2NavigationStartingEventArgs3_put_Cancel(This,cancel)	\
+    ( (This)->lpVtbl -> put_Cancel(This,cancel) ) 
+
+#define ICoreWebView2NavigationStartingEventArgs3_get_NavigationId(This,navigationId)	\
+    ( (This)->lpVtbl -> get_NavigationId(This,navigationId) ) 
+
+
+#define ICoreWebView2NavigationStartingEventArgs3_get_AdditionalAllowedFrameAncestors(This,value)	\
+    ( (This)->lpVtbl -> get_AdditionalAllowedFrameAncestors(This,value) ) 
+
+#define ICoreWebView2NavigationStartingEventArgs3_put_AdditionalAllowedFrameAncestors(This,value)	\
+    ( (This)->lpVtbl -> put_AdditionalAllowedFrameAncestors(This,value) ) 
+
+
+#define ICoreWebView2NavigationStartingEventArgs3_get_NavigationKind(This,navigation_kind)	\
+    ( (This)->lpVtbl -> get_NavigationKind(This,navigation_kind) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2NavigationStartingEventArgs3_INTERFACE_DEFINED__ */
+
+
 #ifndef __ICoreWebView2NavigationStartingEventHandler_INTERFACE_DEFINED__
 #define __ICoreWebView2NavigationStartingEventHandler_INTERFACE_DEFINED__
 
@@ -26164,6 +36652,164 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2NewWindowRequestedEven
 #endif 	/* __ICoreWebView2NewWindowRequestedEventArgs2_INTERFACE_DEFINED__ */
 
 
+#ifndef __ICoreWebView2NewWindowRequestedEventArgs3_INTERFACE_DEFINED__
+#define __ICoreWebView2NewWindowRequestedEventArgs3_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2NewWindowRequestedEventArgs3 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2NewWindowRequestedEventArgs3 = {0x842bed3c,0x6ad6,0x4dd9,{0xb9,0x38,0x28,0xc9,0x66,0x67,0xad,0x66}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("842bed3c-6ad6-4dd9-b938-28c96667ad66")
+    ICoreWebView2NewWindowRequestedEventArgs3 : public ICoreWebView2NewWindowRequestedEventArgs2
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_OriginalSourceFrameInfo( 
+            /* [retval][out] */ ICoreWebView2FrameInfo **frameInfo) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2NewWindowRequestedEventArgs3Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2NewWindowRequestedEventArgs3 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2NewWindowRequestedEventArgs3 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2NewWindowRequestedEventArgs3 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NewWindowRequestedEventArgs, get_Uri)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Uri )( 
+            ICoreWebView2NewWindowRequestedEventArgs3 * This,
+            /* [retval][out] */ LPWSTR *uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NewWindowRequestedEventArgs, put_NewWindow)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_NewWindow )( 
+            ICoreWebView2NewWindowRequestedEventArgs3 * This,
+            /* [in] */ ICoreWebView2 *newWindow);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NewWindowRequestedEventArgs, get_NewWindow)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_NewWindow )( 
+            ICoreWebView2NewWindowRequestedEventArgs3 * This,
+            /* [retval][out] */ ICoreWebView2 **newWindow);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NewWindowRequestedEventArgs, put_Handled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_Handled )( 
+            ICoreWebView2NewWindowRequestedEventArgs3 * This,
+            /* [in] */ BOOL handled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NewWindowRequestedEventArgs, get_Handled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Handled )( 
+            ICoreWebView2NewWindowRequestedEventArgs3 * This,
+            /* [retval][out] */ BOOL *handled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NewWindowRequestedEventArgs, get_IsUserInitiated)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsUserInitiated )( 
+            ICoreWebView2NewWindowRequestedEventArgs3 * This,
+            /* [retval][out] */ BOOL *isUserInitiated);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NewWindowRequestedEventArgs, GetDeferral)
+        HRESULT ( STDMETHODCALLTYPE *GetDeferral )( 
+            ICoreWebView2NewWindowRequestedEventArgs3 * This,
+            /* [retval][out] */ ICoreWebView2Deferral **deferral);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NewWindowRequestedEventArgs, get_WindowFeatures)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_WindowFeatures )( 
+            ICoreWebView2NewWindowRequestedEventArgs3 * This,
+            /* [retval][out] */ ICoreWebView2WindowFeatures **value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NewWindowRequestedEventArgs2, get_Name)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Name )( 
+            ICoreWebView2NewWindowRequestedEventArgs3 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2NewWindowRequestedEventArgs3, get_OriginalSourceFrameInfo)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_OriginalSourceFrameInfo )( 
+            ICoreWebView2NewWindowRequestedEventArgs3 * This,
+            /* [retval][out] */ ICoreWebView2FrameInfo **frameInfo);
+        
+        END_INTERFACE
+    } ICoreWebView2NewWindowRequestedEventArgs3Vtbl;
+
+    interface ICoreWebView2NewWindowRequestedEventArgs3
+    {
+        CONST_VTBL struct ICoreWebView2NewWindowRequestedEventArgs3Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2NewWindowRequestedEventArgs3_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2NewWindowRequestedEventArgs3_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2NewWindowRequestedEventArgs3_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2NewWindowRequestedEventArgs3_get_Uri(This,uri)	\
+    ( (This)->lpVtbl -> get_Uri(This,uri) ) 
+
+#define ICoreWebView2NewWindowRequestedEventArgs3_put_NewWindow(This,newWindow)	\
+    ( (This)->lpVtbl -> put_NewWindow(This,newWindow) ) 
+
+#define ICoreWebView2NewWindowRequestedEventArgs3_get_NewWindow(This,newWindow)	\
+    ( (This)->lpVtbl -> get_NewWindow(This,newWindow) ) 
+
+#define ICoreWebView2NewWindowRequestedEventArgs3_put_Handled(This,handled)	\
+    ( (This)->lpVtbl -> put_Handled(This,handled) ) 
+
+#define ICoreWebView2NewWindowRequestedEventArgs3_get_Handled(This,handled)	\
+    ( (This)->lpVtbl -> get_Handled(This,handled) ) 
+
+#define ICoreWebView2NewWindowRequestedEventArgs3_get_IsUserInitiated(This,isUserInitiated)	\
+    ( (This)->lpVtbl -> get_IsUserInitiated(This,isUserInitiated) ) 
+
+#define ICoreWebView2NewWindowRequestedEventArgs3_GetDeferral(This,deferral)	\
+    ( (This)->lpVtbl -> GetDeferral(This,deferral) ) 
+
+#define ICoreWebView2NewWindowRequestedEventArgs3_get_WindowFeatures(This,value)	\
+    ( (This)->lpVtbl -> get_WindowFeatures(This,value) ) 
+
+
+#define ICoreWebView2NewWindowRequestedEventArgs3_get_Name(This,value)	\
+    ( (This)->lpVtbl -> get_Name(This,value) ) 
+
+
+#define ICoreWebView2NewWindowRequestedEventArgs3_get_OriginalSourceFrameInfo(This,frameInfo)	\
+    ( (This)->lpVtbl -> get_OriginalSourceFrameInfo(This,frameInfo) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2NewWindowRequestedEventArgs3_INTERFACE_DEFINED__ */
+
+
 #ifndef __ICoreWebView2NewWindowRequestedEventHandler_INTERFACE_DEFINED__
 #define __ICoreWebView2NewWindowRequestedEventHandler_INTERFACE_DEFINED__
 
@@ -26533,6 +37179,167 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2PermissionRequestedEve
 #endif 	/* __ICoreWebView2PermissionRequestedEventArgs2_INTERFACE_DEFINED__ */
 
 
+#ifndef __ICoreWebView2PermissionRequestedEventArgs3_INTERFACE_DEFINED__
+#define __ICoreWebView2PermissionRequestedEventArgs3_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2PermissionRequestedEventArgs3 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2PermissionRequestedEventArgs3 = {0xe61670bc,0x3dce,0x4177,{0x86,0xd2,0xc6,0x29,0xae,0x3c,0xb6,0xac}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("e61670bc-3dce-4177-86d2-c629ae3cb6ac")
+    ICoreWebView2PermissionRequestedEventArgs3 : public ICoreWebView2PermissionRequestedEventArgs2
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_SavesInProfile( 
+            /* [retval][out] */ BOOL *value) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_SavesInProfile( 
+            /* [in] */ BOOL value) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2PermissionRequestedEventArgs3Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2PermissionRequestedEventArgs3 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2PermissionRequestedEventArgs3 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2PermissionRequestedEventArgs3 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionRequestedEventArgs, get_Uri)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Uri )( 
+            ICoreWebView2PermissionRequestedEventArgs3 * This,
+            /* [retval][out] */ LPWSTR *uri);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionRequestedEventArgs, get_PermissionKind)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PermissionKind )( 
+            ICoreWebView2PermissionRequestedEventArgs3 * This,
+            /* [retval][out] */ COREWEBVIEW2_PERMISSION_KIND *permissionKind);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionRequestedEventArgs, get_IsUserInitiated)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsUserInitiated )( 
+            ICoreWebView2PermissionRequestedEventArgs3 * This,
+            /* [retval][out] */ BOOL *isUserInitiated);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionRequestedEventArgs, get_State)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_State )( 
+            ICoreWebView2PermissionRequestedEventArgs3 * This,
+            /* [retval][out] */ COREWEBVIEW2_PERMISSION_STATE *state);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionRequestedEventArgs, put_State)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_State )( 
+            ICoreWebView2PermissionRequestedEventArgs3 * This,
+            /* [in] */ COREWEBVIEW2_PERMISSION_STATE state);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionRequestedEventArgs, GetDeferral)
+        HRESULT ( STDMETHODCALLTYPE *GetDeferral )( 
+            ICoreWebView2PermissionRequestedEventArgs3 * This,
+            /* [retval][out] */ ICoreWebView2Deferral **deferral);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionRequestedEventArgs2, get_Handled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Handled )( 
+            ICoreWebView2PermissionRequestedEventArgs3 * This,
+            /* [retval][out] */ BOOL *handled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionRequestedEventArgs2, put_Handled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_Handled )( 
+            ICoreWebView2PermissionRequestedEventArgs3 * This,
+            /* [in] */ BOOL handled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionRequestedEventArgs3, get_SavesInProfile)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_SavesInProfile )( 
+            ICoreWebView2PermissionRequestedEventArgs3 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionRequestedEventArgs3, put_SavesInProfile)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_SavesInProfile )( 
+            ICoreWebView2PermissionRequestedEventArgs3 * This,
+            /* [in] */ BOOL value);
+        
+        END_INTERFACE
+    } ICoreWebView2PermissionRequestedEventArgs3Vtbl;
+
+    interface ICoreWebView2PermissionRequestedEventArgs3
+    {
+        CONST_VTBL struct ICoreWebView2PermissionRequestedEventArgs3Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2PermissionRequestedEventArgs3_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2PermissionRequestedEventArgs3_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2PermissionRequestedEventArgs3_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2PermissionRequestedEventArgs3_get_Uri(This,uri)	\
+    ( (This)->lpVtbl -> get_Uri(This,uri) ) 
+
+#define ICoreWebView2PermissionRequestedEventArgs3_get_PermissionKind(This,permissionKind)	\
+    ( (This)->lpVtbl -> get_PermissionKind(This,permissionKind) ) 
+
+#define ICoreWebView2PermissionRequestedEventArgs3_get_IsUserInitiated(This,isUserInitiated)	\
+    ( (This)->lpVtbl -> get_IsUserInitiated(This,isUserInitiated) ) 
+
+#define ICoreWebView2PermissionRequestedEventArgs3_get_State(This,state)	\
+    ( (This)->lpVtbl -> get_State(This,state) ) 
+
+#define ICoreWebView2PermissionRequestedEventArgs3_put_State(This,state)	\
+    ( (This)->lpVtbl -> put_State(This,state) ) 
+
+#define ICoreWebView2PermissionRequestedEventArgs3_GetDeferral(This,deferral)	\
+    ( (This)->lpVtbl -> GetDeferral(This,deferral) ) 
+
+
+#define ICoreWebView2PermissionRequestedEventArgs3_get_Handled(This,handled)	\
+    ( (This)->lpVtbl -> get_Handled(This,handled) ) 
+
+#define ICoreWebView2PermissionRequestedEventArgs3_put_Handled(This,handled)	\
+    ( (This)->lpVtbl -> put_Handled(This,handled) ) 
+
+
+#define ICoreWebView2PermissionRequestedEventArgs3_get_SavesInProfile(This,value)	\
+    ( (This)->lpVtbl -> get_SavesInProfile(This,value) ) 
+
+#define ICoreWebView2PermissionRequestedEventArgs3_put_SavesInProfile(This,value)	\
+    ( (This)->lpVtbl -> put_SavesInProfile(This,value) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2PermissionRequestedEventArgs3_INTERFACE_DEFINED__ */
+
+
 #ifndef __ICoreWebView2PermissionRequestedEventHandler_INTERFACE_DEFINED__
 #define __ICoreWebView2PermissionRequestedEventHandler_INTERFACE_DEFINED__
 
@@ -26617,6 +37424,209 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2PermissionRequestedEve
 
 
 #endif 	/* __ICoreWebView2PermissionRequestedEventHandler_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2PermissionSettingCollectionView_INTERFACE_DEFINED__
+#define __ICoreWebView2PermissionSettingCollectionView_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2PermissionSettingCollectionView */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2PermissionSettingCollectionView = {0xf5596f62,0x3de5,0x47b1,{0x91,0xe8,0xa4,0x10,0x4b,0x59,0x6b,0x96}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("f5596f62-3de5-47b1-91e8-a4104b596b96")
+    ICoreWebView2PermissionSettingCollectionView : public IUnknown
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE GetValueAtIndex( 
+            /* [in] */ UINT32 index,
+            /* [retval][out] */ ICoreWebView2PermissionSetting **permissionSetting) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Count( 
+            /* [retval][out] */ UINT32 *value) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2PermissionSettingCollectionViewVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2PermissionSettingCollectionView * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2PermissionSettingCollectionView * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2PermissionSettingCollectionView * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionSettingCollectionView, GetValueAtIndex)
+        HRESULT ( STDMETHODCALLTYPE *GetValueAtIndex )( 
+            ICoreWebView2PermissionSettingCollectionView * This,
+            /* [in] */ UINT32 index,
+            /* [retval][out] */ ICoreWebView2PermissionSetting **permissionSetting);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionSettingCollectionView, get_Count)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Count )( 
+            ICoreWebView2PermissionSettingCollectionView * This,
+            /* [retval][out] */ UINT32 *value);
+        
+        END_INTERFACE
+    } ICoreWebView2PermissionSettingCollectionViewVtbl;
+
+    interface ICoreWebView2PermissionSettingCollectionView
+    {
+        CONST_VTBL struct ICoreWebView2PermissionSettingCollectionViewVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2PermissionSettingCollectionView_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2PermissionSettingCollectionView_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2PermissionSettingCollectionView_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2PermissionSettingCollectionView_GetValueAtIndex(This,index,permissionSetting)	\
+    ( (This)->lpVtbl -> GetValueAtIndex(This,index,permissionSetting) ) 
+
+#define ICoreWebView2PermissionSettingCollectionView_get_Count(This,value)	\
+    ( (This)->lpVtbl -> get_Count(This,value) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2PermissionSettingCollectionView_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2PermissionSetting_INTERFACE_DEFINED__
+#define __ICoreWebView2PermissionSetting_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2PermissionSetting */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2PermissionSetting = {0x792b6eca,0x5576,0x421c,{0x91,0x19,0x74,0xeb,0xb3,0xa4,0xff,0xb3}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("792b6eca-5576-421c-9119-74ebb3a4ffb3")
+    ICoreWebView2PermissionSetting : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_PermissionKind( 
+            /* [retval][out] */ COREWEBVIEW2_PERMISSION_KIND *value) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_PermissionOrigin( 
+            /* [retval][out] */ LPWSTR *value) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_PermissionState( 
+            /* [retval][out] */ COREWEBVIEW2_PERMISSION_STATE *value) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2PermissionSettingVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2PermissionSetting * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2PermissionSetting * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2PermissionSetting * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionSetting, get_PermissionKind)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PermissionKind )( 
+            ICoreWebView2PermissionSetting * This,
+            /* [retval][out] */ COREWEBVIEW2_PERMISSION_KIND *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionSetting, get_PermissionOrigin)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PermissionOrigin )( 
+            ICoreWebView2PermissionSetting * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2PermissionSetting, get_PermissionState)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PermissionState )( 
+            ICoreWebView2PermissionSetting * This,
+            /* [retval][out] */ COREWEBVIEW2_PERMISSION_STATE *value);
+        
+        END_INTERFACE
+    } ICoreWebView2PermissionSettingVtbl;
+
+    interface ICoreWebView2PermissionSetting
+    {
+        CONST_VTBL struct ICoreWebView2PermissionSettingVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2PermissionSetting_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2PermissionSetting_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2PermissionSetting_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2PermissionSetting_get_PermissionKind(This,value)	\
+    ( (This)->lpVtbl -> get_PermissionKind(This,value) ) 
+
+#define ICoreWebView2PermissionSetting_get_PermissionOrigin(This,value)	\
+    ( (This)->lpVtbl -> get_PermissionOrigin(This,value) ) 
+
+#define ICoreWebView2PermissionSetting_get_PermissionState(This,value)	\
+    ( (This)->lpVtbl -> get_PermissionState(This,value) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2PermissionSetting_INTERFACE_DEFINED__ */
 
 
 #ifndef __ICoreWebView2PointerInfo_INTERFACE_DEFINED__
@@ -29000,6 +40010,1484 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Profile2 = {0xfa740d4b
 #endif 	/* __ICoreWebView2Profile2_INTERFACE_DEFINED__ */
 
 
+#ifndef __ICoreWebView2Profile3_INTERFACE_DEFINED__
+#define __ICoreWebView2Profile3_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2Profile3 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Profile3 = {0xB188E659,0x5685,0x4E05,{0xBD,0xBA,0xFC,0x64,0x0E,0x0F,0x19,0x92}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("B188E659-5685-4E05-BDBA-FC640E0F1992")
+    ICoreWebView2Profile3 : public ICoreWebView2Profile2
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_PreferredTrackingPreventionLevel( 
+            /* [retval][out] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL *value) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_PreferredTrackingPreventionLevel( 
+            /* [in] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL value) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2Profile3Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2Profile3 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2Profile3 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2Profile3 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_ProfileName)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProfileName )( 
+            ICoreWebView2Profile3 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_IsInPrivateModeEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsInPrivateModeEnabled )( 
+            ICoreWebView2Profile3 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_ProfilePath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProfilePath )( 
+            ICoreWebView2Profile3 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_DefaultDownloadFolderPath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadFolderPath )( 
+            ICoreWebView2Profile3 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, put_DefaultDownloadFolderPath)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadFolderPath )( 
+            ICoreWebView2Profile3 * This,
+            /* [in] */ LPCWSTR value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_PreferredColorScheme)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PreferredColorScheme )( 
+            ICoreWebView2Profile3 * This,
+            /* [retval][out] */ COREWEBVIEW2_PREFERRED_COLOR_SCHEME *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, put_PreferredColorScheme)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PreferredColorScheme )( 
+            ICoreWebView2Profile3 * This,
+            /* [in] */ COREWEBVIEW2_PREFERRED_COLOR_SCHEME value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingData)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingData )( 
+            ICoreWebView2Profile3 * This,
+            /* [in] */ COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingDataInTimeRange)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingDataInTimeRange )( 
+            ICoreWebView2Profile3 * This,
+            /* [in] */ COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
+            /* [in] */ double startTime,
+            /* [in] */ double endTime,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingDataAll)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingDataAll )( 
+            ICoreWebView2Profile3 * This,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile3, get_PreferredTrackingPreventionLevel)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PreferredTrackingPreventionLevel )( 
+            ICoreWebView2Profile3 * This,
+            /* [retval][out] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile3, put_PreferredTrackingPreventionLevel)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PreferredTrackingPreventionLevel )( 
+            ICoreWebView2Profile3 * This,
+            /* [in] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL value);
+        
+        END_INTERFACE
+    } ICoreWebView2Profile3Vtbl;
+
+    interface ICoreWebView2Profile3
+    {
+        CONST_VTBL struct ICoreWebView2Profile3Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2Profile3_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2Profile3_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2Profile3_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2Profile3_get_ProfileName(This,value)	\
+    ( (This)->lpVtbl -> get_ProfileName(This,value) ) 
+
+#define ICoreWebView2Profile3_get_IsInPrivateModeEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsInPrivateModeEnabled(This,value) ) 
+
+#define ICoreWebView2Profile3_get_ProfilePath(This,value)	\
+    ( (This)->lpVtbl -> get_ProfilePath(This,value) ) 
+
+#define ICoreWebView2Profile3_get_DefaultDownloadFolderPath(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadFolderPath(This,value) ) 
+
+#define ICoreWebView2Profile3_put_DefaultDownloadFolderPath(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadFolderPath(This,value) ) 
+
+#define ICoreWebView2Profile3_get_PreferredColorScheme(This,value)	\
+    ( (This)->lpVtbl -> get_PreferredColorScheme(This,value) ) 
+
+#define ICoreWebView2Profile3_put_PreferredColorScheme(This,value)	\
+    ( (This)->lpVtbl -> put_PreferredColorScheme(This,value) ) 
+
+
+#define ICoreWebView2Profile3_ClearBrowsingData(This,dataKinds,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingData(This,dataKinds,handler) ) 
+
+#define ICoreWebView2Profile3_ClearBrowsingDataInTimeRange(This,dataKinds,startTime,endTime,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingDataInTimeRange(This,dataKinds,startTime,endTime,handler) ) 
+
+#define ICoreWebView2Profile3_ClearBrowsingDataAll(This,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingDataAll(This,handler) ) 
+
+
+#define ICoreWebView2Profile3_get_PreferredTrackingPreventionLevel(This,value)	\
+    ( (This)->lpVtbl -> get_PreferredTrackingPreventionLevel(This,value) ) 
+
+#define ICoreWebView2Profile3_put_PreferredTrackingPreventionLevel(This,value)	\
+    ( (This)->lpVtbl -> put_PreferredTrackingPreventionLevel(This,value) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2Profile3_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Profile4_INTERFACE_DEFINED__
+#define __ICoreWebView2Profile4_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2Profile4 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Profile4 = {0x8F4ae680,0x192e,0x4eC8,{0x83,0x3a,0x21,0xcf,0xad,0xae,0xf6,0x28}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("8F4ae680-192e-4eC8-833a-21cfadaef628")
+    ICoreWebView2Profile4 : public ICoreWebView2Profile3
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE SetPermissionState( 
+            /* [in] */ COREWEBVIEW2_PERMISSION_KIND permissionKind,
+            /* [in] */ LPCWSTR origin,
+            /* [in] */ COREWEBVIEW2_PERMISSION_STATE state,
+            /* [in] */ ICoreWebView2SetPermissionStateCompletedHandler *completedHandler) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetNonDefaultPermissionSettings( 
+            /* [in] */ ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler *completedHandler) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2Profile4Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2Profile4 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2Profile4 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2Profile4 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_ProfileName)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProfileName )( 
+            ICoreWebView2Profile4 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_IsInPrivateModeEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsInPrivateModeEnabled )( 
+            ICoreWebView2Profile4 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_ProfilePath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProfilePath )( 
+            ICoreWebView2Profile4 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_DefaultDownloadFolderPath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadFolderPath )( 
+            ICoreWebView2Profile4 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, put_DefaultDownloadFolderPath)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadFolderPath )( 
+            ICoreWebView2Profile4 * This,
+            /* [in] */ LPCWSTR value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_PreferredColorScheme)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PreferredColorScheme )( 
+            ICoreWebView2Profile4 * This,
+            /* [retval][out] */ COREWEBVIEW2_PREFERRED_COLOR_SCHEME *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, put_PreferredColorScheme)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PreferredColorScheme )( 
+            ICoreWebView2Profile4 * This,
+            /* [in] */ COREWEBVIEW2_PREFERRED_COLOR_SCHEME value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingData)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingData )( 
+            ICoreWebView2Profile4 * This,
+            /* [in] */ COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingDataInTimeRange)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingDataInTimeRange )( 
+            ICoreWebView2Profile4 * This,
+            /* [in] */ COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
+            /* [in] */ double startTime,
+            /* [in] */ double endTime,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingDataAll)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingDataAll )( 
+            ICoreWebView2Profile4 * This,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile3, get_PreferredTrackingPreventionLevel)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PreferredTrackingPreventionLevel )( 
+            ICoreWebView2Profile4 * This,
+            /* [retval][out] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile3, put_PreferredTrackingPreventionLevel)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PreferredTrackingPreventionLevel )( 
+            ICoreWebView2Profile4 * This,
+            /* [in] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile4, SetPermissionState)
+        HRESULT ( STDMETHODCALLTYPE *SetPermissionState )( 
+            ICoreWebView2Profile4 * This,
+            /* [in] */ COREWEBVIEW2_PERMISSION_KIND permissionKind,
+            /* [in] */ LPCWSTR origin,
+            /* [in] */ COREWEBVIEW2_PERMISSION_STATE state,
+            /* [in] */ ICoreWebView2SetPermissionStateCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile4, GetNonDefaultPermissionSettings)
+        HRESULT ( STDMETHODCALLTYPE *GetNonDefaultPermissionSettings )( 
+            ICoreWebView2Profile4 * This,
+            /* [in] */ ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler *completedHandler);
+        
+        END_INTERFACE
+    } ICoreWebView2Profile4Vtbl;
+
+    interface ICoreWebView2Profile4
+    {
+        CONST_VTBL struct ICoreWebView2Profile4Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2Profile4_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2Profile4_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2Profile4_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2Profile4_get_ProfileName(This,value)	\
+    ( (This)->lpVtbl -> get_ProfileName(This,value) ) 
+
+#define ICoreWebView2Profile4_get_IsInPrivateModeEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsInPrivateModeEnabled(This,value) ) 
+
+#define ICoreWebView2Profile4_get_ProfilePath(This,value)	\
+    ( (This)->lpVtbl -> get_ProfilePath(This,value) ) 
+
+#define ICoreWebView2Profile4_get_DefaultDownloadFolderPath(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadFolderPath(This,value) ) 
+
+#define ICoreWebView2Profile4_put_DefaultDownloadFolderPath(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadFolderPath(This,value) ) 
+
+#define ICoreWebView2Profile4_get_PreferredColorScheme(This,value)	\
+    ( (This)->lpVtbl -> get_PreferredColorScheme(This,value) ) 
+
+#define ICoreWebView2Profile4_put_PreferredColorScheme(This,value)	\
+    ( (This)->lpVtbl -> put_PreferredColorScheme(This,value) ) 
+
+
+#define ICoreWebView2Profile4_ClearBrowsingData(This,dataKinds,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingData(This,dataKinds,handler) ) 
+
+#define ICoreWebView2Profile4_ClearBrowsingDataInTimeRange(This,dataKinds,startTime,endTime,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingDataInTimeRange(This,dataKinds,startTime,endTime,handler) ) 
+
+#define ICoreWebView2Profile4_ClearBrowsingDataAll(This,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingDataAll(This,handler) ) 
+
+
+#define ICoreWebView2Profile4_get_PreferredTrackingPreventionLevel(This,value)	\
+    ( (This)->lpVtbl -> get_PreferredTrackingPreventionLevel(This,value) ) 
+
+#define ICoreWebView2Profile4_put_PreferredTrackingPreventionLevel(This,value)	\
+    ( (This)->lpVtbl -> put_PreferredTrackingPreventionLevel(This,value) ) 
+
+
+#define ICoreWebView2Profile4_SetPermissionState(This,permissionKind,origin,state,completedHandler)	\
+    ( (This)->lpVtbl -> SetPermissionState(This,permissionKind,origin,state,completedHandler) ) 
+
+#define ICoreWebView2Profile4_GetNonDefaultPermissionSettings(This,completedHandler)	\
+    ( (This)->lpVtbl -> GetNonDefaultPermissionSettings(This,completedHandler) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2Profile4_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Profile5_INTERFACE_DEFINED__
+#define __ICoreWebView2Profile5_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2Profile5 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Profile5 = {0x2EE5B76E,0x6E80,0x4DF2,{0xBC,0xD3,0xD4,0xEC,0x33,0x40,0xA0,0x1B}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("2EE5B76E-6E80-4DF2-BCD3-D4EC3340A01B")
+    ICoreWebView2Profile5 : public ICoreWebView2Profile4
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_CookieManager( 
+            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2Profile5Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2Profile5 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2Profile5 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2Profile5 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_ProfileName)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProfileName )( 
+            ICoreWebView2Profile5 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_IsInPrivateModeEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsInPrivateModeEnabled )( 
+            ICoreWebView2Profile5 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_ProfilePath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProfilePath )( 
+            ICoreWebView2Profile5 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_DefaultDownloadFolderPath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadFolderPath )( 
+            ICoreWebView2Profile5 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, put_DefaultDownloadFolderPath)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadFolderPath )( 
+            ICoreWebView2Profile5 * This,
+            /* [in] */ LPCWSTR value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_PreferredColorScheme)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PreferredColorScheme )( 
+            ICoreWebView2Profile5 * This,
+            /* [retval][out] */ COREWEBVIEW2_PREFERRED_COLOR_SCHEME *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, put_PreferredColorScheme)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PreferredColorScheme )( 
+            ICoreWebView2Profile5 * This,
+            /* [in] */ COREWEBVIEW2_PREFERRED_COLOR_SCHEME value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingData)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingData )( 
+            ICoreWebView2Profile5 * This,
+            /* [in] */ COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingDataInTimeRange)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingDataInTimeRange )( 
+            ICoreWebView2Profile5 * This,
+            /* [in] */ COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
+            /* [in] */ double startTime,
+            /* [in] */ double endTime,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingDataAll)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingDataAll )( 
+            ICoreWebView2Profile5 * This,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile3, get_PreferredTrackingPreventionLevel)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PreferredTrackingPreventionLevel )( 
+            ICoreWebView2Profile5 * This,
+            /* [retval][out] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile3, put_PreferredTrackingPreventionLevel)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PreferredTrackingPreventionLevel )( 
+            ICoreWebView2Profile5 * This,
+            /* [in] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile4, SetPermissionState)
+        HRESULT ( STDMETHODCALLTYPE *SetPermissionState )( 
+            ICoreWebView2Profile5 * This,
+            /* [in] */ COREWEBVIEW2_PERMISSION_KIND permissionKind,
+            /* [in] */ LPCWSTR origin,
+            /* [in] */ COREWEBVIEW2_PERMISSION_STATE state,
+            /* [in] */ ICoreWebView2SetPermissionStateCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile4, GetNonDefaultPermissionSettings)
+        HRESULT ( STDMETHODCALLTYPE *GetNonDefaultPermissionSettings )( 
+            ICoreWebView2Profile5 * This,
+            /* [in] */ ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile5, get_CookieManager)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
+            ICoreWebView2Profile5 * This,
+            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
+        
+        END_INTERFACE
+    } ICoreWebView2Profile5Vtbl;
+
+    interface ICoreWebView2Profile5
+    {
+        CONST_VTBL struct ICoreWebView2Profile5Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2Profile5_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2Profile5_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2Profile5_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2Profile5_get_ProfileName(This,value)	\
+    ( (This)->lpVtbl -> get_ProfileName(This,value) ) 
+
+#define ICoreWebView2Profile5_get_IsInPrivateModeEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsInPrivateModeEnabled(This,value) ) 
+
+#define ICoreWebView2Profile5_get_ProfilePath(This,value)	\
+    ( (This)->lpVtbl -> get_ProfilePath(This,value) ) 
+
+#define ICoreWebView2Profile5_get_DefaultDownloadFolderPath(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadFolderPath(This,value) ) 
+
+#define ICoreWebView2Profile5_put_DefaultDownloadFolderPath(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadFolderPath(This,value) ) 
+
+#define ICoreWebView2Profile5_get_PreferredColorScheme(This,value)	\
+    ( (This)->lpVtbl -> get_PreferredColorScheme(This,value) ) 
+
+#define ICoreWebView2Profile5_put_PreferredColorScheme(This,value)	\
+    ( (This)->lpVtbl -> put_PreferredColorScheme(This,value) ) 
+
+
+#define ICoreWebView2Profile5_ClearBrowsingData(This,dataKinds,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingData(This,dataKinds,handler) ) 
+
+#define ICoreWebView2Profile5_ClearBrowsingDataInTimeRange(This,dataKinds,startTime,endTime,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingDataInTimeRange(This,dataKinds,startTime,endTime,handler) ) 
+
+#define ICoreWebView2Profile5_ClearBrowsingDataAll(This,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingDataAll(This,handler) ) 
+
+
+#define ICoreWebView2Profile5_get_PreferredTrackingPreventionLevel(This,value)	\
+    ( (This)->lpVtbl -> get_PreferredTrackingPreventionLevel(This,value) ) 
+
+#define ICoreWebView2Profile5_put_PreferredTrackingPreventionLevel(This,value)	\
+    ( (This)->lpVtbl -> put_PreferredTrackingPreventionLevel(This,value) ) 
+
+
+#define ICoreWebView2Profile5_SetPermissionState(This,permissionKind,origin,state,completedHandler)	\
+    ( (This)->lpVtbl -> SetPermissionState(This,permissionKind,origin,state,completedHandler) ) 
+
+#define ICoreWebView2Profile5_GetNonDefaultPermissionSettings(This,completedHandler)	\
+    ( (This)->lpVtbl -> GetNonDefaultPermissionSettings(This,completedHandler) ) 
+
+
+#define ICoreWebView2Profile5_get_CookieManager(This,cookieManager)	\
+    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2Profile5_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Profile6_INTERFACE_DEFINED__
+#define __ICoreWebView2Profile6_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2Profile6 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Profile6 = {0xBD82FA6A,0x1D65,0x4C33,{0xB2,0xB4,0x03,0x93,0x02,0x0C,0xC6,0x1B}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("BD82FA6A-1D65-4C33-B2B4-0393020CC61B")
+    ICoreWebView2Profile6 : public ICoreWebView2Profile5
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_IsPasswordAutosaveEnabled( 
+            /* [retval][out] */ BOOL *value) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_IsPasswordAutosaveEnabled( 
+            /* [in] */ BOOL value) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_IsGeneralAutofillEnabled( 
+            /* [retval][out] */ BOOL *value) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_IsGeneralAutofillEnabled( 
+            /* [in] */ BOOL value) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2Profile6Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2Profile6 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2Profile6 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2Profile6 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_ProfileName)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProfileName )( 
+            ICoreWebView2Profile6 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_IsInPrivateModeEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsInPrivateModeEnabled )( 
+            ICoreWebView2Profile6 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_ProfilePath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProfilePath )( 
+            ICoreWebView2Profile6 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_DefaultDownloadFolderPath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadFolderPath )( 
+            ICoreWebView2Profile6 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, put_DefaultDownloadFolderPath)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadFolderPath )( 
+            ICoreWebView2Profile6 * This,
+            /* [in] */ LPCWSTR value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_PreferredColorScheme)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PreferredColorScheme )( 
+            ICoreWebView2Profile6 * This,
+            /* [retval][out] */ COREWEBVIEW2_PREFERRED_COLOR_SCHEME *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, put_PreferredColorScheme)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PreferredColorScheme )( 
+            ICoreWebView2Profile6 * This,
+            /* [in] */ COREWEBVIEW2_PREFERRED_COLOR_SCHEME value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingData)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingData )( 
+            ICoreWebView2Profile6 * This,
+            /* [in] */ COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingDataInTimeRange)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingDataInTimeRange )( 
+            ICoreWebView2Profile6 * This,
+            /* [in] */ COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
+            /* [in] */ double startTime,
+            /* [in] */ double endTime,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingDataAll)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingDataAll )( 
+            ICoreWebView2Profile6 * This,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile3, get_PreferredTrackingPreventionLevel)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PreferredTrackingPreventionLevel )( 
+            ICoreWebView2Profile6 * This,
+            /* [retval][out] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile3, put_PreferredTrackingPreventionLevel)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PreferredTrackingPreventionLevel )( 
+            ICoreWebView2Profile6 * This,
+            /* [in] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile4, SetPermissionState)
+        HRESULT ( STDMETHODCALLTYPE *SetPermissionState )( 
+            ICoreWebView2Profile6 * This,
+            /* [in] */ COREWEBVIEW2_PERMISSION_KIND permissionKind,
+            /* [in] */ LPCWSTR origin,
+            /* [in] */ COREWEBVIEW2_PERMISSION_STATE state,
+            /* [in] */ ICoreWebView2SetPermissionStateCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile4, GetNonDefaultPermissionSettings)
+        HRESULT ( STDMETHODCALLTYPE *GetNonDefaultPermissionSettings )( 
+            ICoreWebView2Profile6 * This,
+            /* [in] */ ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile5, get_CookieManager)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
+            ICoreWebView2Profile6 * This,
+            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile6, get_IsPasswordAutosaveEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsPasswordAutosaveEnabled )( 
+            ICoreWebView2Profile6 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile6, put_IsPasswordAutosaveEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsPasswordAutosaveEnabled )( 
+            ICoreWebView2Profile6 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile6, get_IsGeneralAutofillEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsGeneralAutofillEnabled )( 
+            ICoreWebView2Profile6 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile6, put_IsGeneralAutofillEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsGeneralAutofillEnabled )( 
+            ICoreWebView2Profile6 * This,
+            /* [in] */ BOOL value);
+        
+        END_INTERFACE
+    } ICoreWebView2Profile6Vtbl;
+
+    interface ICoreWebView2Profile6
+    {
+        CONST_VTBL struct ICoreWebView2Profile6Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2Profile6_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2Profile6_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2Profile6_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2Profile6_get_ProfileName(This,value)	\
+    ( (This)->lpVtbl -> get_ProfileName(This,value) ) 
+
+#define ICoreWebView2Profile6_get_IsInPrivateModeEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsInPrivateModeEnabled(This,value) ) 
+
+#define ICoreWebView2Profile6_get_ProfilePath(This,value)	\
+    ( (This)->lpVtbl -> get_ProfilePath(This,value) ) 
+
+#define ICoreWebView2Profile6_get_DefaultDownloadFolderPath(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadFolderPath(This,value) ) 
+
+#define ICoreWebView2Profile6_put_DefaultDownloadFolderPath(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadFolderPath(This,value) ) 
+
+#define ICoreWebView2Profile6_get_PreferredColorScheme(This,value)	\
+    ( (This)->lpVtbl -> get_PreferredColorScheme(This,value) ) 
+
+#define ICoreWebView2Profile6_put_PreferredColorScheme(This,value)	\
+    ( (This)->lpVtbl -> put_PreferredColorScheme(This,value) ) 
+
+
+#define ICoreWebView2Profile6_ClearBrowsingData(This,dataKinds,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingData(This,dataKinds,handler) ) 
+
+#define ICoreWebView2Profile6_ClearBrowsingDataInTimeRange(This,dataKinds,startTime,endTime,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingDataInTimeRange(This,dataKinds,startTime,endTime,handler) ) 
+
+#define ICoreWebView2Profile6_ClearBrowsingDataAll(This,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingDataAll(This,handler) ) 
+
+
+#define ICoreWebView2Profile6_get_PreferredTrackingPreventionLevel(This,value)	\
+    ( (This)->lpVtbl -> get_PreferredTrackingPreventionLevel(This,value) ) 
+
+#define ICoreWebView2Profile6_put_PreferredTrackingPreventionLevel(This,value)	\
+    ( (This)->lpVtbl -> put_PreferredTrackingPreventionLevel(This,value) ) 
+
+
+#define ICoreWebView2Profile6_SetPermissionState(This,permissionKind,origin,state,completedHandler)	\
+    ( (This)->lpVtbl -> SetPermissionState(This,permissionKind,origin,state,completedHandler) ) 
+
+#define ICoreWebView2Profile6_GetNonDefaultPermissionSettings(This,completedHandler)	\
+    ( (This)->lpVtbl -> GetNonDefaultPermissionSettings(This,completedHandler) ) 
+
+
+#define ICoreWebView2Profile6_get_CookieManager(This,cookieManager)	\
+    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
+
+
+#define ICoreWebView2Profile6_get_IsPasswordAutosaveEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsPasswordAutosaveEnabled(This,value) ) 
+
+#define ICoreWebView2Profile6_put_IsPasswordAutosaveEnabled(This,value)	\
+    ( (This)->lpVtbl -> put_IsPasswordAutosaveEnabled(This,value) ) 
+
+#define ICoreWebView2Profile6_get_IsGeneralAutofillEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsGeneralAutofillEnabled(This,value) ) 
+
+#define ICoreWebView2Profile6_put_IsGeneralAutofillEnabled(This,value)	\
+    ( (This)->lpVtbl -> put_IsGeneralAutofillEnabled(This,value) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2Profile6_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Profile7_INTERFACE_DEFINED__
+#define __ICoreWebView2Profile7_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2Profile7 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Profile7 = {0x7b4c7906,0xa1aa,0x4cb4,{0xb7,0x23,0xdb,0x09,0xf8,0x13,0xd5,0x41}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("7b4c7906-a1aa-4cb4-b723-db09f813d541")
+    ICoreWebView2Profile7 : public ICoreWebView2Profile6
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE AddBrowserExtension( 
+            /* [in] */ LPCWSTR extensionFolderPath,
+            /* [in] */ ICoreWebView2ProfileAddBrowserExtensionCompletedHandler *handler) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetBrowserExtensions( 
+            /* [in] */ ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler *handler) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2Profile7Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2Profile7 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2Profile7 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2Profile7 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_ProfileName)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProfileName )( 
+            ICoreWebView2Profile7 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_IsInPrivateModeEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsInPrivateModeEnabled )( 
+            ICoreWebView2Profile7 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_ProfilePath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProfilePath )( 
+            ICoreWebView2Profile7 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_DefaultDownloadFolderPath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadFolderPath )( 
+            ICoreWebView2Profile7 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, put_DefaultDownloadFolderPath)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadFolderPath )( 
+            ICoreWebView2Profile7 * This,
+            /* [in] */ LPCWSTR value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_PreferredColorScheme)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PreferredColorScheme )( 
+            ICoreWebView2Profile7 * This,
+            /* [retval][out] */ COREWEBVIEW2_PREFERRED_COLOR_SCHEME *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, put_PreferredColorScheme)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PreferredColorScheme )( 
+            ICoreWebView2Profile7 * This,
+            /* [in] */ COREWEBVIEW2_PREFERRED_COLOR_SCHEME value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingData)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingData )( 
+            ICoreWebView2Profile7 * This,
+            /* [in] */ COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingDataInTimeRange)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingDataInTimeRange )( 
+            ICoreWebView2Profile7 * This,
+            /* [in] */ COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
+            /* [in] */ double startTime,
+            /* [in] */ double endTime,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingDataAll)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingDataAll )( 
+            ICoreWebView2Profile7 * This,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile3, get_PreferredTrackingPreventionLevel)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PreferredTrackingPreventionLevel )( 
+            ICoreWebView2Profile7 * This,
+            /* [retval][out] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile3, put_PreferredTrackingPreventionLevel)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PreferredTrackingPreventionLevel )( 
+            ICoreWebView2Profile7 * This,
+            /* [in] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile4, SetPermissionState)
+        HRESULT ( STDMETHODCALLTYPE *SetPermissionState )( 
+            ICoreWebView2Profile7 * This,
+            /* [in] */ COREWEBVIEW2_PERMISSION_KIND permissionKind,
+            /* [in] */ LPCWSTR origin,
+            /* [in] */ COREWEBVIEW2_PERMISSION_STATE state,
+            /* [in] */ ICoreWebView2SetPermissionStateCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile4, GetNonDefaultPermissionSettings)
+        HRESULT ( STDMETHODCALLTYPE *GetNonDefaultPermissionSettings )( 
+            ICoreWebView2Profile7 * This,
+            /* [in] */ ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile5, get_CookieManager)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
+            ICoreWebView2Profile7 * This,
+            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile6, get_IsPasswordAutosaveEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsPasswordAutosaveEnabled )( 
+            ICoreWebView2Profile7 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile6, put_IsPasswordAutosaveEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsPasswordAutosaveEnabled )( 
+            ICoreWebView2Profile7 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile6, get_IsGeneralAutofillEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsGeneralAutofillEnabled )( 
+            ICoreWebView2Profile7 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile6, put_IsGeneralAutofillEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsGeneralAutofillEnabled )( 
+            ICoreWebView2Profile7 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile7, AddBrowserExtension)
+        HRESULT ( STDMETHODCALLTYPE *AddBrowserExtension )( 
+            ICoreWebView2Profile7 * This,
+            /* [in] */ LPCWSTR extensionFolderPath,
+            /* [in] */ ICoreWebView2ProfileAddBrowserExtensionCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile7, GetBrowserExtensions)
+        HRESULT ( STDMETHODCALLTYPE *GetBrowserExtensions )( 
+            ICoreWebView2Profile7 * This,
+            /* [in] */ ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler *handler);
+        
+        END_INTERFACE
+    } ICoreWebView2Profile7Vtbl;
+
+    interface ICoreWebView2Profile7
+    {
+        CONST_VTBL struct ICoreWebView2Profile7Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2Profile7_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2Profile7_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2Profile7_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2Profile7_get_ProfileName(This,value)	\
+    ( (This)->lpVtbl -> get_ProfileName(This,value) ) 
+
+#define ICoreWebView2Profile7_get_IsInPrivateModeEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsInPrivateModeEnabled(This,value) ) 
+
+#define ICoreWebView2Profile7_get_ProfilePath(This,value)	\
+    ( (This)->lpVtbl -> get_ProfilePath(This,value) ) 
+
+#define ICoreWebView2Profile7_get_DefaultDownloadFolderPath(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadFolderPath(This,value) ) 
+
+#define ICoreWebView2Profile7_put_DefaultDownloadFolderPath(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadFolderPath(This,value) ) 
+
+#define ICoreWebView2Profile7_get_PreferredColorScheme(This,value)	\
+    ( (This)->lpVtbl -> get_PreferredColorScheme(This,value) ) 
+
+#define ICoreWebView2Profile7_put_PreferredColorScheme(This,value)	\
+    ( (This)->lpVtbl -> put_PreferredColorScheme(This,value) ) 
+
+
+#define ICoreWebView2Profile7_ClearBrowsingData(This,dataKinds,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingData(This,dataKinds,handler) ) 
+
+#define ICoreWebView2Profile7_ClearBrowsingDataInTimeRange(This,dataKinds,startTime,endTime,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingDataInTimeRange(This,dataKinds,startTime,endTime,handler) ) 
+
+#define ICoreWebView2Profile7_ClearBrowsingDataAll(This,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingDataAll(This,handler) ) 
+
+
+#define ICoreWebView2Profile7_get_PreferredTrackingPreventionLevel(This,value)	\
+    ( (This)->lpVtbl -> get_PreferredTrackingPreventionLevel(This,value) ) 
+
+#define ICoreWebView2Profile7_put_PreferredTrackingPreventionLevel(This,value)	\
+    ( (This)->lpVtbl -> put_PreferredTrackingPreventionLevel(This,value) ) 
+
+
+#define ICoreWebView2Profile7_SetPermissionState(This,permissionKind,origin,state,completedHandler)	\
+    ( (This)->lpVtbl -> SetPermissionState(This,permissionKind,origin,state,completedHandler) ) 
+
+#define ICoreWebView2Profile7_GetNonDefaultPermissionSettings(This,completedHandler)	\
+    ( (This)->lpVtbl -> GetNonDefaultPermissionSettings(This,completedHandler) ) 
+
+
+#define ICoreWebView2Profile7_get_CookieManager(This,cookieManager)	\
+    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
+
+
+#define ICoreWebView2Profile7_get_IsPasswordAutosaveEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsPasswordAutosaveEnabled(This,value) ) 
+
+#define ICoreWebView2Profile7_put_IsPasswordAutosaveEnabled(This,value)	\
+    ( (This)->lpVtbl -> put_IsPasswordAutosaveEnabled(This,value) ) 
+
+#define ICoreWebView2Profile7_get_IsGeneralAutofillEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsGeneralAutofillEnabled(This,value) ) 
+
+#define ICoreWebView2Profile7_put_IsGeneralAutofillEnabled(This,value)	\
+    ( (This)->lpVtbl -> put_IsGeneralAutofillEnabled(This,value) ) 
+
+
+#define ICoreWebView2Profile7_AddBrowserExtension(This,extensionFolderPath,handler)	\
+    ( (This)->lpVtbl -> AddBrowserExtension(This,extensionFolderPath,handler) ) 
+
+#define ICoreWebView2Profile7_GetBrowserExtensions(This,handler)	\
+    ( (This)->lpVtbl -> GetBrowserExtensions(This,handler) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2Profile7_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Profile8_INTERFACE_DEFINED__
+#define __ICoreWebView2Profile8_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2Profile8 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Profile8 = {0xfbf70c2f,0xeb1f,0x4383,{0x85,0xa0,0x16,0x3e,0x92,0x04,0x40,0x11}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("fbf70c2f-eb1f-4383-85a0-163e92044011")
+    ICoreWebView2Profile8 : public ICoreWebView2Profile7
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE Delete( void) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE add_Deleted( 
+            /* [in] */ ICoreWebView2ProfileDeletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE remove_Deleted( 
+            /* [in] */ EventRegistrationToken token) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2Profile8Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2Profile8 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2Profile8 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_ProfileName)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProfileName )( 
+            ICoreWebView2Profile8 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_IsInPrivateModeEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsInPrivateModeEnabled )( 
+            ICoreWebView2Profile8 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_ProfilePath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ProfilePath )( 
+            ICoreWebView2Profile8 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_DefaultDownloadFolderPath)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadFolderPath )( 
+            ICoreWebView2Profile8 * This,
+            /* [retval][out] */ LPWSTR *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, put_DefaultDownloadFolderPath)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadFolderPath )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ LPCWSTR value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, get_PreferredColorScheme)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PreferredColorScheme )( 
+            ICoreWebView2Profile8 * This,
+            /* [retval][out] */ COREWEBVIEW2_PREFERRED_COLOR_SCHEME *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile, put_PreferredColorScheme)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PreferredColorScheme )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ COREWEBVIEW2_PREFERRED_COLOR_SCHEME value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingData)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingData )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingDataInTimeRange)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingDataInTimeRange )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
+            /* [in] */ double startTime,
+            /* [in] */ double endTime,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile2, ClearBrowsingDataAll)
+        HRESULT ( STDMETHODCALLTYPE *ClearBrowsingDataAll )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ ICoreWebView2ClearBrowsingDataCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile3, get_PreferredTrackingPreventionLevel)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_PreferredTrackingPreventionLevel )( 
+            ICoreWebView2Profile8 * This,
+            /* [retval][out] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile3, put_PreferredTrackingPreventionLevel)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_PreferredTrackingPreventionLevel )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ COREWEBVIEW2_TRACKING_PREVENTION_LEVEL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile4, SetPermissionState)
+        HRESULT ( STDMETHODCALLTYPE *SetPermissionState )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ COREWEBVIEW2_PERMISSION_KIND permissionKind,
+            /* [in] */ LPCWSTR origin,
+            /* [in] */ COREWEBVIEW2_PERMISSION_STATE state,
+            /* [in] */ ICoreWebView2SetPermissionStateCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile4, GetNonDefaultPermissionSettings)
+        HRESULT ( STDMETHODCALLTYPE *GetNonDefaultPermissionSettings )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ ICoreWebView2GetNonDefaultPermissionSettingsCompletedHandler *completedHandler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile5, get_CookieManager)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
+            ICoreWebView2Profile8 * This,
+            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile6, get_IsPasswordAutosaveEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsPasswordAutosaveEnabled )( 
+            ICoreWebView2Profile8 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile6, put_IsPasswordAutosaveEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsPasswordAutosaveEnabled )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile6, get_IsGeneralAutofillEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsGeneralAutofillEnabled )( 
+            ICoreWebView2Profile8 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile6, put_IsGeneralAutofillEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsGeneralAutofillEnabled )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile7, AddBrowserExtension)
+        HRESULT ( STDMETHODCALLTYPE *AddBrowserExtension )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ LPCWSTR extensionFolderPath,
+            /* [in] */ ICoreWebView2ProfileAddBrowserExtensionCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile7, GetBrowserExtensions)
+        HRESULT ( STDMETHODCALLTYPE *GetBrowserExtensions )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile8, Delete)
+        HRESULT ( STDMETHODCALLTYPE *Delete )( 
+            ICoreWebView2Profile8 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile8, add_Deleted)
+        HRESULT ( STDMETHODCALLTYPE *add_Deleted )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ ICoreWebView2ProfileDeletedEventHandler *eventHandler,
+            /* [out] */ EventRegistrationToken *token);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Profile8, remove_Deleted)
+        HRESULT ( STDMETHODCALLTYPE *remove_Deleted )( 
+            ICoreWebView2Profile8 * This,
+            /* [in] */ EventRegistrationToken token);
+        
+        END_INTERFACE
+    } ICoreWebView2Profile8Vtbl;
+
+    interface ICoreWebView2Profile8
+    {
+        CONST_VTBL struct ICoreWebView2Profile8Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2Profile8_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2Profile8_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2Profile8_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2Profile8_get_ProfileName(This,value)	\
+    ( (This)->lpVtbl -> get_ProfileName(This,value) ) 
+
+#define ICoreWebView2Profile8_get_IsInPrivateModeEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsInPrivateModeEnabled(This,value) ) 
+
+#define ICoreWebView2Profile8_get_ProfilePath(This,value)	\
+    ( (This)->lpVtbl -> get_ProfilePath(This,value) ) 
+
+#define ICoreWebView2Profile8_get_DefaultDownloadFolderPath(This,value)	\
+    ( (This)->lpVtbl -> get_DefaultDownloadFolderPath(This,value) ) 
+
+#define ICoreWebView2Profile8_put_DefaultDownloadFolderPath(This,value)	\
+    ( (This)->lpVtbl -> put_DefaultDownloadFolderPath(This,value) ) 
+
+#define ICoreWebView2Profile8_get_PreferredColorScheme(This,value)	\
+    ( (This)->lpVtbl -> get_PreferredColorScheme(This,value) ) 
+
+#define ICoreWebView2Profile8_put_PreferredColorScheme(This,value)	\
+    ( (This)->lpVtbl -> put_PreferredColorScheme(This,value) ) 
+
+
+#define ICoreWebView2Profile8_ClearBrowsingData(This,dataKinds,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingData(This,dataKinds,handler) ) 
+
+#define ICoreWebView2Profile8_ClearBrowsingDataInTimeRange(This,dataKinds,startTime,endTime,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingDataInTimeRange(This,dataKinds,startTime,endTime,handler) ) 
+
+#define ICoreWebView2Profile8_ClearBrowsingDataAll(This,handler)	\
+    ( (This)->lpVtbl -> ClearBrowsingDataAll(This,handler) ) 
+
+
+#define ICoreWebView2Profile8_get_PreferredTrackingPreventionLevel(This,value)	\
+    ( (This)->lpVtbl -> get_PreferredTrackingPreventionLevel(This,value) ) 
+
+#define ICoreWebView2Profile8_put_PreferredTrackingPreventionLevel(This,value)	\
+    ( (This)->lpVtbl -> put_PreferredTrackingPreventionLevel(This,value) ) 
+
+
+#define ICoreWebView2Profile8_SetPermissionState(This,permissionKind,origin,state,completedHandler)	\
+    ( (This)->lpVtbl -> SetPermissionState(This,permissionKind,origin,state,completedHandler) ) 
+
+#define ICoreWebView2Profile8_GetNonDefaultPermissionSettings(This,completedHandler)	\
+    ( (This)->lpVtbl -> GetNonDefaultPermissionSettings(This,completedHandler) ) 
+
+
+#define ICoreWebView2Profile8_get_CookieManager(This,cookieManager)	\
+    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
+
+
+#define ICoreWebView2Profile8_get_IsPasswordAutosaveEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsPasswordAutosaveEnabled(This,value) ) 
+
+#define ICoreWebView2Profile8_put_IsPasswordAutosaveEnabled(This,value)	\
+    ( (This)->lpVtbl -> put_IsPasswordAutosaveEnabled(This,value) ) 
+
+#define ICoreWebView2Profile8_get_IsGeneralAutofillEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsGeneralAutofillEnabled(This,value) ) 
+
+#define ICoreWebView2Profile8_put_IsGeneralAutofillEnabled(This,value)	\
+    ( (This)->lpVtbl -> put_IsGeneralAutofillEnabled(This,value) ) 
+
+
+#define ICoreWebView2Profile8_AddBrowserExtension(This,extensionFolderPath,handler)	\
+    ( (This)->lpVtbl -> AddBrowserExtension(This,extensionFolderPath,handler) ) 
+
+#define ICoreWebView2Profile8_GetBrowserExtensions(This,handler)	\
+    ( (This)->lpVtbl -> GetBrowserExtensions(This,handler) ) 
+
+
+#define ICoreWebView2Profile8_Delete(This)	\
+    ( (This)->lpVtbl -> Delete(This) ) 
+
+#define ICoreWebView2Profile8_add_Deleted(This,eventHandler,token)	\
+    ( (This)->lpVtbl -> add_Deleted(This,eventHandler,token) ) 
+
+#define ICoreWebView2Profile8_remove_Deleted(This,token)	\
+    ( (This)->lpVtbl -> remove_Deleted(This,token) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2Profile8_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2ProfileDeletedEventHandler_INTERFACE_DEFINED__
+#define __ICoreWebView2ProfileDeletedEventHandler_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2ProfileDeletedEventHandler */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2ProfileDeletedEventHandler = {0xDF35055D,0x772E,0x4DBE,{0xB7,0x43,0x5F,0xBF,0x74,0xA2,0xB2,0x58}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("DF35055D-772E-4DBE-B743-5FBF74A2B258")
+    ICoreWebView2ProfileDeletedEventHandler : public IUnknown
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE Invoke( 
+            /* [in] */ ICoreWebView2Profile *sender,
+            /* [in] */ IUnknown *args) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2ProfileDeletedEventHandlerVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2ProfileDeletedEventHandler * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2ProfileDeletedEventHandler * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2ProfileDeletedEventHandler * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ProfileDeletedEventHandler, Invoke)
+        HRESULT ( STDMETHODCALLTYPE *Invoke )( 
+            ICoreWebView2ProfileDeletedEventHandler * This,
+            /* [in] */ ICoreWebView2Profile *sender,
+            /* [in] */ IUnknown *args);
+        
+        END_INTERFACE
+    } ICoreWebView2ProfileDeletedEventHandlerVtbl;
+
+    interface ICoreWebView2ProfileDeletedEventHandler
+    {
+        CONST_VTBL struct ICoreWebView2ProfileDeletedEventHandlerVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2ProfileDeletedEventHandler_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2ProfileDeletedEventHandler_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2ProfileDeletedEventHandler_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2ProfileDeletedEventHandler_Invoke(This,sender,args)	\
+    ( (This)->lpVtbl -> Invoke(This,sender,args) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2ProfileDeletedEventHandler_INTERFACE_DEFINED__ */
+
+
 #ifndef __ICoreWebView2RasterizationScaleChangedEventHandler_INTERFACE_DEFINED__
 #define __ICoreWebView2RasterizationScaleChangedEventHandler_INTERFACE_DEFINED__
 
@@ -29309,6 +41797,90 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2ServerCertificateError
 
 
 #endif 	/* __ICoreWebView2ServerCertificateErrorDetectedEventHandler_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2SetPermissionStateCompletedHandler_INTERFACE_DEFINED__
+#define __ICoreWebView2SetPermissionStateCompletedHandler_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2SetPermissionStateCompletedHandler */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2SetPermissionStateCompletedHandler = {0xfc77fb30,0x9c9e,0x4076,{0xb8,0xc7,0x76,0x44,0xa7,0x03,0xca,0x1b}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("fc77fb30-9c9e-4076-b8c7-7644a703ca1b")
+    ICoreWebView2SetPermissionStateCompletedHandler : public IUnknown
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE Invoke( 
+            /* [in] */ HRESULT errorCode) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2SetPermissionStateCompletedHandlerVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2SetPermissionStateCompletedHandler * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2SetPermissionStateCompletedHandler * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2SetPermissionStateCompletedHandler * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2SetPermissionStateCompletedHandler, Invoke)
+        HRESULT ( STDMETHODCALLTYPE *Invoke )( 
+            ICoreWebView2SetPermissionStateCompletedHandler * This,
+            /* [in] */ HRESULT errorCode);
+        
+        END_INTERFACE
+    } ICoreWebView2SetPermissionStateCompletedHandlerVtbl;
+
+    interface ICoreWebView2SetPermissionStateCompletedHandler
+    {
+        CONST_VTBL struct ICoreWebView2SetPermissionStateCompletedHandlerVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2SetPermissionStateCompletedHandler_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2SetPermissionStateCompletedHandler_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2SetPermissionStateCompletedHandler_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2SetPermissionStateCompletedHandler_Invoke(This,errorCode)	\
+    ( (This)->lpVtbl -> Invoke(This,errorCode) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2SetPermissionStateCompletedHandler_INTERFACE_DEFINED__ */
 
 
 #ifndef __ICoreWebView2ScriptDialogOpeningEventArgs_INTERFACE_DEFINED__
@@ -31590,6 +44162,490 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Settings7 = {0x488dc90
 
 
 #endif 	/* __ICoreWebView2Settings7_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2Settings8_INTERFACE_DEFINED__
+#define __ICoreWebView2Settings8_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2Settings8 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2Settings8 = {0x9e6b0e8f,0x86ad,0x4e81,{0x81,0x47,0xa9,0xb5,0xed,0xb6,0x86,0x50}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("9e6b0e8f-86ad-4e81-8147-a9b5edb68650")
+    ICoreWebView2Settings8 : public ICoreWebView2Settings7
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_IsReputationCheckingRequired( 
+            /* [retval][out] */ BOOL *value) = 0;
+        
+        virtual /* [propput] */ HRESULT STDMETHODCALLTYPE put_IsReputationCheckingRequired( 
+            /* [in] */ BOOL value) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2Settings8Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2Settings8 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2Settings8 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, get_IsScriptEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsScriptEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *isScriptEnabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, put_IsScriptEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsScriptEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL isScriptEnabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, get_IsWebMessageEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsWebMessageEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *isWebMessageEnabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, put_IsWebMessageEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsWebMessageEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL isWebMessageEnabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, get_AreDefaultScriptDialogsEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AreDefaultScriptDialogsEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *areDefaultScriptDialogsEnabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, put_AreDefaultScriptDialogsEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AreDefaultScriptDialogsEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL areDefaultScriptDialogsEnabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, get_IsStatusBarEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsStatusBarEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *isStatusBarEnabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, put_IsStatusBarEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsStatusBarEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL isStatusBarEnabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, get_AreDevToolsEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AreDevToolsEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *areDevToolsEnabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, put_AreDevToolsEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AreDevToolsEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL areDevToolsEnabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, get_AreDefaultContextMenusEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AreDefaultContextMenusEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *enabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, put_AreDefaultContextMenusEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AreDefaultContextMenusEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL enabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, get_AreHostObjectsAllowed)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AreHostObjectsAllowed )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *allowed);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, put_AreHostObjectsAllowed)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AreHostObjectsAllowed )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL allowed);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, get_IsZoomControlEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsZoomControlEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *enabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, put_IsZoomControlEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsZoomControlEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL enabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, get_IsBuiltInErrorPageEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsBuiltInErrorPageEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *enabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings, put_IsBuiltInErrorPageEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsBuiltInErrorPageEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL enabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings2, get_UserAgent)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_UserAgent )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ LPWSTR *userAgent);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings2, put_UserAgent)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_UserAgent )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ LPCWSTR userAgent);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings3, get_AreBrowserAcceleratorKeysEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AreBrowserAcceleratorKeysEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *areBrowserAcceleratorKeysEnabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings3, put_AreBrowserAcceleratorKeysEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_AreBrowserAcceleratorKeysEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL areBrowserAcceleratorKeysEnabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings4, get_IsPasswordAutosaveEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsPasswordAutosaveEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings4, put_IsPasswordAutosaveEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsPasswordAutosaveEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings4, get_IsGeneralAutofillEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsGeneralAutofillEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings4, put_IsGeneralAutofillEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsGeneralAutofillEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings5, get_IsPinchZoomEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsPinchZoomEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *enabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings5, put_IsPinchZoomEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsPinchZoomEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL enabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings6, get_IsSwipeNavigationEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsSwipeNavigationEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *enabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings6, put_IsSwipeNavigationEnabled)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsSwipeNavigationEnabled )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL enabled);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings7, get_HiddenPdfToolbarItems)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_HiddenPdfToolbarItems )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ COREWEBVIEW2_PDF_TOOLBAR_ITEMS *hidden_pdf_toolbar_items);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings7, put_HiddenPdfToolbarItems)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_HiddenPdfToolbarItems )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ COREWEBVIEW2_PDF_TOOLBAR_ITEMS hidden_pdf_toolbar_items);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings8, get_IsReputationCheckingRequired)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsReputationCheckingRequired )( 
+            ICoreWebView2Settings8 * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2Settings8, put_IsReputationCheckingRequired)
+        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsReputationCheckingRequired )( 
+            ICoreWebView2Settings8 * This,
+            /* [in] */ BOOL value);
+        
+        END_INTERFACE
+    } ICoreWebView2Settings8Vtbl;
+
+    interface ICoreWebView2Settings8
+    {
+        CONST_VTBL struct ICoreWebView2Settings8Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2Settings8_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2Settings8_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2Settings8_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2Settings8_get_IsScriptEnabled(This,isScriptEnabled)	\
+    ( (This)->lpVtbl -> get_IsScriptEnabled(This,isScriptEnabled) ) 
+
+#define ICoreWebView2Settings8_put_IsScriptEnabled(This,isScriptEnabled)	\
+    ( (This)->lpVtbl -> put_IsScriptEnabled(This,isScriptEnabled) ) 
+
+#define ICoreWebView2Settings8_get_IsWebMessageEnabled(This,isWebMessageEnabled)	\
+    ( (This)->lpVtbl -> get_IsWebMessageEnabled(This,isWebMessageEnabled) ) 
+
+#define ICoreWebView2Settings8_put_IsWebMessageEnabled(This,isWebMessageEnabled)	\
+    ( (This)->lpVtbl -> put_IsWebMessageEnabled(This,isWebMessageEnabled) ) 
+
+#define ICoreWebView2Settings8_get_AreDefaultScriptDialogsEnabled(This,areDefaultScriptDialogsEnabled)	\
+    ( (This)->lpVtbl -> get_AreDefaultScriptDialogsEnabled(This,areDefaultScriptDialogsEnabled) ) 
+
+#define ICoreWebView2Settings8_put_AreDefaultScriptDialogsEnabled(This,areDefaultScriptDialogsEnabled)	\
+    ( (This)->lpVtbl -> put_AreDefaultScriptDialogsEnabled(This,areDefaultScriptDialogsEnabled) ) 
+
+#define ICoreWebView2Settings8_get_IsStatusBarEnabled(This,isStatusBarEnabled)	\
+    ( (This)->lpVtbl -> get_IsStatusBarEnabled(This,isStatusBarEnabled) ) 
+
+#define ICoreWebView2Settings8_put_IsStatusBarEnabled(This,isStatusBarEnabled)	\
+    ( (This)->lpVtbl -> put_IsStatusBarEnabled(This,isStatusBarEnabled) ) 
+
+#define ICoreWebView2Settings8_get_AreDevToolsEnabled(This,areDevToolsEnabled)	\
+    ( (This)->lpVtbl -> get_AreDevToolsEnabled(This,areDevToolsEnabled) ) 
+
+#define ICoreWebView2Settings8_put_AreDevToolsEnabled(This,areDevToolsEnabled)	\
+    ( (This)->lpVtbl -> put_AreDevToolsEnabled(This,areDevToolsEnabled) ) 
+
+#define ICoreWebView2Settings8_get_AreDefaultContextMenusEnabled(This,enabled)	\
+    ( (This)->lpVtbl -> get_AreDefaultContextMenusEnabled(This,enabled) ) 
+
+#define ICoreWebView2Settings8_put_AreDefaultContextMenusEnabled(This,enabled)	\
+    ( (This)->lpVtbl -> put_AreDefaultContextMenusEnabled(This,enabled) ) 
+
+#define ICoreWebView2Settings8_get_AreHostObjectsAllowed(This,allowed)	\
+    ( (This)->lpVtbl -> get_AreHostObjectsAllowed(This,allowed) ) 
+
+#define ICoreWebView2Settings8_put_AreHostObjectsAllowed(This,allowed)	\
+    ( (This)->lpVtbl -> put_AreHostObjectsAllowed(This,allowed) ) 
+
+#define ICoreWebView2Settings8_get_IsZoomControlEnabled(This,enabled)	\
+    ( (This)->lpVtbl -> get_IsZoomControlEnabled(This,enabled) ) 
+
+#define ICoreWebView2Settings8_put_IsZoomControlEnabled(This,enabled)	\
+    ( (This)->lpVtbl -> put_IsZoomControlEnabled(This,enabled) ) 
+
+#define ICoreWebView2Settings8_get_IsBuiltInErrorPageEnabled(This,enabled)	\
+    ( (This)->lpVtbl -> get_IsBuiltInErrorPageEnabled(This,enabled) ) 
+
+#define ICoreWebView2Settings8_put_IsBuiltInErrorPageEnabled(This,enabled)	\
+    ( (This)->lpVtbl -> put_IsBuiltInErrorPageEnabled(This,enabled) ) 
+
+
+#define ICoreWebView2Settings8_get_UserAgent(This,userAgent)	\
+    ( (This)->lpVtbl -> get_UserAgent(This,userAgent) ) 
+
+#define ICoreWebView2Settings8_put_UserAgent(This,userAgent)	\
+    ( (This)->lpVtbl -> put_UserAgent(This,userAgent) ) 
+
+
+#define ICoreWebView2Settings8_get_AreBrowserAcceleratorKeysEnabled(This,areBrowserAcceleratorKeysEnabled)	\
+    ( (This)->lpVtbl -> get_AreBrowserAcceleratorKeysEnabled(This,areBrowserAcceleratorKeysEnabled) ) 
+
+#define ICoreWebView2Settings8_put_AreBrowserAcceleratorKeysEnabled(This,areBrowserAcceleratorKeysEnabled)	\
+    ( (This)->lpVtbl -> put_AreBrowserAcceleratorKeysEnabled(This,areBrowserAcceleratorKeysEnabled) ) 
+
+
+#define ICoreWebView2Settings8_get_IsPasswordAutosaveEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsPasswordAutosaveEnabled(This,value) ) 
+
+#define ICoreWebView2Settings8_put_IsPasswordAutosaveEnabled(This,value)	\
+    ( (This)->lpVtbl -> put_IsPasswordAutosaveEnabled(This,value) ) 
+
+#define ICoreWebView2Settings8_get_IsGeneralAutofillEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsGeneralAutofillEnabled(This,value) ) 
+
+#define ICoreWebView2Settings8_put_IsGeneralAutofillEnabled(This,value)	\
+    ( (This)->lpVtbl -> put_IsGeneralAutofillEnabled(This,value) ) 
+
+
+#define ICoreWebView2Settings8_get_IsPinchZoomEnabled(This,enabled)	\
+    ( (This)->lpVtbl -> get_IsPinchZoomEnabled(This,enabled) ) 
+
+#define ICoreWebView2Settings8_put_IsPinchZoomEnabled(This,enabled)	\
+    ( (This)->lpVtbl -> put_IsPinchZoomEnabled(This,enabled) ) 
+
+
+#define ICoreWebView2Settings8_get_IsSwipeNavigationEnabled(This,enabled)	\
+    ( (This)->lpVtbl -> get_IsSwipeNavigationEnabled(This,enabled) ) 
+
+#define ICoreWebView2Settings8_put_IsSwipeNavigationEnabled(This,enabled)	\
+    ( (This)->lpVtbl -> put_IsSwipeNavigationEnabled(This,enabled) ) 
+
+
+#define ICoreWebView2Settings8_get_HiddenPdfToolbarItems(This,hidden_pdf_toolbar_items)	\
+    ( (This)->lpVtbl -> get_HiddenPdfToolbarItems(This,hidden_pdf_toolbar_items) ) 
+
+#define ICoreWebView2Settings8_put_HiddenPdfToolbarItems(This,hidden_pdf_toolbar_items)	\
+    ( (This)->lpVtbl -> put_HiddenPdfToolbarItems(This,hidden_pdf_toolbar_items) ) 
+
+
+#define ICoreWebView2Settings8_get_IsReputationCheckingRequired(This,value)	\
+    ( (This)->lpVtbl -> get_IsReputationCheckingRequired(This,value) ) 
+
+#define ICoreWebView2Settings8_put_IsReputationCheckingRequired(This,value)	\
+    ( (This)->lpVtbl -> put_IsReputationCheckingRequired(This,value) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2Settings8_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2SharedBuffer_INTERFACE_DEFINED__
+#define __ICoreWebView2SharedBuffer_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2SharedBuffer */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2SharedBuffer = {0xB747A495,0x0C6F,0x449E,{0x97,0xB8,0x2F,0x81,0xE9,0xD6,0xAB,0x43}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("B747A495-0C6F-449E-97B8-2F81E9D6AB43")
+    ICoreWebView2SharedBuffer : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Size( 
+            /* [retval][out] */ UINT64 *value) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Buffer( 
+            /* [retval][out] */ BYTE **value) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE OpenStream( 
+            /* [retval][out] */ IStream **value) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FileMappingHandle( 
+            /* [retval][out] */ HANDLE *value) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE Close( void) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2SharedBufferVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2SharedBuffer * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2SharedBuffer * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2SharedBuffer * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2SharedBuffer, get_Size)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Size )( 
+            ICoreWebView2SharedBuffer * This,
+            /* [retval][out] */ UINT64 *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2SharedBuffer, get_Buffer)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Buffer )( 
+            ICoreWebView2SharedBuffer * This,
+            /* [retval][out] */ BYTE **value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2SharedBuffer, OpenStream)
+        HRESULT ( STDMETHODCALLTYPE *OpenStream )( 
+            ICoreWebView2SharedBuffer * This,
+            /* [retval][out] */ IStream **value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2SharedBuffer, get_FileMappingHandle)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FileMappingHandle )( 
+            ICoreWebView2SharedBuffer * This,
+            /* [retval][out] */ HANDLE *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2SharedBuffer, Close)
+        HRESULT ( STDMETHODCALLTYPE *Close )( 
+            ICoreWebView2SharedBuffer * This);
+        
+        END_INTERFACE
+    } ICoreWebView2SharedBufferVtbl;
+
+    interface ICoreWebView2SharedBuffer
+    {
+        CONST_VTBL struct ICoreWebView2SharedBufferVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2SharedBuffer_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2SharedBuffer_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2SharedBuffer_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2SharedBuffer_get_Size(This,value)	\
+    ( (This)->lpVtbl -> get_Size(This,value) ) 
+
+#define ICoreWebView2SharedBuffer_get_Buffer(This,value)	\
+    ( (This)->lpVtbl -> get_Buffer(This,value) ) 
+
+#define ICoreWebView2SharedBuffer_OpenStream(This,value)	\
+    ( (This)->lpVtbl -> OpenStream(This,value) ) 
+
+#define ICoreWebView2SharedBuffer_get_FileMappingHandle(This,value)	\
+    ( (This)->lpVtbl -> get_FileMappingHandle(This,value) ) 
+
+#define ICoreWebView2SharedBuffer_Close(This)	\
+    ( (This)->lpVtbl -> Close(This) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2SharedBuffer_INTERFACE_DEFINED__ */
 
 
 #ifndef __ICoreWebView2SourceChangedEventArgs_INTERFACE_DEFINED__
@@ -34087,627 +47143,61 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2GetFaviconCompletedHan
 #endif 	/* __ICoreWebView2GetFaviconCompletedHandler_INTERFACE_DEFINED__ */
 
 
-#ifndef __ICoreWebView2_14_INTERFACE_DEFINED__
-#define __ICoreWebView2_14_INTERFACE_DEFINED__
+#ifndef __ICoreWebView2ProfileAddBrowserExtensionCompletedHandler_INTERFACE_DEFINED__
+#define __ICoreWebView2ProfileAddBrowserExtensionCompletedHandler_INTERFACE_DEFINED__
 
-/* interface ICoreWebView2_14 */
+/* interface ICoreWebView2ProfileAddBrowserExtensionCompletedHandler */
 /* [unique][object][uuid] */ 
 
 
-EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_14 = {0x6DAA4F10,0x4A90,0x4753,{0x88,0x98,0x77,0xC5,0xDF,0x53,0x41,0x65}};
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2ProfileAddBrowserExtensionCompletedHandler = {0xDF1AAB27,0x82B9,0x4AB6,{0xAA,0xE8,0x01,0x7A,0x49,0x39,0x8C,0x14}};
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
     
-    MIDL_INTERFACE("6DAA4F10-4A90-4753-8898-77C5DF534165")
-    ICoreWebView2_14 : public ICoreWebView2_13
+    MIDL_INTERFACE("DF1AAB27-82B9-4AB6-AAE8-017A49398C14")
+    ICoreWebView2ProfileAddBrowserExtensionCompletedHandler : public IUnknown
     {
     public:
-        virtual HRESULT STDMETHODCALLTYPE add_ServerCertificateErrorDetected( 
-            /* [in] */ ICoreWebView2ServerCertificateErrorDetectedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token) = 0;
-        
-        virtual HRESULT STDMETHODCALLTYPE remove_ServerCertificateErrorDetected( 
-            /* [in] */ EventRegistrationToken token) = 0;
-        
-        virtual HRESULT STDMETHODCALLTYPE ClearServerCertificateErrorActions( 
-            /* [in] */ ICoreWebView2ClearServerCertificateErrorActionsCompletedHandler *handler) = 0;
+        virtual HRESULT STDMETHODCALLTYPE Invoke( 
+            /* [in] */ HRESULT errorCode,
+            /* [in] */ ICoreWebView2BrowserExtension *extension) = 0;
         
     };
     
     
 #else 	/* C style interface */
 
-    typedef struct ICoreWebView2_14Vtbl
+    typedef struct ICoreWebView2ProfileAddBrowserExtensionCompletedHandlerVtbl
     {
         BEGIN_INTERFACE
         
         DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
         HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-            ICoreWebView2_14 * This,
+            ICoreWebView2ProfileAddBrowserExtensionCompletedHandler * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
             _COM_Outptr_  void **ppvObject);
         
         DECLSPEC_XFGVIRT(IUnknown, AddRef)
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
-            ICoreWebView2_14 * This);
+            ICoreWebView2ProfileAddBrowserExtensionCompletedHandler * This);
         
         DECLSPEC_XFGVIRT(IUnknown, Release)
         ULONG ( STDMETHODCALLTYPE *Release )( 
-            ICoreWebView2_14 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_Settings)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Settings )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ ICoreWebView2Settings **settings);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_Source)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Source )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ LPWSTR *uri);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, Navigate)
-        HRESULT ( STDMETHODCALLTYPE *Navigate )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR uri);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, NavigateToString)
-        HRESULT ( STDMETHODCALLTYPE *NavigateToString )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR htmlContent);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationStarting)
-        HRESULT ( STDMETHODCALLTYPE *add_NavigationStarting )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationStarting)
-        HRESULT ( STDMETHODCALLTYPE *remove_NavigationStarting )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContentLoading)
-        HRESULT ( STDMETHODCALLTYPE *add_ContentLoading )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2ContentLoadingEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContentLoading)
-        HRESULT ( STDMETHODCALLTYPE *remove_ContentLoading )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_SourceChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_SourceChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2SourceChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_SourceChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_SourceChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_HistoryChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_HistoryChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2HistoryChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_HistoryChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_HistoryChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationCompleted)
-        HRESULT ( STDMETHODCALLTYPE *add_NavigationCompleted )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationCompleted)
-        HRESULT ( STDMETHODCALLTYPE *remove_NavigationCompleted )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationStarting)
-        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationStarting )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationStarting)
-        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationStarting )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationCompleted)
-        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationCompleted )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationCompleted)
-        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationCompleted )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_ScriptDialogOpening)
-        HRESULT ( STDMETHODCALLTYPE *add_ScriptDialogOpening )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2ScriptDialogOpeningEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ScriptDialogOpening)
-        HRESULT ( STDMETHODCALLTYPE *remove_ScriptDialogOpening )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_PermissionRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_PermissionRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2PermissionRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_PermissionRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_PermissionRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_ProcessFailed)
-        HRESULT ( STDMETHODCALLTYPE *add_ProcessFailed )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2ProcessFailedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ProcessFailed)
-        HRESULT ( STDMETHODCALLTYPE *remove_ProcessFailed )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, AddScriptToExecuteOnDocumentCreated)
-        HRESULT ( STDMETHODCALLTYPE *AddScriptToExecuteOnDocumentCreated )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR javaScript,
-            /* [in] */ ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveScriptToExecuteOnDocumentCreated)
-        HRESULT ( STDMETHODCALLTYPE *RemoveScriptToExecuteOnDocumentCreated )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR id);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, ExecuteScript)
-        HRESULT ( STDMETHODCALLTYPE *ExecuteScript )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR javaScript,
-            /* [in] */ ICoreWebView2ExecuteScriptCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, CapturePreview)
-        HRESULT ( STDMETHODCALLTYPE *CapturePreview )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT imageFormat,
-            /* [in] */ IStream *imageStream,
-            /* [in] */ ICoreWebView2CapturePreviewCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, Reload)
-        HRESULT ( STDMETHODCALLTYPE *Reload )( 
-            ICoreWebView2_14 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsJson)
-        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsJson )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR webMessageAsJson);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsString)
-        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsString )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR webMessageAsString);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebMessageReceived)
-        HRESULT ( STDMETHODCALLTYPE *add_WebMessageReceived )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2WebMessageReceivedEventHandler *handler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebMessageReceived)
-        HRESULT ( STDMETHODCALLTYPE *remove_WebMessageReceived )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, CallDevToolsProtocolMethod)
-        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethod )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR methodName,
-            /* [in] */ LPCWSTR parametersAsJson,
-            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_BrowserProcessId)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BrowserProcessId )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ UINT32 *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoBack)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoBack )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ BOOL *canGoBack);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoForward)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoForward )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ BOOL *canGoForward);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, GoBack)
-        HRESULT ( STDMETHODCALLTYPE *GoBack )( 
-            ICoreWebView2_14 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, GoForward)
-        HRESULT ( STDMETHODCALLTYPE *GoForward )( 
-            ICoreWebView2_14 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, GetDevToolsProtocolEventReceiver)
-        HRESULT ( STDMETHODCALLTYPE *GetDevToolsProtocolEventReceiver )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR eventName,
-            /* [retval][out] */ ICoreWebView2DevToolsProtocolEventReceiver **receiver);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, Stop)
-        HRESULT ( STDMETHODCALLTYPE *Stop )( 
-            ICoreWebView2_14 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_NewWindowRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_NewWindowRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2NewWindowRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NewWindowRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_NewWindowRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_DocumentTitleChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_DocumentTitleChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2DocumentTitleChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_DocumentTitleChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_DocumentTitleChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_DocumentTitle)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DocumentTitle )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ LPWSTR *title);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, AddHostObjectToScript)
-        HRESULT ( STDMETHODCALLTYPE *AddHostObjectToScript )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR name,
-            /* [in] */ VARIANT *object);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveHostObjectFromScript)
-        HRESULT ( STDMETHODCALLTYPE *RemoveHostObjectFromScript )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR name);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, OpenDevToolsWindow)
-        HRESULT ( STDMETHODCALLTYPE *OpenDevToolsWindow )( 
-            ICoreWebView2_14 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContainsFullScreenElementChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_ContainsFullScreenElementChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2ContainsFullScreenElementChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContainsFullScreenElementChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_ContainsFullScreenElementChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_ContainsFullScreenElement)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ContainsFullScreenElement )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ BOOL *containsFullScreenElement);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebResourceRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_WebResourceRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2WebResourceRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebResourceRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, AddWebResourceRequestedFilter)
-        HRESULT ( STDMETHODCALLTYPE *AddWebResourceRequestedFilter )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ const LPCWSTR uri,
-            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveWebResourceRequestedFilter)
-        HRESULT ( STDMETHODCALLTYPE *RemoveWebResourceRequestedFilter )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ const LPCWSTR uri,
-            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_WindowCloseRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_WindowCloseRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2WindowCloseRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WindowCloseRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_WindowCloseRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_WebResourceResponseReceived)
-        HRESULT ( STDMETHODCALLTYPE *add_WebResourceResponseReceived )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2WebResourceResponseReceivedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_WebResourceResponseReceived)
-        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceResponseReceived )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, NavigateWithWebResourceRequest)
-        HRESULT ( STDMETHODCALLTYPE *NavigateWithWebResourceRequest )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2WebResourceRequest *request);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_DOMContentLoaded)
-        HRESULT ( STDMETHODCALLTYPE *add_DOMContentLoaded )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2DOMContentLoadedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_DOMContentLoaded)
-        HRESULT ( STDMETHODCALLTYPE *remove_DOMContentLoaded )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_CookieManager)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_Environment)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Environment )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ ICoreWebView2Environment **environment);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, TrySuspend)
-        HRESULT ( STDMETHODCALLTYPE *TrySuspend )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2TrySuspendCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, Resume)
-        HRESULT ( STDMETHODCALLTYPE *Resume )( 
-            ICoreWebView2_14 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, get_IsSuspended)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsSuspended )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ BOOL *isSuspended);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, SetVirtualHostNameToFolderMapping)
-        HRESULT ( STDMETHODCALLTYPE *SetVirtualHostNameToFolderMapping )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR hostName,
-            /* [in] */ LPCWSTR folderPath,
-            /* [in] */ COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND accessKind);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, ClearVirtualHostNameToFolderMapping)
-        HRESULT ( STDMETHODCALLTYPE *ClearVirtualHostNameToFolderMapping )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR hostName);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_FrameCreated)
-        HRESULT ( STDMETHODCALLTYPE *add_FrameCreated )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2FrameCreatedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_FrameCreated)
-        HRESULT ( STDMETHODCALLTYPE *remove_FrameCreated )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_DownloadStarting)
-        HRESULT ( STDMETHODCALLTYPE *add_DownloadStarting )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2DownloadStartingEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_DownloadStarting)
-        HRESULT ( STDMETHODCALLTYPE *remove_DownloadStarting )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_5, add_ClientCertificateRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_ClientCertificateRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2ClientCertificateRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_5, remove_ClientCertificateRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_ClientCertificateRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_6, OpenTaskManagerWindow)
-        HRESULT ( STDMETHODCALLTYPE *OpenTaskManagerWindow )( 
-            ICoreWebView2_14 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_7, PrintToPdf)
-        HRESULT ( STDMETHODCALLTYPE *PrintToPdf )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR resultFilePath,
-            /* [in] */ ICoreWebView2PrintSettings *printSettings,
-            /* [in] */ ICoreWebView2PrintToPdfCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsMutedChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_IsMutedChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2IsMutedChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsMutedChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_IsMutedChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsMuted)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsMuted )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ BOOL *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, put_IsMuted)
-        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsMuted )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ BOOL value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsDocumentPlayingAudioChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_IsDocumentPlayingAudioChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2IsDocumentPlayingAudioChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsDocumentPlayingAudioChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_IsDocumentPlayingAudioChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsDocumentPlayingAudio)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDocumentPlayingAudio )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ BOOL *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, add_IsDefaultDownloadDialogOpenChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_IsDefaultDownloadDialogOpenChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler *handler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, remove_IsDefaultDownloadDialogOpenChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_IsDefaultDownloadDialogOpenChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_IsDefaultDownloadDialogOpen)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDefaultDownloadDialogOpen )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ BOOL *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, OpenDefaultDownloadDialog)
-        HRESULT ( STDMETHODCALLTYPE *OpenDefaultDownloadDialog )( 
-            ICoreWebView2_14 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, CloseDefaultDownloadDialog)
-        HRESULT ( STDMETHODCALLTYPE *CloseDefaultDownloadDialog )( 
-            ICoreWebView2_14 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogCornerAlignment)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogCornerAlignment )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogCornerAlignment)
-        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogCornerAlignment )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogMargin)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogMargin )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ POINT *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogMargin)
-        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogMargin )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ POINT value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_10, add_BasicAuthenticationRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_BasicAuthenticationRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2BasicAuthenticationRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_10, remove_BasicAuthenticationRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_BasicAuthenticationRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_11, CallDevToolsProtocolMethodForSession)
-        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethodForSession )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ LPCWSTR sessionId,
-            /* [in] */ LPCWSTR methodName,
-            /* [in] */ LPCWSTR parametersAsJson,
-            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_11, add_ContextMenuRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_ContextMenuRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2ContextMenuRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_11, remove_ContextMenuRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_ContextMenuRequested )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_12, add_StatusBarTextChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_StatusBarTextChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2StatusBarTextChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_12, remove_StatusBarTextChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_StatusBarTextChanged )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_12, get_StatusBarText)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StatusBarText )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ LPWSTR *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_13, get_Profile)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Profile )( 
-            ICoreWebView2_14 * This,
-            /* [retval][out] */ ICoreWebView2Profile **value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_14, add_ServerCertificateErrorDetected)
-        HRESULT ( STDMETHODCALLTYPE *add_ServerCertificateErrorDetected )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2ServerCertificateErrorDetectedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_14, remove_ServerCertificateErrorDetected)
-        HRESULT ( STDMETHODCALLTYPE *remove_ServerCertificateErrorDetected )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_14, ClearServerCertificateErrorActions)
-        HRESULT ( STDMETHODCALLTYPE *ClearServerCertificateErrorActions )( 
-            ICoreWebView2_14 * This,
-            /* [in] */ ICoreWebView2ClearServerCertificateErrorActionsCompletedHandler *handler);
+            ICoreWebView2ProfileAddBrowserExtensionCompletedHandler * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ProfileAddBrowserExtensionCompletedHandler, Invoke)
+        HRESULT ( STDMETHODCALLTYPE *Invoke )( 
+            ICoreWebView2ProfileAddBrowserExtensionCompletedHandler * This,
+            /* [in] */ HRESULT errorCode,
+            /* [in] */ ICoreWebView2BrowserExtension *extension);
         
         END_INTERFACE
-    } ICoreWebView2_14Vtbl;
+    } ICoreWebView2ProfileAddBrowserExtensionCompletedHandlerVtbl;
 
-    interface ICoreWebView2_14
+    interface ICoreWebView2ProfileAddBrowserExtensionCompletedHandler
     {
-        CONST_VTBL struct ICoreWebView2_14Vtbl *lpVtbl;
+        CONST_VTBL struct ICoreWebView2ProfileAddBrowserExtensionCompletedHandlerVtbl *lpVtbl;
     };
 
     
@@ -34715,346 +47205,18 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_14 = {0x6DAA4F10,0x4A
 #ifdef COBJMACROS
 
 
-#define ICoreWebView2_14_QueryInterface(This,riid,ppvObject)	\
+#define ICoreWebView2ProfileAddBrowserExtensionCompletedHandler_QueryInterface(This,riid,ppvObject)	\
     ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
 
-#define ICoreWebView2_14_AddRef(This)	\
+#define ICoreWebView2ProfileAddBrowserExtensionCompletedHandler_AddRef(This)	\
     ( (This)->lpVtbl -> AddRef(This) ) 
 
-#define ICoreWebView2_14_Release(This)	\
+#define ICoreWebView2ProfileAddBrowserExtensionCompletedHandler_Release(This)	\
     ( (This)->lpVtbl -> Release(This) ) 
 
 
-#define ICoreWebView2_14_get_Settings(This,settings)	\
-    ( (This)->lpVtbl -> get_Settings(This,settings) ) 
-
-#define ICoreWebView2_14_get_Source(This,uri)	\
-    ( (This)->lpVtbl -> get_Source(This,uri) ) 
-
-#define ICoreWebView2_14_Navigate(This,uri)	\
-    ( (This)->lpVtbl -> Navigate(This,uri) ) 
-
-#define ICoreWebView2_14_NavigateToString(This,htmlContent)	\
-    ( (This)->lpVtbl -> NavigateToString(This,htmlContent) ) 
-
-#define ICoreWebView2_14_add_NavigationStarting(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_NavigationStarting(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_NavigationStarting(This,token)	\
-    ( (This)->lpVtbl -> remove_NavigationStarting(This,token) ) 
-
-#define ICoreWebView2_14_add_ContentLoading(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ContentLoading(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_ContentLoading(This,token)	\
-    ( (This)->lpVtbl -> remove_ContentLoading(This,token) ) 
-
-#define ICoreWebView2_14_add_SourceChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_SourceChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_SourceChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_SourceChanged(This,token) ) 
-
-#define ICoreWebView2_14_add_HistoryChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_HistoryChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_HistoryChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_HistoryChanged(This,token) ) 
-
-#define ICoreWebView2_14_add_NavigationCompleted(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_NavigationCompleted(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_NavigationCompleted(This,token)	\
-    ( (This)->lpVtbl -> remove_NavigationCompleted(This,token) ) 
-
-#define ICoreWebView2_14_add_FrameNavigationStarting(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_FrameNavigationStarting(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_FrameNavigationStarting(This,token)	\
-    ( (This)->lpVtbl -> remove_FrameNavigationStarting(This,token) ) 
-
-#define ICoreWebView2_14_add_FrameNavigationCompleted(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_FrameNavigationCompleted(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_FrameNavigationCompleted(This,token)	\
-    ( (This)->lpVtbl -> remove_FrameNavigationCompleted(This,token) ) 
-
-#define ICoreWebView2_14_add_ScriptDialogOpening(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ScriptDialogOpening(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_ScriptDialogOpening(This,token)	\
-    ( (This)->lpVtbl -> remove_ScriptDialogOpening(This,token) ) 
-
-#define ICoreWebView2_14_add_PermissionRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_PermissionRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_PermissionRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_PermissionRequested(This,token) ) 
-
-#define ICoreWebView2_14_add_ProcessFailed(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ProcessFailed(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_ProcessFailed(This,token)	\
-    ( (This)->lpVtbl -> remove_ProcessFailed(This,token) ) 
-
-#define ICoreWebView2_14_AddScriptToExecuteOnDocumentCreated(This,javaScript,handler)	\
-    ( (This)->lpVtbl -> AddScriptToExecuteOnDocumentCreated(This,javaScript,handler) ) 
-
-#define ICoreWebView2_14_RemoveScriptToExecuteOnDocumentCreated(This,id)	\
-    ( (This)->lpVtbl -> RemoveScriptToExecuteOnDocumentCreated(This,id) ) 
-
-#define ICoreWebView2_14_ExecuteScript(This,javaScript,handler)	\
-    ( (This)->lpVtbl -> ExecuteScript(This,javaScript,handler) ) 
-
-#define ICoreWebView2_14_CapturePreview(This,imageFormat,imageStream,handler)	\
-    ( (This)->lpVtbl -> CapturePreview(This,imageFormat,imageStream,handler) ) 
-
-#define ICoreWebView2_14_Reload(This)	\
-    ( (This)->lpVtbl -> Reload(This) ) 
-
-#define ICoreWebView2_14_PostWebMessageAsJson(This,webMessageAsJson)	\
-    ( (This)->lpVtbl -> PostWebMessageAsJson(This,webMessageAsJson) ) 
-
-#define ICoreWebView2_14_PostWebMessageAsString(This,webMessageAsString)	\
-    ( (This)->lpVtbl -> PostWebMessageAsString(This,webMessageAsString) ) 
-
-#define ICoreWebView2_14_add_WebMessageReceived(This,handler,token)	\
-    ( (This)->lpVtbl -> add_WebMessageReceived(This,handler,token) ) 
-
-#define ICoreWebView2_14_remove_WebMessageReceived(This,token)	\
-    ( (This)->lpVtbl -> remove_WebMessageReceived(This,token) ) 
-
-#define ICoreWebView2_14_CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler)	\
-    ( (This)->lpVtbl -> CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler) ) 
-
-#define ICoreWebView2_14_get_BrowserProcessId(This,value)	\
-    ( (This)->lpVtbl -> get_BrowserProcessId(This,value) ) 
-
-#define ICoreWebView2_14_get_CanGoBack(This,canGoBack)	\
-    ( (This)->lpVtbl -> get_CanGoBack(This,canGoBack) ) 
-
-#define ICoreWebView2_14_get_CanGoForward(This,canGoForward)	\
-    ( (This)->lpVtbl -> get_CanGoForward(This,canGoForward) ) 
-
-#define ICoreWebView2_14_GoBack(This)	\
-    ( (This)->lpVtbl -> GoBack(This) ) 
-
-#define ICoreWebView2_14_GoForward(This)	\
-    ( (This)->lpVtbl -> GoForward(This) ) 
-
-#define ICoreWebView2_14_GetDevToolsProtocolEventReceiver(This,eventName,receiver)	\
-    ( (This)->lpVtbl -> GetDevToolsProtocolEventReceiver(This,eventName,receiver) ) 
-
-#define ICoreWebView2_14_Stop(This)	\
-    ( (This)->lpVtbl -> Stop(This) ) 
-
-#define ICoreWebView2_14_add_NewWindowRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_NewWindowRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_NewWindowRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_NewWindowRequested(This,token) ) 
-
-#define ICoreWebView2_14_add_DocumentTitleChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_DocumentTitleChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_DocumentTitleChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_DocumentTitleChanged(This,token) ) 
-
-#define ICoreWebView2_14_get_DocumentTitle(This,title)	\
-    ( (This)->lpVtbl -> get_DocumentTitle(This,title) ) 
-
-#define ICoreWebView2_14_AddHostObjectToScript(This,name,object)	\
-    ( (This)->lpVtbl -> AddHostObjectToScript(This,name,object) ) 
-
-#define ICoreWebView2_14_RemoveHostObjectFromScript(This,name)	\
-    ( (This)->lpVtbl -> RemoveHostObjectFromScript(This,name) ) 
-
-#define ICoreWebView2_14_OpenDevToolsWindow(This)	\
-    ( (This)->lpVtbl -> OpenDevToolsWindow(This) ) 
-
-#define ICoreWebView2_14_add_ContainsFullScreenElementChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ContainsFullScreenElementChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_ContainsFullScreenElementChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_ContainsFullScreenElementChanged(This,token) ) 
-
-#define ICoreWebView2_14_get_ContainsFullScreenElement(This,containsFullScreenElement)	\
-    ( (This)->lpVtbl -> get_ContainsFullScreenElement(This,containsFullScreenElement) ) 
-
-#define ICoreWebView2_14_add_WebResourceRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_WebResourceRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_WebResourceRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_WebResourceRequested(This,token) ) 
-
-#define ICoreWebView2_14_AddWebResourceRequestedFilter(This,uri,resourceContext)	\
-    ( (This)->lpVtbl -> AddWebResourceRequestedFilter(This,uri,resourceContext) ) 
-
-#define ICoreWebView2_14_RemoveWebResourceRequestedFilter(This,uri,resourceContext)	\
-    ( (This)->lpVtbl -> RemoveWebResourceRequestedFilter(This,uri,resourceContext) ) 
-
-#define ICoreWebView2_14_add_WindowCloseRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_WindowCloseRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_WindowCloseRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_WindowCloseRequested(This,token) ) 
-
-
-#define ICoreWebView2_14_add_WebResourceResponseReceived(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_WebResourceResponseReceived(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_WebResourceResponseReceived(This,token)	\
-    ( (This)->lpVtbl -> remove_WebResourceResponseReceived(This,token) ) 
-
-#define ICoreWebView2_14_NavigateWithWebResourceRequest(This,request)	\
-    ( (This)->lpVtbl -> NavigateWithWebResourceRequest(This,request) ) 
-
-#define ICoreWebView2_14_add_DOMContentLoaded(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_DOMContentLoaded(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_DOMContentLoaded(This,token)	\
-    ( (This)->lpVtbl -> remove_DOMContentLoaded(This,token) ) 
-
-#define ICoreWebView2_14_get_CookieManager(This,cookieManager)	\
-    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
-
-#define ICoreWebView2_14_get_Environment(This,environment)	\
-    ( (This)->lpVtbl -> get_Environment(This,environment) ) 
-
-
-#define ICoreWebView2_14_TrySuspend(This,handler)	\
-    ( (This)->lpVtbl -> TrySuspend(This,handler) ) 
-
-#define ICoreWebView2_14_Resume(This)	\
-    ( (This)->lpVtbl -> Resume(This) ) 
-
-#define ICoreWebView2_14_get_IsSuspended(This,isSuspended)	\
-    ( (This)->lpVtbl -> get_IsSuspended(This,isSuspended) ) 
-
-#define ICoreWebView2_14_SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind)	\
-    ( (This)->lpVtbl -> SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind) ) 
-
-#define ICoreWebView2_14_ClearVirtualHostNameToFolderMapping(This,hostName)	\
-    ( (This)->lpVtbl -> ClearVirtualHostNameToFolderMapping(This,hostName) ) 
-
-
-#define ICoreWebView2_14_add_FrameCreated(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_FrameCreated(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_FrameCreated(This,token)	\
-    ( (This)->lpVtbl -> remove_FrameCreated(This,token) ) 
-
-#define ICoreWebView2_14_add_DownloadStarting(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_DownloadStarting(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_DownloadStarting(This,token)	\
-    ( (This)->lpVtbl -> remove_DownloadStarting(This,token) ) 
-
-
-#define ICoreWebView2_14_add_ClientCertificateRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ClientCertificateRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_ClientCertificateRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_ClientCertificateRequested(This,token) ) 
-
-
-#define ICoreWebView2_14_OpenTaskManagerWindow(This)	\
-    ( (This)->lpVtbl -> OpenTaskManagerWindow(This) ) 
-
-
-#define ICoreWebView2_14_PrintToPdf(This,resultFilePath,printSettings,handler)	\
-    ( (This)->lpVtbl -> PrintToPdf(This,resultFilePath,printSettings,handler) ) 
-
-
-#define ICoreWebView2_14_add_IsMutedChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_IsMutedChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_IsMutedChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_IsMutedChanged(This,token) ) 
-
-#define ICoreWebView2_14_get_IsMuted(This,value)	\
-    ( (This)->lpVtbl -> get_IsMuted(This,value) ) 
-
-#define ICoreWebView2_14_put_IsMuted(This,value)	\
-    ( (This)->lpVtbl -> put_IsMuted(This,value) ) 
-
-#define ICoreWebView2_14_add_IsDocumentPlayingAudioChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_IsDocumentPlayingAudioChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_IsDocumentPlayingAudioChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_IsDocumentPlayingAudioChanged(This,token) ) 
-
-#define ICoreWebView2_14_get_IsDocumentPlayingAudio(This,value)	\
-    ( (This)->lpVtbl -> get_IsDocumentPlayingAudio(This,value) ) 
-
-
-#define ICoreWebView2_14_add_IsDefaultDownloadDialogOpenChanged(This,handler,token)	\
-    ( (This)->lpVtbl -> add_IsDefaultDownloadDialogOpenChanged(This,handler,token) ) 
-
-#define ICoreWebView2_14_remove_IsDefaultDownloadDialogOpenChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_IsDefaultDownloadDialogOpenChanged(This,token) ) 
-
-#define ICoreWebView2_14_get_IsDefaultDownloadDialogOpen(This,value)	\
-    ( (This)->lpVtbl -> get_IsDefaultDownloadDialogOpen(This,value) ) 
-
-#define ICoreWebView2_14_OpenDefaultDownloadDialog(This)	\
-    ( (This)->lpVtbl -> OpenDefaultDownloadDialog(This) ) 
-
-#define ICoreWebView2_14_CloseDefaultDownloadDialog(This)	\
-    ( (This)->lpVtbl -> CloseDefaultDownloadDialog(This) ) 
-
-#define ICoreWebView2_14_get_DefaultDownloadDialogCornerAlignment(This,value)	\
-    ( (This)->lpVtbl -> get_DefaultDownloadDialogCornerAlignment(This,value) ) 
-
-#define ICoreWebView2_14_put_DefaultDownloadDialogCornerAlignment(This,value)	\
-    ( (This)->lpVtbl -> put_DefaultDownloadDialogCornerAlignment(This,value) ) 
-
-#define ICoreWebView2_14_get_DefaultDownloadDialogMargin(This,value)	\
-    ( (This)->lpVtbl -> get_DefaultDownloadDialogMargin(This,value) ) 
-
-#define ICoreWebView2_14_put_DefaultDownloadDialogMargin(This,value)	\
-    ( (This)->lpVtbl -> put_DefaultDownloadDialogMargin(This,value) ) 
-
-
-#define ICoreWebView2_14_add_BasicAuthenticationRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_BasicAuthenticationRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_BasicAuthenticationRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_BasicAuthenticationRequested(This,token) ) 
-
-
-#define ICoreWebView2_14_CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler)	\
-    ( (This)->lpVtbl -> CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler) ) 
-
-#define ICoreWebView2_14_add_ContextMenuRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ContextMenuRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_ContextMenuRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_ContextMenuRequested(This,token) ) 
-
-
-#define ICoreWebView2_14_add_StatusBarTextChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_StatusBarTextChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_StatusBarTextChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_StatusBarTextChanged(This,token) ) 
-
-#define ICoreWebView2_14_get_StatusBarText(This,value)	\
-    ( (This)->lpVtbl -> get_StatusBarText(This,value) ) 
-
-
-#define ICoreWebView2_14_get_Profile(This,value)	\
-    ( (This)->lpVtbl -> get_Profile(This,value) ) 
-
-
-#define ICoreWebView2_14_add_ServerCertificateErrorDetected(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ServerCertificateErrorDetected(This,eventHandler,token) ) 
-
-#define ICoreWebView2_14_remove_ServerCertificateErrorDetected(This,token)	\
-    ( (This)->lpVtbl -> remove_ServerCertificateErrorDetected(This,token) ) 
-
-#define ICoreWebView2_14_ClearServerCertificateErrorActions(This,handler)	\
-    ( (This)->lpVtbl -> ClearServerCertificateErrorActions(This,handler) ) 
+#define ICoreWebView2ProfileAddBrowserExtensionCompletedHandler_Invoke(This,errorCode,extension)	\
+    ( (This)->lpVtbl -> Invoke(This,errorCode,extension) ) 
 
 #endif /* COBJMACROS */
 
@@ -35064,656 +47226,279 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_14 = {0x6DAA4F10,0x4A
 
 
 
-#endif 	/* __ICoreWebView2_14_INTERFACE_DEFINED__ */
+#endif 	/* __ICoreWebView2ProfileAddBrowserExtensionCompletedHandler_INTERFACE_DEFINED__ */
 
 
-#ifndef __ICoreWebView2_15_INTERFACE_DEFINED__
-#define __ICoreWebView2_15_INTERFACE_DEFINED__
+#ifndef __ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler_INTERFACE_DEFINED__
+#define __ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler_INTERFACE_DEFINED__
 
-/* interface ICoreWebView2_15 */
+/* interface ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler */
 /* [unique][object][uuid] */ 
 
 
-EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_15 = {0x517B2D1D,0x7DAE,0x4A66,{0xA4,0xF4,0x10,0x35,0x2F,0xFB,0x95,0x18}};
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler = {0xFCE16A1C,0xF107,0x4601,{0x8B,0x75,0xFC,0x49,0x40,0xAE,0x25,0xD0}};
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
     
-    MIDL_INTERFACE("517B2D1D-7DAE-4A66-A4F4-10352FFB9518")
-    ICoreWebView2_15 : public ICoreWebView2_14
+    MIDL_INTERFACE("FCE16A1C-F107-4601-8B75-FC4940AE25D0")
+    ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler : public IUnknown
     {
     public:
-        virtual HRESULT STDMETHODCALLTYPE add_FaviconChanged( 
-            /* [in] */ ICoreWebView2FaviconChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token) = 0;
+        virtual HRESULT STDMETHODCALLTYPE Invoke( 
+            /* [in] */ HRESULT errorCode,
+            /* [in] */ ICoreWebView2BrowserExtensionList *extensionList) = 0;
         
-        virtual HRESULT STDMETHODCALLTYPE remove_FaviconChanged( 
-            /* [in] */ EventRegistrationToken token) = 0;
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2ProfileGetBrowserExtensionsCompletedHandlerVtbl
+    {
+        BEGIN_INTERFACE
         
-        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_FaviconUri( 
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler, Invoke)
+        HRESULT ( STDMETHODCALLTYPE *Invoke )( 
+            ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler * This,
+            /* [in] */ HRESULT errorCode,
+            /* [in] */ ICoreWebView2BrowserExtensionList *extensionList);
+        
+        END_INTERFACE
+    } ICoreWebView2ProfileGetBrowserExtensionsCompletedHandlerVtbl;
+
+    interface ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler
+    {
+        CONST_VTBL struct ICoreWebView2ProfileGetBrowserExtensionsCompletedHandlerVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler_Invoke(This,errorCode,extensionList)	\
+    ( (This)->lpVtbl -> Invoke(This,errorCode,extensionList) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2ProfileGetBrowserExtensionsCompletedHandler_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2BrowserExtensionList_INTERFACE_DEFINED__
+#define __ICoreWebView2BrowserExtensionList_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2BrowserExtensionList */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2BrowserExtensionList = {0x2EF3D2DC,0xBD5F,0x4F4D,{0x90,0xAF,0xFD,0x67,0x79,0x8F,0x0C,0x2F}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("2EF3D2DC-BD5F-4F4D-90AF-FD67798F0C2F")
+    ICoreWebView2BrowserExtensionList : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Count( 
+            /* [retval][out] */ UINT *count) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetValueAtIndex( 
+            /* [in] */ UINT index,
+            /* [retval][out] */ ICoreWebView2BrowserExtension **extension) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2BrowserExtensionListVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2BrowserExtensionList * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2BrowserExtensionList * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2BrowserExtensionList * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2BrowserExtensionList, get_Count)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Count )( 
+            ICoreWebView2BrowserExtensionList * This,
+            /* [retval][out] */ UINT *count);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2BrowserExtensionList, GetValueAtIndex)
+        HRESULT ( STDMETHODCALLTYPE *GetValueAtIndex )( 
+            ICoreWebView2BrowserExtensionList * This,
+            /* [in] */ UINT index,
+            /* [retval][out] */ ICoreWebView2BrowserExtension **extension);
+        
+        END_INTERFACE
+    } ICoreWebView2BrowserExtensionListVtbl;
+
+    interface ICoreWebView2BrowserExtensionList
+    {
+        CONST_VTBL struct ICoreWebView2BrowserExtensionListVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2BrowserExtensionList_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2BrowserExtensionList_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2BrowserExtensionList_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2BrowserExtensionList_get_Count(This,count)	\
+    ( (This)->lpVtbl -> get_Count(This,count) ) 
+
+#define ICoreWebView2BrowserExtensionList_GetValueAtIndex(This,index,extension)	\
+    ( (This)->lpVtbl -> GetValueAtIndex(This,index,extension) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2BrowserExtensionList_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2BrowserExtension_INTERFACE_DEFINED__
+#define __ICoreWebView2BrowserExtension_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2BrowserExtension */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2BrowserExtension = {0x7EF7FFA0,0xFAC5,0x462C,{0xB1,0x89,0x3D,0x9E,0xDB,0xE5,0x75,0xDA}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("7EF7FFA0-FAC5-462C-B189-3D9EDBE575DA")
+    ICoreWebView2BrowserExtension : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Id( 
             /* [retval][out] */ LPWSTR *value) = 0;
         
-        virtual HRESULT STDMETHODCALLTYPE GetFavicon( 
-            /* [in] */ COREWEBVIEW2_FAVICON_IMAGE_FORMAT format,
-            /* [in] */ ICoreWebView2GetFaviconCompletedHandler *completedHandler) = 0;
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Name( 
+            /* [retval][out] */ LPWSTR *value) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE Remove( 
+            /* [in] */ ICoreWebView2BrowserExtensionRemoveCompletedHandler *handler) = 0;
+        
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_IsEnabled( 
+            /* [retval][out] */ BOOL *value) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE Enable( 
+            /* [in] */ BOOL isEnabled,
+            /* [in] */ ICoreWebView2BrowserExtensionEnableCompletedHandler *handler) = 0;
         
     };
     
     
 #else 	/* C style interface */
 
-    typedef struct ICoreWebView2_15Vtbl
+    typedef struct ICoreWebView2BrowserExtensionVtbl
     {
         BEGIN_INTERFACE
         
         DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
         HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-            ICoreWebView2_15 * This,
+            ICoreWebView2BrowserExtension * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
             _COM_Outptr_  void **ppvObject);
         
         DECLSPEC_XFGVIRT(IUnknown, AddRef)
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
-            ICoreWebView2_15 * This);
+            ICoreWebView2BrowserExtension * This);
         
         DECLSPEC_XFGVIRT(IUnknown, Release)
         ULONG ( STDMETHODCALLTYPE *Release )( 
-            ICoreWebView2_15 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_Settings)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Settings )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ ICoreWebView2Settings **settings);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_Source)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Source )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ LPWSTR *uri);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, Navigate)
-        HRESULT ( STDMETHODCALLTYPE *Navigate )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR uri);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, NavigateToString)
-        HRESULT ( STDMETHODCALLTYPE *NavigateToString )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR htmlContent);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationStarting)
-        HRESULT ( STDMETHODCALLTYPE *add_NavigationStarting )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationStarting)
-        HRESULT ( STDMETHODCALLTYPE *remove_NavigationStarting )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContentLoading)
-        HRESULT ( STDMETHODCALLTYPE *add_ContentLoading )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2ContentLoadingEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContentLoading)
-        HRESULT ( STDMETHODCALLTYPE *remove_ContentLoading )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_SourceChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_SourceChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2SourceChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_SourceChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_SourceChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_HistoryChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_HistoryChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2HistoryChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_HistoryChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_HistoryChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationCompleted)
-        HRESULT ( STDMETHODCALLTYPE *add_NavigationCompleted )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationCompleted)
-        HRESULT ( STDMETHODCALLTYPE *remove_NavigationCompleted )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationStarting)
-        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationStarting )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationStarting)
-        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationStarting )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationCompleted)
-        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationCompleted )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationCompleted)
-        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationCompleted )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_ScriptDialogOpening)
-        HRESULT ( STDMETHODCALLTYPE *add_ScriptDialogOpening )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2ScriptDialogOpeningEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ScriptDialogOpening)
-        HRESULT ( STDMETHODCALLTYPE *remove_ScriptDialogOpening )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_PermissionRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_PermissionRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2PermissionRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_PermissionRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_PermissionRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_ProcessFailed)
-        HRESULT ( STDMETHODCALLTYPE *add_ProcessFailed )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2ProcessFailedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ProcessFailed)
-        HRESULT ( STDMETHODCALLTYPE *remove_ProcessFailed )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, AddScriptToExecuteOnDocumentCreated)
-        HRESULT ( STDMETHODCALLTYPE *AddScriptToExecuteOnDocumentCreated )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR javaScript,
-            /* [in] */ ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveScriptToExecuteOnDocumentCreated)
-        HRESULT ( STDMETHODCALLTYPE *RemoveScriptToExecuteOnDocumentCreated )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR id);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, ExecuteScript)
-        HRESULT ( STDMETHODCALLTYPE *ExecuteScript )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR javaScript,
-            /* [in] */ ICoreWebView2ExecuteScriptCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, CapturePreview)
-        HRESULT ( STDMETHODCALLTYPE *CapturePreview )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT imageFormat,
-            /* [in] */ IStream *imageStream,
-            /* [in] */ ICoreWebView2CapturePreviewCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, Reload)
-        HRESULT ( STDMETHODCALLTYPE *Reload )( 
-            ICoreWebView2_15 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsJson)
-        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsJson )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR webMessageAsJson);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsString)
-        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsString )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR webMessageAsString);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebMessageReceived)
-        HRESULT ( STDMETHODCALLTYPE *add_WebMessageReceived )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2WebMessageReceivedEventHandler *handler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebMessageReceived)
-        HRESULT ( STDMETHODCALLTYPE *remove_WebMessageReceived )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, CallDevToolsProtocolMethod)
-        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethod )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR methodName,
-            /* [in] */ LPCWSTR parametersAsJson,
-            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_BrowserProcessId)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BrowserProcessId )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ UINT32 *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoBack)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoBack )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ BOOL *canGoBack);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoForward)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoForward )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ BOOL *canGoForward);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, GoBack)
-        HRESULT ( STDMETHODCALLTYPE *GoBack )( 
-            ICoreWebView2_15 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, GoForward)
-        HRESULT ( STDMETHODCALLTYPE *GoForward )( 
-            ICoreWebView2_15 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, GetDevToolsProtocolEventReceiver)
-        HRESULT ( STDMETHODCALLTYPE *GetDevToolsProtocolEventReceiver )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR eventName,
-            /* [retval][out] */ ICoreWebView2DevToolsProtocolEventReceiver **receiver);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, Stop)
-        HRESULT ( STDMETHODCALLTYPE *Stop )( 
-            ICoreWebView2_15 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_NewWindowRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_NewWindowRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2NewWindowRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NewWindowRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_NewWindowRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_DocumentTitleChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_DocumentTitleChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2DocumentTitleChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_DocumentTitleChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_DocumentTitleChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_DocumentTitle)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DocumentTitle )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ LPWSTR *title);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, AddHostObjectToScript)
-        HRESULT ( STDMETHODCALLTYPE *AddHostObjectToScript )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR name,
-            /* [in] */ VARIANT *object);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveHostObjectFromScript)
-        HRESULT ( STDMETHODCALLTYPE *RemoveHostObjectFromScript )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR name);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, OpenDevToolsWindow)
-        HRESULT ( STDMETHODCALLTYPE *OpenDevToolsWindow )( 
-            ICoreWebView2_15 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContainsFullScreenElementChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_ContainsFullScreenElementChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2ContainsFullScreenElementChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContainsFullScreenElementChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_ContainsFullScreenElementChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_ContainsFullScreenElement)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ContainsFullScreenElement )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ BOOL *containsFullScreenElement);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebResourceRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_WebResourceRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2WebResourceRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebResourceRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, AddWebResourceRequestedFilter)
-        HRESULT ( STDMETHODCALLTYPE *AddWebResourceRequestedFilter )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ const LPCWSTR uri,
-            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveWebResourceRequestedFilter)
-        HRESULT ( STDMETHODCALLTYPE *RemoveWebResourceRequestedFilter )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ const LPCWSTR uri,
-            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_WindowCloseRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_WindowCloseRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2WindowCloseRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WindowCloseRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_WindowCloseRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_WebResourceResponseReceived)
-        HRESULT ( STDMETHODCALLTYPE *add_WebResourceResponseReceived )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2WebResourceResponseReceivedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_WebResourceResponseReceived)
-        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceResponseReceived )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, NavigateWithWebResourceRequest)
-        HRESULT ( STDMETHODCALLTYPE *NavigateWithWebResourceRequest )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2WebResourceRequest *request);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_DOMContentLoaded)
-        HRESULT ( STDMETHODCALLTYPE *add_DOMContentLoaded )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2DOMContentLoadedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_DOMContentLoaded)
-        HRESULT ( STDMETHODCALLTYPE *remove_DOMContentLoaded )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_CookieManager)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_Environment)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Environment )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ ICoreWebView2Environment **environment);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, TrySuspend)
-        HRESULT ( STDMETHODCALLTYPE *TrySuspend )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2TrySuspendCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, Resume)
-        HRESULT ( STDMETHODCALLTYPE *Resume )( 
-            ICoreWebView2_15 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, get_IsSuspended)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsSuspended )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ BOOL *isSuspended);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, SetVirtualHostNameToFolderMapping)
-        HRESULT ( STDMETHODCALLTYPE *SetVirtualHostNameToFolderMapping )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR hostName,
-            /* [in] */ LPCWSTR folderPath,
-            /* [in] */ COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND accessKind);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, ClearVirtualHostNameToFolderMapping)
-        HRESULT ( STDMETHODCALLTYPE *ClearVirtualHostNameToFolderMapping )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR hostName);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_FrameCreated)
-        HRESULT ( STDMETHODCALLTYPE *add_FrameCreated )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2FrameCreatedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_FrameCreated)
-        HRESULT ( STDMETHODCALLTYPE *remove_FrameCreated )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_DownloadStarting)
-        HRESULT ( STDMETHODCALLTYPE *add_DownloadStarting )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2DownloadStartingEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_DownloadStarting)
-        HRESULT ( STDMETHODCALLTYPE *remove_DownloadStarting )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_5, add_ClientCertificateRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_ClientCertificateRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2ClientCertificateRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_5, remove_ClientCertificateRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_ClientCertificateRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_6, OpenTaskManagerWindow)
-        HRESULT ( STDMETHODCALLTYPE *OpenTaskManagerWindow )( 
-            ICoreWebView2_15 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_7, PrintToPdf)
-        HRESULT ( STDMETHODCALLTYPE *PrintToPdf )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR resultFilePath,
-            /* [in] */ ICoreWebView2PrintSettings *printSettings,
-            /* [in] */ ICoreWebView2PrintToPdfCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsMutedChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_IsMutedChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2IsMutedChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsMutedChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_IsMutedChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsMuted)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsMuted )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ BOOL *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, put_IsMuted)
-        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsMuted )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ BOOL value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsDocumentPlayingAudioChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_IsDocumentPlayingAudioChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2IsDocumentPlayingAudioChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsDocumentPlayingAudioChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_IsDocumentPlayingAudioChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsDocumentPlayingAudio)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDocumentPlayingAudio )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ BOOL *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, add_IsDefaultDownloadDialogOpenChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_IsDefaultDownloadDialogOpenChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler *handler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, remove_IsDefaultDownloadDialogOpenChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_IsDefaultDownloadDialogOpenChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_IsDefaultDownloadDialogOpen)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDefaultDownloadDialogOpen )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ BOOL *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, OpenDefaultDownloadDialog)
-        HRESULT ( STDMETHODCALLTYPE *OpenDefaultDownloadDialog )( 
-            ICoreWebView2_15 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, CloseDefaultDownloadDialog)
-        HRESULT ( STDMETHODCALLTYPE *CloseDefaultDownloadDialog )( 
-            ICoreWebView2_15 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogCornerAlignment)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogCornerAlignment )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogCornerAlignment)
-        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogCornerAlignment )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogMargin)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogMargin )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ POINT *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogMargin)
-        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogMargin )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ POINT value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_10, add_BasicAuthenticationRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_BasicAuthenticationRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2BasicAuthenticationRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_10, remove_BasicAuthenticationRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_BasicAuthenticationRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_11, CallDevToolsProtocolMethodForSession)
-        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethodForSession )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ LPCWSTR sessionId,
-            /* [in] */ LPCWSTR methodName,
-            /* [in] */ LPCWSTR parametersAsJson,
-            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_11, add_ContextMenuRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_ContextMenuRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2ContextMenuRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_11, remove_ContextMenuRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_ContextMenuRequested )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_12, add_StatusBarTextChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_StatusBarTextChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2StatusBarTextChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_12, remove_StatusBarTextChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_StatusBarTextChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_12, get_StatusBarText)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StatusBarText )( 
-            ICoreWebView2_15 * This,
+            ICoreWebView2BrowserExtension * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2BrowserExtension, get_Id)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Id )( 
+            ICoreWebView2BrowserExtension * This,
             /* [retval][out] */ LPWSTR *value);
         
-        DECLSPEC_XFGVIRT(ICoreWebView2_13, get_Profile)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Profile )( 
-            ICoreWebView2_15 * This,
-            /* [retval][out] */ ICoreWebView2Profile **value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_14, add_ServerCertificateErrorDetected)
-        HRESULT ( STDMETHODCALLTYPE *add_ServerCertificateErrorDetected )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2ServerCertificateErrorDetectedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_14, remove_ServerCertificateErrorDetected)
-        HRESULT ( STDMETHODCALLTYPE *remove_ServerCertificateErrorDetected )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_14, ClearServerCertificateErrorActions)
-        HRESULT ( STDMETHODCALLTYPE *ClearServerCertificateErrorActions )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2ClearServerCertificateErrorActionsCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_15, add_FaviconChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_FaviconChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ ICoreWebView2FaviconChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_15, remove_FaviconChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_FaviconChanged )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_15, get_FaviconUri)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FaviconUri )( 
-            ICoreWebView2_15 * This,
+        DECLSPEC_XFGVIRT(ICoreWebView2BrowserExtension, get_Name)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Name )( 
+            ICoreWebView2BrowserExtension * This,
             /* [retval][out] */ LPWSTR *value);
         
-        DECLSPEC_XFGVIRT(ICoreWebView2_15, GetFavicon)
-        HRESULT ( STDMETHODCALLTYPE *GetFavicon )( 
-            ICoreWebView2_15 * This,
-            /* [in] */ COREWEBVIEW2_FAVICON_IMAGE_FORMAT format,
-            /* [in] */ ICoreWebView2GetFaviconCompletedHandler *completedHandler);
+        DECLSPEC_XFGVIRT(ICoreWebView2BrowserExtension, Remove)
+        HRESULT ( STDMETHODCALLTYPE *Remove )( 
+            ICoreWebView2BrowserExtension * This,
+            /* [in] */ ICoreWebView2BrowserExtensionRemoveCompletedHandler *handler);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2BrowserExtension, get_IsEnabled)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsEnabled )( 
+            ICoreWebView2BrowserExtension * This,
+            /* [retval][out] */ BOOL *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2BrowserExtension, Enable)
+        HRESULT ( STDMETHODCALLTYPE *Enable )( 
+            ICoreWebView2BrowserExtension * This,
+            /* [in] */ BOOL isEnabled,
+            /* [in] */ ICoreWebView2BrowserExtensionEnableCompletedHandler *handler);
         
         END_INTERFACE
-    } ICoreWebView2_15Vtbl;
+    } ICoreWebView2BrowserExtensionVtbl;
 
-    interface ICoreWebView2_15
+    interface ICoreWebView2BrowserExtension
     {
-        CONST_VTBL struct ICoreWebView2_15Vtbl *lpVtbl;
+        CONST_VTBL struct ICoreWebView2BrowserExtensionVtbl *lpVtbl;
     };
 
     
@@ -35721,359 +47506,30 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_15 = {0x517B2D1D,0x7D
 #ifdef COBJMACROS
 
 
-#define ICoreWebView2_15_QueryInterface(This,riid,ppvObject)	\
+#define ICoreWebView2BrowserExtension_QueryInterface(This,riid,ppvObject)	\
     ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
 
-#define ICoreWebView2_15_AddRef(This)	\
+#define ICoreWebView2BrowserExtension_AddRef(This)	\
     ( (This)->lpVtbl -> AddRef(This) ) 
 
-#define ICoreWebView2_15_Release(This)	\
+#define ICoreWebView2BrowserExtension_Release(This)	\
     ( (This)->lpVtbl -> Release(This) ) 
 
 
-#define ICoreWebView2_15_get_Settings(This,settings)	\
-    ( (This)->lpVtbl -> get_Settings(This,settings) ) 
+#define ICoreWebView2BrowserExtension_get_Id(This,value)	\
+    ( (This)->lpVtbl -> get_Id(This,value) ) 
 
-#define ICoreWebView2_15_get_Source(This,uri)	\
-    ( (This)->lpVtbl -> get_Source(This,uri) ) 
+#define ICoreWebView2BrowserExtension_get_Name(This,value)	\
+    ( (This)->lpVtbl -> get_Name(This,value) ) 
 
-#define ICoreWebView2_15_Navigate(This,uri)	\
-    ( (This)->lpVtbl -> Navigate(This,uri) ) 
+#define ICoreWebView2BrowserExtension_Remove(This,handler)	\
+    ( (This)->lpVtbl -> Remove(This,handler) ) 
 
-#define ICoreWebView2_15_NavigateToString(This,htmlContent)	\
-    ( (This)->lpVtbl -> NavigateToString(This,htmlContent) ) 
+#define ICoreWebView2BrowserExtension_get_IsEnabled(This,value)	\
+    ( (This)->lpVtbl -> get_IsEnabled(This,value) ) 
 
-#define ICoreWebView2_15_add_NavigationStarting(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_NavigationStarting(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_NavigationStarting(This,token)	\
-    ( (This)->lpVtbl -> remove_NavigationStarting(This,token) ) 
-
-#define ICoreWebView2_15_add_ContentLoading(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ContentLoading(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_ContentLoading(This,token)	\
-    ( (This)->lpVtbl -> remove_ContentLoading(This,token) ) 
-
-#define ICoreWebView2_15_add_SourceChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_SourceChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_SourceChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_SourceChanged(This,token) ) 
-
-#define ICoreWebView2_15_add_HistoryChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_HistoryChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_HistoryChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_HistoryChanged(This,token) ) 
-
-#define ICoreWebView2_15_add_NavigationCompleted(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_NavigationCompleted(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_NavigationCompleted(This,token)	\
-    ( (This)->lpVtbl -> remove_NavigationCompleted(This,token) ) 
-
-#define ICoreWebView2_15_add_FrameNavigationStarting(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_FrameNavigationStarting(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_FrameNavigationStarting(This,token)	\
-    ( (This)->lpVtbl -> remove_FrameNavigationStarting(This,token) ) 
-
-#define ICoreWebView2_15_add_FrameNavigationCompleted(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_FrameNavigationCompleted(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_FrameNavigationCompleted(This,token)	\
-    ( (This)->lpVtbl -> remove_FrameNavigationCompleted(This,token) ) 
-
-#define ICoreWebView2_15_add_ScriptDialogOpening(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ScriptDialogOpening(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_ScriptDialogOpening(This,token)	\
-    ( (This)->lpVtbl -> remove_ScriptDialogOpening(This,token) ) 
-
-#define ICoreWebView2_15_add_PermissionRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_PermissionRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_PermissionRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_PermissionRequested(This,token) ) 
-
-#define ICoreWebView2_15_add_ProcessFailed(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ProcessFailed(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_ProcessFailed(This,token)	\
-    ( (This)->lpVtbl -> remove_ProcessFailed(This,token) ) 
-
-#define ICoreWebView2_15_AddScriptToExecuteOnDocumentCreated(This,javaScript,handler)	\
-    ( (This)->lpVtbl -> AddScriptToExecuteOnDocumentCreated(This,javaScript,handler) ) 
-
-#define ICoreWebView2_15_RemoveScriptToExecuteOnDocumentCreated(This,id)	\
-    ( (This)->lpVtbl -> RemoveScriptToExecuteOnDocumentCreated(This,id) ) 
-
-#define ICoreWebView2_15_ExecuteScript(This,javaScript,handler)	\
-    ( (This)->lpVtbl -> ExecuteScript(This,javaScript,handler) ) 
-
-#define ICoreWebView2_15_CapturePreview(This,imageFormat,imageStream,handler)	\
-    ( (This)->lpVtbl -> CapturePreview(This,imageFormat,imageStream,handler) ) 
-
-#define ICoreWebView2_15_Reload(This)	\
-    ( (This)->lpVtbl -> Reload(This) ) 
-
-#define ICoreWebView2_15_PostWebMessageAsJson(This,webMessageAsJson)	\
-    ( (This)->lpVtbl -> PostWebMessageAsJson(This,webMessageAsJson) ) 
-
-#define ICoreWebView2_15_PostWebMessageAsString(This,webMessageAsString)	\
-    ( (This)->lpVtbl -> PostWebMessageAsString(This,webMessageAsString) ) 
-
-#define ICoreWebView2_15_add_WebMessageReceived(This,handler,token)	\
-    ( (This)->lpVtbl -> add_WebMessageReceived(This,handler,token) ) 
-
-#define ICoreWebView2_15_remove_WebMessageReceived(This,token)	\
-    ( (This)->lpVtbl -> remove_WebMessageReceived(This,token) ) 
-
-#define ICoreWebView2_15_CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler)	\
-    ( (This)->lpVtbl -> CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler) ) 
-
-#define ICoreWebView2_15_get_BrowserProcessId(This,value)	\
-    ( (This)->lpVtbl -> get_BrowserProcessId(This,value) ) 
-
-#define ICoreWebView2_15_get_CanGoBack(This,canGoBack)	\
-    ( (This)->lpVtbl -> get_CanGoBack(This,canGoBack) ) 
-
-#define ICoreWebView2_15_get_CanGoForward(This,canGoForward)	\
-    ( (This)->lpVtbl -> get_CanGoForward(This,canGoForward) ) 
-
-#define ICoreWebView2_15_GoBack(This)	\
-    ( (This)->lpVtbl -> GoBack(This) ) 
-
-#define ICoreWebView2_15_GoForward(This)	\
-    ( (This)->lpVtbl -> GoForward(This) ) 
-
-#define ICoreWebView2_15_GetDevToolsProtocolEventReceiver(This,eventName,receiver)	\
-    ( (This)->lpVtbl -> GetDevToolsProtocolEventReceiver(This,eventName,receiver) ) 
-
-#define ICoreWebView2_15_Stop(This)	\
-    ( (This)->lpVtbl -> Stop(This) ) 
-
-#define ICoreWebView2_15_add_NewWindowRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_NewWindowRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_NewWindowRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_NewWindowRequested(This,token) ) 
-
-#define ICoreWebView2_15_add_DocumentTitleChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_DocumentTitleChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_DocumentTitleChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_DocumentTitleChanged(This,token) ) 
-
-#define ICoreWebView2_15_get_DocumentTitle(This,title)	\
-    ( (This)->lpVtbl -> get_DocumentTitle(This,title) ) 
-
-#define ICoreWebView2_15_AddHostObjectToScript(This,name,object)	\
-    ( (This)->lpVtbl -> AddHostObjectToScript(This,name,object) ) 
-
-#define ICoreWebView2_15_RemoveHostObjectFromScript(This,name)	\
-    ( (This)->lpVtbl -> RemoveHostObjectFromScript(This,name) ) 
-
-#define ICoreWebView2_15_OpenDevToolsWindow(This)	\
-    ( (This)->lpVtbl -> OpenDevToolsWindow(This) ) 
-
-#define ICoreWebView2_15_add_ContainsFullScreenElementChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ContainsFullScreenElementChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_ContainsFullScreenElementChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_ContainsFullScreenElementChanged(This,token) ) 
-
-#define ICoreWebView2_15_get_ContainsFullScreenElement(This,containsFullScreenElement)	\
-    ( (This)->lpVtbl -> get_ContainsFullScreenElement(This,containsFullScreenElement) ) 
-
-#define ICoreWebView2_15_add_WebResourceRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_WebResourceRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_WebResourceRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_WebResourceRequested(This,token) ) 
-
-#define ICoreWebView2_15_AddWebResourceRequestedFilter(This,uri,resourceContext)	\
-    ( (This)->lpVtbl -> AddWebResourceRequestedFilter(This,uri,resourceContext) ) 
-
-#define ICoreWebView2_15_RemoveWebResourceRequestedFilter(This,uri,resourceContext)	\
-    ( (This)->lpVtbl -> RemoveWebResourceRequestedFilter(This,uri,resourceContext) ) 
-
-#define ICoreWebView2_15_add_WindowCloseRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_WindowCloseRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_WindowCloseRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_WindowCloseRequested(This,token) ) 
-
-
-#define ICoreWebView2_15_add_WebResourceResponseReceived(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_WebResourceResponseReceived(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_WebResourceResponseReceived(This,token)	\
-    ( (This)->lpVtbl -> remove_WebResourceResponseReceived(This,token) ) 
-
-#define ICoreWebView2_15_NavigateWithWebResourceRequest(This,request)	\
-    ( (This)->lpVtbl -> NavigateWithWebResourceRequest(This,request) ) 
-
-#define ICoreWebView2_15_add_DOMContentLoaded(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_DOMContentLoaded(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_DOMContentLoaded(This,token)	\
-    ( (This)->lpVtbl -> remove_DOMContentLoaded(This,token) ) 
-
-#define ICoreWebView2_15_get_CookieManager(This,cookieManager)	\
-    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
-
-#define ICoreWebView2_15_get_Environment(This,environment)	\
-    ( (This)->lpVtbl -> get_Environment(This,environment) ) 
-
-
-#define ICoreWebView2_15_TrySuspend(This,handler)	\
-    ( (This)->lpVtbl -> TrySuspend(This,handler) ) 
-
-#define ICoreWebView2_15_Resume(This)	\
-    ( (This)->lpVtbl -> Resume(This) ) 
-
-#define ICoreWebView2_15_get_IsSuspended(This,isSuspended)	\
-    ( (This)->lpVtbl -> get_IsSuspended(This,isSuspended) ) 
-
-#define ICoreWebView2_15_SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind)	\
-    ( (This)->lpVtbl -> SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind) ) 
-
-#define ICoreWebView2_15_ClearVirtualHostNameToFolderMapping(This,hostName)	\
-    ( (This)->lpVtbl -> ClearVirtualHostNameToFolderMapping(This,hostName) ) 
-
-
-#define ICoreWebView2_15_add_FrameCreated(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_FrameCreated(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_FrameCreated(This,token)	\
-    ( (This)->lpVtbl -> remove_FrameCreated(This,token) ) 
-
-#define ICoreWebView2_15_add_DownloadStarting(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_DownloadStarting(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_DownloadStarting(This,token)	\
-    ( (This)->lpVtbl -> remove_DownloadStarting(This,token) ) 
-
-
-#define ICoreWebView2_15_add_ClientCertificateRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ClientCertificateRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_ClientCertificateRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_ClientCertificateRequested(This,token) ) 
-
-
-#define ICoreWebView2_15_OpenTaskManagerWindow(This)	\
-    ( (This)->lpVtbl -> OpenTaskManagerWindow(This) ) 
-
-
-#define ICoreWebView2_15_PrintToPdf(This,resultFilePath,printSettings,handler)	\
-    ( (This)->lpVtbl -> PrintToPdf(This,resultFilePath,printSettings,handler) ) 
-
-
-#define ICoreWebView2_15_add_IsMutedChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_IsMutedChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_IsMutedChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_IsMutedChanged(This,token) ) 
-
-#define ICoreWebView2_15_get_IsMuted(This,value)	\
-    ( (This)->lpVtbl -> get_IsMuted(This,value) ) 
-
-#define ICoreWebView2_15_put_IsMuted(This,value)	\
-    ( (This)->lpVtbl -> put_IsMuted(This,value) ) 
-
-#define ICoreWebView2_15_add_IsDocumentPlayingAudioChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_IsDocumentPlayingAudioChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_IsDocumentPlayingAudioChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_IsDocumentPlayingAudioChanged(This,token) ) 
-
-#define ICoreWebView2_15_get_IsDocumentPlayingAudio(This,value)	\
-    ( (This)->lpVtbl -> get_IsDocumentPlayingAudio(This,value) ) 
-
-
-#define ICoreWebView2_15_add_IsDefaultDownloadDialogOpenChanged(This,handler,token)	\
-    ( (This)->lpVtbl -> add_IsDefaultDownloadDialogOpenChanged(This,handler,token) ) 
-
-#define ICoreWebView2_15_remove_IsDefaultDownloadDialogOpenChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_IsDefaultDownloadDialogOpenChanged(This,token) ) 
-
-#define ICoreWebView2_15_get_IsDefaultDownloadDialogOpen(This,value)	\
-    ( (This)->lpVtbl -> get_IsDefaultDownloadDialogOpen(This,value) ) 
-
-#define ICoreWebView2_15_OpenDefaultDownloadDialog(This)	\
-    ( (This)->lpVtbl -> OpenDefaultDownloadDialog(This) ) 
-
-#define ICoreWebView2_15_CloseDefaultDownloadDialog(This)	\
-    ( (This)->lpVtbl -> CloseDefaultDownloadDialog(This) ) 
-
-#define ICoreWebView2_15_get_DefaultDownloadDialogCornerAlignment(This,value)	\
-    ( (This)->lpVtbl -> get_DefaultDownloadDialogCornerAlignment(This,value) ) 
-
-#define ICoreWebView2_15_put_DefaultDownloadDialogCornerAlignment(This,value)	\
-    ( (This)->lpVtbl -> put_DefaultDownloadDialogCornerAlignment(This,value) ) 
-
-#define ICoreWebView2_15_get_DefaultDownloadDialogMargin(This,value)	\
-    ( (This)->lpVtbl -> get_DefaultDownloadDialogMargin(This,value) ) 
-
-#define ICoreWebView2_15_put_DefaultDownloadDialogMargin(This,value)	\
-    ( (This)->lpVtbl -> put_DefaultDownloadDialogMargin(This,value) ) 
-
-
-#define ICoreWebView2_15_add_BasicAuthenticationRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_BasicAuthenticationRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_BasicAuthenticationRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_BasicAuthenticationRequested(This,token) ) 
-
-
-#define ICoreWebView2_15_CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler)	\
-    ( (This)->lpVtbl -> CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler) ) 
-
-#define ICoreWebView2_15_add_ContextMenuRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ContextMenuRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_ContextMenuRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_ContextMenuRequested(This,token) ) 
-
-
-#define ICoreWebView2_15_add_StatusBarTextChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_StatusBarTextChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_StatusBarTextChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_StatusBarTextChanged(This,token) ) 
-
-#define ICoreWebView2_15_get_StatusBarText(This,value)	\
-    ( (This)->lpVtbl -> get_StatusBarText(This,value) ) 
-
-
-#define ICoreWebView2_15_get_Profile(This,value)	\
-    ( (This)->lpVtbl -> get_Profile(This,value) ) 
-
-
-#define ICoreWebView2_15_add_ServerCertificateErrorDetected(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ServerCertificateErrorDetected(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_ServerCertificateErrorDetected(This,token)	\
-    ( (This)->lpVtbl -> remove_ServerCertificateErrorDetected(This,token) ) 
-
-#define ICoreWebView2_15_ClearServerCertificateErrorActions(This,handler)	\
-    ( (This)->lpVtbl -> ClearServerCertificateErrorActions(This,handler) ) 
-
-
-#define ICoreWebView2_15_add_FaviconChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_FaviconChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_15_remove_FaviconChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_FaviconChanged(This,token) ) 
-
-#define ICoreWebView2_15_get_FaviconUri(This,value)	\
-    ( (This)->lpVtbl -> get_FaviconUri(This,value) ) 
-
-#define ICoreWebView2_15_GetFavicon(This,format,completedHandler)	\
-    ( (This)->lpVtbl -> GetFavicon(This,format,completedHandler) ) 
+#define ICoreWebView2BrowserExtension_Enable(This,isEnabled,handler)	\
+    ( (This)->lpVtbl -> Enable(This,isEnabled,handler) ) 
 
 #endif /* COBJMACROS */
 
@@ -36083,670 +47539,62 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_15 = {0x517B2D1D,0x7D
 
 
 
-#endif 	/* __ICoreWebView2_15_INTERFACE_DEFINED__ */
+#endif 	/* __ICoreWebView2BrowserExtension_INTERFACE_DEFINED__ */
 
 
-#ifndef __ICoreWebView2_16_INTERFACE_DEFINED__
-#define __ICoreWebView2_16_INTERFACE_DEFINED__
+#ifndef __ICoreWebView2BrowserExtensionEnableCompletedHandler_INTERFACE_DEFINED__
+#define __ICoreWebView2BrowserExtensionEnableCompletedHandler_INTERFACE_DEFINED__
 
-/* interface ICoreWebView2_16 */
+/* interface ICoreWebView2BrowserExtensionEnableCompletedHandler */
 /* [unique][object][uuid] */ 
 
 
-EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_16 = {0x0EB34DC9,0x9F91,0x41E1,{0x86,0x39,0x95,0xCD,0x59,0x43,0x90,0x6B}};
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2BrowserExtensionEnableCompletedHandler = {0x30C186CE,0x7FAD,0x421F,{0xA3,0xBC,0xA8,0xEA,0xF0,0x71,0xDD,0xB8}};
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
     
-    MIDL_INTERFACE("0EB34DC9-9F91-41E1-8639-95CD5943906B")
-    ICoreWebView2_16 : public ICoreWebView2_15
+    MIDL_INTERFACE("30C186CE-7FAD-421F-A3BC-A8EAF071DDB8")
+    ICoreWebView2BrowserExtensionEnableCompletedHandler : public IUnknown
     {
     public:
-        virtual HRESULT STDMETHODCALLTYPE Print( 
-            /* [in] */ ICoreWebView2PrintSettings *printSettings,
-            /* [in] */ ICoreWebView2PrintCompletedHandler *handler) = 0;
-        
-        virtual HRESULT STDMETHODCALLTYPE ShowPrintUI( 
-            /* [in] */ COREWEBVIEW2_PRINT_DIALOG_KIND printDialogKind) = 0;
-        
-        virtual HRESULT STDMETHODCALLTYPE PrintToPdfStream( 
-            /* [in] */ ICoreWebView2PrintSettings *printSettings,
-            /* [in] */ ICoreWebView2PrintToPdfStreamCompletedHandler *handler) = 0;
+        virtual HRESULT STDMETHODCALLTYPE Invoke( 
+            /* [in] */ HRESULT errorCode) = 0;
         
     };
     
     
 #else 	/* C style interface */
 
-    typedef struct ICoreWebView2_16Vtbl
+    typedef struct ICoreWebView2BrowserExtensionEnableCompletedHandlerVtbl
     {
         BEGIN_INTERFACE
         
         DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
         HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-            ICoreWebView2_16 * This,
+            ICoreWebView2BrowserExtensionEnableCompletedHandler * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
             _COM_Outptr_  void **ppvObject);
         
         DECLSPEC_XFGVIRT(IUnknown, AddRef)
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
-            ICoreWebView2_16 * This);
+            ICoreWebView2BrowserExtensionEnableCompletedHandler * This);
         
         DECLSPEC_XFGVIRT(IUnknown, Release)
         ULONG ( STDMETHODCALLTYPE *Release )( 
-            ICoreWebView2_16 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_Settings)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Settings )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ ICoreWebView2Settings **settings);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_Source)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Source )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ LPWSTR *uri);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, Navigate)
-        HRESULT ( STDMETHODCALLTYPE *Navigate )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR uri);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, NavigateToString)
-        HRESULT ( STDMETHODCALLTYPE *NavigateToString )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR htmlContent);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationStarting)
-        HRESULT ( STDMETHODCALLTYPE *add_NavigationStarting )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationStarting)
-        HRESULT ( STDMETHODCALLTYPE *remove_NavigationStarting )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContentLoading)
-        HRESULT ( STDMETHODCALLTYPE *add_ContentLoading )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2ContentLoadingEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContentLoading)
-        HRESULT ( STDMETHODCALLTYPE *remove_ContentLoading )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_SourceChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_SourceChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2SourceChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_SourceChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_SourceChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_HistoryChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_HistoryChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2HistoryChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_HistoryChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_HistoryChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_NavigationCompleted)
-        HRESULT ( STDMETHODCALLTYPE *add_NavigationCompleted )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NavigationCompleted)
-        HRESULT ( STDMETHODCALLTYPE *remove_NavigationCompleted )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationStarting)
-        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationStarting )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2NavigationStartingEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationStarting)
-        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationStarting )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_FrameNavigationCompleted)
-        HRESULT ( STDMETHODCALLTYPE *add_FrameNavigationCompleted )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2NavigationCompletedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_FrameNavigationCompleted)
-        HRESULT ( STDMETHODCALLTYPE *remove_FrameNavigationCompleted )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_ScriptDialogOpening)
-        HRESULT ( STDMETHODCALLTYPE *add_ScriptDialogOpening )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2ScriptDialogOpeningEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ScriptDialogOpening)
-        HRESULT ( STDMETHODCALLTYPE *remove_ScriptDialogOpening )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_PermissionRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_PermissionRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2PermissionRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_PermissionRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_PermissionRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_ProcessFailed)
-        HRESULT ( STDMETHODCALLTYPE *add_ProcessFailed )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2ProcessFailedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ProcessFailed)
-        HRESULT ( STDMETHODCALLTYPE *remove_ProcessFailed )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, AddScriptToExecuteOnDocumentCreated)
-        HRESULT ( STDMETHODCALLTYPE *AddScriptToExecuteOnDocumentCreated )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR javaScript,
-            /* [in] */ ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveScriptToExecuteOnDocumentCreated)
-        HRESULT ( STDMETHODCALLTYPE *RemoveScriptToExecuteOnDocumentCreated )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR id);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, ExecuteScript)
-        HRESULT ( STDMETHODCALLTYPE *ExecuteScript )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR javaScript,
-            /* [in] */ ICoreWebView2ExecuteScriptCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, CapturePreview)
-        HRESULT ( STDMETHODCALLTYPE *CapturePreview )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT imageFormat,
-            /* [in] */ IStream *imageStream,
-            /* [in] */ ICoreWebView2CapturePreviewCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, Reload)
-        HRESULT ( STDMETHODCALLTYPE *Reload )( 
-            ICoreWebView2_16 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsJson)
-        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsJson )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR webMessageAsJson);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, PostWebMessageAsString)
-        HRESULT ( STDMETHODCALLTYPE *PostWebMessageAsString )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR webMessageAsString);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebMessageReceived)
-        HRESULT ( STDMETHODCALLTYPE *add_WebMessageReceived )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2WebMessageReceivedEventHandler *handler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebMessageReceived)
-        HRESULT ( STDMETHODCALLTYPE *remove_WebMessageReceived )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, CallDevToolsProtocolMethod)
-        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethod )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR methodName,
-            /* [in] */ LPCWSTR parametersAsJson,
-            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_BrowserProcessId)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_BrowserProcessId )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ UINT32 *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoBack)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoBack )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ BOOL *canGoBack);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_CanGoForward)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CanGoForward )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ BOOL *canGoForward);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, GoBack)
-        HRESULT ( STDMETHODCALLTYPE *GoBack )( 
-            ICoreWebView2_16 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, GoForward)
-        HRESULT ( STDMETHODCALLTYPE *GoForward )( 
-            ICoreWebView2_16 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, GetDevToolsProtocolEventReceiver)
-        HRESULT ( STDMETHODCALLTYPE *GetDevToolsProtocolEventReceiver )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR eventName,
-            /* [retval][out] */ ICoreWebView2DevToolsProtocolEventReceiver **receiver);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, Stop)
-        HRESULT ( STDMETHODCALLTYPE *Stop )( 
-            ICoreWebView2_16 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_NewWindowRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_NewWindowRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2NewWindowRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_NewWindowRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_NewWindowRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_DocumentTitleChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_DocumentTitleChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2DocumentTitleChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_DocumentTitleChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_DocumentTitleChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_DocumentTitle)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DocumentTitle )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ LPWSTR *title);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, AddHostObjectToScript)
-        HRESULT ( STDMETHODCALLTYPE *AddHostObjectToScript )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR name,
-            /* [in] */ VARIANT *object);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveHostObjectFromScript)
-        HRESULT ( STDMETHODCALLTYPE *RemoveHostObjectFromScript )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR name);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, OpenDevToolsWindow)
-        HRESULT ( STDMETHODCALLTYPE *OpenDevToolsWindow )( 
-            ICoreWebView2_16 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_ContainsFullScreenElementChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_ContainsFullScreenElementChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2ContainsFullScreenElementChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_ContainsFullScreenElementChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_ContainsFullScreenElementChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, get_ContainsFullScreenElement)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_ContainsFullScreenElement )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ BOOL *containsFullScreenElement);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_WebResourceRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_WebResourceRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2WebResourceRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WebResourceRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, AddWebResourceRequestedFilter)
-        HRESULT ( STDMETHODCALLTYPE *AddWebResourceRequestedFilter )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ const LPCWSTR uri,
-            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, RemoveWebResourceRequestedFilter)
-        HRESULT ( STDMETHODCALLTYPE *RemoveWebResourceRequestedFilter )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ const LPCWSTR uri,
-            /* [in] */ const COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, add_WindowCloseRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_WindowCloseRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2WindowCloseRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2, remove_WindowCloseRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_WindowCloseRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_WebResourceResponseReceived)
-        HRESULT ( STDMETHODCALLTYPE *add_WebResourceResponseReceived )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2WebResourceResponseReceivedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_WebResourceResponseReceived)
-        HRESULT ( STDMETHODCALLTYPE *remove_WebResourceResponseReceived )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, NavigateWithWebResourceRequest)
-        HRESULT ( STDMETHODCALLTYPE *NavigateWithWebResourceRequest )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2WebResourceRequest *request);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, add_DOMContentLoaded)
-        HRESULT ( STDMETHODCALLTYPE *add_DOMContentLoaded )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2DOMContentLoadedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, remove_DOMContentLoaded)
-        HRESULT ( STDMETHODCALLTYPE *remove_DOMContentLoaded )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_CookieManager)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_CookieManager )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ ICoreWebView2CookieManager **cookieManager);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_2, get_Environment)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Environment )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ ICoreWebView2Environment **environment);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, TrySuspend)
-        HRESULT ( STDMETHODCALLTYPE *TrySuspend )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2TrySuspendCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, Resume)
-        HRESULT ( STDMETHODCALLTYPE *Resume )( 
-            ICoreWebView2_16 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, get_IsSuspended)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsSuspended )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ BOOL *isSuspended);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, SetVirtualHostNameToFolderMapping)
-        HRESULT ( STDMETHODCALLTYPE *SetVirtualHostNameToFolderMapping )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR hostName,
-            /* [in] */ LPCWSTR folderPath,
-            /* [in] */ COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND accessKind);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_3, ClearVirtualHostNameToFolderMapping)
-        HRESULT ( STDMETHODCALLTYPE *ClearVirtualHostNameToFolderMapping )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR hostName);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_FrameCreated)
-        HRESULT ( STDMETHODCALLTYPE *add_FrameCreated )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2FrameCreatedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_FrameCreated)
-        HRESULT ( STDMETHODCALLTYPE *remove_FrameCreated )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_4, add_DownloadStarting)
-        HRESULT ( STDMETHODCALLTYPE *add_DownloadStarting )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2DownloadStartingEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_4, remove_DownloadStarting)
-        HRESULT ( STDMETHODCALLTYPE *remove_DownloadStarting )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_5, add_ClientCertificateRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_ClientCertificateRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2ClientCertificateRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_5, remove_ClientCertificateRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_ClientCertificateRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_6, OpenTaskManagerWindow)
-        HRESULT ( STDMETHODCALLTYPE *OpenTaskManagerWindow )( 
-            ICoreWebView2_16 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_7, PrintToPdf)
-        HRESULT ( STDMETHODCALLTYPE *PrintToPdf )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR resultFilePath,
-            /* [in] */ ICoreWebView2PrintSettings *printSettings,
-            /* [in] */ ICoreWebView2PrintToPdfCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsMutedChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_IsMutedChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2IsMutedChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsMutedChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_IsMutedChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsMuted)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsMuted )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ BOOL *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, put_IsMuted)
-        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_IsMuted )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ BOOL value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, add_IsDocumentPlayingAudioChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_IsDocumentPlayingAudioChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2IsDocumentPlayingAudioChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, remove_IsDocumentPlayingAudioChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_IsDocumentPlayingAudioChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_8, get_IsDocumentPlayingAudio)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDocumentPlayingAudio )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ BOOL *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, add_IsDefaultDownloadDialogOpenChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_IsDefaultDownloadDialogOpenChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler *handler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, remove_IsDefaultDownloadDialogOpenChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_IsDefaultDownloadDialogOpenChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_IsDefaultDownloadDialogOpen)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_IsDefaultDownloadDialogOpen )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ BOOL *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, OpenDefaultDownloadDialog)
-        HRESULT ( STDMETHODCALLTYPE *OpenDefaultDownloadDialog )( 
-            ICoreWebView2_16 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, CloseDefaultDownloadDialog)
-        HRESULT ( STDMETHODCALLTYPE *CloseDefaultDownloadDialog )( 
-            ICoreWebView2_16 * This);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogCornerAlignment)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogCornerAlignment )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogCornerAlignment)
-        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogCornerAlignment )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, get_DefaultDownloadDialogMargin)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_DefaultDownloadDialogMargin )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ POINT *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_9, put_DefaultDownloadDialogMargin)
-        /* [propput] */ HRESULT ( STDMETHODCALLTYPE *put_DefaultDownloadDialogMargin )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ POINT value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_10, add_BasicAuthenticationRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_BasicAuthenticationRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2BasicAuthenticationRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_10, remove_BasicAuthenticationRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_BasicAuthenticationRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_11, CallDevToolsProtocolMethodForSession)
-        HRESULT ( STDMETHODCALLTYPE *CallDevToolsProtocolMethodForSession )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ LPCWSTR sessionId,
-            /* [in] */ LPCWSTR methodName,
-            /* [in] */ LPCWSTR parametersAsJson,
-            /* [in] */ ICoreWebView2CallDevToolsProtocolMethodCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_11, add_ContextMenuRequested)
-        HRESULT ( STDMETHODCALLTYPE *add_ContextMenuRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2ContextMenuRequestedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_11, remove_ContextMenuRequested)
-        HRESULT ( STDMETHODCALLTYPE *remove_ContextMenuRequested )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_12, add_StatusBarTextChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_StatusBarTextChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2StatusBarTextChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_12, remove_StatusBarTextChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_StatusBarTextChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_12, get_StatusBarText)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_StatusBarText )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ LPWSTR *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_13, get_Profile)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Profile )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ ICoreWebView2Profile **value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_14, add_ServerCertificateErrorDetected)
-        HRESULT ( STDMETHODCALLTYPE *add_ServerCertificateErrorDetected )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2ServerCertificateErrorDetectedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_14, remove_ServerCertificateErrorDetected)
-        HRESULT ( STDMETHODCALLTYPE *remove_ServerCertificateErrorDetected )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_14, ClearServerCertificateErrorActions)
-        HRESULT ( STDMETHODCALLTYPE *ClearServerCertificateErrorActions )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2ClearServerCertificateErrorActionsCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_15, add_FaviconChanged)
-        HRESULT ( STDMETHODCALLTYPE *add_FaviconChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2FaviconChangedEventHandler *eventHandler,
-            /* [out] */ EventRegistrationToken *token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_15, remove_FaviconChanged)
-        HRESULT ( STDMETHODCALLTYPE *remove_FaviconChanged )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ EventRegistrationToken token);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_15, get_FaviconUri)
-        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_FaviconUri )( 
-            ICoreWebView2_16 * This,
-            /* [retval][out] */ LPWSTR *value);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_15, GetFavicon)
-        HRESULT ( STDMETHODCALLTYPE *GetFavicon )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ COREWEBVIEW2_FAVICON_IMAGE_FORMAT format,
-            /* [in] */ ICoreWebView2GetFaviconCompletedHandler *completedHandler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_16, Print)
-        HRESULT ( STDMETHODCALLTYPE *Print )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2PrintSettings *printSettings,
-            /* [in] */ ICoreWebView2PrintCompletedHandler *handler);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_16, ShowPrintUI)
-        HRESULT ( STDMETHODCALLTYPE *ShowPrintUI )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ COREWEBVIEW2_PRINT_DIALOG_KIND printDialogKind);
-        
-        DECLSPEC_XFGVIRT(ICoreWebView2_16, PrintToPdfStream)
-        HRESULT ( STDMETHODCALLTYPE *PrintToPdfStream )( 
-            ICoreWebView2_16 * This,
-            /* [in] */ ICoreWebView2PrintSettings *printSettings,
-            /* [in] */ ICoreWebView2PrintToPdfStreamCompletedHandler *handler);
+            ICoreWebView2BrowserExtensionEnableCompletedHandler * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2BrowserExtensionEnableCompletedHandler, Invoke)
+        HRESULT ( STDMETHODCALLTYPE *Invoke )( 
+            ICoreWebView2BrowserExtensionEnableCompletedHandler * This,
+            /* [in] */ HRESULT errorCode);
         
         END_INTERFACE
-    } ICoreWebView2_16Vtbl;
+    } ICoreWebView2BrowserExtensionEnableCompletedHandlerVtbl;
 
-    interface ICoreWebView2_16
+    interface ICoreWebView2BrowserExtensionEnableCompletedHandler
     {
-        CONST_VTBL struct ICoreWebView2_16Vtbl *lpVtbl;
+        CONST_VTBL struct ICoreWebView2BrowserExtensionEnableCompletedHandlerVtbl *lpVtbl;
     };
 
     
@@ -36754,369 +47602,18 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_16 = {0x0EB34DC9,0x9F
 #ifdef COBJMACROS
 
 
-#define ICoreWebView2_16_QueryInterface(This,riid,ppvObject)	\
+#define ICoreWebView2BrowserExtensionEnableCompletedHandler_QueryInterface(This,riid,ppvObject)	\
     ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
 
-#define ICoreWebView2_16_AddRef(This)	\
+#define ICoreWebView2BrowserExtensionEnableCompletedHandler_AddRef(This)	\
     ( (This)->lpVtbl -> AddRef(This) ) 
 
-#define ICoreWebView2_16_Release(This)	\
+#define ICoreWebView2BrowserExtensionEnableCompletedHandler_Release(This)	\
     ( (This)->lpVtbl -> Release(This) ) 
 
 
-#define ICoreWebView2_16_get_Settings(This,settings)	\
-    ( (This)->lpVtbl -> get_Settings(This,settings) ) 
-
-#define ICoreWebView2_16_get_Source(This,uri)	\
-    ( (This)->lpVtbl -> get_Source(This,uri) ) 
-
-#define ICoreWebView2_16_Navigate(This,uri)	\
-    ( (This)->lpVtbl -> Navigate(This,uri) ) 
-
-#define ICoreWebView2_16_NavigateToString(This,htmlContent)	\
-    ( (This)->lpVtbl -> NavigateToString(This,htmlContent) ) 
-
-#define ICoreWebView2_16_add_NavigationStarting(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_NavigationStarting(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_NavigationStarting(This,token)	\
-    ( (This)->lpVtbl -> remove_NavigationStarting(This,token) ) 
-
-#define ICoreWebView2_16_add_ContentLoading(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ContentLoading(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_ContentLoading(This,token)	\
-    ( (This)->lpVtbl -> remove_ContentLoading(This,token) ) 
-
-#define ICoreWebView2_16_add_SourceChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_SourceChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_SourceChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_SourceChanged(This,token) ) 
-
-#define ICoreWebView2_16_add_HistoryChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_HistoryChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_HistoryChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_HistoryChanged(This,token) ) 
-
-#define ICoreWebView2_16_add_NavigationCompleted(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_NavigationCompleted(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_NavigationCompleted(This,token)	\
-    ( (This)->lpVtbl -> remove_NavigationCompleted(This,token) ) 
-
-#define ICoreWebView2_16_add_FrameNavigationStarting(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_FrameNavigationStarting(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_FrameNavigationStarting(This,token)	\
-    ( (This)->lpVtbl -> remove_FrameNavigationStarting(This,token) ) 
-
-#define ICoreWebView2_16_add_FrameNavigationCompleted(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_FrameNavigationCompleted(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_FrameNavigationCompleted(This,token)	\
-    ( (This)->lpVtbl -> remove_FrameNavigationCompleted(This,token) ) 
-
-#define ICoreWebView2_16_add_ScriptDialogOpening(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ScriptDialogOpening(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_ScriptDialogOpening(This,token)	\
-    ( (This)->lpVtbl -> remove_ScriptDialogOpening(This,token) ) 
-
-#define ICoreWebView2_16_add_PermissionRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_PermissionRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_PermissionRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_PermissionRequested(This,token) ) 
-
-#define ICoreWebView2_16_add_ProcessFailed(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ProcessFailed(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_ProcessFailed(This,token)	\
-    ( (This)->lpVtbl -> remove_ProcessFailed(This,token) ) 
-
-#define ICoreWebView2_16_AddScriptToExecuteOnDocumentCreated(This,javaScript,handler)	\
-    ( (This)->lpVtbl -> AddScriptToExecuteOnDocumentCreated(This,javaScript,handler) ) 
-
-#define ICoreWebView2_16_RemoveScriptToExecuteOnDocumentCreated(This,id)	\
-    ( (This)->lpVtbl -> RemoveScriptToExecuteOnDocumentCreated(This,id) ) 
-
-#define ICoreWebView2_16_ExecuteScript(This,javaScript,handler)	\
-    ( (This)->lpVtbl -> ExecuteScript(This,javaScript,handler) ) 
-
-#define ICoreWebView2_16_CapturePreview(This,imageFormat,imageStream,handler)	\
-    ( (This)->lpVtbl -> CapturePreview(This,imageFormat,imageStream,handler) ) 
-
-#define ICoreWebView2_16_Reload(This)	\
-    ( (This)->lpVtbl -> Reload(This) ) 
-
-#define ICoreWebView2_16_PostWebMessageAsJson(This,webMessageAsJson)	\
-    ( (This)->lpVtbl -> PostWebMessageAsJson(This,webMessageAsJson) ) 
-
-#define ICoreWebView2_16_PostWebMessageAsString(This,webMessageAsString)	\
-    ( (This)->lpVtbl -> PostWebMessageAsString(This,webMessageAsString) ) 
-
-#define ICoreWebView2_16_add_WebMessageReceived(This,handler,token)	\
-    ( (This)->lpVtbl -> add_WebMessageReceived(This,handler,token) ) 
-
-#define ICoreWebView2_16_remove_WebMessageReceived(This,token)	\
-    ( (This)->lpVtbl -> remove_WebMessageReceived(This,token) ) 
-
-#define ICoreWebView2_16_CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler)	\
-    ( (This)->lpVtbl -> CallDevToolsProtocolMethod(This,methodName,parametersAsJson,handler) ) 
-
-#define ICoreWebView2_16_get_BrowserProcessId(This,value)	\
-    ( (This)->lpVtbl -> get_BrowserProcessId(This,value) ) 
-
-#define ICoreWebView2_16_get_CanGoBack(This,canGoBack)	\
-    ( (This)->lpVtbl -> get_CanGoBack(This,canGoBack) ) 
-
-#define ICoreWebView2_16_get_CanGoForward(This,canGoForward)	\
-    ( (This)->lpVtbl -> get_CanGoForward(This,canGoForward) ) 
-
-#define ICoreWebView2_16_GoBack(This)	\
-    ( (This)->lpVtbl -> GoBack(This) ) 
-
-#define ICoreWebView2_16_GoForward(This)	\
-    ( (This)->lpVtbl -> GoForward(This) ) 
-
-#define ICoreWebView2_16_GetDevToolsProtocolEventReceiver(This,eventName,receiver)	\
-    ( (This)->lpVtbl -> GetDevToolsProtocolEventReceiver(This,eventName,receiver) ) 
-
-#define ICoreWebView2_16_Stop(This)	\
-    ( (This)->lpVtbl -> Stop(This) ) 
-
-#define ICoreWebView2_16_add_NewWindowRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_NewWindowRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_NewWindowRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_NewWindowRequested(This,token) ) 
-
-#define ICoreWebView2_16_add_DocumentTitleChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_DocumentTitleChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_DocumentTitleChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_DocumentTitleChanged(This,token) ) 
-
-#define ICoreWebView2_16_get_DocumentTitle(This,title)	\
-    ( (This)->lpVtbl -> get_DocumentTitle(This,title) ) 
-
-#define ICoreWebView2_16_AddHostObjectToScript(This,name,object)	\
-    ( (This)->lpVtbl -> AddHostObjectToScript(This,name,object) ) 
-
-#define ICoreWebView2_16_RemoveHostObjectFromScript(This,name)	\
-    ( (This)->lpVtbl -> RemoveHostObjectFromScript(This,name) ) 
-
-#define ICoreWebView2_16_OpenDevToolsWindow(This)	\
-    ( (This)->lpVtbl -> OpenDevToolsWindow(This) ) 
-
-#define ICoreWebView2_16_add_ContainsFullScreenElementChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ContainsFullScreenElementChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_ContainsFullScreenElementChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_ContainsFullScreenElementChanged(This,token) ) 
-
-#define ICoreWebView2_16_get_ContainsFullScreenElement(This,containsFullScreenElement)	\
-    ( (This)->lpVtbl -> get_ContainsFullScreenElement(This,containsFullScreenElement) ) 
-
-#define ICoreWebView2_16_add_WebResourceRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_WebResourceRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_WebResourceRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_WebResourceRequested(This,token) ) 
-
-#define ICoreWebView2_16_AddWebResourceRequestedFilter(This,uri,resourceContext)	\
-    ( (This)->lpVtbl -> AddWebResourceRequestedFilter(This,uri,resourceContext) ) 
-
-#define ICoreWebView2_16_RemoveWebResourceRequestedFilter(This,uri,resourceContext)	\
-    ( (This)->lpVtbl -> RemoveWebResourceRequestedFilter(This,uri,resourceContext) ) 
-
-#define ICoreWebView2_16_add_WindowCloseRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_WindowCloseRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_WindowCloseRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_WindowCloseRequested(This,token) ) 
-
-
-#define ICoreWebView2_16_add_WebResourceResponseReceived(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_WebResourceResponseReceived(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_WebResourceResponseReceived(This,token)	\
-    ( (This)->lpVtbl -> remove_WebResourceResponseReceived(This,token) ) 
-
-#define ICoreWebView2_16_NavigateWithWebResourceRequest(This,request)	\
-    ( (This)->lpVtbl -> NavigateWithWebResourceRequest(This,request) ) 
-
-#define ICoreWebView2_16_add_DOMContentLoaded(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_DOMContentLoaded(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_DOMContentLoaded(This,token)	\
-    ( (This)->lpVtbl -> remove_DOMContentLoaded(This,token) ) 
-
-#define ICoreWebView2_16_get_CookieManager(This,cookieManager)	\
-    ( (This)->lpVtbl -> get_CookieManager(This,cookieManager) ) 
-
-#define ICoreWebView2_16_get_Environment(This,environment)	\
-    ( (This)->lpVtbl -> get_Environment(This,environment) ) 
-
-
-#define ICoreWebView2_16_TrySuspend(This,handler)	\
-    ( (This)->lpVtbl -> TrySuspend(This,handler) ) 
-
-#define ICoreWebView2_16_Resume(This)	\
-    ( (This)->lpVtbl -> Resume(This) ) 
-
-#define ICoreWebView2_16_get_IsSuspended(This,isSuspended)	\
-    ( (This)->lpVtbl -> get_IsSuspended(This,isSuspended) ) 
-
-#define ICoreWebView2_16_SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind)	\
-    ( (This)->lpVtbl -> SetVirtualHostNameToFolderMapping(This,hostName,folderPath,accessKind) ) 
-
-#define ICoreWebView2_16_ClearVirtualHostNameToFolderMapping(This,hostName)	\
-    ( (This)->lpVtbl -> ClearVirtualHostNameToFolderMapping(This,hostName) ) 
-
-
-#define ICoreWebView2_16_add_FrameCreated(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_FrameCreated(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_FrameCreated(This,token)	\
-    ( (This)->lpVtbl -> remove_FrameCreated(This,token) ) 
-
-#define ICoreWebView2_16_add_DownloadStarting(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_DownloadStarting(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_DownloadStarting(This,token)	\
-    ( (This)->lpVtbl -> remove_DownloadStarting(This,token) ) 
-
-
-#define ICoreWebView2_16_add_ClientCertificateRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ClientCertificateRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_ClientCertificateRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_ClientCertificateRequested(This,token) ) 
-
-
-#define ICoreWebView2_16_OpenTaskManagerWindow(This)	\
-    ( (This)->lpVtbl -> OpenTaskManagerWindow(This) ) 
-
-
-#define ICoreWebView2_16_PrintToPdf(This,resultFilePath,printSettings,handler)	\
-    ( (This)->lpVtbl -> PrintToPdf(This,resultFilePath,printSettings,handler) ) 
-
-
-#define ICoreWebView2_16_add_IsMutedChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_IsMutedChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_IsMutedChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_IsMutedChanged(This,token) ) 
-
-#define ICoreWebView2_16_get_IsMuted(This,value)	\
-    ( (This)->lpVtbl -> get_IsMuted(This,value) ) 
-
-#define ICoreWebView2_16_put_IsMuted(This,value)	\
-    ( (This)->lpVtbl -> put_IsMuted(This,value) ) 
-
-#define ICoreWebView2_16_add_IsDocumentPlayingAudioChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_IsDocumentPlayingAudioChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_IsDocumentPlayingAudioChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_IsDocumentPlayingAudioChanged(This,token) ) 
-
-#define ICoreWebView2_16_get_IsDocumentPlayingAudio(This,value)	\
-    ( (This)->lpVtbl -> get_IsDocumentPlayingAudio(This,value) ) 
-
-
-#define ICoreWebView2_16_add_IsDefaultDownloadDialogOpenChanged(This,handler,token)	\
-    ( (This)->lpVtbl -> add_IsDefaultDownloadDialogOpenChanged(This,handler,token) ) 
-
-#define ICoreWebView2_16_remove_IsDefaultDownloadDialogOpenChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_IsDefaultDownloadDialogOpenChanged(This,token) ) 
-
-#define ICoreWebView2_16_get_IsDefaultDownloadDialogOpen(This,value)	\
-    ( (This)->lpVtbl -> get_IsDefaultDownloadDialogOpen(This,value) ) 
-
-#define ICoreWebView2_16_OpenDefaultDownloadDialog(This)	\
-    ( (This)->lpVtbl -> OpenDefaultDownloadDialog(This) ) 
-
-#define ICoreWebView2_16_CloseDefaultDownloadDialog(This)	\
-    ( (This)->lpVtbl -> CloseDefaultDownloadDialog(This) ) 
-
-#define ICoreWebView2_16_get_DefaultDownloadDialogCornerAlignment(This,value)	\
-    ( (This)->lpVtbl -> get_DefaultDownloadDialogCornerAlignment(This,value) ) 
-
-#define ICoreWebView2_16_put_DefaultDownloadDialogCornerAlignment(This,value)	\
-    ( (This)->lpVtbl -> put_DefaultDownloadDialogCornerAlignment(This,value) ) 
-
-#define ICoreWebView2_16_get_DefaultDownloadDialogMargin(This,value)	\
-    ( (This)->lpVtbl -> get_DefaultDownloadDialogMargin(This,value) ) 
-
-#define ICoreWebView2_16_put_DefaultDownloadDialogMargin(This,value)	\
-    ( (This)->lpVtbl -> put_DefaultDownloadDialogMargin(This,value) ) 
-
-
-#define ICoreWebView2_16_add_BasicAuthenticationRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_BasicAuthenticationRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_BasicAuthenticationRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_BasicAuthenticationRequested(This,token) ) 
-
-
-#define ICoreWebView2_16_CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler)	\
-    ( (This)->lpVtbl -> CallDevToolsProtocolMethodForSession(This,sessionId,methodName,parametersAsJson,handler) ) 
-
-#define ICoreWebView2_16_add_ContextMenuRequested(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ContextMenuRequested(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_ContextMenuRequested(This,token)	\
-    ( (This)->lpVtbl -> remove_ContextMenuRequested(This,token) ) 
-
-
-#define ICoreWebView2_16_add_StatusBarTextChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_StatusBarTextChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_StatusBarTextChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_StatusBarTextChanged(This,token) ) 
-
-#define ICoreWebView2_16_get_StatusBarText(This,value)	\
-    ( (This)->lpVtbl -> get_StatusBarText(This,value) ) 
-
-
-#define ICoreWebView2_16_get_Profile(This,value)	\
-    ( (This)->lpVtbl -> get_Profile(This,value) ) 
-
-
-#define ICoreWebView2_16_add_ServerCertificateErrorDetected(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_ServerCertificateErrorDetected(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_ServerCertificateErrorDetected(This,token)	\
-    ( (This)->lpVtbl -> remove_ServerCertificateErrorDetected(This,token) ) 
-
-#define ICoreWebView2_16_ClearServerCertificateErrorActions(This,handler)	\
-    ( (This)->lpVtbl -> ClearServerCertificateErrorActions(This,handler) ) 
-
-
-#define ICoreWebView2_16_add_FaviconChanged(This,eventHandler,token)	\
-    ( (This)->lpVtbl -> add_FaviconChanged(This,eventHandler,token) ) 
-
-#define ICoreWebView2_16_remove_FaviconChanged(This,token)	\
-    ( (This)->lpVtbl -> remove_FaviconChanged(This,token) ) 
-
-#define ICoreWebView2_16_get_FaviconUri(This,value)	\
-    ( (This)->lpVtbl -> get_FaviconUri(This,value) ) 
-
-#define ICoreWebView2_16_GetFavicon(This,format,completedHandler)	\
-    ( (This)->lpVtbl -> GetFavicon(This,format,completedHandler) ) 
-
-
-#define ICoreWebView2_16_Print(This,printSettings,handler)	\
-    ( (This)->lpVtbl -> Print(This,printSettings,handler) ) 
-
-#define ICoreWebView2_16_ShowPrintUI(This,printDialogKind)	\
-    ( (This)->lpVtbl -> ShowPrintUI(This,printDialogKind) ) 
-
-#define ICoreWebView2_16_PrintToPdfStream(This,printSettings,handler)	\
-    ( (This)->lpVtbl -> PrintToPdfStream(This,printSettings,handler) ) 
+#define ICoreWebView2BrowserExtensionEnableCompletedHandler_Invoke(This,errorCode)	\
+    ( (This)->lpVtbl -> Invoke(This,errorCode) ) 
 
 #endif /* COBJMACROS */
 
@@ -37126,7 +47623,381 @@ EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2_16 = {0x0EB34DC9,0x9F
 
 
 
-#endif 	/* __ICoreWebView2_16_INTERFACE_DEFINED__ */
+#endif 	/* __ICoreWebView2BrowserExtensionEnableCompletedHandler_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2BrowserExtensionRemoveCompletedHandler_INTERFACE_DEFINED__
+#define __ICoreWebView2BrowserExtensionRemoveCompletedHandler_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2BrowserExtensionRemoveCompletedHandler */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2BrowserExtensionRemoveCompletedHandler = {0x8E41909A,0x9B18,0x4BB1,{0x8C,0xDF,0x93,0x0F,0x46,0x7A,0x50,0xBE}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("8E41909A-9B18-4BB1-8CDF-930F467A50BE")
+    ICoreWebView2BrowserExtensionRemoveCompletedHandler : public IUnknown
+    {
+    public:
+        virtual HRESULT STDMETHODCALLTYPE Invoke( 
+            /* [in] */ HRESULT errorCode) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2BrowserExtensionRemoveCompletedHandlerVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2BrowserExtensionRemoveCompletedHandler * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2BrowserExtensionRemoveCompletedHandler * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2BrowserExtensionRemoveCompletedHandler * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2BrowserExtensionRemoveCompletedHandler, Invoke)
+        HRESULT ( STDMETHODCALLTYPE *Invoke )( 
+            ICoreWebView2BrowserExtensionRemoveCompletedHandler * This,
+            /* [in] */ HRESULT errorCode);
+        
+        END_INTERFACE
+    } ICoreWebView2BrowserExtensionRemoveCompletedHandlerVtbl;
+
+    interface ICoreWebView2BrowserExtensionRemoveCompletedHandler
+    {
+        CONST_VTBL struct ICoreWebView2BrowserExtensionRemoveCompletedHandlerVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2BrowserExtensionRemoveCompletedHandler_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2BrowserExtensionRemoveCompletedHandler_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2BrowserExtensionRemoveCompletedHandler_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2BrowserExtensionRemoveCompletedHandler_Invoke(This,errorCode)	\
+    ( (This)->lpVtbl -> Invoke(This,errorCode) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2BrowserExtensionRemoveCompletedHandler_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2File_INTERFACE_DEFINED__
+#define __ICoreWebView2File_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2File */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2File = {0xf2c19559,0x6bc1,0x4583,{0xa7,0x57,0x90,0x02,0x1b,0xe9,0xaf,0xec}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("f2c19559-6bc1-4583-a757-90021be9afec")
+    ICoreWebView2File : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Path( 
+            /* [retval][out] */ LPWSTR *path) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2FileVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2File * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2File * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2File * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2File, get_Path)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Path )( 
+            ICoreWebView2File * This,
+            /* [retval][out] */ LPWSTR *path);
+        
+        END_INTERFACE
+    } ICoreWebView2FileVtbl;
+
+    interface ICoreWebView2File
+    {
+        CONST_VTBL struct ICoreWebView2FileVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2File_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2File_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2File_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2File_get_Path(This,path)	\
+    ( (This)->lpVtbl -> get_Path(This,path) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2File_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2ObjectCollectionView_INTERFACE_DEFINED__
+#define __ICoreWebView2ObjectCollectionView_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2ObjectCollectionView */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2ObjectCollectionView = {0x0f36fd87,0x4f69,0x4415,{0x98,0xda,0x88,0x8f,0x89,0xfb,0x9a,0x33}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("0f36fd87-4f69-4415-98da-888f89fb9a33")
+    ICoreWebView2ObjectCollectionView : public IUnknown
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_Count( 
+            /* [retval][out] */ UINT32 *value) = 0;
+        
+        virtual HRESULT STDMETHODCALLTYPE GetValueAtIndex( 
+            /* [in] */ UINT32 index,
+            /* [retval][out] */ IUnknown **value) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2ObjectCollectionViewVtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2ObjectCollectionView * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2ObjectCollectionView * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2ObjectCollectionView * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ObjectCollectionView, get_Count)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Count )( 
+            ICoreWebView2ObjectCollectionView * This,
+            /* [retval][out] */ UINT32 *value);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2ObjectCollectionView, GetValueAtIndex)
+        HRESULT ( STDMETHODCALLTYPE *GetValueAtIndex )( 
+            ICoreWebView2ObjectCollectionView * This,
+            /* [in] */ UINT32 index,
+            /* [retval][out] */ IUnknown **value);
+        
+        END_INTERFACE
+    } ICoreWebView2ObjectCollectionViewVtbl;
+
+    interface ICoreWebView2ObjectCollectionView
+    {
+        CONST_VTBL struct ICoreWebView2ObjectCollectionViewVtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2ObjectCollectionView_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2ObjectCollectionView_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2ObjectCollectionView_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2ObjectCollectionView_get_Count(This,value)	\
+    ( (This)->lpVtbl -> get_Count(This,value) ) 
+
+#define ICoreWebView2ObjectCollectionView_GetValueAtIndex(This,index,value)	\
+    ( (This)->lpVtbl -> GetValueAtIndex(This,index,value) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2ObjectCollectionView_INTERFACE_DEFINED__ */
+
+
+#ifndef __ICoreWebView2WebMessageReceivedEventArgs2_INTERFACE_DEFINED__
+#define __ICoreWebView2WebMessageReceivedEventArgs2_INTERFACE_DEFINED__
+
+/* interface ICoreWebView2WebMessageReceivedEventArgs2 */
+/* [unique][object][uuid] */ 
+
+
+EXTERN_C __declspec(selectany) const IID IID_ICoreWebView2WebMessageReceivedEventArgs2 = {0x06fc7ab7,0xc90c,0x4297,{0x93,0x89,0x33,0xca,0x01,0xcf,0x6d,0x5e}};
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+    
+    MIDL_INTERFACE("06fc7ab7-c90c-4297-9389-33ca01cf6d5e")
+    ICoreWebView2WebMessageReceivedEventArgs2 : public ICoreWebView2WebMessageReceivedEventArgs
+    {
+    public:
+        virtual /* [propget] */ HRESULT STDMETHODCALLTYPE get_AdditionalObjects( 
+            /* [retval][out] */ ICoreWebView2ObjectCollectionView **value) = 0;
+        
+    };
+    
+    
+#else 	/* C style interface */
+
+    typedef struct ICoreWebView2WebMessageReceivedEventArgs2Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        DECLSPEC_XFGVIRT(IUnknown, QueryInterface)
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            ICoreWebView2WebMessageReceivedEventArgs2 * This,
+            /* [in] */ REFIID riid,
+            /* [annotation][iid_is][out] */ 
+            _COM_Outptr_  void **ppvObject);
+        
+        DECLSPEC_XFGVIRT(IUnknown, AddRef)
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            ICoreWebView2WebMessageReceivedEventArgs2 * This);
+        
+        DECLSPEC_XFGVIRT(IUnknown, Release)
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            ICoreWebView2WebMessageReceivedEventArgs2 * This);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2WebMessageReceivedEventArgs, get_Source)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_Source )( 
+            ICoreWebView2WebMessageReceivedEventArgs2 * This,
+            /* [retval][out] */ LPWSTR *source);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2WebMessageReceivedEventArgs, get_WebMessageAsJson)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_WebMessageAsJson )( 
+            ICoreWebView2WebMessageReceivedEventArgs2 * This,
+            /* [retval][out] */ LPWSTR *webMessageAsJson);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2WebMessageReceivedEventArgs, TryGetWebMessageAsString)
+        HRESULT ( STDMETHODCALLTYPE *TryGetWebMessageAsString )( 
+            ICoreWebView2WebMessageReceivedEventArgs2 * This,
+            /* [retval][out] */ LPWSTR *webMessageAsString);
+        
+        DECLSPEC_XFGVIRT(ICoreWebView2WebMessageReceivedEventArgs2, get_AdditionalObjects)
+        /* [propget] */ HRESULT ( STDMETHODCALLTYPE *get_AdditionalObjects )( 
+            ICoreWebView2WebMessageReceivedEventArgs2 * This,
+            /* [retval][out] */ ICoreWebView2ObjectCollectionView **value);
+        
+        END_INTERFACE
+    } ICoreWebView2WebMessageReceivedEventArgs2Vtbl;
+
+    interface ICoreWebView2WebMessageReceivedEventArgs2
+    {
+        CONST_VTBL struct ICoreWebView2WebMessageReceivedEventArgs2Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define ICoreWebView2WebMessageReceivedEventArgs2_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define ICoreWebView2WebMessageReceivedEventArgs2_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define ICoreWebView2WebMessageReceivedEventArgs2_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define ICoreWebView2WebMessageReceivedEventArgs2_get_Source(This,source)	\
+    ( (This)->lpVtbl -> get_Source(This,source) ) 
+
+#define ICoreWebView2WebMessageReceivedEventArgs2_get_WebMessageAsJson(This,webMessageAsJson)	\
+    ( (This)->lpVtbl -> get_WebMessageAsJson(This,webMessageAsJson) ) 
+
+#define ICoreWebView2WebMessageReceivedEventArgs2_TryGetWebMessageAsString(This,webMessageAsString)	\
+    ( (This)->lpVtbl -> TryGetWebMessageAsString(This,webMessageAsString) ) 
+
+
+#define ICoreWebView2WebMessageReceivedEventArgs2_get_AdditionalObjects(This,value)	\
+    ( (This)->lpVtbl -> get_AdditionalObjects(This,value) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+
+
+#endif 	/* __ICoreWebView2WebMessageReceivedEventArgs2_INTERFACE_DEFINED__ */
 
 #endif /* __WebView2_LIBRARY_DEFINED__ */
 
