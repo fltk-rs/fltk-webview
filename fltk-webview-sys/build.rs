@@ -1,6 +1,5 @@
 use std::env;
 use std::path::PathBuf;
-use std::process::Command;
 
 fn main() {
     compile_webview();
@@ -126,11 +125,6 @@ fn compile_webview() {
             }
         }
     } else if target.contains("apple") {
-        // Command::new("git")
-        //     .args(&["apply", "webview.patch"])
-        //     .current_dir(&manifest_dir)
-        //     .status()
-        //     .expect("Git is needed to retrieve the fltk & webview source files!");
         build.flag("-DWEBVIEW_COCOA");
         build.flag("-std=c++11");
         println!("cargo:rustc-link-lib=framework=Cocoa");
