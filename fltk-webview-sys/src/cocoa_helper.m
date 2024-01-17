@@ -56,7 +56,7 @@ void add_nsmenu(bool val) {
   }
 }
 
-void make_delegate(NSWindow *child, NSWindow *parent, add_menu: int) {
+void make_delegate(NSWindow *child, NSWindow *parent, int add_menu) {
   [parent setDelegate:(id)child];
   [child orderWindow:NSWindowAbove relativeTo:[parent windowNumber]];
   Method old_method =
