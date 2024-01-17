@@ -9,7 +9,7 @@ Add fltk-webview to your fltk application's Cargo.toml file:
 ```toml
 [dependencies]
 fltk = "1"
-fltk-webview = "0.2"
+fltk-webview = "0.4"
 ```
 Then you can embed a webview using fltk_webview::Webview::create:
 ```rust
@@ -39,7 +39,7 @@ fn main() {
 - On Windows: No other dependencies.
 - On MacOS: No other dependencies.
 - On X11/wayland platforms, webkit2gtk:
-    - Debian-based distros: `sudo apt-get install libwebkit2gtk-4.0-dev`.
+    - Debian-based distros: `sudo apt-get install libwebkit2gtk-4.1-dev`.
     - RHEL-based distros: `sudo dnf install webkit2gtk3-devel`.
 */
 

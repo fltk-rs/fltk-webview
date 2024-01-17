@@ -8,7 +8,7 @@ Add fltk-webview to your fltk application's Cargo.toml file:
 ```toml
 [dependencies]
 fltk = "1"
-fltk-webview = "0.2"
+fltk-webview = "0.4"
 ```
 
 Then you can embed a webview using fltk_webview::Webview::create:
@@ -39,11 +39,11 @@ fn main() {
 - On Windows: No other dependencies.
 - On MacOS: No other dependencies.
 - On X11/wayland platforms, webkit2gtk:
-    - Debian-based distros: `sudo apt-get install libwebkit2gtk-4.0-dev`.
+    - Debian-based distros: `sudo apt-get install libwebkit2gtk-4.1-dev`.
     - RHEL-based distros: `sudo dnf install webkit2gtk3-devel`.
 
 ## Known Issues
-- On windows, building using the gnu toolchain will still require deploying the dlls (webview.dll and WebView2Loader.dlls, which can be found in the `target/<profile>` directory.
+- On windows, building using the gnu toolchain will still require deploying the dlls (webview.dll and WebView2Loader.dlls), which can be found in the `target/<profile>` directory.
 - On X11/wayland platforms:
     - Need help with Gnome's mutter window manager fighting for ownership of the webview window, causing flickering in text fields!
     - If running on Wayland, you need to pass the GDK_BACKEND=x11 environment variable for webkit2gtk to work properly.
