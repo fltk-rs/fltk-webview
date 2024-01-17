@@ -70,12 +70,12 @@ impl FromFltkWindow for Webview {
             {
                 pub enum NSWindow {}
                 extern "C" {
-                    pub fn make_delegate(child: *mut NSWindow, parent: *mut NSWindow, add_menu: bool);
+                    pub fn make_delegate(child: *mut NSWindow, parent: *mut NSWindow, add_menu: i32);
                     pub fn my_close_win(win: *mut NSWindow);
                 }
                 let handle = win.raw_handle();
                 inner = wv::webview_create(debug as i32, handle as _);
-                make_delegate(wv::webview_get_window(inner) as _, handle as _, true);
+                make_delegate(wv::webview_get_window(inner) as _, handle as _, 1);
                 win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
