@@ -1,5 +1,5 @@
 use fltk::{app, prelude::*, window};
-use fltk_webview::Webview;
+use fltk_webview::*;
 
 const HTML: &str = "<p>مرحبا</p>";
 

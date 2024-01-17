@@ -2,7 +2,7 @@ extern crate fltk;
 extern crate tinyjson;
 
 use fltk::{app, button, prelude::*, window};
-use fltk_webview::Webview;
+use fltk_webview::*;
 
 const HTML: &str = r#"<div id="result"></div>"#;
 

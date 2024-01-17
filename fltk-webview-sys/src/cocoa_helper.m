@@ -56,7 +56,7 @@ void add_nsmenu(bool val) {
   }
 }
 
-void make_delegate(NSWindow *child, NSWindow *parent) {
+void make_delegate(NSWindow *child, NSWindow *parent, add_menu: bool) {
   [parent setDelegate:(id)child];
   [child orderWindow:NSWindowAbove relativeTo:[parent windowNumber]];
   Method old_method =
@@ -67,7 +67,7 @@ void make_delegate(NSWindow *child, NSWindow *parent) {
   method_exchangeImplementations(old_method, new_method);
   [child setIgnoresMouseEvents:NO];
   [child makeKeyAndOrderFront:nil];
-  add_nsmenu(true);
+  add_nsmenu(add_menu);
 }
 
 void my_close_win(NSWindow *win) {

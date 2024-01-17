@@ -1,6 +1,6 @@
 use core::time;
 use fltk::{app, prelude::*, window};
-use fltk_webview::Webview;
+use fltk_webview::*;
 
 // Work only on webkit, Egde doesn't.
 

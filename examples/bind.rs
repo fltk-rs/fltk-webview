@@ -2,7 +2,7 @@ extern crate fltk;
 extern crate tinyjson;
 
 use fltk::{app, prelude::*, window};
-use fltk_webview::Webview;
+use fltk_webview::*;
 use tinyjson::JsonValue;
 
 const HTML: &str = r#"data:text/html,

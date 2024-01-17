@@ -1,5 +1,5 @@
 use fltk::{prelude::*, *};
-use fltk_webview::Webview;
+use fltk_webview::*;
 use pulldown_cmark::{html, Options, Parser};
 
 fn main() {
