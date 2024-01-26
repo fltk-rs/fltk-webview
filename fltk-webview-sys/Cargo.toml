@@ -1,6 +1,6 @@
 [package]
 name = "fltk-webview-sys"
-version = "0.3.1"
+version = "0.3.2"
 authors = ["MoAlyousef <mohammed.alyousef@neurosrg.com>", "Adia Robbie <adyaro37@gmail.com>"]
 edition = "2018"
 description = "Webview for embedded fltk windows"
@@ -12,7 +12,7 @@ readme = "../README.md"
 license = "MIT"
 
 [dependencies]
-wv-sys = "0.1"
+wv-sys = "0.1.2"
 
 [build-dependencies]
 pkg-config = "0.3"
