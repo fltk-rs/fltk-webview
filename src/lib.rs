@@ -53,6 +53,9 @@ impl FromFltkWindow for Webview {
         unsafe {
             #[cfg(target_os = "windows")]
             {
+                extern "system" {
+                    pub fn SetFocus(child: *mut ()) -> *mut ();
+                }
                 inner = wv::webview_create(
                     debug as i32,
                     &mut win.raw_handle() as *mut *mut raw::c_void as *mut raw::c_void,
@@ -60,10 +63,19 @@ impl FromFltkWindow for Webview {
                 win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
+                SetFocus(topwin.raw_handle() as _);
                 topwin.set_callback(|t| {
                     if app::event() == enums::Event::Close {
                         t.hide();
                     }
+                });
+                topwin.assume_derived();
+                topwin.handle(|w, ev| match ev {
+                    fltk::enums::Event::Push => {
+                        SetFocus(w.raw_handle() as _);
+                        true
+                    },
+                    _ => false
                 });
             }
             #[cfg(target_os = "macos")]
