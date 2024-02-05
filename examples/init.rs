@@ -21,7 +21,7 @@ fn main() {
     let wv = Webview::create(true, &mut wv_win);
     wv.init(
         r#"
-    window.change = function() {
+    window.change = () => {
         let result = document.getElementById("result");
         result.innerText = "works";
     };

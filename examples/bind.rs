@@ -5,19 +5,17 @@ use fltk::{app, prelude::*, window};
 use fltk_webview::*;
 use tinyjson::JsonValue;
 
-const HTML: &str = r#"data:text/html,
+const HTML: &str = r#"
 <html>
-<body>hello</body>
+<body>
+<p>hello</p>
 <script>
-    window.onload = function() {
-        add(1, 2).then(function(res) {
-            document.body.innerText = `added, ${res}`;
-        });
-        say_hello('Mo').then(function(res) {
-            console.log(res);
-        });
+    window.onload = async () => {
+        document.body.innerText = `added, ${await add(1, 2)}`;
+        console.log(await say_hello('Mo'));
     };
 </script>
+</body>
 </html>"#;
 
 fn main() {
@@ -33,7 +31,7 @@ fn main() {
     win.show();
 
     let wv = Webview::create(true, &mut wv_win);
-
+    wv.set_html(HTML);
     wv.bind("add", |seq, content| {
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
@@ -49,9 +47,9 @@ fn main() {
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
         let val: &String = parsed[0].get().unwrap();
-        wv.return_(seq, 0, &format!("Hello {}", val));
+        wv.return_(seq, 0, &format!("\"Hello {}\"", val));
     });
 
-    wv.navigate(HTML);
+    
     app.run().unwrap();
 }
