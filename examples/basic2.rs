@@ -1,4 +1,4 @@
-use fltk::{app, prelude::*, group, input, window};
+use fltk::{app, group, input, prelude::*, window};
 use fltk_webview::*;
 
 fn main() {

@@ -37,13 +37,15 @@ fn main() {
 ## Dependencies
 - fltk-rs's dependencies, which can be found [here](https://github.com/fltk-rs/fltk-rs#dependencies).
 - On Windows: No other dependencies.
-- On MacOS: No other dependencies.
-- On X11/wayland platforms, webkit2gtk:
-    - Debian-based distros: `sudo apt-get install libwebkit2gtk-4.1-dev`.
-    - RHEL-based distros: `sudo dnf install webkit2gtk3-devel`.
+- On macOS: No other dependencies.
+- On Linux (X11 only): WebKitGTK and X11 dev packages.
+    - Debian-based distros: `sudo apt-get install libwebkit2gtk-4.1-dev libx11-dev`.
+    - RHEL-based distros: `sudo dnf install webkit2gtk3-devel libX11-devel`.
 
-## Known Issues
-The situation on linux is quite bad. It depends on whether you're running X11 or wayland. On wayland, this will use xwayland. On X11, I can't get embedding to work on Gnome's mutter window manager, which keeps fighting for ownership of the webview window, causing flickering or a blank screen!D=x11 environment variable for webkit2gtk to work properly.
+## Linux Notes
+- This crate supports X11 only on Linux. On GNOME or Wayland sessions, force X11: `GDK_BACKEND=x11`.
+- GNOME/Mutter can interfere with embedded toplevels; the X11 path mitigates this by making the webview unmanaged.
+- If you see blanking, try: `WEBKIT_DISABLE_COMPOSITING_MODE=1`.
 
 ![alt_test](screenshots/ex.jpg)
 

@@ -50,6 +50,5 @@ fn main() {
         wv.return_(seq, 0, &format!("\"Hello {}\"", val));
     });
 
-    
     app.run().unwrap();
 }

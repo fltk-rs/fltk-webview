@@ -1,3 +1,4 @@
+#![allow(clippy::needless_doctest_main)]
 #![doc = include_str!("../README.md")]
 
 use fltk::{
@@ -6,39 +7,11 @@ use fltk::{
     window,
 };
 use fltk_webview_sys as wv;
-pub use wv::Webview;
+use std::{os::raw, sync::Arc};
 pub use wv::SizeHint;
-use std::{
-    os::raw,
-    sync::Arc,
-};
+pub use wv::Webview;
 
-#[cfg(not(any(target_os = "macos", target_os = "windows")))]
-fn win_manager(prog: &str) -> bool {
-    let sm = std::env::var("SESSION_MANAGER");
-    if let Ok(sm) = sm {
-        let pid = sm.split("/").last();
-        if let Some(pid) = pid {
-            match std::process::Command::new("ps")
-                .args(&["-p", pid, "-o", "comm="])
-                .output()
-            {
-                Ok(out) => {
-                    if String::from_utf8_lossy(&out.stdout).contains(prog) {
-                        true
-                    } else {
-                        false
-                    }
-                }
-                _ => false,
-            }
-        } else {
-            false
-        }
-    } else {
-        false
-    }
-}
+// Linux path is unified under X11; Wayland embedding is not supported.
 
 pub trait FromFltkWindow {
     fn create(debug: bool, win: &mut window::Window) -> Webview;
@@ -75,15 +48,19 @@ impl FromFltkWindow for Webview {
                     fltk::enums::Event::Push => {
                         SetFocus(w.raw_handle() as _);
                         true
-                    },
-                    _ => false
+                    }
+                    _ => false,
                 });
             }
             #[cfg(target_os = "macos")]
             {
                 pub enum NSWindow {}
                 extern "C" {
-                    pub fn make_delegate(child: *mut NSWindow, parent: *mut NSWindow, add_menu: i32);
+                    pub fn make_delegate(
+                        child: *mut NSWindow,
+                        parent: *mut NSWindow,
+                        add_menu: i32,
+                    );
                     pub fn my_close_win(win: *mut NSWindow);
                 }
                 let handle = win.raw_handle();
@@ -107,9 +84,11 @@ impl FromFltkWindow for Webview {
                 pub enum Display {}
                 extern "C" {
                     pub fn gtk_init(argc: *mut i32, argv: *mut *mut raw::c_char);
+                    pub fn my_gtk_events_pending() -> i32;
                     pub fn my_get_win(wid: *mut GtkWindow) -> *mut GdkWindow;
                     pub fn my_get_xid(w: *mut GdkWindow) -> u64;
                     pub fn x_init(disp: *mut Display, child: u64, parent: u64);
+                    pub fn x_focus(disp: *mut Display, child: u64);
                     pub fn gtk_main_iteration_do(blocking: bool);
                 }
                 gtk_init(&mut 0, std::ptr::null_mut());
@@ -121,25 +100,37 @@ impl FromFltkWindow for Webview {
                 assert!(!temp.is_null());
                 let xid = my_get_xid(temp as _);
                 let flxid = win.raw_handle();
-                if win_manager("gnome-session") {
-                    win.draw(move |w| {
-                        x_init(app::display() as _, xid, flxid);
-                        app::sleep(0.03);
-                        wv::webview_set_size(inner, w.w(), w.h(), 0);
-                    });
-                    win.flush();
-                } else {
-                    x_init(app::display() as _, xid, flxid);
-                    win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
-                }
 
-                app::add_timeout3(0.001, |handle| {
-                    gtk_main_iteration_do(false);
-                    app::repeat_timeout3(0.001, handle);
+                // Unified X11 path: make child unmanaged and reparent into FLTK window
+                x_init(app::display() as _, xid, flxid);
+                // Ensure input focus goes to the embedded child when shown
+                x_focus(app::display() as _, xid);
+
+                win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
+
+                // Set focus to child on mouse press to ensure keystrokes reach WebKit
+                let xid_for_focus = xid;
+                win.handle(move |_, ev| {
+                    if ev == enums::Event::Push {
+                        x_focus(app::display() as _, xid_for_focus);
+                        true
+                    } else {
+                        false
+                    }
+                });
+
+                app::add_timeout3(0.016, |handle| {
+                    let mut spins = 0;
+                    while my_gtk_events_pending() != 0 && spins < 4 {
+                        gtk_main_iteration_do(false);
+                        spins += 1;
+                    }
+                    app::repeat_timeout3(0.016, handle);
                 });
             }
         }
         assert!(!inner.is_null());
+        #[allow(clippy::arc_with_non_send_sync)]
         let inner = Arc::new(inner);
         Webview::from_raw(inner)
     }
