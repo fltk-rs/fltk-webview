@@ -37,7 +37,7 @@ impl FromFltkWindow for Webview {
                 win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
-                SetFocus(topwin.raw_handle() as _);
+                // SetFocus(topwin.raw_handle() as _);
                 topwin.set_callback(|t| {
                     if app::event() == enums::Event::Close {
                         t.hide();
@@ -91,6 +91,7 @@ impl FromFltkWindow for Webview {
                     pub fn x_focus(disp: *mut Display, child: u64);
                     pub fn gtk_main_iteration_do(blocking: bool);
                 }
+                std::env::set_var("GDK_BACKEND", "x11");
                 gtk_init(&mut 0, std::ptr::null_mut());
                 inner = wv::webview_create(debug as i32, std::ptr::null_mut() as _);
                 assert!(!inner.is_null());
@@ -106,7 +107,7 @@ impl FromFltkWindow for Webview {
                 // Ensure input focus goes to the embedded child when shown
                 x_focus(app::display() as _, xid);
 
-                win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
+                win.draw(move |w| { wv::webview_set_size(inner, w.w(), w.h(), 0); });
 
                 // Set focus to child on mouse press to ensure keystrokes reach WebKit
                 let xid_for_focus = xid;

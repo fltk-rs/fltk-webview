@@ -14,7 +14,7 @@ fn main() {
     win.show();
 
     let wv = Webview::create(false, &mut wv_win);
-    wv.navigate("https://google.com");
+    wv.navigate("https://wikipedia.com").unwrap();
 
     app.run().unwrap();
 }

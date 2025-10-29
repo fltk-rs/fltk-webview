@@ -7,6 +7,7 @@
 long my_get_xid(GdkWindow *win) { return GDK_WINDOW_XID(win); }
 
 GdkWindow *my_get_win(GtkWindow *win) {
+  gtk_widget_show_all(GTK_WIDGET(win));  // Ensure the window is realized
   GdkWindow *w = gtk_widget_get_window(GTK_WIDGET(win));
   return w;
 }
