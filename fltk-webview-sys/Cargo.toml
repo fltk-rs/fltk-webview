@@ -12,7 +12,7 @@ readme = "../README.md"
 license = "MIT"
 
 [dependencies]
-wv = { git = "https://github.com/MoAlyousef/wv" }
+wv = "0.2"
 
 [build-dependencies]
 pkg-config = "0.3"
