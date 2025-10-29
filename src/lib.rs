@@ -34,7 +34,7 @@ impl FromFltkWindow for Webview {
                     debug as i32,
                     &mut win.raw_handle() as *mut *mut raw::c_void as *mut raw::c_void,
                 );
-                win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
+                win.draw(move |w| { wv::webview_set_size(inner, w.w(), w.h(), 0); });
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
                 // SetFocus(topwin.raw_handle() as _);
@@ -66,7 +66,7 @@ impl FromFltkWindow for Webview {
                 let handle = win.raw_handle();
                 inner = wv::webview_create(debug as i32, handle as _);
                 make_delegate(wv::webview_get_window(inner) as _, handle as _, 1);
-                win.draw(move |w| wv::webview_set_size(inner, w.w(), w.h(), 0));
+                win.draw(move |w| { wv::webview_set_size(inner, w.w(), w.h(), 0); });
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
                 let inner = inner.clone();
