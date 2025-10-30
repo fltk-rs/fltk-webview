@@ -30,21 +30,31 @@ impl FromFltkWindow for Webview {
                 extern "system" {
                     pub fn SetFocus(child: *mut ()) -> *mut ();
                     pub fn CoInitializeEx(pvReserved: *mut (), dwCoInit: u32) -> i32;
-                    pub fn SendMessageW(hwnd: *mut (), msg: u32, wparam: usize, lparam: isize) -> isize;
+                    pub fn SendMessageW(
+                        hwnd: *mut (),
+                        msg: u32,
+                        wparam: usize,
+                        lparam: isize,
+                    ) -> isize;
                 }
                 const COINIT_APARTMENTTHREADED: u32 = 0x2;
                 const WM_SIZE: u32 = 0x0005;
                 CoInitializeEx(std::ptr::null_mut(), COINIT_APARTMENTTHREADED);
-                inner = wv::webview_create(
-                    debug as i32,
-                    std::ptr::null_mut(),
-                );
-                wv::webview_set_size(inner, win.w(), win.h(), 0);
+                inner = wv::webview_create(debug as i32, std::ptr::null_mut());
+                wv::webview_set_size(inner, win.w(), win.h(), 3);
                 let wv_hwnd = wv::webview_get_window(inner);
                 // Manually set the webview window as a child and position it
                 extern "system" {
                     pub fn SetParent(child: *mut (), parent: *mut ()) -> *mut ();
-                    pub fn SetWindowPos(hwnd: *mut (), hwnd_insert_after: *mut (), x: i32, y: i32, cx: i32, cy: i32, flags: u32) -> i32;
+                    pub fn SetWindowPos(
+                        hwnd: *mut (),
+                        hwnd_insert_after: *mut (),
+                        x: i32,
+                        y: i32,
+                        cx: i32,
+                        cy: i32,
+                        flags: u32,
+                    ) -> i32;
                     pub fn GetWindowLongW(hwnd: *mut (), index: i32) -> i32;
                     pub fn SetWindowLongW(hwnd: *mut (), index: i32, new_long: i32) -> i32;
                 }
@@ -57,9 +67,26 @@ impl FromFltkWindow for Webview {
                 // Change window style to WS_CHILD to remove decorations
                 SetWindowLongW(wv_hwnd as _, GWL_STYLE, WS_CHILD | WS_VISIBLE);
                 SetParent(wv_hwnd as _, win.raw_handle() as _);
-                SetWindowPos(wv_hwnd as _, std::ptr::null_mut(), 0, 0, win.w(), win.h(), SWP_NOZORDER | SWP_NOACTIVATE | SWP_FRAMECHANGED);
+                SetWindowPos(
+                    wv_hwnd as _,
+                    std::ptr::null_mut(),
+                    0,
+                    0,
+                    win.w(),
+                    win.h(),
+                    SWP_NOZORDER | SWP_NOACTIVATE | SWP_FRAMECHANGED,
+                );
                 win.resize_callback(move |w, _, _, _, _| {
-                    SetWindowPos(wv_hwnd as _, std::ptr::null_mut(), 0, 0, w.w(), w.h(), SWP_NOZORDER | SWP_NOACTIVATE);
+                    wv::webview_set_size(inner, w.w(), w.h(), 3);
+                });
+                win.resize(win.x(), win.y(), win.w(), win.h());
+                win.handle(|w, ev| {
+                    if ev == enums::Event::Focus {
+                        SetFocus(w.raw_handle() as _);
+                        true
+                    } else {
+                        false
+                    }
                 });
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
@@ -92,7 +119,9 @@ impl FromFltkWindow for Webview {
                 let handle = win.raw_handle();
                 inner = wv::webview_create(debug as i32, handle as _);
                 make_delegate(wv::webview_get_window(inner) as _, handle as _, 1);
-                win.resize_callback(move |w, _, _, _, _| { wv::webview_set_size(inner, w.w(), w.h(), 0); });
+                win.resize_callback(move |w, _, _, _, _| {
+                    wv::webview_set_size(inner, w.w(), w.h(), 0);
+                });
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
                 let inner = inner.clone();
@@ -133,7 +162,9 @@ impl FromFltkWindow for Webview {
                 // Ensure input focus goes to the embedded child when shown
                 x_focus(app::display() as _, xid);
 
-                win.resize_callback(move |w, _, _, _, _| { wv::webview_set_size(inner, w.w(), w.h(), 0); });
+                win.resize_callback(move |w, _, _, _, _| {
+                    wv::webview_set_size(inner, w.w(), w.h(), 0);
+                });
 
                 // Set focus to child on mouse press to ensure keystrokes reach WebKit
                 let xid_for_focus = xid;
