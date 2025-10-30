@@ -122,6 +122,7 @@ impl FromFltkWindow for Webview {
                 win.resize_callback(move |w, _, _, _, _| {
                     wv::webview_set_size(inner, w.w(), w.h(), 0);
                 });
+                win.resize(win.x(), win.y(), win.w(), win.h());
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
                 let inner = inner.clone();
@@ -165,7 +166,7 @@ impl FromFltkWindow for Webview {
                 win.resize_callback(move |w, _, _, _, _| {
                     wv::webview_set_size(inner, w.w(), w.h(), 0);
                 });
-
+                win.resize(win.x(), win.y(), win.w(), win.h());
                 // Set focus to child on mouse press to ensure keystrokes reach WebKit
                 let xid_for_focus = xid;
                 win.handle(move |_, ev| {
