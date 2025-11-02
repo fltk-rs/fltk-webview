@@ -1,7 +1,10 @@
 [package]
 name = "fltk-webview-sys"
 version = "0.4.1"
-authors = ["MoAlyousef <mohammed.alyousef@neurosrg.com>", "Adia Robbie <adyaro37@gmail.com>"]
+authors = [
+  "MoAlyousef <mohammed.alyousef@neurosrg.com>",
+  "Adia Robbie <adyaro37@gmail.com>",
+]
 edition = "2018"
 description = "Webview for embedded fltk windows"
 repository = "https://github.com/fltk-rs/fltk-webview"
@@ -17,3 +20,5 @@ wv = "0.2.1"
 [build-dependencies]
 pkg-config = "0.3"
 cc = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
