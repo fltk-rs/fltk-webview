@@ -27,6 +27,9 @@ impl FromFltkWindow for Webview {
         unsafe {
             #[cfg(target_os = "windows")]
             {
+                extern "C" {
+                    pub fn move_focus(wv: *mut wv::webview_t);
+                }
                 extern "system" {
                     pub fn SetFocus(child: *mut ()) -> *mut ();
                     pub fn CoInitializeEx(pvReserved: *mut (), dwCoInit: u32) -> i32;
@@ -76,13 +79,14 @@ impl FromFltkWindow for Webview {
                     win.h(),
                     SWP_NOZORDER | SWP_NOACTIVATE | SWP_FRAMECHANGED,
                 );
+                move_focus(inner as *mut _);
                 win.resize_callback(move |w, _, _, _, _| {
                     wv::webview_set_size(inner, w.w(), w.h(), 3);
                 });
                 win.resize(win.x(), win.y(), win.w(), win.h());
-                win.handle(|w, ev| {
+                win.handle(move |_w, ev| {
                     if ev == enums::Event::Focus {
-                        SetFocus(w.raw_handle() as _);
+                        move_focus(inner as *mut _);
                         true
                     } else {
                         false
@@ -90,14 +94,13 @@ impl FromFltkWindow for Webview {
                 });
                 let mut topwin =
                     window::Window::from_widget_ptr(win.top_window().unwrap().as_widget_ptr());
-                // SetFocus(topwin.raw_handle() as _);
                 topwin.set_callback(|t| {
                     if app::event() == enums::Event::Close {
                         t.hide();
                     }
                 });
                 topwin.assume_derived();
-                topwin.handle(|w, ev| match ev {
+                topwin.handle(move |w, ev| match ev {
                     fltk::enums::Event::Push => {
                         SetFocus(w.raw_handle() as _);
                         true
