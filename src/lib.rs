@@ -7,6 +7,7 @@ use fltk::{
     window,
 };
 use fltk_webview_sys as wv;
+use std::os::raw;
 use std::sync::Arc;
 pub use wv::SizeHint;
 pub use wv::Webview;
