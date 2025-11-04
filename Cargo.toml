@@ -1,6 +1,6 @@
 [package]
 name = "fltk-webview"
-version = "0.4.5"
+version = "0.4.6"
 authors = ["MoAlyousef <mohammed.alyousef@neurosrg.com>", "Adia Robbie <adyaro37@gmail.com>"]
 edition = "2021"
 description = "Webview for embedded fltk windows"
@@ -13,7 +13,7 @@ license = "MIT"
 
 [dependencies]
 fltk = "1.5.10"
-fltk-webview-sys = { version = "0.4.1", path = "fltk-webview-sys" }
+fltk-webview-sys = { version = "0.4.2", path = "fltk-webview-sys" }
 
 # for the examples
 [dev-dependencies]
