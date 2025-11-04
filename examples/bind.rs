@@ -31,7 +31,7 @@ fn main() {
     win.show();
 
     let wv = Webview::create(true, &mut wv_win);
-    wv.set_html(HTML);
+    wv.set_html(HTML).unwrap();
     wv.bind("add", |seq, content| {
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
@@ -40,15 +40,15 @@ fn main() {
         let ret = val1 + val2;
         // currenyly still not valid on MS Edge as well as the official for window.onload = function() {..},
         // binding (on first load window evaluation), but working fine on webkit.
-        wv.return_(seq, 0, &ret.to_string());
-    });
+        wv.return_(seq, 0, &ret.to_string()).unwrap();
+    }).unwrap();
 
     wv.bind("say_hello", |seq, content| {
         println!("{}, {}", seq, content);
         let parsed: JsonValue = content.parse().unwrap();
         let val: &String = parsed[0].get().unwrap();
-        wv.return_(seq, 0, &format!("\"Hello {}\"", val));
-    });
+        wv.return_(seq, 0, &format!("\"Hello {}\"", val)).unwrap();
+    }).unwrap();
 
     app.run().unwrap();
 }

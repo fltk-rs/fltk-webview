@@ -43,10 +43,10 @@ fn main() {
         wv.eval(&format!(
             "document.getElementById('result').innerText = {}",
             ret
-        ));
-    });
+        )).unwrap();
+    }).unwrap();
 
-    wv.set_html(HTML);
+    wv.set_html(HTML).unwrap();
 
     app.run().unwrap();
 }

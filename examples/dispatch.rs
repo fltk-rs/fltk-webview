@@ -31,8 +31,8 @@ fn main() {
         result.innerText = s;
     };
     "#,
-    );
-    wv.set_html(HTML);
+    ).unwrap();
+    wv.set_html(HTML).unwrap();
 
     let (s, r) = app::channel::<i32>();
     wv.dispatch(move |_wv| {
@@ -44,11 +44,11 @@ fn main() {
                 count += 1;
             }
         });
-    });
+    }).unwrap();
 
     while app.wait() {
         if let Some(count) = r.recv() {
-            wv.eval(&format!("counter({})", count));
+            wv.eval(&format!("counter({})", count)).unwrap();
         }
     }
 }

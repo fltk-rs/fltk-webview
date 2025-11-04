@@ -26,11 +26,11 @@ fn main() {
         result.innerText = "works";
     };
     "#,
-    );
+    ).unwrap();
 
-    wv.set_html(HTML);
+    wv.set_html(HTML).unwrap();
 
-    btn.set_callback(move |_| wv.eval("window.change()"));
+    btn.set_callback(move |_| { wv.eval("window.change()").unwrap(); });
 
     app.run().unwrap();
 }

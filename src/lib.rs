@@ -7,7 +7,7 @@ use fltk::{
     window,
 };
 use fltk_webview_sys as wv;
-use std::{os::raw, sync::Arc};
+use std::sync::Arc;
 pub use wv::SizeHint;
 pub use wv::Webview;
 
@@ -33,21 +33,12 @@ impl FromFltkWindow for Webview {
                 extern "system" {
                     pub fn SetFocus(child: *mut ()) -> *mut ();
                     pub fn CoInitializeEx(pvReserved: *mut (), dwCoInit: u32) -> i32;
-                    pub fn SendMessageW(
-                        hwnd: *mut (),
-                        msg: u32,
-                        wparam: usize,
-                        lparam: isize,
-                    ) -> isize;
-                }
-                const COINIT_APARTMENTTHREADED: u32 = 0x2;
-                const WM_SIZE: u32 = 0x0005;
-                CoInitializeEx(std::ptr::null_mut(), COINIT_APARTMENTTHREADED);
-                inner = wv::webview_create(debug as i32, std::ptr::null_mut());
-                wv::webview_set_size(inner, win.w(), win.h(), 3);
-                let wv_hwnd = wv::webview_get_window(inner);
-                // Manually set the webview window as a child and position it
-                extern "system" {
+                    // pub fn SendMessageW(
+                    //     hwnd: *mut (),
+                    //     msg: u32,
+                    //     wparam: usize,
+                    //     lparam: isize,
+                    // ) -> isize;
                     pub fn SetParent(child: *mut (), parent: *mut ()) -> *mut ();
                     pub fn SetWindowPos(
                         hwnd: *mut (),
@@ -58,9 +49,16 @@ impl FromFltkWindow for Webview {
                         cy: i32,
                         flags: u32,
                     ) -> i32;
-                    pub fn GetWindowLongW(hwnd: *mut (), index: i32) -> i32;
+                    // pub fn GetWindowLongW(hwnd: *mut (), index: i32) -> i32;
                     pub fn SetWindowLongW(hwnd: *mut (), index: i32, new_long: i32) -> i32;
                 }
+                const COINIT_APARTMENTTHREADED: u32 = 0x2;
+                // const WM_SIZE: u32 = 0x0005;
+                CoInitializeEx(std::ptr::null_mut(), COINIT_APARTMENTTHREADED);
+                inner = wv::webview_create(debug as i32, std::ptr::null_mut());
+                wv::webview_set_size(inner, win.w(), win.h(), 3);
+                let wv_hwnd = wv::webview_get_window(inner);
+                // Manually set the webview window as a child and position it
                 const GWL_STYLE: i32 = -16;
                 const WS_CHILD: i32 = 0x40000000;
                 const WS_VISIBLE: i32 = 0x10000000;

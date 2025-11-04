@@ -16,7 +16,7 @@ fn main() {
     win.show();
 
     let wv = Webview::create(false, &mut wv_win);
-    wv.set_html(HTML);
+    wv.set_html(HTML).unwrap();
 
     app.run().unwrap();
 }

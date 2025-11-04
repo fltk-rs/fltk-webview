@@ -19,7 +19,7 @@ fn main() {
     win.show();
 
     let wv = Webview::create(false, &mut wv_win);
-    wv.set_html("");
+    wv.set_html("").unwrap();
 
     buf.add_modify_callback({
         move |_, _, _, _, _| {
@@ -29,7 +29,7 @@ fn main() {
             let parser = Parser::new_ext(&txt, options);
             let mut html_output: String = String::with_capacity(txt.len() * 3 / 2);
             html::push_html(&mut html_output, parser);
-            wv.set_html(&html_output);
+            wv.set_html(&html_output).unwrap();
         }
     });
 
